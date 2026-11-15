@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PFRDA &amp; SEBI Grade A — QRE Master Concept Notes with Tricks, Tips &amp; Worked Examples</title>
+<style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #0f172a;
+            --primary-light: #eff6ff;
+            --secondary: #0d9488;
+            --accent: #d97706;
+            --danger: #b91c1c;
+            --success: #15803d;
+            --purple: #7c3aed;
+            --border-color: #cbd5e1;
+            --text-main: #334155;
+            --text-heading: #0f172a;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            margin: 0; padding: 0;
+            background: #f1f5f9;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .hero .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.35);
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 700;
+        }
+        .hero h1 { margin: 0 0 10px 0; font-size: 2.3rem; letter-spacing: 0.5px; }
+        .hero p { margin: 0 auto; max-width: 950px; font-size: 1.15rem; color: #bae6fd; font-weight: 400; }
+        .container { max-width: 1280px; margin: 30px auto; padding: 0 20px; }
+
+        .quick-nav {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 12px 0 20px;
+            position: sticky;
+            top: 0;
+            background: #f1f5f9;
+            z-index: 100;
+        }
+        .nav-btn {
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-main);
+            text-decoration: none;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            transition: all 0.2s ease;
+        }
+        .nav-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+        .card h2 {
+            font-size: 1.55rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 10px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            color: var(--text-heading);
+            margin-top: 26px;
+            margin-bottom: 12px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.92rem;
+        }
+        th {
+            background: #f8fafc;
+            color: var(--text-heading);
+            padding: 12px 16px;
+            font-weight: 600;
+            border-bottom: 2px solid var(--border-color);
+        }
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        tr:last-child td { border-bottom: none; }
+        tr:hover { background: #f8fafc; }
+
+        .callout {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .callout-warning {
+            background: #fffbeb;
+            border-left: 4px solid var(--accent);
+        }
+        .callout-success {
+            background: #f0fdf4;
+            border-left: 4px solid var(--success);
+        }
+
+        .formula-box {
+            background: #0f172a;
+            color: #38bdf8;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 14px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 0.98rem;
+            line-height: 1.6;
+            overflow-x: auto;
+        }
+
+        .trick-box {
+            background: #fdf4ff;
+            border: 1px solid #f0abfc;
+            border-left: 5px solid var(--purple);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 18px 0;
+        }
+        .trick-title {
+            font-weight: 700;
+            color: var(--purple);
+            margin-bottom: 6px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .example-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 18px 0;
+        }
+        .example-header {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .example-sol {
+            background: white;
+            border-left: 3px solid var(--success);
+            padding: 12px 16px;
+            border-radius: 0 6px 6px 0;
+            margin-top: 12px;
+            font-size: 0.92rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            background: white;
+            margin-top: 40px;
+        }
+    
+  .desc-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+    border: 1.5px solid #93c5fd;
+    border-left: 6px solid #1d4ed8;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+  .desc-header {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .desc-q-card {
+    background: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(29, 78, 216, 0.04);
+  }
+  .desc-q-card:last-child { margin-bottom: 0; }
+  .desc-q-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #cbd5e1;
+  }
+  .desc-struct {
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 1.65;
+  }
+  .desc-struct p { margin-bottom: 8px; }
+  .desc-tag {
+    display: inline-block;
+    background: #1d4ed8;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-right: 8px;
+  }
+
+</style>
+</head>
+<body>
+<!-- PFRDA PORTAL UNIFIED NAV -->
+<div class="pfrda-portal-nav no-print" style="background:#ffffff;border-bottom:1px solid #e2e8f0;padding:8px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;font-family:'Segoe UI',system-ui,sans-serif;position:sticky;top:0;z-index:9999;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+<div style="display:flex;align-items:center;gap:8px;">
+<span style="background:#0f172a;color:#38bdf8;font-weight:800;font-size:0.76rem;padding:4px 9px;border-radius:4px;letter-spacing:0.6px;">PFRDA 2026</span>
+<span style="font-weight:700;font-size:0.88rem;color:#0f172a;">Paper 1 (QRE): Paper 1 - QRE Mocks &amp; Study Notes</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;">
+<a href="../index.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">🏠 Syllabus Portal</a><a href="PFRDA_SEBI_QRE_Comprehensive_Master_Study_Notes.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📘 Comprehensive Notes</a><a href="PFRDA_SEBI_QRE_Master_Concept_Notes_with_Tricks_and_Examples.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#2563eb;color:#ffffff;border-color:#2563eb;box-shadow:0 1px 4px rgba(37,99,235,0.25);transition:all 0.15s;">⚡ Revision Sheet</a><a href="PFRDA_SEBI_QRE_Mock_Test_1.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 1</a><a href="PFRDA_SEBI_QRE_Mock_Test_2.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 2</a><a href="PFRDA_SEBI_QRE_Mock_Test_3.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 3</a><a href="PFRDA_SEBI_QRE_Mock_Test_4.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 4</a><a href="PFRDA_SEBI_QRE_Mock_Test_5.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 5</a>
+</div>
+</div>
+<!-- END PFRDA PORTAL UNIFIED NAV -->
+<div class="hero">
+<div class="badge">PFRDA · SEBI · COMPLETE CONCEPT MASTERCLASS</div>
+<h1>QRE Comprehensive Master Notes with Tricks, Tips &amp; Worked Examples</h1>
+<p>Complete Chapter-Wise Conceptual Handbook with Mathematical Formulas, Vedic Shortcuts, Logical Algorithms &amp; Concrete Solved Questions</p>
+</div>
+<div class="container">
+<div class="quick-nav">
+<a class="nav-btn" href="#qa-speed">⚡ Speed Math</a>
+<a class="nav-btn" href="#qa-approx">📐 Approximations</a>
+<a class="nav-btn" href="#qa-quad">🎯 Quadratic Equations</a>
+<a class="nav-btn" href="#qa-series">🔢 Number Series</a>
+<a class="nav-btn" href="#qa-arith">📊 Arithmetic Formulas</a>
+<a class="nav-btn" href="#qa-di">📈 Data Interpretation</a>
+<a class="nav-btn" href="#lr-syl">🧩 Syllogisms</a>
+<a class="nav-btn" href="#lr-ineq">⚖️ Inequalities</a>
+<a class="nav-btn" href="#lr-puzzles">🏢 Puzzles &amp; Seating</a>
+<a class="nav-btn" href="#lr-cr">🧠 Critical Reasoning</a>
+<a class="nav-btn" href="#el-grammar">📖 40 Grammar Rules</a>
+<a class="nav-btn" href="#el-vocab">💡 Idioms &amp; Parajumbles</a>
+</div>
+<!-- PART 1: QUANTITATIVE APTITUDE -->
+<!-- 1. Speed Math -->
+<div class="card" id="qa-speed">
+<h2>⚡ 1. Speed Math &amp; Calculation Shortcuts</h2>
+<p>Speed calculation forms the backbone of regulatory paper clearing. Memorizing percentage-fraction conversions cuts Data Interpretation solving time by over 50%.</p>
+<div class="trick-box">
+<div class="trick-title">💡 Pro-Tricks &amp; Shortcuts:</div>
+<ul>
+<li><strong>Squaring Numbers Ending in 5:</strong> Multiply the leading digits by (digits + 1) and append 25. e.g., 65² = (6 × 7) | 25 = 4225. 115² = (11 × 12) | 25 = 13225.</li>
+<li><strong>Multiplication by 11:</strong> To multiply a two-digit number <code>ab × 11</code>, sum the digits in between: <code>a | (a+b) | b</code>. e.g., 43 × 11 = 473. 78 × 11 = 7 | (15) | 8 = 858.</li>
+<li><strong>Percentage Splitting Technique:</strong> Calculate 54% of 750 = 50% (375) + 4% (30) = 405. Or interchange: <em>x% of y = y% of x</em>. (e.g., 68% of 50 = 50% of 68 = 34).</li>
+</ul>
+</div>
+<h3>Fraction-to-Percentage Master Conversion Table</h3>
+<div class="table-wrapper">
+<table>
+<thead><tr><th>Fraction</th><th>Percentage</th><th>Fraction</th><th>Percentage</th><th>Fraction</th><th>Percentage</th></tr></thead>
+<tbody>
+<tr><td><strong>1/2</strong></td><td>50%</td><td><strong>1/9</strong></td><td>11.11% (11 1/9%)</td><td><strong>1/16</strong></td><td>6.25% (6 1/4%)</td></tr>
+<tr><td><strong>1/3</strong></td><td>33.33% (33 1/3%)</td><td><strong>1/10</strong></td><td>10%</td><td><strong>1/17</strong></td><td>5.88%</td></tr>
+<tr><td><strong>1/4</strong></td><td>25%</td><td><strong>1/11</strong></td><td>9.09% (9 1/11%)</td><td><strong>1/18</strong></td><td>5.55%</td></tr>
+<tr><td><strong>1/5</strong></td><td>20%</td><td><strong>1/12</strong></td><td>8.33% (8 1/3%)</td><td><strong>1/19</strong></td><td>5.26%</td></tr>
+<tr><td><strong>1/6</strong></td><td>16.66% (16 2/3%)</td><td><strong>1/13</strong></td><td>7.69%</td><td><strong>1/20</strong></td><td>5%</td></tr>
+<tr><td><strong>1/7</strong></td><td>14.28% (14 2/7%)</td><td><strong>1/14</strong></td><td>7.14% (7 1/7%)</td><td><strong>1/24</strong></td><td>4.16%</td></tr>
+<tr><td><strong>1/8</strong></td><td>12.5% (12 1/2%)</td><td><strong>1/15</strong></td><td>6.66% (6 2/3%)</td><td><strong>1/25</strong></td><td>4%</td></tr>
+</tbody>
+</table>
+</div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Mental DI Fraction Calculation</span>
+<span style="color:var(--primary); font-weight:600;">Concept Application</span>
+</div>
+<p><strong>Problem:</strong> In a regulatory exam DI set, evaluate: <code>37.5% of 640 + 57.14% of 490 - 83.33% of 240</code>.</p>
+<div class="example-sol">
+<strong>Step-by-Step Solution:</strong><br/>
+                    1. Convert percentages to exact fractions: 37.5% = 3/8, 57.14% = 4/7, 83.33% = 5/6.<br/>
+                    2. Calculation: (3/8 × 640) + (4/7 × 490) - (5/6 × 240)<br/>
+                    3. = (3 × 80) + (4 × 70) - (5 × 40) = 240 + 280 - 200 = <strong>320</strong>. (Solved mentally in 10 seconds!)
+                </div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — ⚡ 1. Speed Math &amp; Calculation Shortcuts</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '⚡ 1. Speed Math &amp; Calculation Shortcuts'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Speed calculation forms the backbone of regulatory paper clearing. Memorizing percentage-fraction conversions cuts Data Interpretation solving time by over 50%.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Squaring Numbers Ending in 5: Multiply the leading digits by (digits + 1) and append 25. e.g., 65² = (6 × 7) | 25 = 4225. 115² = (11 × 12) | 25 = 13225.; Multiplication by 11: To multiply a two-digit number ab × 11 , sum the digits in between: a | (a+b) | b . e.g., 43 × 11 = 473. 78 × 11 = 7 | (15) | 8 = 858.; Percentage Splitting Technique: Calculate 54% of 750 = 50% (375) + 4% (30) = 405. Or interchange: x% of y = y% of x . (e.g., 68% of 50 = 5</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> 1/2 | 50% | 1/9 | 11.11% (11 1/9%) | 1/16 | 6.25% (6 1/4%); 1/3 | 33.33% (33 1/3%) | 1/10 | 10% | 1/17 | 5.88%; 1/4 | 25% | 1/11 | 9.09% (9 1/11%) | 1/18 | 5.55%</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> 1/2 | 50% | 1/9 | 11.11% (11 1/9%) | 1/16 | 6.25% (6 1/4%); 1/3 | 33.33% (33 1/3%) | 1/10 | 10% | 1/17 | 5.88%; 1/4 | 25% | 1/11 | 9.09% (9 1/11%) | 1/18 | 5.55%</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across ⚡ 1. Speed Math &amp; Calculation Shortcuts is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under ⚡ 1. Speed Math &amp; Calculation Shortcuts.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in ⚡ 1. Speed Math &amp; Calculation Shortcuts.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Percentage Splitting Technique: Calculate 54% of 750 = 50% (375) + 4% (30) = 405. Or interchange: x% of y = y% of x . (e.g., 68% of 50 = 50% of 68 = 34). Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 2. Approximations -->
+<div class="card" id="qa-approx">
+<h2>📐 2. Approximations &amp; Simplifications</h2>
+<p>Approximations consistently provide 5 questions in SEBI and PFRDA Phase 1 Paper 1. They are designed to test your estimation skills rather than exact pen-and-paper arithmetic.</p>
+<div class="trick-box">
+<div class="trick-title">💡 Pro-Tricks &amp; Rules:</div>
+<ul>
+<li><strong>Round to Nearest Benchmark:</strong> Decimal .89, .95 round UP (e.g. 419.82 → 420; 2024.95 → 2025). Decimal .02, .12 round DOWN.</li>
+<li><strong>Strict BODMAS Order:</strong> Brackets → Orders (Roots/Powers) → Division &amp; Multiplication → Addition &amp; Subtraction. Always perform division before large multiplications.</li>
+<li><strong>Denominator Rounding:</strong> When dividing by ~6.94, round to 7. When dividing by ~4.02, round to 4.</li>
+</ul>
+</div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Multi-Operator Approximation</span>
+<span style="color:var(--primary); font-weight:600;">SEBI 2025 PYQ Style</span>
+</div>
+<p><strong>Question:</strong> What approximate value will come in place of (?)?<br/>
+<code>49.88% of 799.91 + 24.93% of 1199.85 = ? % of 1399.78</code></p>
+<div class="example-sol">
+<strong>Solution:</strong><br/>
+                    • Round values: 50% of 800 + 25% of 1200 ≈ ? % of 1400<br/>
+                    • LHS = 400 + 300 = 700.<br/>
+                    • RHS = (? / 100) × 1400 = 14 × ?<br/>
+                    • ? = 700 / 14 = <strong>50</strong>.
+                </div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 📐 2. Approximations &amp; Simplifications</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '📐 2. Approximations &amp; Simplifications'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Approximations consistently provide 5 questions in SEBI and PFRDA Phase 1 Paper 1. They are designed to test your estimation skills rather than exact pen-and-paper arithmetic.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Round to Nearest Benchmark: Decimal .89, .95 round UP (e.g. 419.82 → 420; 2024.95 → 2025). Decimal .02, .12 round DOWN.; Strict BODMAS Order: Brackets → Orders (Roots/Powers) → Division &amp; Multiplication → Addition &amp; Subtraction. Always perform division before large multiplications.; Denominator Rounding: When dividing by ~6.94, round to 7. When dividing by ~4.02, round to 4.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 📐 2. Approximations &amp; Simplifications is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 📐 2. Approximations &amp; Simplifications.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 📐 2. Approximations &amp; Simplifications.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Denominator Rounding: When dividing by ~6.94, round to 7. When dividing by ~4.02, round to 4. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 3. Quadratic Equations -->
+<div class="card" id="qa-quad">
+<h2>🎯 3. Quadratic Equations: The 15-Second Sign Method</h2>
+<p>For standard quadratic equations <em>ax² + bx + c = 0</em>, roots can be determined rapidly by inspecting the signs of the linear coefficient (b) and constant (c).</p>
+<div class="table-wrapper">
+<table>
+<thead><tr><th>Equation Type</th><th>Sign of b</th><th>Sign of c</th><th>Root 1 Sign</th><th>Root 2 Sign</th><th>Shortcut Rule</th></tr></thead>
+<tbody>
+<tr><td><strong>x² - bx + c = 0</strong></td><td>-</td><td>+</td><td><strong>+</strong></td><td><strong>+</strong></td><td>Both roots are always POSITIVE.</td></tr>
+<tr><td><strong>x² + bx + c = 0</strong></td><td>+</td><td>+</td><td><strong>-</strong></td><td><strong>-</strong></td><td>Both roots are always NEGATIVE.</td></tr>
+<tr><td><strong>x² - bx - c = 0</strong></td><td>-</td><td>-</td><td><strong>+</strong></td><td><strong>-</strong></td><td>Larger root is POSITIVE, Smaller is NEGATIVE.</td></tr>
+<tr><td><strong>x² + bx - c = 0</strong></td><td>+</td><td>-</td><td><strong>-</strong></td><td><strong>+</strong></td><td>Larger root is NEGATIVE, Smaller is POSITIVE.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="trick-box">
+<div class="trick-title">💡 Instant Comparison Rules (Zero-Calculation):</div>
+<ol>
+<li>If Eq I has (+, +) signs and Eq II has (-, +) signs, then without solving: <strong>x &lt; y</strong> (all roots of I are negative, all roots of II are positive).</li>
+<li>If the constant <em>c</em> is negative in both equations (c &lt; 0), roots for both are (+, -). Hence, <strong>Relationship Cannot Be Established (CND)</strong> holds true 100% of the time!</li>
+</ol>
+</div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Quadratic Root Comparison</span>
+<span style="color:var(--primary); font-weight:600;">PFRDA 2025 Recollected</span>
+</div>
+<p><strong>Question:</strong> Solve both equations and establish the relationship:<br/>
+<code>I. x² - 18x + 77 = 0</code><br/>
+<code>II. y² - 25y + 154 = 0</code></p>
+<div class="example-sol">
+<strong>Solution:</strong><br/>
+                    • Eq I: Signs (-, +) =&gt; Both roots (+, +). Factors of 77 adding to 18: 11 × 7 = 77, 11 + 7 = 18. Roots: <strong>x = 7, 11</strong>.<br/>
+                    • Eq II: Signs (-, +) =&gt; Both roots (+, +). Factors of 154 adding to 25: 14 × 11 = 154, 14 + 11 = 25. Roots: <strong>y = 11, 14</strong>.<br/>
+                    • Comparison:<br/>
+                      - x = 7 is &lt; 11 and &lt; 14.<br/>
+                      - x = 11 is = 11 and &lt; 14.<br/>
+                    • Conclusion: <strong>x ≤ y</strong>.
+                </div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 🎯 3. Quadratic Equations: The 15-Second Sign Method</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '🎯 3. Quadratic Equations: The 15-Second Sign Method'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> For standard quadratic equations ax² + bx + c = 0 , roots can be determined rapidly by inspecting the signs of the linear coefficient (b) and constant (c).</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> If Eq I has (+, +) signs and Eq II has (-, +) signs, then without solving: x &lt; y (all roots of I are negative, all roots of II are positive).; If the constant c is negative in both equations (c &lt; 0), roots for both are (+, -). Hence, Relationship Cannot Be Established (CND) holds true 100% of the time!</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> x² - bx + c = 0 | - | + | + | + | Both roots are always POSITIVE.; x² + bx + c = 0 | + | + | - | - | Both roots are always NEGATIVE.; x² - bx - c = 0 | - | - | + | - | Larger root is POSITIVE, Smaller is NEGATIVE.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> x² - bx + c = 0 | - | + | + | + | Both roots are always POSITIVE.; x² + bx + c = 0 | + | + | - | - | Both roots are always NEGATIVE.; x² - bx - c = 0 | - | - | + | - | Larger root is POSITIVE, Smaller is NEGATIVE.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 🎯 3. Quadratic Equations: The 15-Second Sign Method is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 🎯 3. Quadratic Equations: The 15-Second Sign Method.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 🎯 3. Quadratic Equations: The 15-Second Sign Method.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> If the constant c is negative in both equations (c &lt; 0), roots for both are (+, -). Hence, Relationship Cannot Be Established (CND) holds true 100% of the time! Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 4. Number Series -->
+<div class="card" id="qa-series">
+<h2>🔢 4. Number Series Patterns &amp; Detection Algorithms</h2>
+<div class="grid-2">
+<div class="key-rule">
+<div class="key-rule-title">Pattern 1: Differences of Squares / Cubes</div>
+<p>Differences are squares or cubes: +9, +25, +49 (3², 5², 7² primes) or +8, +27, +64 (2³, 3³, 4³).</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Pattern 2: Multiplicative + Constant</div>
+<p>×1+1, ×2+2, ×3+3, ×4+4... or ×2-1, ×2-2, ×2-3...</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Pattern 3: Decimal 0.5 Multiplier</div>
+<p>×0.5 + 1, ×1 + 1.5, ×1.5 + 2, ×2 + 2.5... (First two terms are almost identical or decrease slightly, then grow rapidly).</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Pattern 4: Alternating Double Series</div>
+<p>Interleaved operations: +k, -m, +k, -m... or square additions and subtractions: +2², -3², +4², -5².</p>
+</div>
+</div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Wrong Number Detection</span>
+<span style="color:var(--primary); font-weight:600;">SEBI Grade A Pattern</span>
+</div>
+<p><strong>Series:</strong> <code>12, 14, 32, 102, 414, 2090, 12570</code>. Find the wrong number.</p>
+<div class="example-sol">
+<strong>Step-by-Step Logic:</strong><br/>
+                    • 12 × 1 + 2 = 14<br/>
+                    • 14 × 2 + 4 = 32<br/>
+                    • 32 × 3 + 6 = 102<br/>
+                    • 102 × 4 + 8 = <strong>416</strong> (Given term is 414!)<br/>
+                    • Verify next: 416 × 5 + 10 = 2080 + 10 = 2090 (Matches!).<br/>
+                    • Hence, <strong>414</strong> is the wrong number (should be 416).
+                </div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 🔢 4. Number Series Patterns &amp; Detection Algorithms</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '🔢 4. Number Series Patterns &amp; Detection Algorithms'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Differences are squares or cubes: +9, +25, +49 (3², 5², 7² primes) or +8, +27, +64 (2³, 3³, 4³).</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 🔢 4. Number Series Patterns &amp; Detection Algorithms.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 🔢 4. Number Series Patterns &amp; Detection Algorithms is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 🔢 4. Number Series Patterns &amp; Detection Algorithms.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 🔢 4. Number Series Patterns &amp; Detection Algorithms.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Differences are squares or cubes: +9, +25, +49 (3², 5², 7² primes) or +8, +27, +64 (2³, 3³, 4³). Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 5. Arithmetic Core Formulas & Worked Examples -->
+<div class="card" id="qa-arith">
+<h2>📊 5. Arithmetic Core Formulas with Worked Examples</h2>
+<h3>A. Simple &amp; Compound Interest Difference</h3>
+<div class="formula-box">
+• 2-Year Difference (CI - SI): D₂ = P × (R / 100)²
+• 3-Year Difference (CI - SI): D₃ = P × (R / 100)² × [ 3 + (R / 100) ]
+            </div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: 2-Year CI-SI Difference</span>
+<span style="color:var(--primary); font-weight:600;">Exam Standard</span>
+</div>
+<p><strong>Problem:</strong> The difference between compound interest and simple interest on a principal at 12% per annum for 2 years is Rs. 432. Find the principal sum.</p>
+<div class="example-sol">
+<strong>Solution using formula:</strong><br/>
+                    D₂ = P × (R / 100)² =&gt; 432 = P × (12 / 100)² = P × (144 / 10000)<br/>
+                    P = (432 × 10000) / 144 = 3 × 10000 = <strong>Rs. 30,000</strong>.
+                </div>
+</div>
+<h3>B. Partnerships with Working Partner Deductions</h3>
+<div class="formula-box">
+• Profit Ratio = (Capital_A × Time_A) : (Capital_B × Time_B) : (Capital_C × Time_C)
+• Working Partner Salary: Subtract management salary from Total Profit FIRST, then distribute remaining amount.
+            </div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Working Partner Salary Deduction</span>
+<span style="color:var(--primary); font-weight:600;">Regulatory Classic</span>
+</div>
+<p><strong>Problem:</strong> A and B invest Rs. 50,000 and Rs. 70,000 in a business. A is an active working partner and receives 10% of total profit as management salary. If the total annual profit is Rs. 40,000, find A's total income.</p>
+<div class="example-sol">
+<strong>Solution:</strong><br/>
+                    1. A's salary = 10% of 40,000 = Rs. 4,000.<br/>
+                    2. Remaining profit = 40,000 - 4,000 = Rs. 36,000.<br/>
+                    3. Investment ratio A : B = 50,000 : 70,000 = 5 : 7. Total parts = 12.<br/>
+                    4. A's profit share = (5 / 12) × 36,000 = Rs. 15,000.<br/>
+                    5. A's total income = Salary + Profit Share = 4,000 + 15,000 = <strong>Rs. 19,000</strong>.
+                </div>
+</div>
+<h3>C. Mixtures &amp; Repeated Dilution</h3>
+<div class="formula-box">
+• Repeated Replacement: Remaining Pure Liquid = Initial_Qty × (1 - x / V)ⁿ
+  where V = total volume, x = volume replaced each operation, n = number of operations.
+            </div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Repeated Liquid Replacement</span>
+<span style="color:var(--primary); font-weight:600;">Shortcut Formula</span>
+</div>
+<p><strong>Problem:</strong> A container has 80 liters of pure milk. 8 liters of milk are taken out and replaced with water. This process is repeated 2 more times (total 3 times). How much pure milk remains?</p>
+<div class="example-sol">
+<strong>Solution:</strong><br/>
+                    Remaining Milk = 80 × (1 - 8/80)³ = 80 × (1 - 0.1)³ = 80 × (0.9)³<br/>
+                    = 80 × 0.729 = <strong>58.32 liters</strong>.
+                </div>
+</div>
+<h3>D. Boats and Streams</h3>
+<div class="formula-box">
+• Downstream (D) = u + v | Upstream (U) = u - v
+• Boat Speed in Still Water (u) = (D + U) / 2
+• Stream Speed (v) = (D - U) / 2
+            </div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Stream and Boat Speed</span>
+<span style="color:var(--primary); font-weight:600;">Speed Calculation</span>
+</div>
+<p><strong>Problem:</strong> A boat travels 48 km downstream in 3 hours and 32 km upstream in 4 hours. Find the speed of the river current.</p>
+<div class="example-sol">
+<strong>Solution:</strong><br/>
+                    • Downstream Speed D = 48 / 3 = 16 km/h.<br/>
+                    • Upstream Speed U = 32 / 4 = 8 km/h.<br/>
+                    • Current Speed v = (D - U) / 2 = (16 - 8) / 2 = <strong>4 km/h</strong>.
+                </div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 📊 5. Arithmetic Core Formulas with Worked Examples</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '📊 5. Arithmetic Core Formulas with Worked Examples'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Problem: The difference between compound interest and simple interest on a principal at 12% per annum for 2 years is Rs. 432. Find the principal sum.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 📊 5. Arithmetic Core Formulas with Worked Examples.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 📊 5. Arithmetic Core Formulas with Worked Examples is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 📊 5. Arithmetic Core Formulas with Worked Examples.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 📊 5. Arithmetic Core Formulas with Worked Examples.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Problem: The difference between compound interest and simple interest on a principal at 12% per annum for 2 years is Rs. 432. Find the principal sum. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 6. Data Interpretation -->
+<div class="card" id="qa-di">
+<h2>📈 6. Data Interpretation (DI) Speed Toolkit</h2>
+<div class="trick-box">
+<div class="trick-title">💡 High-Speed DI Shortcuts:</div>
+<ul>
+<li><strong>Percentage Increase/Decrease:</strong> <code>(Difference / Initial Value) × 100%</code>. When comparing growth across 4 companies, compare the fractions directly without multiplying by 100.</li>
+<li><strong>Cross-Multiplication for Fraction Comparison:</strong> To compare 45/112 and 52/128, cross multiply: 45 × 128 = 5760; 52 × 112 = 5824. Since 5824 &gt; 5760, 52/128 is larger!</li>
+<li><strong>Average of Group:</strong> Pick an assumed mean (e.g. 500) and calculate average deviation, then adjust.</li>
+</ul>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 📈 6. Data Interpretation (DI) Speed Toolkit</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '📈 6. Data Interpretation (DI) Speed Toolkit'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 📈 6. Data Interpretation (DI) Speed Toolkit is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Percentage Increase/Decrease: (Difference / Initial Value) × 100% . When comparing growth across 4 companies, compare the fractions directly without multiplying by 100.; Cross-Multiplication for Fraction Comparison: To compare 45/112 and 52/128, cross multiply: 45 × 128 = 5760; 52 × 112 = 5824. Since 5824 &gt; 5760, 52/128 is larger!; Average of Group: Pick an assumed mean (e.g. 500) and calculate average deviation, then adjust.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 📈 6. Data Interpretation (DI) Speed Toolkit is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 📈 6. Data Interpretation (DI) Speed Toolkit.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 📈 6. Data Interpretation (DI) Speed Toolkit.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Average of Group: Pick an assumed mean (e.g. 500) and calculate average deviation, then adjust. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- PART 2: REASONING ABILITY -->
+<!-- 7. Syllogisms -->
+<div class="card" id="lr-syl">
+<h2>🧩 7. Modern Syllogisms: "Only a few" &amp; "Only" Master Rules</h2>
+<div class="table-wrapper">
+<table>
+<thead><tr><th>Statement</th><th>Exact Meaning</th><th>Definite Deductions</th><th>Possibility Deductions</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Only a few A are B</strong></td>
+<td>Some A are B <br/>AND<br/> Some A are NOT B</td>
+<td>1. Some A are B (True)<br/>2. Some A are not B (True)<br/>3. All A are B (100% False)</td>
+<td>1. All B can be A (Possible ✓)<br/>2. Some B not being A is possible (Possible ✓)<br/>3. All A can be B (NEVER Possible ✗)</td>
+</tr>
+<tr>
+<td><strong>Only A is B</strong></td>
+<td>All B are A <br/>(B belongs strictly to A)</td>
+<td>1. All B are A (True)<br/>2. No B is C (True for all other elements)</td>
+<td>B can NEVER intersect with any third element under any possibility.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: "Only a few" with Possibility</span>
+<span style="color:var(--primary); font-weight:600;">SEBI 2024 Exam Pattern</span>
+</div>
+<p><strong>Statements:</strong><br/>
+                Only a few Bonds are Equities.<br/>
+                All Equities are Shares.<br/>
+                No Shares are Debentures.<br/>
+<strong>Conclusions:</strong><br/>
+                I. Some Bonds are not Debentures.<br/>
+                II. All Equities being Debentures is a possibility.</p>
+<div class="example-sol">
+<strong>Solution:</strong><br/>
+                    • Equities are inside Shares. No Shares are Debentures =&gt; No Equities can be Debentures. Therefore, Conclusion II is 100% False.<br/>
+                    • Since some Bonds are Equities and all Equities are Shares (which cannot be Debentures), that portion of Bonds can never be Debentures. Conclusion I is <strong>Definitely True</strong>.<br/>
+                    • Answer: <strong>Only Conclusion I follows</strong>.
+                </div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 🧩 7. Modern Syllogisms: "Only a few" &amp; "Only" Master Rules</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '🧩 7. Modern Syllogisms: "Only a few" &amp; "Only" Master Rules'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Statements: Only a few Bonds are Equities. All Equities are Shares. No Shares are Debentures. Conclusions: I. Some Bonds are not Debentures. II. All Equities being Debentures is a possibility.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 🧩 7. Modern Syllogisms: "Only a few" &amp; "Only" Master Rules.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Only a few A are B | Some A are B | AND | Some A are NOT B | 1. Some A are B (True) | 2. Some A are not B (True) | 3. All A are B (100% False) | 1. All B can be A (Possible ✓) | 2. Some B not being A is possible (Possible ✓) | 3. All A can be B (NEVER Possible ✗); Only A is B | All B are A | (B belongs strictly to A) | 1. All B are A (True) | 2. No B is C (True for all other elements) | B can NEVER intersect with any third element under any possi</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Only a few A are B | Some A are B | AND | Some A are NOT B | 1. Some A are B (True) | 2. Some A are not B (True) | 3. All A are B (100% False) | 1. All B can be A (Possible ✓) | 2. Some B not being A is possible (Possible ✓) | 3. All A can be B (NEVER Possible ✗); Only A is B | All B are A | (B belongs strictly to A) | 1. All B are A (True) | 2. No B is C (True for all other elements) | B can NEVER intersect with any third element under any possi</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 🧩 7. Modern Syllogisms: "Only a few" &amp; "Only" Master Rules is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 🧩 7. Modern Syllogisms: "Only a few" &amp; "Only" Master Rules.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 🧩 7. Modern Syllogisms: "Only a few" &amp; "Only" Master Rules.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Statements: Only a few Bonds are Equities. All Equities are Shares. No Shares are Debentures. Conclusions: I. Some Bonds are not Debentures. II. All Equities being Debentures is a possibility. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 8. Inequalities -->
+<div class="card" id="lr-ineq">
+<h2>⚖️ 8. Inequalities: Open Gate Framework</h2>
+<div class="callout callout-success">
+<strong>Open Gate Mechanics:</strong>
+<ul>
+<li>Symbol <code>&gt;</code> represents an open door from left to right. You can walk from A to B in <code>A &gt; B</code>.</li>
+<li>For <code>A ≥ B</code> to be valid, EVERY gate along the path must have an equal sign (≥ or =). If even one strict gate (<code>&gt;</code>) appears, the relation strictly reduces to <code>A &gt; B</code>.</li>
+<li>If opposing arrows meet (e.g. <code>A &gt; B &lt; C</code>), the door is blocked. No definite conclusion exists.</li>
+</ul>
+</div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Multi-Statement Inequality</span>
+<span style="color:var(--primary); font-weight:600;">PFRDA Exam Standard</span>
+</div>
+<p><strong>Statements:</strong> <code>P ≥ Q &gt; R = S; S ≥ T &gt; U</code><br/>
+<strong>Conclusions:</strong><br/>
+                I. P &gt; T<br/>
+                II. Q &gt; U</p>
+<div class="example-sol">
+<strong>Solution:</strong><br/>
+                    • Path from P to T: P ≥ Q &gt; R = S ≥ T. Notice strict gate '&gt;' exists. Hence P &gt; T is <strong>True</strong>.<br/>
+                    • Path from Q to U: Q &gt; R = S ≥ T &gt; U. Strict gate exists. Hence Q &gt; U is <strong>True</strong>.<br/>
+                    • Answer: <strong>Both conclusions follow</strong>.
+                </div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — ⚖️ 8. Inequalities: Open Gate Framework</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '⚖️ 8. Inequalities: Open Gate Framework'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Statements: P ≥ Q &gt; R = S; S ≥ T &gt; U Conclusions: I. P &gt; T II. Q &gt; U</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Symbol &gt; represents an open door from left to right. You can walk from A to B in A &gt; B .; For A ≥ B to be valid, EVERY gate along the path must have an equal sign (≥ or =). If even one strict gate ( &gt; ) appears, the relation strictly reduces to A &gt; B .; If opposing arrows meet (e.g. A &gt; B &lt; C ), the door is blocked. No definite conclusion exists.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across ⚖️ 8. Inequalities: Open Gate Framework is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under ⚖️ 8. Inequalities: Open Gate Framework.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in ⚖️ 8. Inequalities: Open Gate Framework.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> If opposing arrows meet (e.g. A &gt; B &lt; C ), the door is blocked. No definite conclusion exists. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 9. Puzzles & Seating -->
+<div class="card" id="lr-puzzles">
+<h2>🏢 9. Puzzles &amp; Seating Arrangements: 4-Phase Algorithm</h2>
+<div class="grid-2">
+<div class="key-rule">
+<div class="key-rule-title">Phase 1: Scanning &amp; Triage</div>
+<p>Spend 20 seconds counting variables. Solve single-variable linear rows or 8-floor buildings first; leave dual-variable month-date puzzles for later.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Phase 2: Anchor Identification</div>
+<p>Find definite anchor points: "X sits at an extreme end", "Y lives on Floor 8", or "Z sits third to the right of corner person".</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Phase 3: Two-Case Parallel Grids</div>
+<p>Always draw Case 1 and Case 2 side-by-side. Never hold branching scenarios in your head. Enter definite clues on both grids simultaneously.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Phase 4: Negative Clue Elimination</div>
+<p>Use negative clues ("Neither A nor B likes Blue", "C does not sit adjacent to D") to eliminate invalid cases cleanly.</p>
+</div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 🏢 9. Puzzles &amp; Seating Arrangements: 4-Phase Algorithm</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '🏢 9. Puzzles &amp; Seating Arrangements: 4-Phase Algorithm'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Spend 20 seconds counting variables. Solve single-variable linear rows or 8-floor buildings first; leave dual-variable month-date puzzles for later.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 🏢 9. Puzzles &amp; Seating Arrangements: 4-Phase Algorithm.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 🏢 9. Puzzles &amp; Seating Arrangements: 4-Phase Algorithm is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 🏢 9. Puzzles &amp; Seating Arrangements: 4-Phase Algorithm.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 🏢 9. Puzzles &amp; Seating Arrangements: 4-Phase Algorithm.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Spend 20 seconds counting variables. Solve single-variable linear rows or 8-floor buildings first; leave dual-variable month-date puzzles for later. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 10. Critical Reasoning -->
+<div class="card" id="lr-cr">
+<h2>🧠 10. Critical Reasoning: The Assumption Negation Test</h2>
+<div class="callout callout-warning">
+<strong>The Golden Negation Rule:</strong>
+<p>An assumption is an unstated foundation. If you negate an option (make it opposite) and the conclusion completely collapses, that option is <strong>100% an implicit assumption</strong>!</p>
+</div>
+<div class="example-box">
+<div class="example-header">
+<span>Worked Example: Assumption Testing</span>
+<span style="color:var(--primary); font-weight:600;">Regulatory Decision Making</span>
+</div>
+<p><strong>Statement:</strong> The central bank has mandated that all Non-Banking Financial Companies (NBFCs) maintain higher capital adequacy buffers to mitigate retail credit risk.<br/>
+<strong>Assumption I:</strong> Higher capital buffers protect financial institutions during sudden default shocks.</p>
+<div class="example-sol">
+<strong>Negation Test:</strong><br/>
+                    Negate Assumption I: <em>"Higher capital buffers DO NOT protect institutions during default shocks."</em><br/>
+                    If buffers do not protect them, why would the central bank mandate them? The policy becomes completely pointless! Thus, the conclusion collapses upon negation.<br/>
+                    Therefore, Assumption I is <strong>Implicit</strong>.
+                </div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 🧠 10. Critical Reasoning: The Assumption Negation Test</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '🧠 10. Critical Reasoning: The Assumption Negation Test'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> An assumption is an unstated foundation. If you negate an option (make it opposite) and the conclusion completely collapses, that option is 100% an implicit assumption !</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 🧠 10. Critical Reasoning: The Assumption Negation Test.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 🧠 10. Critical Reasoning: The Assumption Negation Test is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 🧠 10. Critical Reasoning: The Assumption Negation Test.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 🧠 10. Critical Reasoning: The Assumption Negation Test.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> An assumption is an unstated foundation. If you negate an option (make it opposite) and the conclusion completely collapses, that option is 100% an implicit assumption ! Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- PART 3: ENGLISH LANGUAGE -->
+<!-- 11. 40 Grammar Rules -->
+<div class="card" id="el-grammar">
+<h2>📖 11. 40 Golden Grammar Rules for Error Detection (with Worked Examples)</h2>
+<div class="grid-2">
+<div class="key-rule">
+<div class="key-rule-title">Rule 1: Along with / Together with</div>
+<p>Verb agrees with the <strong>FIRST subject</strong>.<br/>
+<em>Incorrect:</em> The CEO along with his directors are attending.<br/>
+<em>Correct:</em> The CEO along with his directors <strong>is</strong> attending.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 2: Neither... Nor Agreement</div>
+<p>Verb agrees with the <strong>NEAREST subject</strong>.<br/>
+<em>Incorrect:</em> Neither the manager nor the employees was present.<br/>
+<em>Correct:</em> Neither the manager nor the employees <strong>were</strong> present.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 3: Inversion with Negative Adverbs</div>
+<p>Negative adverbs at sentence start require auxiliary inversion.<br/>
+<em>Incorrect:</em> Hardly the circular had been published...<br/>
+<em>Correct:</em> Hardly <strong>had the circular been</strong> published...</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 4: Correlative Pairs</div>
+<p>• Hardly / Scarcely is paired with <strong>when</strong> (never 'than').<br/>
+                    • No sooner is paired with <strong>than</strong> (never 'when').<br/>
+                    • Not only is paired with <strong>but also</strong>.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 5: Uncountable Noun Pluralization</div>
+<p>Words like <em>information, furniture, luggage, equipment, advice, machinery</em> never take plural 's'. Say <em>pieces of equipment</em>, not <em>equipments</em>.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 6: Absolute Adjectives</div>
+<p>Adjectives like <em>unique, perfect, supreme, fatal, ideal</em> cannot take degrees of comparison. Never say <em>very unique</em> or <em>more perfect</em>.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 7: Preposition + Gerund</div>
+<p>A verb following a preposition must be in the gerund (V+ing) form.<br/>
+<em>Incorrect:</em> He was penalized for violate the rules.<br/>
+<em>Correct:</em> He was penalized for <strong>violating</strong> the rules.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 8: Redundancy Errors</div>
+<p>Never say <em>discussed about</em>, <em>revert back</em>, <em>return back</em>, or <em>supposing if</em>.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 9: Between vs Among</div>
+<p><em>Between</em> is for two distinct entities; <em>Among</em> is for groups of three or more.</p>
+</div>
+<div class="key-rule">
+<div class="key-rule-title">Rule 10: One of the + Plural Noun</div>
+<p><em>One of the officers <strong>was</strong> selected.</em> BUT if followed by a relative pronoun: <em>He is one of the officers who <strong>were</strong> selected.</em></p>
+</div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 📖 11. 40 Golden Grammar Rules for Error Detection (with Worked Examples)</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '📖 11. 40 Golden Grammar Rules for Error Detection (with Worked Examples)'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Verb agrees with the FIRST subject . Incorrect: The CEO along with his directors are attending. Correct: The CEO along with his directors is attending.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 📖 11. 40 Golden Grammar Rules for Error Detection (with Worked Examples).</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 📖 11. 40 Golden Grammar Rules for Error Detection (with Worked Examples) is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 📖 11. 40 Golden Grammar Rules for Error Detection (with Worked Examples).</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 📖 11. 40 Golden Grammar Rules for Error Detection (with Worked Examples).</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Verb agrees with the FIRST subject . Incorrect: The CEO along with his directors are attending. Correct: The CEO along with his directors is attending. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- 12. Idioms & Parajumbles -->
+<div class="card" id="el-vocab">
+<h2>💡 12. High-Frequency Regulatory Exam Idioms &amp; Parajumbles Strategy</h2>
+<h3>Top 10 Regulatory Body Idioms</h3>
+<div class="table-wrapper">
+<table>
+<thead><tr><th>Idiom / Phrase</th><th>Literal Meaning</th><th>Exam Context Example</th></tr></thead>
+<tbody>
+<tr><td><strong>Put a lid on</strong></td><td>To curb or control tightly</td><td>The committee decided to put a lid on non-essential capital expenditure.</td></tr>
+<tr><td><strong>Throw cold water on</strong></td><td>To discourage or dampen enthusiasm</td><td>The audit report threw cold water on the management's merger projections.</td></tr>
+<tr><td><strong>Stand the test of time</strong></td><td>To endure across years</td><td>Only robust corporate governance structures stand the test of time.</td></tr>
+<tr><td><strong>Turn the corner</strong></td><td>To pass a crisis and begin recovering</td><td>After credit restructuring, the stressed commercial bank finally turned the corner.</td></tr>
+<tr><td><strong>Stem the tide</strong></td><td>To stop an adverse trend</td><td>Central bank interventions helped stem the tide of accelerating inflation.</td></tr>
+<tr><td><strong>Cut corners</strong></td><td>To compromise quality/rules to save money</td><td>Listed entities cannot cut corners regarding statutory disclosure norms.</td></tr>
+<tr><td><strong>Burn the midnight oil</strong></td><td>To work late into the night</td><td>The compliance officers burned the midnight oil to submit the audit report.</td></tr>
+</tbody>
+</table>
+</div>
+<h3>Parajumble / Sentence Rearrangement Framework</h3>
+<div class="trick-box">
+<div class="trick-title">💡 3-Step Parajumble Solving Framework:</div>
+<ol>
+<li><strong>Identify the Independent Opening Sentence:</strong> Look for a sentence introducing a broad noun, concept, or historical premise. Sentences starting with <em>However, Therefore, Furthermore, This, Such</em> can NEVER be sentence 1!</li>
+<li><strong>Form Mandatory Pairs:</strong> Link a full noun to its subsequent pronoun (e.g. <em>The Reserve Bank of India → It / The central bank</em>). Link problem statements to their resulting solutions.</li>
+<li><strong>Find Chronological / Cause-Effect Signposts:</strong> Words like <em>Initially, Consequently, In conclusion, Finally</em> establish definitive sequential order.</li>
+</ol>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 💡 12. High-Frequency Regulatory Exam Idioms &amp; Parajumbles Strategy</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '💡 12. High-Frequency Regulatory Exam Idioms &amp; Parajumbles Strategy'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 💡 12. High-Frequency Regulatory Exam Idioms &amp; Parajumbles Strategy is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Identify the Independent Opening Sentence: Look for a sentence introducing a broad noun, concept, or historical premise. Sentences starting with However, Therefore, Furthermore, This, Such can NEVER be sentence 1!; Form Mandatory Pairs: Link a full noun to its subsequent pronoun (e.g. The Reserve Bank of India → It / The central bank ). Link problem statements to their resulting solutions.; Find Chronological / Cause-Effect Signposts: Words like </li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Put a lid on | To curb or control tightly | The committee decided to put a lid on non-essential capital expenditure.; Throw cold water on | To discourage or dampen enthusiasm | The audit report threw cold water on the management's merger projections.; Stand the test of time | To endure across years | Only robust corporate governance structures stand the test of time.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Put a lid on | To curb or control tightly | The committee decided to put a lid on non-essential capital expenditure.; Throw cold water on | To discourage or dampen enthusiasm | The audit report threw cold water on the management's merger projections.; Stand the test of time | To endure across years | Only robust corporate governance structures stand the test of time.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 💡 12. High-Frequency Regulatory Exam Idioms &amp; Parajumbles Strategy is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 💡 12. High-Frequency Regulatory Exam Idioms &amp; Parajumbles Strategy.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 💡 12. High-Frequency Regulatory Exam Idioms &amp; Parajumbles Strategy.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Find Chronological / Cause-Effect Signposts: Words like Initially, Consequently, In conclusion, Finally establish definitive sequential order. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+
+<div class="card" style="background:#fff;border:1.5px solid #cbd5e1;border-top:5px solid #0284c7;border-radius:16px;padding:28px;margin:26px 0;box-shadow:0 6px 18px rgba(15,23,42,0.05);">
+<span style="display:inline-block;background:#0284c7;color:#fff;font-size:11.5px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:8px;">EXHAUSTIVE SYLLABUS &amp; DESCRIPTIVE SUPPLEMENT</span>
+<h2 style="font-size:22px;font-weight:800;color:#0f172a;margin-bottom:6px;">Chapter 08: General Awareness for Regulatory Exams (Financial, Insurance &amp; Pension Current Affairs 2025–2026) &amp; Phase II Descriptive English Templates</h2>
+<p style="font-size:14px;font-weight:600;color:#475569;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid #e2e8f0;">Complete Regulatory GA Capsule (RBI, SEBI, IRDAI, PFRDA, IFSCA, NPS Trust) + Ready-to-Use Essay, Precis, Reading Comprehension &amp; Business Correspondence Templates</p>
+<ul style="padding-left:22px;color:#1e293b;font-size:14.8px;"><li style="margin-bottom:8px;line-height:1.65;">Regulatory Heads, Headquarters &amp; Statutory Acts Quick-Grid: RBI (RBI Act 1934, HQ Mumbai); SEBI (SEBI Act 1992, HQ Mumbai); IRDAI (IRDAI Act 1999, HQ Hyderabad); PFRDA (PFRDA Act 2013, HQ New Delhi); IFSCA (IFSCA Act 2019, HQ GIFT City Gandhinagar); NPS Trust (Indian Trusts Act 1882 &amp; PFRDA NPS Trust Regs 2015, HQ New Delhi).</li><li style="margin-bottom:8px;line-height:1.65;">High-Scoring Essay Template (300–400 Words for PFRDA, IFSCA, IRDAI &amp; NPS Trust Phase II Paper 1): Paragraph 1 (40–50 words): Define the core economic/financial theme + quote recent Vision 2047 / Economic Survey / Regulatory Report context. Paragraph 2 (70–80 words): Economic &amp; Institutional Significance (quantify using GDP share, Penetration ~4%, NPS AUM ₹13.5+ Lakh Cr, GIFT IFSC $70B+ banking assets, or Financial Inclusion Index 64.2+). Paragraph 3 (80–90 words): Recent Policy &amp; Regulatory Initiatives (e.g., Bima Trinity, Unified Pension Scheme 2025, IFSCA Direct Listing &amp; Bullion IIBX, Digital Public Infrastructure ULI/AA/CBDC). Paragraph 4 (60–70 words): Structural Bottlenecks &amp; Risks (cyber risk, rural literacy gap, climate/catastrophe protection gap, demographic aging). Paragraph 5 (40–50 words): Balanced, Forward-Looking Conclusion aligned with inclusive and sustainable growth.</li><li style="margin-bottom:8px;line-height:1.65;">Precis Writing Golden Rules (30–35 Marks): (1) Always write a concise Title (5–7 words capturing the central thesis); (2) Strictly compress to 1/3rd of the original passage word count (±5 words); (3) Write in Indirect (Reported) Speech in the third person; (4) Never include personal opinions, outside examples, or verbatim copied sentences.</li></ul>
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:10px;">✍️ Phase II Descriptive Mains Model Answer — Chapter 08: General Awareness for Regulatory Exams (Financial, Insurance &amp; Pension Current Affairs 2025–2026) &amp; Phase II Descriptive English Templates (15 Marks)</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;font-size:13.8px;color:#1e293b;line-height:1.65;">
+<p style="margin-bottom:6px;"><strong>1. Introduction:</strong> Chapter 08: General Awareness for Regulatory Exams (Financial, Insurance &amp; Pension Current Affairs 2025–2026) &amp; Phase II Descriptive English Templates (Complete Regulatory GA Capsule (RBI, SEBI, IRDAI, PFRDA, IFSCA, NPS Trust) + Ready-to-Use Essay, Precis, Reading Comprehension &amp; Business Correspondence Templates) represents a cornerstone of the updated 2026–2027 regulatory examination syllabus.</p>
+<p style="margin-bottom:6px;"><strong>2. Core Analytical Synthesis:</strong> Regulatory Heads, Headquarters &amp; Statutory Acts Quick-Grid: RBI (RBI Act 1934, HQ Mumbai); SEBI (SEBI Act 1992, HQ Mumbai); IRDAI (IRDAI Act 1999, HQ Hyderabad); PFRDA (PFRDA Act 2013, HQ New Delhi); IFSCA (IFSCA Act 2019, HQ GIFT City Gandhinagar); NPS Trust (Indian Trusts Act 1882 &amp; PFRDA NPS Trust Regs 2015, HQ New Delhi). | High-Scoring Essay Template (300–400 Words for PFRDA, IFSCA, IRDAI &amp; NPS Trust Phase II Paper 1): Paragraph 1 (40–50 words): Define the core economic/financial theme + quote recent Vision 2047 / Economic Survey / Regulatory Report context. Paragraph 2 (70–80 words): Economic &amp; Institutional Significance (quantify using GDP share, Penetration ~4%, NPS AUM ₹13.5+ Lakh Cr, GIFT IFSC $70B+ banking assets, or Financial Inclusion Index 64.2+). Paragraph 3 (80–90 words): Recent Policy &amp; Regulatory Initiatives (e.g., Bima Trinity, Unified Pension Scheme 2025, IFSCA Direct Listing &amp; Bullion IIBX, Digital Public Infrastructure ULI/AA/CBDC). Paragraph 4 (60–70 words): Structural Bottlenecks &amp; Risks (cyber risk, rural literacy gap, climate/catastrophe protection gap, demographic aging). Paragraph 5 (40–50 words): Balanced, Forward-Looking Conclusion aligned with inclusive and sustainable growth. | Precis Writing Golden Rules (30–35 Marks): (1) Always write a concise Title (5–7 words capturing the central thesis); (2) Strictly compress to 1/3rd of the original passage word count (±5 words); (3) Write in Indirect (Reported) Speech in the third person; (4) Never include personal opinions, outside examples, or verbatim copied sentences.</p>
+<p><strong>3. Way Forward:</strong> Aligning statutory rules with global best practices (IOSCO, IAIS, IOPS, Basel III, and OECD norms) ensures robust market development and consumer protection.</p>
+</div>
+</div>
+</div></div>
+<!-- PFRDA REV VISUAL PACK -->
+<div class="visual-diagram-box" style="background:#ffffff;border:1.5px solid #cbd5e1;border-radius:12px;padding:18px;margin:22px 0;box-shadow:0 2px 10px rgba(15,23,42,0.05);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;">
+<span style="font-weight:800;color:#0f4c81;font-size:1.02rem;">📊 Paper 1 QRE High-Speed Problem Solving &amp; Syllogism ('Only a Few' / 'Only') Visual Matrix</span>
+<span style="background:#e0f2fe;color:#0369a1;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:12px;">Quant, Reasoning &amp; English Master Toolkit</span>
+</div>
+<svg style="width:100%;height:auto;display:block;font-family:'Segoe UI',system-ui,sans-serif;" viewbox="0 0 900 230">
+<defs><lineargradient id="grad_8994" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#0f4c81"></stop><stop offset="100%" stop-color="#0d9488"></stop></lineargradient></defs>
+<rect fill="#f8fafc" height="230" rx="10" width="900" x="0" y="0"></rect>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="30" y="22"></rect>
+<rect fill="url(#grad_8994)" height="38" rx="8" width="189" x="30" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="124.5" y="46">Quadratic Sign Shortcut</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="124.5" y="94">ax²+bx+c=0: (+,+) → (-,-)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="124.5" y="120">(-,+) → (+,+) | (+,-) → (-,+)</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="42" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="124.5" y="172">(-,-) → (+,-) [Larger Root First]</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="222" x2="244" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="244,115.0 237,110.0 237,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="247" y="22"></rect>
+<rect fill="url(#grad_8994)" height="38" rx="8" width="189" x="247" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="341.5" y="46">'Only a Few A are B'</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="341.5" y="94">Some A are B AND Some A are not B</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="341.5" y="120">All A can NEVER be B</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="259" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="341.5" y="172">All B CAN be A (Possibility True)</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="439" x2="461" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="461,115.0 454,110.0 454,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="464" y="22"></rect>
+<rect fill="url(#grad_8994)" height="38" rx="8" width="189" x="464" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="558.5" y="46">'Only A are B' Rule</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="558.5" y="94">All B are Exclusively A</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="558.5" y="120">B cannot intersect any C</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="476" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="558.5" y="172">Reverse 'All B are A' is Definite</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="656" x2="678" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="678,115.0 671,110.0 671,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="681" y="22"></rect>
+<rect fill="url(#grad_8994)" height="38" rx="8" width="189" x="681" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="775.5" y="46">4-Phase Puzzle Algorithm</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="775.5" y="94">1. Tabulate Definite Clues</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="775.5" y="120">2. Link Negative Constraints</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="693" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="775.5" y="172">3. Fork ≤2 Cases → 4. Eliminate</text>
+</svg></div>
+<div class="visual-diagram-box" style="background:#ffffff;border:1.5px solid #cbd5e1;border-radius:12px;padding:18px;margin:22px 0;box-shadow:0 2px 10px rgba(15,23,42,0.05);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;">
+<span style="font-weight:800;color:#0f4c81;font-size:1.02rem;">📈 Paper 1 QRE Time Allocation &amp; High-Yield Topic Weightage Benchmark</span>
+<span style="background:#fef3c7;color:#b45309;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:12px;">CBT Exam Strategy</span>
+</div>
+<svg style="width:100%;height:auto;display:block;font-family:'Segoe UI',system-ui,sans-serif;" viewbox="0 0 900 240">
+<rect fill="#f8fafc" height="240" rx="10" width="900" x="0" y="0"></rect>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="40">Data Interpretation &amp; Series</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="25"></rect>
+<rect fill="#0f4c81" height="22" rx="5" width="357" x="240" y="25"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="605" y="40">10–12 Qs (Quad + Series + DI)</text>
+<text fill="#475569" font-size="11" x="735" y="40">Target in First 12 Mins of Quant</text>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="80">Puzzles &amp; Seating Arr.</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="65"></rect>
+<rect fill="#0d9488" height="22" rx="5" width="369" x="240" y="65"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="617" y="80">12–15 Qs (Floor, Box, Circular)</text>
+<text fill="#475569" font-size="11" x="735" y="80">Anchor Definite Clues First</text>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="120">Syllogism, Ineq &amp; Coding</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="105"></rect>
+<rect fill="#0f4c81" height="22" rx="5" width="336" x="240" y="105"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="584" y="120">8–10 Qs (100% Accuracy Zone)</text>
+<text fill="#475569" font-size="11" x="735" y="120">Solve via Open-Gate &amp; Venn Rules</text>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="160">Reading Comp &amp; Grammar</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="145"></rect>
+<rect fill="#0d9488" height="22" rx="5" width="327" x="240" y="145"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="575" y="160">15–20 Qs (RC + Error + Cloze)</text>
+<text fill="#475569" font-size="11" x="735" y="160">Eliminate via 40 Golden Grammar Rules</text>
+</svg></div>
+<div class="section-card module-card" style="background:#f8fafc;border-radius:12px;padding:24px;margin-top:28px;margin-bottom:28px;border:1.5px solid #93c5fd;">
+<h3 style="margin-top:0;color:#1e3a8a;">🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Paper 1 (QRE))</h3>
+<p style="margin-bottom:12px;">Test your mastery of <strong>Paper 1 - QRE Mocks &amp; Study Notes</strong> with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</p>
+<div style="margin-bottom:16px;"><a href="PFRDA_SEBI_QRE_Mock_Test_1.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 1 (50 Qs)</a> <a href="PFRDA_SEBI_QRE_Mock_Test_2.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 2 (50 Qs)</a> <a href="PFRDA_SEBI_QRE_Mock_Test_3.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 3 (50 Qs)</a> <a href="PFRDA_SEBI_QRE_Mock_Test_4.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 4 (50 Qs)</a> <a href="PFRDA_SEBI_QRE_Mock_Test_5.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 5 (50 Qs)</a></div>
+<div style="font-size:0.86rem;color:#475569;border-top:1px solid #cbd5e1;padding-top:10px;">
+<strong>Verified Regulatory &amp; Statutory Sources (Updated October 2026):</strong>
+<a href="https://www.pfrda.org.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">PFRDA Official Portal</a> ·
+    <a href="https://npstrust.org.in/act-and-regulations" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">NPS Trust Regulations (2025–26)</a> ·
+    <a href="https://www.sebi.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">SEBI Circulars &amp; Regulations</a> ·
+    <a href="https://www.rbi.org.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">RBI Monetary Policy (Oct 2026)</a> ·
+    <a href="https://www.indiabudget.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">Union Budget 2026–27 &amp; Economic Survey 2025–26</a> ·
+    <a href="https://prsindia.org/policy/report-summaries/report-of-the-16th-finance-commission-for-2026-31" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">16th Finance Commission Report (2026–31)</a> ·
+    <a href="https://www.mca.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">MCA Companies Act, 2013</a>
+</div>
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Paper 1 (QRE))</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of '🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Paper 1 (QRE))' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Test your mastery of Paper 1 - QRE Mocks &amp; Study Notes with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Covers fundamental theoretical principles, statutory provisions, and quantitative norms under 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Paper 1 (QRE)).</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Integrates multi-column comparative benchmarks and regulatory compliance limits.</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Applies latest 2025–2026 regulatory circulars, empirical formulas, and practical case scenarios.</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Paper 1 (QRE)) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Paper 1 (QRE)).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Paper 1 (QRE)) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Test your mastery of Paper 1 - QRE Mocks &amp; Study Notes with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Paper 1 (QRE)).</p>
+</div>
+</div>
+</div></div>
+<!-- END PFRDA REV VISUAL PACK -->
+<footer>
+<p><strong>PFRDA &amp; SEBI Grade A — QRE Comprehensive Master Notes</strong></p>
+<p>Phase 1 Paper 1 Preparation Suite | © 2026 Regulatory Exam Suite</p>
+</footer>
+</body>
+</html>

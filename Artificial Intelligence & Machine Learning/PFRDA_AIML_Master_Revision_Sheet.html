@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PFRDA Grade A - AI &amp; Machine Learning Master Revision Sheet - SHIVAM</title>
+<style>
+        :root {
+            --primary: #4338ca;
+            --primary-dark: #312e81;
+            --secondary: #0891b2;
+            --accent: #d97706;
+            --danger: #dc2626;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-main: #334155;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f1f5f9;
+            color: var(--text-main);
+            line-height: 1.65;
+        }
+        .header {
+            background: linear-gradient(135deg, #4338ca 0%, #0f172a 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #c7d2fe;
+            font-weight: 500;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--gray-border);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid #c7d2fe;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.55rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h3 {
+            color: var(--dark);
+            margin-top: 25px;
+            font-size: 1.25rem;
+            border-left: 4px solid var(--secondary);
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            border: 1px solid var(--gray-border);
+            padding: 12px 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #f8fafc;
+            color: var(--dark);
+            font-weight: 700;
+        }
+        tr:nth-child(even) td {
+            background: #fafbfc;
+        }
+        .formula-box {
+            background: #eef2ff;
+            border-left: 5px solid var(--primary);
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            font-family: 'Consolas', monospace;
+            font-size: 1rem;
+            color: #3730a3;
+            font-weight: 600;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #92400e;
+        }
+        .tag-green {
+            background: #dcfce7;
+            color: #166534;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .tag-blue {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .tag-red {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        ul, ol {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 40px;
+        }
+    
+  .desc-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+    border: 1.5px solid #93c5fd;
+    border-left: 6px solid #1d4ed8;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+  .desc-header {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .desc-q-card {
+    background: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(29, 78, 216, 0.04);
+  }
+  .desc-q-card:last-child { margin-bottom: 0; }
+  .desc-q-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #cbd5e1;
+  }
+  .desc-struct {
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 1.65;
+  }
+  .desc-struct p { margin-bottom: 8px; }
+  .desc-tag {
+    display: inline-block;
+    background: #1d4ed8;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-right: 8px;
+  }
+
+</style>
+</head>
+<body>
+<style>
+.fin-unified-nav { background: #0f172a; border-bottom: 2px solid #0284c7; padding: 10px 16px; position: sticky; top: 0; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-family: 'Inter', -apple-system, sans-serif; }
+.fin-unified-nav-inner { max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.fnav-btn { color: #cbd5e1; text-decoration: none; font-size: 12.5px; font-weight: 600; padding: 6px 11px; border-radius: 6px; background: #1e293b; border: 1px solid #334155; transition: all 0.15s ease; white-space: nowrap; }
+.fnav-btn:hover { background: #334155; color: #ffffff; border-color: #38bdf8; }
+.fnav-btn.active { background: #0284c7; color: #ffffff; border-color: #38bdf8; box-shadow: 0 0 0 2px rgba(56,189,248,0.3); }
+.fnav-home { background: #0f766e; border-color: #14b8a6; color: #f0fdfa; }
+.fnav-mock { padding: 6px 8.5px; font-size: 12px; }
+</style>
+<div class="fin-unified-nav"><div class="fin-unified-nav-inner"><a class="fnav-btn fnav-home" href="../index.html">🏠 All Subjects Portal</a><a class="fnav-btn" href="PFRDA_AI_ML_Hub.html">🏛️ AI &amp; Machine Learning Hub</a><a class="fnav-btn" href="PFRDA_AI_ML_Comprehensive_Master_Study_Notes.html">📘 Detailed Notes (8 Ch)</a><a class="fnav-btn active" href="PFRDA_AIML_Master_Revision_Sheet.html">⚡ Revision Sheet</a><a class="fnav-btn" href="PFRDA_AI_ML_All_Exams_PYQ_Practice.html">🎯 All-Exams PYQs (125)</a><a class="fnav-btn" href="PFRDA_AI_ML_Topic_Wise_Mocks.html">🧩 Topic-Wise Mocks (8 Ch)</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_1.html">M1</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_2.html">M2</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_3.html">M3</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_4.html">M4</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_5.html">M5</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_6.html">M6</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_7.html">M7</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_8.html">M8</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_9.html">M9</a><a class="fnav-btn fnav-mock" href="PFRDA_AI_ML_Mock_10.html">M10</a></div></div>
+<!-- PFRDA PORTAL UNIFIED NAV -->
+<div class="pfrda-portal-nav no-print" style="background:#ffffff;border-bottom:1px solid #e2e8f0;padding:8px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;font-family:'Segoe UI',system-ui,sans-serif;position:sticky;top:0;z-index:9999;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+<div style="display:flex;align-items:center;gap:8px;">
+<span style="background:#0f172a;color:#38bdf8;font-weight:800;font-size:0.76rem;padding:4px 9px;border-radius:4px;letter-spacing:0.6px;">PFRDA 2026</span>
+<span style="font-weight:700;font-size:0.88rem;color:#0f172a;">Subject J: Artificial Intelligence &amp; Machine Learning</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;">
+<a href="../index.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">🏠 Syllabus Portal</a><a href="PFRDA_AI_ML_Comprehensive_Master_Study_Notes.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📘 Comprehensive Notes</a><a href="PFRDA_AIML_Master_Revision_Sheet.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#2563eb;color:#ffffff;border-color:#2563eb;box-shadow:0 1px 4px rgba(37,99,235,0.25);transition:all 0.15s;">⚡ Revision Sheet</a><a href="PFRDA_AI_ML_Mock_1.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 1</a><a href="PFRDA_AI_ML_Mock_2.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 2</a><a href="PFRDA_AI_ML_Mock_3.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 3</a><a href="PFRDA_AI_ML_Mock_4.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 4</a><a href="PFRDA_AI_ML_Mock_5.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 5</a>
+</div>
+</div>
+<!-- END PFRDA PORTAL UNIFIED NAV -->
+<div class="header">
+<div class="badge">PFRDA · SHIVAM · EXAM EXCELLENCE</div>
+<h1>PFRDA Grade A / SEBI Grade A · Paper 2</h1>
+<p>Comprehensive Master Revision Sheet: Artificial Intelligence &amp; Machine Learning (Cluster J Syllabus)</p>
+</div>
+<div class="container">
+<!-- Section 1 -->
+<div class="card">
+<h2>1. Machine Learning Foundations &amp; Learning Paradigms</h2>
+<h3>1.1 Tom Mitchell's Formal Definition of ML (1997)</h3>
+<div class="formula-box">
+            "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
+        </div>
+<table>
+<tr>
+<th>Component</th>
+<th>Definition</th>
+<th>Financial / Pension Sector Real-World Example</th>
+</tr>
+<tr>
+<td><strong>Task (T)</strong></td>
+<td>The specific target problem being executed.</td>
+<td>Classifying an NPS withdrawal or insurance claim as 'Fraudulent' vs 'Legitimate'.</td>
+</tr>
+<tr>
+<td><strong>Performance (P)</strong></td>
+<td>Quantitative metric measuring task effectiveness.</td>
+<td>ROC-AUC, Precision, Recall, or F1-Score of fraud detection.</td>
+</tr>
+<tr>
+<td><strong>Experience (E)</strong></td>
+<td>Historical data / observations used for learning.</td>
+<td>Historical dataset of past 5 years of verified subscriber claims and transaction logs.</td>
+</tr>
+</table>
+<h3>1.2 The Three Core Learning Paradigms</h3>
+<table>
+<tr>
+<th>Paradigm</th>
+<th>Data Nature</th>
+<th>Learning Mechanism</th>
+<th>Primary Problem Types</th>
+<th>Key Algorithms</th>
+</tr>
+<tr>
+<td><strong>Supervised Learning</strong></td>
+<td>Labelled data: pairs of input features X and target ground-truth output y.</td>
+<td>Learns a mapping function f: X → y by minimizing prediction error.</td>
+<td>Classification (discrete labels) &amp; Regression (continuous values).</td>
+<td>Linear/Logistic Regression, Decision Trees, Random Forest, XGBoost, SVM, Naive Bayes.</td>
+</tr>
+<tr>
+<td><strong>Unsupervised Learning</strong></td>
+<td>Unlabelled data: input features X only, with no target labels y.</td>
+<td>Discovers hidden patterns, clusters, density, or low-dimensional structures.</td>
+<td>Clustering, Dimensionality Reduction, Association Rules, Anomaly Detection.</td>
+<td>K-Means, K-Medoids, Hierarchical (Agglomerative), DBSCAN, PCA, t-SNE, UMAP, Apriori.</td>
+</tr>
+<tr>
+<td><strong>Reinforcement Learning</strong></td>
+<td>No static dataset; sequential state-action-reward interactions.</td>
+<td>Agent learns optimal policy π(a|s) through trial-and-error to maximize cumulative discounted reward.</td>
+<td>Sequential Decision Making, Game Playing, Dynamic Control, Robotics.</td>
+<td>Q-Learning, SARSA, Deep Q-Networks (DQN), Policy Gradients, PPO, RLHF.</td>
+</tr>
+</table>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 1. Machine Learning Foundations &amp; Learning Paradigms</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '1. Machine Learning Foundations &amp; Learning Paradigms'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 1. Machine Learning Foundations &amp; Learning Paradigms is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 1. Machine Learning Foundations &amp; Learning Paradigms.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Task (T) | The specific target problem being executed. | Classifying an NPS withdrawal or insurance claim as 'Fraudulent' vs 'Legitimate'.; Performance (P) | Quantitative metric measuring task effectiveness. | ROC-AUC, Precision, Recall, or F1-Score of fraud detection.; Experience (E) | Historical data / observations used for learning. | Historical dataset of past 5 years of verified subscriber claims and transaction logs.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Task (T) | The specific target problem being executed. | Classifying an NPS withdrawal or insurance claim as 'Fraudulent' vs 'Legitimate'.; Performance (P) | Quantitative metric measuring task effectiveness. | ROC-AUC, Precision, Recall, or F1-Score of fraud detection.; Experience (E) | Historical data / observations used for learning. | Historical dataset of past 5 years of verified subscriber claims and transaction logs.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 1. Machine Learning Foundations &amp; Learning Paradigms is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 1. Machine Learning Foundations &amp; Learning Paradigms.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 1. Machine Learning Foundations &amp; Learning Paradigms.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> 1. Machine Learning Foundations &amp; Learning Paradigms is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 2 -->
+<div class="card">
+<h2>2. Data Preprocessing &amp; Feature Engineering Master Reference</h2>
+<h3>2.1 Missing Data Mechanisms &amp; Imputation Strategies</h3>
+<table>
+<tr>
+<th>Mechanism</th>
+<th>Statistical Definition</th>
+<th>Recommended Treatment Strategy</th>
+</tr>
+<tr>
+<td><strong>MCAR</strong> (Missing Completely at Random)</td>
+<td>Missingness is purely random, unrelated to observed or unobserved data: P(M|X, Y) = P(M).</td>
+<td>Mean/Median/Mode imputation, Complete Case Analysis (dropping rows if &lt;5%).</td>
+</tr>
+<tr>
+<td><strong>MAR</strong> (Missing at Random)</td>
+<td>Missingness depends on observed features, but not on the missing value itself: P(M|X, Y) = P(M|X_observed).</td>
+<td>Multiple Imputation by Chained Equations (MICE), KNN Imputation, Predictive Modeling.</td>
+</tr>
+<tr>
+<td><strong>MNAR</strong> (Missing Not at Random)</td>
+<td>Missingness depends directly on the unobserved value itself (e.g. high earners hiding wealth).</td>
+<td>Add binary 'Missingness Indicator' feature; pattern-mixture models; domain-specific rules.</td>
+</tr>
+</table>
+<h3>2.2 Outlier Detection &amp; Treatment</h3>
+<ul>
+<li><strong>Tukey's IQR Method:</strong> <span class="formula-box">Lower Fence = Q1 - 1.5 × IQR;   Upper Fence = Q3 + 1.5 × IQR (where IQR = Q3 - Q1)</span></li>
+<li><strong>Z-Score Method:</strong> <span class="formula-box">Z = (x - μ) / σ;   Flag as outlier if |Z| &gt; 3.0 (assumes normal distribution)</span></li>
+<li><strong>Winsorization:</strong> Caps extreme values at specific percentiles (e.g. 1st and 99th percentiles) without reducing sample size.</li>
+</ul>
+<h3>2.3 Feature Scaling Comparison</h3>
+<table>
+<tr>
+<th>Method</th>
+<th>Mathematical Formula</th>
+<th>Output Range / Properties</th>
+<th>Sensitivity to Outliers</th>
+</tr>
+<tr>
+<td><strong>Min-Max Normalization</strong></td>
+<td><div class="formula-box">x_norm = (x - x_min) / (x_max - x_min)</div></td>
+<td>Strictly bounded to <span class="highlight">[0, 1]</span>.</td>
+<td><span class="tag-red">Highly Sensitive</span> (Outliers compress normal range)</td>
+</tr>
+<tr>
+<td><strong>Standardization (Z-Score)</strong></td>
+<td><div class="formula-box">z = (x - μ) / σ</div></td>
+<td>Unbounded; <span class="highlight">Mean = 0, Variance = 1</span>.</td>
+<td><span class="tag-blue">Moderately Sensitive</span> (Mean/Std affected by outliers)</td>
+</tr>
+<tr>
+<td><strong>RobustScaler</strong></td>
+<td><div class="formula-box">x_robust = (x - Median) / IQR</div></td>
+<td>Centered at median, scaled by interquartile range.</td>
+<td><span class="tag-green">Robust to Outliers</span> (Ignores extreme tails)</td>
+</tr>
+</table>
+<p><i>Note: Tree-based models (Decision Trees, Random Forest, XGBoost) are inherently invariant to monotonic feature scaling. Scaling is mandatory for distance-based (KNN, K-Means, SVM) and gradient-based (Neural Networks, Logistic Regression) models.</i></p>
+<h3>2.4 Categorical Encoding &amp; Imbalanced Data Handling</h3>
+<table>
+<tr>
+<th>Technique</th>
+<th>Mechanism</th>
+<th>Key Considerations / Cautions</th>
+</tr>
+<tr>
+<td><strong>One-Hot Encoding</strong></td>
+<td>Creates binary dummy column for each category.</td>
+<td>Drop 1 column (<span class="highlight">k - 1 dummies</span>) to avoid the <em>Dummy Variable Trap</em> (perfect multicollinearity). High cardinality causes feature explosion.</td>
+</tr>
+<tr>
+<td><strong>Ordinal Encoding</strong></td>
+<td>Maps ordered categories to integers (e.g. Low=1, Med=2, High=3).</td>
+<td>Use ONLY when natural hierarchy exists; applying to nominal categories imposes false numeric distances.</td>
+</tr>
+<tr>
+<td><strong>SMOTE</strong></td>
+<td>Generates synthetic minority examples along line segments connecting k-nearest neighbors.</td>
+<td>Apply strictly to the training fold only to prevent data leakage.</td>
+</tr>
+<tr>
+<td><strong>Cost-Sensitive Learning</strong></td>
+<td>Weights loss function heavily on minority errors (`class_weight='balanced'`).</td>
+<td>Penalizes False Negatives without altering underlying dataset size.</td>
+</tr>
+</table>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 2. Data Preprocessing &amp; Feature Engineering Master Reference</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '2. Data Preprocessing &amp; Feature Engineering Master Reference'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Note: Tree-based models (Decision Trees, Random Forest, XGBoost) are inherently invariant to monotonic feature scaling. Scaling is mandatory for distance-based (KNN, K-Means, SVM) and gradient-based (Neural Networks, Logistic Regression) models.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Tukey's IQR Method: Lower Fence = Q1 - 1.5 × IQR;   Upper Fence = Q3 + 1.5 × IQR (where IQR = Q3 - Q1); Z-Score Method: Z = (x - μ) / σ;   Flag as outlier if |Z| &gt; 3.0 (assumes normal distribution); Winsorization: Caps extreme values at specific percentiles (e.g. 1st and 99th percentiles) without reducing sample size.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> MCAR | (Missing Completely at Random) | Missingness is purely random, unrelated to observed or unobserved data: P(M|X, Y) = P(M). | Mean/Median/Mode imputation, Complete Case Analysis (dropping rows if &lt;5%).; MAR | (Missing at Random) | Missingness depends on observed features, but not on the missing value itself: P(M|X, Y) = P(M|X_observed). | Multiple Imputation by Chained Equations (MICE), KNN Imputation, Predictive Modeling.; MNAR | (Missing </li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> MCAR | (Missing Completely at Random) | Missingness is purely random, unrelated to observed or unobserved data: P(M|X, Y) = P(M). | Mean/Median/Mode imputation, Complete Case Analysis (dropping rows if &lt;5%).; MAR | (Missing at Random) | Missingness depends on observed features, but not on the missing value itself: P(M|X, Y) = P(M|X_observed). | Multiple Imputation by Chained Equations (MICE), KNN Imputation, Predictive Modeling.; MNAR | (Missing </li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 2. Data Preprocessing &amp; Feature Engineering Master Reference is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 2. Data Preprocessing &amp; Feature Engineering Master Reference.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 2. Data Preprocessing &amp; Feature Engineering Master Reference.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Winsorization: Caps extreme values at specific percentiles (e.g. 1st and 99th percentiles) without reducing sample size. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 3 -->
+<div class="card">
+<h2>3. Model Evaluation, Cross-Validation &amp; Error Decomposition</h2>
+<h3>3.1 Confusion Matrix &amp; Classification Metrics</h3>
+<table>
+<tr>
+<th>Metric</th>
+<th>Formula</th>
+<th>Focus / When to Prioritize</th>
+</tr>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td><div class="formula-box">Accuracy = (TP + TN) / (TP + TN + FP + FN)</div></td>
+<td>Overall correctness. <span class="tag-red">Misleading in imbalanced datasets</span> (Accuracy Paradox).</td>
+</tr>
+<tr>
+<td><strong>Precision</strong> (PPV)</td>
+<td><div class="formula-box">Precision = TP / (TP + FP)</div></td>
+<td>Accuracy of positive predictions. Prioritize when <span class="highlight">False Positives are costly</span> (e.g. spam filtering, false accusations).</td>
+</tr>
+<tr>
+<td><strong>Recall</strong> (Sensitivity / TPR)</td>
+<td><div class="formula-box">Recall = TP / (TP + FN)</div></td>
+<td>Proportion of actual positives captured. Prioritize when <span class="highlight">False Negatives are dangerous</span> (e.g. fraud, AML, disease detection).</td>
+</tr>
+<tr>
+<td><strong>Specificity</strong> (TNR)</td>
+<td><div class="formula-box">Specificity = TN / (TN + FP)</div></td>
+<td>Proportion of actual negatives correctly identified. Note: False Positive Rate (FPR) = 1 - Specificity.</td>
+</tr>
+<tr>
+<td><strong>F1-Score</strong></td>
+<td><div class="formula-box">F1 = 2 × (Precision × Recall) / (Precision + Recall)</div></td>
+<td>Harmonic mean of precision and recall. Balances both; plummets if either is near zero.</td>
+</tr>
+<tr>
+<td><strong>ROC-AUC</strong></td>
+<td>Area under TPR vs FPR curve across thresholds</td>
+<td>0.5 = Random guessing; 1.0 = Perfect classifier; Threshold-independent evaluation.</td>
+</tr>
+</table>
+<h3>3.2 Regression Evaluation Metrics</h3>
+<table>
+<tr>
+<th>Metric</th>
+<th>Formula</th>
+<th>Characteristics</th>
+</tr>
+<tr>
+<td><strong>Mean Absolute Error (MAE)</strong></td>
+<td><div class="formula-box">MAE = (1/n) ∑ |y_i - ŷ_i|</div></td>
+<td>Linear penalty; robust to outliers; in original target units.</td>
+</tr>
+<tr>
+<td><strong>Root Mean Squared Error (RMSE)</strong></td>
+<td><div class="formula-box">RMSE = √[ (1/n) ∑ (y_i - ŷ_i)^2 ]</div></td>
+<td>Squares errors before root; <span class="highlight">heavily penalizes large outlier errors</span>. Always RMSE ≥ MAE.</td>
+</tr>
+<tr>
+<td><strong>R-squared (R²)</strong></td>
+<td><div class="formula-box">R² = 1 - (SS_res / SS_tot)</div></td>
+<td>Fraction of variance explained. Increases automatically with added features.</td>
+</tr>
+<tr>
+<td><strong>Adjusted R-squared</strong></td>
+<td><div class="formula-box">Adj R² = 1 - [ (1 - R²)(n - 1) / (n - k - 1) ]</div></td>
+<td>Penalizes addition of uninformative features (k = number of predictors).</td>
+</tr>
+</table>
+<h3>3.3 Bias-Variance Tradeoff</h3>
+<div class="formula-box">
+            Expected Test Error = [Bias(f̂(x))]² + Var(f̂(x)) + σ_ε²   (Irreducible Error)
+        </div>
+<table>
+<tr>
+<th>Property</th>
+<th>High Bias (Underfitting)</th>
+<th>High Variance (Overfitting)</th>
+</tr>
+<tr>
+<td>Model Nature</td>
+<td>Overly simple; rigid assumptions (e.g. straight line for curved data).</td>
+<td>Overly complex; memorizes training noise and idiosyncrasies.</td>
+</tr>
+<tr>
+<td>Error Pattern</td>
+<td>High Training Error AND High Test Error.</td>
+<td>Low Training Error, but High Test/Validation Error (Generalization Gap).</td>
+</tr>
+<tr>
+<td>Remedies</td>
+<td>Add features, increase model complexity, reduce regularization.</td>
+<td>Add training data, apply L1/L2 regularization, prune trees, add dropout.</td>
+</tr>
+</table>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 3. Model Evaluation, Cross-Validation &amp; Error Decomposition</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '3. Model Evaluation, Cross-Validation &amp; Error Decomposition'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 3. Model Evaluation, Cross-Validation &amp; Error Decomposition is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 3. Model Evaluation, Cross-Validation &amp; Error Decomposition.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Accuracy | Accuracy = (TP + TN) / (TP + TN + FP + FN) | Overall correctness. | Misleading in imbalanced datasets | (Accuracy Paradox).; Precision | (PPV) | Precision = TP / (TP + FP) | Accuracy of positive predictions. Prioritize when | False Positives are costly | (e.g. spam filtering, false accusations).; Recall | (Sensitivity / TPR) | Recall = TP / (TP + FN) | Proportion of actual positives captured. Prioritize when | False Negatives are dange</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Accuracy | Accuracy = (TP + TN) / (TP + TN + FP + FN) | Overall correctness. | Misleading in imbalanced datasets | (Accuracy Paradox).; Precision | (PPV) | Precision = TP / (TP + FP) | Accuracy of positive predictions. Prioritize when | False Positives are costly | (e.g. spam filtering, false accusations).; Recall | (Sensitivity / TPR) | Recall = TP / (TP + FN) | Proportion of actual positives captured. Prioritize when | False Negatives are dange</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 3. Model Evaluation, Cross-Validation &amp; Error Decomposition is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 3. Model Evaluation, Cross-Validation &amp; Error Decomposition.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 3. Model Evaluation, Cross-Validation &amp; Error Decomposition.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> 3. Model Evaluation, Cross-Validation &amp; Error Decomposition is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 4 -->
+<div class="card">
+<h2>4. Regularization &amp; Machine Learning Algorithms</h2>
+<h3>4.1 Regularization Comparison: Lasso vs. Ridge vs. ElasticNet</h3>
+<table>
+<tr>
+<th>Regularizer</th>
+<th>Penalty Term Added to Loss</th>
+<th>Weight Shrinkage Behavior</th>
+<th>Feature Selection?</th>
+</tr>
+<tr>
+<td><strong>Lasso (L1)</strong></td>
+<td><div class="formula-box">λ ∑ |w_j|</div></td>
+<td>Drives non-essential weights <span class="highlight">exactly to zero</span> (sparse model).</td>
+<td><span class="tag-green">Yes (Built-in)</span></td>
+</tr>
+<tr>
+<td><strong>Ridge (L2)</strong></td>
+<td><div class="formula-box">λ ∑ (w_j)²</div></td>
+<td>Shrinks weights smoothly toward zero, but never exactly zero.</td>
+<td><span class="tag-red">No (Retains all features)</span></td>
+</tr>
+<tr>
+<td><strong>ElasticNet</strong></td>
+<td><div class="formula-box">rλ∑|w_j| + 0.5(1-r)λ∑(w_j)²</div></td>
+<td>Hybrid L1 + L2; handles groups of correlated features gracefully.</td>
+<td><span class="tag-green">Yes (Group Selection)</span></td>
+</tr>
+</table>
+<h3>4.2 Ensemble Learning Architectures</h3>
+<table>
+<tr>
+<th>Ensemble Paradigm</th>
+<th>Mechanism &amp; Independence</th>
+<th>Primary Error Reduced</th>
+<th>Prominent Algorithms</th>
+</tr>
+<tr>
+<td><strong>Bagging</strong> (Bootstrap Aggregating)</td>
+<td>Trains diverse base models in parallel on random bootstrap samples (with replacement). Aggregates by voting/averaging.</td>
+<td><span class="highlight">Reduces Variance</span></td>
+<td>Random Forest, Bagged Decision Trees.</td>
+</tr>
+<tr>
+<td><strong>Boosting</strong></td>
+<td>Trains models sequentially; each subsequent model focuses on correcting residual errors of previous models.</td>
+<td><span class="highlight">Reduces Bias</span></td>
+<td>AdaBoost, Gradient Boosting (GBM), XGBoost, LightGBM, CatBoost.</td>
+</tr>
+<tr>
+<td><strong>Stacking</strong></td>
+<td>Heterogeneous base models trained in parallel; predictions used as features to train a meta-learner.</td>
+<td>Improves predictive flexibility</td>
+<td>Stacked Generalization (Level 0 learners + Level 1 meta-model).</td>
+</tr>
+</table>
+<h3>4.3 Tree &amp; SVM Splits Formula Reference</h3>
+<ul>
+<li><strong>Gini Impurity (CART):</strong> <span class="formula-box">Gini = 1 - ∑ (p_i)²   (Pure node = 0.0; Equal binary split = 0.50)</span></li>
+<li><strong>Entropy (ID3 / C4.5):</strong> <span class="formula-box">H(S) = - ∑ p_i × log&amp;sub2(p_i)   (Pure node = 0.0; Equal binary split = 1.0)</span></li>
+<li><strong>SVM Soft Margin Objective:</strong> <span class="formula-box">Min 0.5 ||w||² + C ∑ ξ_i   (Large C = narrow margin, low bias; Small C = wide margin, higher bias)</span></li>
+<li><strong>RBF Kernel:</strong> <span class="formula-box">K(x, z) = exp(- γ ||x - z||²)   (Large γ = localized complex boundary; Small γ = smooth boundary)</span></li>
+</ul>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 4. Regularization &amp; Machine Learning Algorithms</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '4. Regularization &amp; Machine Learning Algorithms'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 4. Regularization &amp; Machine Learning Algorithms is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Gini Impurity (CART): Gini = 1 - ∑ (p_i)²   (Pure node = 0.0; Equal binary split = 0.50); Entropy (ID3 / C4.5): H(S) = - ∑ p_i × log&amp;sub2(p_i)   (Pure node = 0.0; Equal binary split = 1.0); SVM Soft Margin Objective: Min 0.5 ||w||² + C ∑ ξ_i   (Large C = narrow margin, low bias; Small C = wide margin, higher bias)</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> RBF Kernel: K(x, z) = exp(- γ ||x - z||²)   (Large γ = localized complex boundary; Small γ = smooth boundary)</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Lasso (L1) | λ ∑ |w_j| | Drives non-essential weights | exactly to zero | (sparse model). | Yes (Built-in); Ridge (L2) | λ ∑ (w_j)² | Shrinks weights smoothly toward zero, but never exactly zero. | No (Retains all features); ElasticNet | rλ∑|w_j| + 0.5(1-r)λ∑(w_j)² | Hybrid L1 + L2; handles groups of correlated features gracefully. | Yes (Group Selection)</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 4. Regularization &amp; Machine Learning Algorithms is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 4. Regularization &amp; Machine Learning Algorithms.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 4. Regularization &amp; Machine Learning Algorithms.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> RBF Kernel: K(x, z) = exp(- γ ||x - z||²)   (Large γ = localized complex boundary; Small γ = smooth boundary) Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 5 -->
+<div class="card">
+<h2>5. Natural Language Processing (NLP) &amp; Sentiment Analysis</h2>
+<h3>5.1 Text Processing Pipeline</h3>
+<ol>
+<li><strong>Tokenization:</strong> Breaking sentence into words, subwords, or characters.</li>
+<li><strong>Normalization &amp; Case Folding:</strong> Lowercasing, punctuation stripping, unicode normalization.</li>
+<li><strong>Stopwords Removal:</strong> Dropping common words ('is', 'the', 'at'); retain negations ('not') for sentiment!</li>
+<li><strong>Morphology:</strong>
+<ul>
+<li><em>Stemming:</em> Rule-based chopping of suffixes (Porter Stemmer); can yield non-words ('studi').</li>
+<li><em>Lemmatization:</em> Dictionary &amp; POS-based morphological analysis; yields valid root lemmas ('studies' → 'study', 'better' → 'good').</li>
+</ul>
+</li>
+</ol>
+<h3>5.2 Vectorization &amp; Word Embeddings</h3>
+<table>
+<tr>
+<th>Method</th>
+<th>Representation Nature</th>
+<th>Semantic Understanding</th>
+<th>Key Formulas / Characteristics</th>
+</tr>
+<tr>
+<td><strong>Bag of Words (BoW)</strong></td>
+<td>Sparse count vector of size |V|.</td>
+<td>Zero (discards word order &amp; grammar).</td>
+<td>Exact term frequency counts; ignores context.</td>
+</tr>
+<tr>
+<td><strong>TF-IDF</strong></td>
+<td>Sparse weighted vector of size |V|.</td>
+<td>Low (lexical rarity weighting).</td>
+<td><div class="formula-box">TF × IDF = [count(t,d)/|d|] × ln[N / (df_t + 1)]</div> Downweights ubiquitous words.</td>
+</tr>
+<tr>
+<td><strong>Word2Vec</strong></td>
+<td>Dense continuous vector (e.g. 300d).</td>
+<td>High (semantic vector arithmetic).</td>
+<td>CBOW (context → target) vs Skip-gram (target → context). Vector('King') - Vector('Man') + Vector('Woman') ≈ Vector('Queen').</td>
+</tr>
+<tr>
+<td><strong>GloVe</strong></td>
+<td>Dense vector (300d).</td>
+<td>High (global corpus co-occurrences).</td>
+<td>Log-bilinear matrix factorization on global word co-occurrence matrix.</td>
+</tr>
+<tr>
+<td><strong>FastText</strong></td>
+<td>Dense subword n-gram vector.</td>
+<td>High + Morphological robustness.</td>
+<td>Decomposes words into character n-grams; handles Out-Of-Vocabulary (OOV) and misspelled words.</td>
+</tr>
+</table>
+<h3>5.3 Sentiment Analysis Tools</h3>
+<ul>
+<li><strong>VADER:</strong> Rule-based engine optimized for social/micro text. Uses a lexicon + grammatical rules (exclamations, capitalization, degree adverbs). Compound score: <span class="highlight">Positive ≥ +0.05</span>, <span class="highlight">Neutral (-0.05 to +0.05)</span>, <span class="highlight">Negative ≤ -0.05</span>.</li>
+<li><strong>FinBERT:</strong> Financial domain-adapted BERT fine-tuned on earnings calls, analyst reports, and corporate filings. Recognizes that terms like 'liability' or 'cost' are neutral balance-sheet terms rather than negative emotional sentiment.</li>
+</ul>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 5. Natural Language Processing (NLP) &amp; Sentiment Analysis</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '5. Natural Language Processing (NLP) &amp; Sentiment Analysis'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 5. Natural Language Processing (NLP) &amp; Sentiment Analysis is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Tokenization: Breaking sentence into words, subwords, or characters.; Normalization &amp; Case Folding: Lowercasing, punctuation stripping, unicode normalization.; Stopwords Removal: Dropping common words ('is', 'the', 'at'); retain negations ('not') for sentiment!</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Morphology: Stemming: Rule-based chopping of suffixes (Porter Stemmer); can yield non-words ('studi'). Lemmatization: Dictionary &amp; POS-based morphological analysis; yields valid root lemmas ('studies' → 'study', 'better' → 'good').; Stemming: Rule-based chopping of suffixes (Porter Stemmer); can yield non-words ('studi').; Lemmatization: Dictionary &amp; POS-based morphological analysis; yields valid root lemmas ('studies' → 'study', 'better' → 'good</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Bag of Words (BoW) | Sparse count vector of size |V|. | Zero (discards word order &amp; grammar). | Exact term frequency counts; ignores context.; TF-IDF | Sparse weighted vector of size |V|. | Low (lexical rarity weighting). | TF × IDF = [count(t,d)/|d|] × ln[N / (df_t + 1)] | Downweights ubiquitous words.; Word2Vec | Dense continuous vector (e.g. 300d). | High (semantic vector arithmetic). | CBOW (context → target) vs Skip-gram (target → context). </li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 5. Natural Language Processing (NLP) &amp; Sentiment Analysis is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 5. Natural Language Processing (NLP) &amp; Sentiment Analysis.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 5. Natural Language Processing (NLP) &amp; Sentiment Analysis.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> FinBERT: Financial domain-adapted BERT fine-tuned on earnings calls, analyst reports, and corporate filings. Recognizes that terms like 'liability' or 'cost' are neutral balance-sheet terms rather than negative emotional sentiment. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 6 -->
+<div class="card">
+<h2>6. Large Language Models (LLMs) &amp; Modern Agentic AI</h2>
+<h3>6.1 Transformer Architecture Archetypes</h3>
+<table>
+<tr>
+<th>Architecture</th>
+<th>Attention Type</th>
+<th>Pre-training Objective</th>
+<th>Exemplar Models &amp; Best Use Cases</th>
+</tr>
+<tr>
+<td><strong>Encoder-only</strong></td>
+<td>Bidirectional Self-Attention (unmasked)</td>
+<td>Masked Language Modeling (MLM)</td>
+<td><strong>BERT, RoBERTa:</strong> Classification, Named Entity Recognition, Embeddings, Extraction.</td>
+</tr>
+<tr>
+<td><strong>Decoder-only</strong></td>
+<td>Causal / Autoregressive Attention (masked)</td>
+<td>Causal Language Modeling (predict next token)</td>
+<td><strong>GPT series, Llama, Mistral:</strong> Text generation, reasoning, code generation, chatbots.</td>
+</tr>
+<tr>
+<td><strong>Encoder-Decoder</strong></td>
+<td>Bidirectional Encoder + Causal Decoder</td>
+<td>Sequence-to-Sequence reconstruction</td>
+<td><strong>Original Transformer, T5, BART:</strong> Summarization, translation, Q&amp;A.</td>
+</tr>
+</table>
+<h3>6.2 Fine-Tuning &amp; Parameter-Efficient Adaptation (PEFT)</h3>
+<ul>
+<li><strong>Full Fine-Tuning:</strong> Updates 100% of model parameters; requires immense GPU VRAM and storage.</li>
+<li><strong>LoRA (Low-Rank Adaptation):</strong> Freezes W_0, injects rank decomposition matrices: <span class="formula-box">ΔW = B × A   (where r ≪ d)</span>. Reduces trainable weights by 90–99%.</li>
+<li><strong>QLoRA:</strong> Quantizes frozen base model weights to 4-bit NormalFloat (NF4), backpropagates through 16-bit LoRA adapters. Enables 70B parameter models to fine-tune on single commercial GPUs.</li>
+</ul>
+<h3>6.3 Retrieval-Augmented Generation (RAG) Architecture</h3>
+<div class="formula-box">
+            Pipeline: Document Ingestion → Chunking with Overlap → Dense Embedding → Vector Database Indexing → Semantic Similarity Retrieval → Context-Augmented Prompting → LLM Generation
+        </div>
+<ul>
+<li><strong>Mitigates:</strong> Hallucinations, knowledge cutoff dates, and lack of private/enterprise data access.</li>
+<li><strong>Advanced RAG:</strong> Hybrid search (BM25 keyword + Dense vector via RRF) and Cross-Encoder Re-ranking.</li>
+</ul>
+<h3>6.4 Agentic AI &amp; ReAct Framework</h3>
+<table>
+<tr>
+<th>Agent Component</th>
+<th>Mechanism</th>
+<th>Implementation Details</th>
+</tr>
+<tr>
+<td><strong>Planning &amp; Reasoning</strong></td>
+<td>ReAct Loop: Thought → Action → Observation</td>
+<td>Decomposes goals into sequential steps; reflects on errors; replans dynamically.</td>
+</tr>
+<tr>
+<td><strong>Tool / Function Calling</strong></td>
+<td>Structured JSON Schema invocations</td>
+<td>Model outputs structured arguments to execute calculators, web search, database APIs, Python interpreters.</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Short-term (scratchpad) vs Long-term</td>
+<td>Context window maintains immediate working trace; Vector DB stores persistent episodic memory across sessions.</td>
+</tr>
+</table>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 6. Large Language Models (LLMs) &amp; Modern Agentic AI</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '6. Large Language Models (LLMs) &amp; Modern Agentic AI'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 6. Large Language Models (LLMs) &amp; Modern Agentic AI is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Full Fine-Tuning: Updates 100% of model parameters; requires immense GPU VRAM and storage.; LoRA (Low-Rank Adaptation): Freezes W_0, injects rank decomposition matrices: ΔW = B × A   (where r ≪ d) . Reduces trainable weights by 90–99%.; QLoRA: Quantizes frozen base model weights to 4-bit NormalFloat (NF4), backpropagates through 16-bit LoRA adapters. Enables 70B parameter models to fine-tune on single commercial GPUs.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Mitigates: Hallucinations, knowledge cutoff dates, and lack of private/enterprise data access.; Advanced RAG: Hybrid search (BM25 keyword + Dense vector via RRF) and Cross-Encoder Re-ranking.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Encoder-only | Bidirectional Self-Attention (unmasked) | Masked Language Modeling (MLM) | BERT, RoBERTa: | Classification, Named Entity Recognition, Embeddings, Extraction.; Decoder-only | Causal / Autoregressive Attention (masked) | Causal Language Modeling (predict next token) | GPT series, Llama, Mistral: | Text generation, reasoning, code generation, chatbots.; Encoder-Decoder | Bidirectional Encoder + Causal Decoder | Sequence-to-Sequence re</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 6. Large Language Models (LLMs) &amp; Modern Agentic AI is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 6. Large Language Models (LLMs) &amp; Modern Agentic AI.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 6. Large Language Models (LLMs) &amp; Modern Agentic AI.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Advanced RAG: Hybrid search (BM25 keyword + Dense vector via RRF) and Cross-Encoder Re-ranking. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 7 -->
+<div class="card">
+<h2>7. Reinforcement Learning (RL) &amp; RLHF Master Summary</h2>
+<h3>7.1 Markov Decision Process (MDP) Foundations</h3>
+<div class="formula-box">
+            MDP 5-Tuple: (S, A, P, R, γ)  |  Bellman Optimality: Q*(s, a) = R(s, a) + γ ∑ P(s'|s,a) max_a' Q*(s', a')
+        </div>
+<table>
+<tr>
+<th>Concept</th>
+<th>Role in RL</th>
+<th>Mathematical / Operational Form</th>
+</tr>
+<tr>
+<td><strong>Policy π(a|s)</strong></td>
+<td>The agent's strategy / behavioral rule.</td>
+<td>Deterministic: a = π(s); Stochastic: π(a|s) = P(A_t = a | S_t = s).</td>
+</tr>
+<tr>
+<td><strong>Q-Function Q(s, a)</strong></td>
+<td>Expected return taking action a from state s.</td>
+<td>Q^π(s, a) = E_π [ ∑ γ^k R_{t+k+1} | S_t = s, A_t = a ].</td>
+</tr>
+<tr>
+<td><strong>Q-Learning</strong></td>
+<td>Off-policy Temporal Difference (TD) control.</td>
+<td><div class="formula-box">Q(s, a) ← Q(s, a) + α [R + γ max_a' Q(s', a') - Q(s, a)]</div></td>
+</tr>
+<tr>
+<td><strong>SARSA</strong></td>
+<td>On-policy Temporal Difference control.</td>
+<td><div class="formula-box">Q(s, a) ← Q(s, a) + α [R + γ Q(s', a') - Q(s, a)]</div></td>
+</tr>
+<tr>
+<td><strong>Deep Q-Networks (DQN)</strong></td>
+<td>Deep Q-function approximation.</td>
+<td>Experience Replay Buffer (decorrelates data) + Target Network (stabilizes moving target).</td>
+</tr>
+</table>
+<h3>7.2 RLHF &amp; LLM Alignment</h3>
+<ol>
+<li><strong>Step 1: Supervised Fine-Tuning (SFT):</strong> Train on instruction-response pairs.</li>
+<li><strong>Step 2: Reward Model (RM) Training:</strong> Collect human pairwise preference rankings (A &gt; B); train reward model to score outputs.</li>
+<li><strong>Step 3: PPO Optimization:</strong> Optimize policy to maximize RM score while penalizing deviation from SFT model via KL-divergence penalty.</li>
+<li><strong>DPO (Direct Preference Optimization):</strong> Modern alternative; optimizes policy directly on preference data without training a separate reward model or using PPO.</li>
+</ol>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 7. Reinforcement Learning (RL) &amp; RLHF Master Summary</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '7. Reinforcement Learning (RL) &amp; RLHF Master Summary'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 7. Reinforcement Learning (RL) &amp; RLHF Master Summary is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Step 1: Supervised Fine-Tuning (SFT): Train on instruction-response pairs.; Step 2: Reward Model (RM) Training: Collect human pairwise preference rankings (A &gt; B); train reward model to score outputs.; Step 3: PPO Optimization: Optimize policy to maximize RM score while penalizing deviation from SFT model via KL-divergence penalty.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> DPO (Direct Preference Optimization): Modern alternative; optimizes policy directly on preference data without training a separate reward model or using PPO.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Policy π(a|s) | The agent's strategy / behavioral rule. | Deterministic: a = π(s); Stochastic: π(a|s) = P(A_t = a | S_t = s).; Q-Function Q(s, a) | Expected return taking action a from state s. | Q^π(s, a) = E_π [ ∑ γ^k R_{t+k+1} | S_t = s, A_t = a ].; Q-Learning | Off-policy Temporal Difference (TD) control. | Q(s, a) ← Q(s, a) + α [R + γ max_a' Q(s', a') - Q(s, a)]</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 7. Reinforcement Learning (RL) &amp; RLHF Master Summary is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 7. Reinforcement Learning (RL) &amp; RLHF Master Summary.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 7. Reinforcement Learning (RL) &amp; RLHF Master Summary.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> DPO (Direct Preference Optimization): Modern alternative; optimizes policy directly on preference data without training a separate reward model or using PPO. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 8 -->
+<div class="card">
+<h2>8. Responsible AI, Ethics &amp; Regulatory Frameworks</h2>
+<h3>8.1 Explainable AI (XAI): SHAP vs. LIME</h3>
+<table>
+<tr>
+<th>Feature</th>
+<th>LIME (Ribeiro et al., 2016)</th>
+<th>SHAP (Lundberg &amp; Lee, 2017)</th>
+</tr>
+<tr>
+<td>Theoretical Foundation</td>
+<td>Local surrogate approximation (perturbation in local neighborhood).</td>
+<td>Cooperative Game Theory (Lloyd Shapley, 1953 Nobel Prize).</td>
+</tr>
+<tr>
+<td>Explanations Provided</td>
+<td><span class="highlight">Local only</span> (explains single individual prediction).</td>
+<td><span class="highlight">Both Local &amp; Globally Consistent</span>.</td>
+</tr>
+<tr>
+<td>Mathematical Axioms</td>
+<td>Heuristic (no axiomatic guarantees).</td>
+<td>Satisfies Efficiency, Symmetry, Dummy/Null Player, and Additivity.</td>
+</tr>
+<tr>
+<td>Computational Speed</td>
+<td>Fast sampling around local instance.</td>
+<td>TreeSHAP is fast; KernelSHAP is computationally intensive.</td>
+</tr>
+</table>
+<h3>8.2 Algorithmic Fairness &amp; Discrimination</h3>
+<ul>
+<li><strong>Demographic Parity:</strong> <span class="formula-box">P(Ŷ = 1 | A = 0) = P(Ŷ = 1 | A = 1)   (Selection rate identical across groups)</span></li>
+<li><strong>Equalized Odds:</strong> <span class="formula-box">P(Ŷ = 1 | A=0, Y=y) = P(Ŷ = 1 | A=1, Y=y)   for y ∈ {0, 1}   (TPR and FPR identical across groups)</span></li>
+<li><strong>Disparate Impact vs. Disparate Treatment:</strong> Disparate Treatment is intentional use of protected traits; Disparate Impact is unintentional discriminatory outcome via correlated proxy variables (e.g. postal code, browsing history).</li>
+</ul>
+<h3>8.3 Statutory &amp; Regulatory AI Landscape in India</h3>
+<table>
+<tr>
+<th>Regulatory Entity / Law</th>
+<th>Year</th>
+<th>Core Regulatory Mandate</th>
+</tr>
+<tr>
+<td><strong>NITI Aayog · National Strategy for AI</strong></td>
+<td>2018</td>
+<td><strong>#AIforAll</strong>: Focus on inclusive economic growth and social sectors (healthcare, agriculture, education, smart mobility).</td>
+</tr>
+<tr>
+<td><strong>NITI Aayog · Principles for Responsible AI</strong></td>
+<td>2021</td>
+<td>System principles: Safety &amp; Reliability, Inclusivity, Privacy, Transparency &amp; Explainability, Accountability.</td>
+</tr>
+<tr>
+<td><strong>Digital Personal Data Protection (DPDP) Act</strong></td>
+<td>2023</td>
+<td>Governs personal data processing; classifies entities as Data Fiduciaries; designates Significant Data Fiduciaries (SDFs); penalties up to <span class="highlight">₹250 Crore</span> for security failures.</td>
+</tr>
+<tr>
+<td><strong>SEBI Circulars on AI/ML</strong></td>
+<td>2019+</td>
+<td>Mandatory periodic reporting of AI/ML applications used by stock brokers, mutual funds, and depositories to monitor market stability.</td>
+</tr>
+<tr>
+<td><strong>RBI Digital Lending Guidelines</strong></td>
+<td>2022</td>
+<td>Mandates algorithmic auditability, transparency, fair lending compliance, and borrower privacy in digital loan underwriting.</td>
+</tr>
+<tr>
+<td><strong>EU AI Act</strong></td>
+<td>2024</td>
+<td>Global benchmark: 4-tier risk classification (Unacceptable [banned], High [strictly regulated], Limited [transparency], Minimal [free]).</td>
+</tr>
+</table>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 8. Responsible AI, Ethics &amp; Regulatory Frameworks</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '8. Responsible AI, Ethics &amp; Regulatory Frameworks'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 8. Responsible AI, Ethics &amp; Regulatory Frameworks is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Demographic Parity: P(Ŷ = 1 | A = 0) = P(Ŷ = 1 | A = 1)   (Selection rate identical across groups); Equalized Odds: P(Ŷ = 1 | A=0, Y=y) = P(Ŷ = 1 | A=1, Y=y)   for y ∈ {0, 1}   (TPR and FPR identical across groups); Disparate Impact vs. Disparate Treatment: Disparate Treatment is intentional use of protected traits; Disparate Impact is unintentional discriminatory outcome via correlated proxy variables (e.g. postal code, browsing history).</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Theoretical Foundation | Local surrogate approximation (perturbation in local neighborhood). | Cooperative Game Theory (Lloyd Shapley, 1953 Nobel Prize).; Explanations Provided | Local only | (explains single individual prediction). | Both Local &amp; Globally Consistent | .; Mathematical Axioms | Heuristic (no axiomatic guarantees). | Satisfies Efficiency, Symmetry, Dummy/Null Player, and Additivity.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Theoretical Foundation | Local surrogate approximation (perturbation in local neighborhood). | Cooperative Game Theory (Lloyd Shapley, 1953 Nobel Prize).; Explanations Provided | Local only | (explains single individual prediction). | Both Local &amp; Globally Consistent | .; Mathematical Axioms | Heuristic (no axiomatic guarantees). | Satisfies Efficiency, Symmetry, Dummy/Null Player, and Additivity.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 8. Responsible AI, Ethics &amp; Regulatory Frameworks is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 8. Responsible AI, Ethics &amp; Regulatory Frameworks.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 8. Responsible AI, Ethics &amp; Regulatory Frameworks.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Disparate Impact vs. Disparate Treatment: Disparate Treatment is intentional use of protected traits; Disparate Impact is unintentional discriminatory outcome via correlated proxy variables (e.g. postal code, browsing history). Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+
+<div class="card" style="background:#fff;border:1.5px solid #cbd5e1;border-top:5px solid #0284c7;border-radius:16px;padding:28px;margin:26px 0;box-shadow:0 6px 18px rgba(15,23,42,0.05);">
+<span style="display:inline-block;background:#0284c7;color:#fff;font-size:11.5px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:8px;">EXHAUSTIVE SYLLABUS &amp; DESCRIPTIVE SUPPLEMENT</span>
+<h2 style="font-size:22px;font-weight:800;color:#0f172a;margin-bottom:6px;">Chapter 09: Mathematical Foundations of Machine Learning, Loss Functions, Optimizers &amp; Regularization (L1 Lasso vs L2 Ridge)</h2>
+<p style="font-size:14px;font-weight:600;color:#475569;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid #e2e8f0;">Gradient Descent (SGD, Momentum, Adam), Cross-Entropy vs MSE Loss, L1 (Lasso Sparsity) vs L2 (Ridge Weight Decay) vs ElasticNet, Bias-Variance Decomposition &amp; ROC-AUC</p>
+<ul style="padding-left:22px;color:#1e293b;font-size:14.8px;"><li style="margin-bottom:8px;line-height:1.65;">Bias-Variance Decomposition of Expected Test Error: E[(y - f̂(x))²] = Bias²(f̂(x)) + Variance(f̂(x)) + σ²_irreducible. Underfitting = High Bias + Low Variance (too simple model); Overfitting = Low Bias + High Variance (memorizing training noise).</li><li style="margin-bottom:8px;line-height:1.65;">L1 (Lasso) vs L2 (Ridge) Regularization: L1 Regularization (Lasso — Least Absolute Shrinkage and Selection Operator) adds λ · Σ|wⱼ| (Manhattan norm) to the loss function, driving redundant feature weights to EXACT ZERO (performing automatic Feature Selection / Sparse models!). L2 Regularization (Ridge / Tikhonov) adds λ · Σ(wⱼ²) (Squared Euclidean norm), shrinking weights smoothly toward zero without setting them to exact zero (handles multicollinearity!). ElasticNet combines both L1 and L2 penalties.</li><li style="margin-bottom:8px;line-height:1.65;">Classification Confusion Matrix &amp; Evaluation Formulas: Precision = TP / (TP + FP) ( penalizes False Positives); Recall (Sensitivity / True Positive Rate TPR) = TP / (TP + FN) (penalizes False Negatives — critical in fraud &amp; medical/cancer detection!); Specificity (True Negative Rate TNR) = TN / (TN + FP); False Positive Rate (FPR) = 1 - Specificity = FP / (FP + TN); F1-Score = Harmonic Mean of Precision and Recall = 2 · (Precision · Recall) / (Precision + Recall). ROC Curve plots TPR (Y-axis) vs FPR (X-axis) across all classification thresholds.</li></ul>
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:10px;">✍️ Phase II Descriptive Mains Model Answer — Chapter 09: Mathematical Foundations of Machine Learning, Loss Functions, Optimizers &amp; Regularization (L1 Lasso vs L2 Ridge) (15 Marks)</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;font-size:13.8px;color:#1e293b;line-height:1.65;">
+<p style="margin-bottom:6px;"><strong>1. Introduction:</strong> Chapter 09: Mathematical Foundations of Machine Learning, Loss Functions, Optimizers &amp; Regularization (L1 Lasso vs L2 Ridge) (Gradient Descent (SGD, Momentum, Adam), Cross-Entropy vs MSE Loss, L1 (Lasso Sparsity) vs L2 (Ridge Weight Decay) vs ElasticNet, Bias-Variance Decomposition &amp; ROC-AUC) represents a cornerstone of the updated 2026–2027 regulatory examination syllabus.</p>
+<p style="margin-bottom:6px;"><strong>2. Core Analytical Synthesis:</strong> Bias-Variance Decomposition of Expected Test Error: E[(y - f̂(x))²] = Bias²(f̂(x)) + Variance(f̂(x)) + σ²_irreducible. Underfitting = High Bias + Low Variance (too simple model); Overfitting = Low Bias + High Variance (memorizing training noise). | L1 (Lasso) vs L2 (Ridge) Regularization: L1 Regularization (Lasso — Least Absolute Shrinkage and Selection Operator) adds λ · Σ|wⱼ| (Manhattan norm) to the loss function, driving redundant feature weights to EXACT ZERO (performing automatic Feature Selection / Sparse models!). L2 Regularization (Ridge / Tikhonov) adds λ · Σ(wⱼ²) (Squared Euclidean norm), shrinking weights smoothly toward zero without setting them to exact zero (handles multicollinearity!). ElasticNet combines both L1 and L2 penalties. | Classification Confusion Matrix &amp; Evaluation Formulas: Precision = TP / (TP + FP) ( penalizes False Positives); Recall (Sensitivity / True Positive Rate TPR) = TP / (TP + FN) (penalizes False Negatives — critical in fraud &amp; medical/cancer detection!); Specificity (True Negative Rate TNR) = TN / (TN + FP); False Positive Rate (FPR) = 1 - Specificity = FP / (FP + TN); F1-Score = Harmonic Mean of Precision and Recall = 2 · (Precision · Recall) / (Precision + Recall). ROC Curve plots TPR (Y-axis) vs FPR (X-axis) across all classification thresholds.</p>
+<p><strong>3. Way Forward:</strong> Aligning statutory rules with global best practices (IOSCO, IAIS, IOPS, Basel III, and OECD norms) ensures robust market development and consumer protection.</p>
+</div>
+</div>
+</div>
+<div class="card" style="background:#fff;border:1.5px solid #cbd5e1;border-top:5px solid #0284c7;border-radius:16px;padding:28px;margin:26px 0;box-shadow:0 6px 18px rgba(15,23,42,0.05);">
+<span style="display:inline-block;background:#0284c7;color:#fff;font-size:11.5px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:8px;">EXHAUSTIVE SYLLABUS &amp; DESCRIPTIVE SUPPLEMENT</span>
+<h2 style="font-size:22px;font-weight:800;color:#0f172a;margin-bottom:6px;">Chapter 10: Deep Learning, Transformer Architecture, LLMs, RAG, Agentic AI &amp; Responsible AI Governance (INDIAai &amp; RBI FREE-AI)</h2>
+<p style="font-size:14px;font-weight:600;color:#475569;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid #e2e8f0;">Self-Attention [Softmax(QK^T/√d_k)V], Tokenization, RLHF, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), Agentic Workflows &amp; Responsible AI Principles</p>
+<ul style="padding-left:22px;color:#1e293b;font-size:14.8px;"><li style="margin-bottom:8px;line-height:1.65;">Transformer Scaled Dot-Product Self-Attention (Vaswani et al., 2017 'Attention Is All You Need'): Attention(Q, K, V) = Softmax[(Q · K^T) / √d_k] · V, where dividing by √d_k prevents dot products from growing too large and pushing the Softmax into regions with vanishingly small gradients!</li><li style="margin-bottom:8px;line-height:1.65;">Pre-Training -&gt; SFT -&gt; RLHF / DPO Alignment Pipeline: Large Language Models (LLMs) undergo (1) Self-Supervised Next-Token / Masked-Token Pre-training on trillions of tokens, (2) Supervised Fine-Tuning (SFT) on instruction-response pairs, and (3) Reinforcement Learning from Human Feedback (RLHF using PPO) or Direct Preference Optimization (DPO) to align outputs with Helpfulness, Honesty, and Harmlessness (3H).</li><li style="margin-bottom:8px;line-height:1.65;">Retrieval-Augmented Generation (RAG) vs Fine-Tuning &amp; Agentic AI: RAG connects an LLM to an external Vector Database (using dense embeddings + Cosine Similarity / HNSW index) to ground responses in real-time verified regulatory documents and eliminate hallucinations without expensive weight updates. Agentic AI systems combine Planning (Chain-of-Thought / ReAct: Reason + Act), Memory (Short-term context + Long-term episodic/semantic vector store), and Tool Use (Function Calling / Model Context Protocol — MCP).</li><li style="margin-bottom:8px;line-height:1.65;">Responsible AI &amp; Regulatory AI Governance in India: Covers Fairness/Bias mitigation (Demographic Parity, Equalized Odds), Explainable AI (XAI: SHAP — Shapley Additive Explanations &amp; LIME), Privacy (Differential Privacy, Federated Learning, DPDP Act 2023), IndiaAI Mission (₹10,372 Crore Cabinet outlay across 7 pillars including 18,000+ GPUs), and RBI's FREE-AI Committee (Framework for Responsible and Ethical Enablement of AI in Financial Sector).</li></ul>
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:10px;">✍️ Phase II Descriptive Mains Model Answer — Chapter 10: Deep Learning, Transformer Architecture, LLMs, RAG, Agentic AI &amp; Responsible AI Governance (INDIAai &amp; RBI FREE-AI) (15 Marks)</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;font-size:13.8px;color:#1e293b;line-height:1.65;">
+<p style="margin-bottom:6px;"><strong>1. Introduction:</strong> Chapter 10: Deep Learning, Transformer Architecture, LLMs, RAG, Agentic AI &amp; Responsible AI Governance (INDIAai &amp; RBI FREE-AI) (Self-Attention [Softmax(QK^T/√d_k)V], Tokenization, RLHF, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), Agentic Workflows &amp; Responsible AI Principles) represents a cornerstone of the updated 2026–2027 regulatory examination syllabus.</p>
+<p style="margin-bottom:6px;"><strong>2. Core Analytical Synthesis:</strong> Transformer Scaled Dot-Product Self-Attention (Vaswani et al., 2017 'Attention Is All You Need'): Attention(Q, K, V) = Softmax[(Q · K^T) / √d_k] · V, where dividing by √d_k prevents dot products from growing too large and pushing the Softmax into regions with vanishingly small gradients! | Pre-Training -&gt; SFT -&gt; RLHF / DPO Alignment Pipeline: Large Language Models (LLMs) undergo (1) Self-Supervised Next-Token / Masked-Token Pre-training on trillions of tokens, (2) Supervised Fine-Tuning (SFT) on instruction-response pairs, and (3) Reinforcement Learning from Human Feedback (RLHF using PPO) or Direct Preference Optimization (DPO) to align outputs with Helpfulness, Honesty, and Harmlessness (3H). | Retrieval-Augmented Generation (RAG) vs Fine-Tuning &amp; Agentic AI: RAG connects an LLM to an external Vector Database (using dense embeddings + Cosine Similarity / HNSW index) to ground responses in real-time verified regulatory documents and eliminate hallucinations without expensive weight updates. Agentic AI systems combine Planning (Chain-of-Thought / ReAct: Reason + Act), Memory (Short-term context + Long-term episodic/semantic vector store), and Tool Use (Function Calling / Model Context Protocol — MCP).</p>
+<p><strong>3. Way Forward:</strong> Aligning statutory rules with global best practices (IOSCO, IAIS, IOPS, Basel III, and OECD norms) ensures robust market development and consumer protection.</p>
+</div>
+</div>
+</div></div>
+<!-- PFRDA REV VISUAL PACK -->
+<div class="visual-diagram-box" style="background:#ffffff;border:1.5px solid #cbd5e1;border-radius:12px;padding:18px;margin:22px 0;box-shadow:0 2px 10px rgba(15,23,42,0.05);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;">
+<span style="font-weight:800;color:#0f4c81;font-size:1.02rem;">📊 Machine Learning Paradigm Taxonomy: Supervised, Unsupervised &amp; Reinforcement Learning</span>
+<span style="background:#e0f2fe;color:#0369a1;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:12px;">Subject J Core Architecture</span>
+</div>
+<svg style="width:100%;height:auto;display:block;font-family:'Segoe UI',system-ui,sans-serif;" viewbox="0 0 900 230">
+<defs><lineargradient id="grad_9731" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#0f4c81"></stop><stop offset="100%" stop-color="#0d9488"></stop></lineargradient></defs>
+<rect fill="#f8fafc" height="230" rx="10" width="900" x="0" y="0"></rect>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="30" y="22"></rect>
+<rect fill="url(#grad_9731)" height="38" rx="8" width="189" x="30" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="124.5" y="46">Supervised Learning</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="124.5" y="94">Labelled Data (X, y)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="124.5" y="120">Regression: OLS, Ridge, Lasso</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="42" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="124.5" y="172">Classification: Logistic, SVM, RF, XGBoost</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="222" x2="244" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="244,115.0 237,110.0 237,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="247" y="22"></rect>
+<rect fill="url(#grad_9731)" height="38" rx="8" width="189" x="247" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="341.5" y="46">Unsupervised Learning</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="341.5" y="94">Unlabelled Data (X Only)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="341.5" y="120">Clustering: K-Means, DBSCAN, HC</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="259" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="341.5" y="172">Dim Reduction: PCA, SVD, t-SNE, UMAP</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="439" x2="461" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="461,115.0 454,110.0 454,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="464" y="22"></rect>
+<rect fill="url(#grad_9731)" height="38" rx="8" width="189" x="464" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="558.5" y="46">Reinforcement Learning</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="558.5" y="94">Agent-Environment Loop</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="558.5" y="120">MDP (S, A, P, R, γ) &amp; Bellman</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="476" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="558.5" y="172">Q-Learning, DQN, Policy Gradient, PPO</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="656" x2="678" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="678,115.0 671,110.0 671,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="681" y="22"></rect>
+<rect fill="url(#grad_9731)" height="38" rx="8" width="189" x="681" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="775.5" y="46">Deep Learning &amp; GenAI</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="775.5" y="94">Transformers &amp; Self-Attention</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="775.5" y="120">Pre-training → SFT → RLHF/DPO</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="693" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="775.5" y="172">RAG &amp; ReAct Agentic Workflows</text>
+</svg></div>
+<div class="visual-diagram-box" style="background:#ffffff;border:1.5px solid #cbd5e1;border-radius:12px;padding:18px;margin:22px 0;box-shadow:0 2px 10px rgba(15,23,42,0.05);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;">
+<span style="font-weight:800;color:#0f4c81;font-size:1.02rem;">📊 Bias-Variance Tradeoff, Regularization (L1 vs L2) &amp; Classification Evaluation Matrix</span>
+<span style="background:#e0f2fe;color:#0369a1;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:12px;">Model Generalization &amp; Diagnostics</span>
+</div>
+<svg style="width:100%;height:auto;display:block;font-family:'Segoe UI',system-ui,sans-serif;" viewbox="0 0 900 230">
+<defs><lineargradient id="grad_7737" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#0f4c81"></stop><stop offset="100%" stop-color="#0d9488"></stop></lineargradient></defs>
+<rect fill="#f8fafc" height="230" rx="10" width="900" x="0" y="0"></rect>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="30" y="22"></rect>
+<rect fill="url(#grad_7737)" height="38" rx="8" width="189" x="30" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="124.5" y="46">Underfitting (High Bias)</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="124.5" y="94">Overly Simple Model</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="124.5" y="120">High Train &amp; High Test Error</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="42" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="124.5" y="172">Fix: Add Features / Increase Capacity</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="222" x2="244" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="244,115.0 237,110.0 237,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="247" y="22"></rect>
+<rect fill="url(#grad_7737)" height="38" rx="8" width="189" x="247" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="341.5" y="46">Overfitting (High Variance)</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="341.5" y="94">Memorizes Training Noise</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="341.5" y="120">Low Train &amp; High Test Error</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="259" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="341.5" y="172">Fix: Regularization, Dropout, More Data</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="439" x2="461" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="461,115.0 454,110.0 454,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="464" y="22"></rect>
+<rect fill="url(#grad_7737)" height="38" rx="8" width="189" x="464" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="558.5" y="46">L1 (Lasso) vs L2 (Ridge)</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="558.5" y="94">L1: λ∑|w| (Sparse Selection)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="558.5" y="120">L2: λ∑w² (Weight Decay)</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="476" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="558.5" y="172">ElasticNet Combines L1 + L2</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="656" x2="678" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="678,115.0 671,110.0 671,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="681" y="22"></rect>
+<rect fill="url(#grad_7737)" height="38" rx="8" width="189" x="681" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="775.5" y="46">Confusion Matrix &amp; ROC</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="775.5" y="94">Precision = TP/(TP+FP)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="775.5" y="120">Recall (TPR) = TP/(TP+FN)</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="693" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="775.5" y="172">F1 = 2PR/(P+R) | AUC-ROC ∈ [0,1]</text>
+</svg></div>
+<div class="section-card module-card" style="background:#f8fafc;border-radius:12px;padding:24px;margin-top:28px;margin-bottom:28px;border:1.5px solid #93c5fd;">
+<h3 style="margin-top:0;color:#1e3a8a;">🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject J)</h3>
+<p style="margin-bottom:12px;">Test your mastery of <strong>Artificial Intelligence &amp; Machine Learning</strong> with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</p>
+<div style="margin-bottom:16px;"><a href="PFRDA_AI_ML_Mock_1.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 1 (50 Qs)</a> <a href="PFRDA_AI_ML_Mock_2.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 2 (50 Qs)</a> <a href="PFRDA_AI_ML_Mock_3.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 3 (50 Qs)</a> <a href="PFRDA_AI_ML_Mock_4.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 4 (50 Qs)</a> <a href="PFRDA_AI_ML_Mock_5.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 5 (50 Qs)</a></div>
+<div style="font-size:0.86rem;color:#475569;border-top:1px solid #cbd5e1;padding-top:10px;">
+<strong>Verified Regulatory &amp; Statutory Sources (Updated October 2026):</strong>
+<a href="https://www.pfrda.org.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">PFRDA Official Portal</a> ·
+    <a href="https://npstrust.org.in/act-and-regulations" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">NPS Trust Regulations (2025–26)</a> ·
+    <a href="https://www.sebi.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">SEBI Circulars &amp; Regulations</a> ·
+    <a href="https://www.rbi.org.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">RBI Monetary Policy (Oct 2026)</a> ·
+    <a href="https://www.indiabudget.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">Union Budget 2026–27 &amp; Economic Survey 2025–26</a> ·
+    <a href="https://prsindia.org/policy/report-summaries/report-of-the-16th-finance-commission-for-2026-31" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">16th Finance Commission Report (2026–31)</a> ·
+    <a href="https://www.mca.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">MCA Companies Act, 2013</a>
+</div>
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject J)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of '🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject J)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Test your mastery of Artificial Intelligence &amp; Machine Learning with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Covers fundamental theoretical principles, statutory provisions, and quantitative norms under 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject J).</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Integrates multi-column comparative benchmarks and regulatory compliance limits.</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Applies latest 2025–2026 regulatory circulars, empirical formulas, and practical case scenarios.</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject J) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject J).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject J) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Test your mastery of Artificial Intelligence &amp; Machine Learning with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject J).</p>
+</div>
+</div>
+</div></div>
+<!-- END PFRDA REV VISUAL PACK -->
+<div class="footer">
+<p><b>PFRDA · SHIVAM · AI &amp; Machine Learning Master Revision Sheet</b></p>
+<p>Authored for PFRDA Grade A &amp; SEBI Grade A Paper 2 Aspirants · Strictly aligned with Cluster J Syllabus.</p>
+</div>
+</body>
+</html>

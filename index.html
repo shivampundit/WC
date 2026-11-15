@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regulatory Bodies Master Preparation Portal 2026–27 — PFRDA • IFSCA • IRDAI • NPS Trust (15 Suites • 219 Files)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f1f5f9; color: #0f172a; line-height: 1.55; }
+  .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 52%, #0284c7 100%); color: #fff; padding: 40px 24px 32px; border-bottom: 4px solid #38bdf8; }
+  .hero-inner { max-width: 1380px; margin: 0 auto; }
+  .hero-tag { display: inline-block; background: rgba(56,189,248,0.2); border: 1px solid #38bdf8; color: #e0f2fe; font-size: 12px; font-weight: 800; padding: 5px 14px; border-radius: 999px; margin-bottom: 12px; }
+  .hero h1 { font-size: 30px; font-weight: 900; letter-spacing: -0.02em; margin-bottom: 10px; }
+  .hero p { font-size: 15px; color: #e2e8f0; max-width: 1120px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 22px; }
+  .kpi-card { background: rgba(15,23,42,0.6); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 14px 18px; }
+  .kpi-val { font-size: 23px; font-weight: 900; color: #38bdf8; }
+  .kpi-lbl { font-size: 12.2px; color: #cbd5e1; font-weight: 600; margin-top: 2px; }
+  .exam-selector-bar { background: #ffffff; border-bottom: 2px solid #cbd5e1; position: sticky; top: 0; z-index: 999; box-shadow: 0 4px 14px rgba(15,23,42,0.06); padding: 14px 20px; }
+  .es-inner { max-width: 1380px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .es-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+  .es-btn { border: 1.5px solid #cbd5e1; background: #f8fafc; color: #1e293b; font-size: 13.5px; font-weight: 800; padding: 9px 16px; border-radius: 999px; cursor: pointer; transition: all 0.16s ease; display: flex; align-items: center; gap: 6px; }
+  .es-btn:hover { border-color: #0284c7; background: #eff6ff; color: #1d4ed8; }
+  .es-btn.active { background: #0f172a; color: #38bdf8; border-color: #0f172a; box-shadow: 0 4px 12px rgba(15,23,42,0.18); }
+  .container { max-width: 1380px; margin: 26px auto 70px; padding: 0 20px; }
+  .exam-banner { background: #ffffff; border: 1.5px solid #93c5fd; border-left: 6px solid #0284c7; border-radius: 16px; padding: 22px 26px; margin-bottom: 26px; box-shadow: 0 4px 14px rgba(2,132,199,0.06); }
+  .eb-hdr { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #e2e8f0; }
+  .eb-title { font-size: 20px; font-weight: 800; color: #0f172a; }
+  .eb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 14px; margin-bottom: 14px; }
+  .eb-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px 15px; font-size: 13.2px; color: #334155; }
+  .eb-box strong { display: block; color: #0f172a; font-size: 13px; margin-bottom: 4px; }
+  .sec-title { font-size: 21px; font-weight: 800; color: #0f172a; margin-bottom: 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(410px, 1fr)); gap: 20px; }
+  @media (max-width: 600px) { .cards-grid { grid-template-columns: 1fr; } }
+  .subj-card { background: #fff; border: 1.5px solid #cbd5e1; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(15,23,42,0.05); transition: all 0.18s; }
+  .subj-card:hover { transform: translateY(-3px); border-color: #0284c7; box-shadow: 0 12px 26px rgba(2,132,199,0.12); }
+  .sc-hdr { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+  .sc-code { color: #fff; font-size: 11.5px; font-weight: 800; padding: 4px 11px; border-radius: 999px; }
+  .sc-badge { font-size: 11.5px; font-weight: 700; color: #475569; background: #f1f5f9; padding: 4px 10px; border-radius: 999px; }
+  .sc-title { font-size: 18px; font-weight: 800; color: #0f172a; margin-bottom: 8px; line-height: 1.35; }
+  .sc-desc { font-size: 13.2px; color: #475569; margin-bottom: 16px; line-height: 1.55; }
+  .pillar-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .p-btn { text-decoration: none; font-size: 12.2px; font-weight: 700; padding: 7px 12px; border-radius: 8px; transition: all 0.15s; }
+  .p-hub { background: #0f172a; color: #38bdf8; }
+  .p-notes { background: #dbeafe; color: #1e40af; }
+  .p-rev { background: #ccfbf1; color: #0f766e; }
+  .p-pyq { background: #ede9fe; color: #5b21b6; }
+  .p-topic { background: #ffedd5; color: #9a3412; }
+  .p-btn:hover { filter: brightness(0.93); transform: translateY(-1px); }
+  .mocks-strip { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px 14px; }
+  .ms-lbl { font-size: 11.5px; font-weight: 800; color: #334155; margin-bottom: 8px; }
+  .ms-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .m-pill { text-decoration: none; background: #fff; border: 1px solid #cbd5e1; color: #0f172a; font-size: 11.8px; font-weight: 700; padding: 5px 10px; border-radius: 6px; transition: all 0.15s; }
+  .m-pill:hover { background: #0284c7; color: #fff; border-color: #0284c7; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">🚀 MULTI-EXAM REGULATORY MASTER PLATFORM • PFRDA • IFSCA • IRDAI • NPS TRUST (2026–2027)</span>
+    <h1>🏛️ Complete 4-Exam Officer Grade 'A' / 'B' Master Preparation &amp; CBT Mock Portal</h1>
+    <p>Interactive Exam Selector for PFRDA Grade A, IFSCA Grade A, IRDAI Grade A &amp; NPS Trust Grade A/B • 15 Full Subject Suites (219 HTML Files) • 166 Textbook Chapters • 2,100+ Solved PYQs • 145 Full-Length CBT Mocks (7,150+ Balanced-Option MCQs)</p>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-val">4 Regulatory Exams</div><div class="kpi-lbl">PFRDA • IFSCA • IRDAI • NPS Trust</div></div>
+      <div class="kpi-card"><div class="kpi-val">15 Subject Suites</div><div class="kpi-lbl">166 Chapters + Tables + SVGs + Formulas</div></div>
+      <div class="kpi-card"><div class="kpi-val">2,100+ Solved PYQs</div><div class="kpi-lbl">Filterable by Exam Board &amp; Chapter</div></div>
+      <div class="kpi-card"><div class="kpi-val">145 Full CBT Mocks</div><div class="kpi-lbl">7,150+ Balanced MCQs (0% Length Bias)</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="exam-selector-bar">
+  <div class="es-inner">
+    <div style="font-size:13.5px;font-weight:800;color:#0f172a;">🎯 Select Your Target Exam Mode:</div>
+    <div class="es-tabs">
+      <button class="es-btn active" id="tab-ALL" onclick="selectExam('ALL')">🌐 All 4 Regulatory Exams (16 Modules)</button>
+      <button class="es-btn" id="tab-PFRDA" onclick="selectExam('PFRDA')">🏛️ PFRDA Grade A (13 Modules)</button>
+      <button class="es-btn" id="tab-IFSCA" onclick="selectExam('IFSCA')">🌍 IFSCA Grade A (11 Modules)</button>
+      <button class="es-btn" id="tab-IRDAI" onclick="selectExam('IRDAI')">🛡️ IRDAI Grade A (9 Modules)</button>
+      <button class="es-btn" id="tab-NPS" onclick="selectExam('NPS')">📊 NPS Trust Grade A/B (10 Modules)</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="exam-banner" id="examBannerBox"></div>
+  <div class="sec-title">
+    <span id="gridHeadingText">📚 Showing All 16 Subject Suites Across PFRDA, IFSCA, IRDAI &amp; NPS Trust</span>
+    <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html" style="font-size:13px;font-weight:800;color:#0284c7;text-decoration:none;background:#e0f2fe;padding:7px 14px;border-radius:8px;border:1px solid #7dd3fc;">📋 Open Full 4-Exam Official Syllabus &amp; Descriptive Hub →</a>
+  </div>
+  <div class="cards-grid" id="cardsGrid">
+    
+    <div class="subj-card" data-exams="PFRDA,IFSCA,IRDAI,NPS" style="border-top: 5px solid #0f172a;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#0f172a;">All 4 Exams • Master Guide</span>
+          <span class="sc-badge">4 Exams Pattern • Overlap Matrix • Descriptive Guide</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA • 🛡️ IRDAI • 📊 NPS Trust</div>
+        <h3 class="sc-title">Official Syllabus, Exam Pattern & Phase-II Descriptive English Hub</h3>
+        <p class="sc-desc">Complete Phase I & Phase II Exam Patterns, Cut-Offs, Negative Marking, Verbatim Topic-Wise Syllabi for PFRDA, IFSCA, IRDAI & NPS Trust + Descriptive English.</p>
+        <div class="pillar-btns">
+          <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-PFRDA" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-IFSCA" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-IRDAI" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-NPS" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">📋 Quick Jump to Exam-Wise Official Syllabi &amp; Descriptive Guide:</div>
+          <div class="ms-grid">
+            <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-PFRDA" class="m-pill">PFRDA Pattern</a>
+            <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-IFSCA" class="m-pill">IFSCA Pattern</a>
+            <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-IRDAI" class="m-pill">IRDAI Pattern</a>
+            <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-NPS" class="m-pill">NPS Trust Pattern</a>
+            <a href="Master_4_Exams_Official_Syllabus_and_Descriptive_Hub.html#sec-DESC" class="m-pill">Descriptive English</a>
+          </div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="IFSCA,IRDAI" style="border-top: 5px solid #0284c7;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#0284c7;">IFSCA Exclusive Suite</span>
+          <span class="sc-badge">10 Ch • 140 PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🌟 IFSCA Core (Phase I & II) • 🛡️ IRDAI (GIFT IIOs)</div>
+        <h3 class="sc-title">IFSCA Act 2019, GIFT IFSC, Bullion (IIBX) & Global Financial Centres</h3>
+        <p class="sc-desc">IFSCA Act (Sec 1–34), GIFT SEZ & Sec 80LA Tax Holiday, GFCI Index, IBUs ($20M Capital, 0% CRR/SLR), FME Regs 2022, IIBX Bullion & BDRs, Aircraft/Ship Leasing, FinTech Grants, IIOs ($1.5M) & Five-Year Plans.</p>
+        <div class="pillar-btns">
+          <a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_1.html" class="m-pill">Mock 1</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_2.html" class="m-pill">Mock 2</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_3.html" class="m-pill">Mock 3</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_4.html" class="m-pill">Mock 4</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_5.html" class="m-pill">Mock 5</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_6.html" class="m-pill">Mock 6</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_7.html" class="m-pill">Mock 7</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_8.html" class="m-pill">Mock 8</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_9.html" class="m-pill">Mock 9</a><a href="IFSCA Act & Global Financial Centres/IFSCA_Grade_A_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="IRDAI,IFSCA,NPS" style="border-top: 5px solid #4f46e5;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#4f46e5;">IRDAI & IFSCA Exclusive Suite</span>
+          <span class="sc-badge">10 Ch • 129 PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🌟 IRDAI Core (Paper II & III) • 🌍 IFSCA Paper 2 • 📊 NPS Trust</div>
+        <h3 class="sc-title">Insurance Principles, Actuarial Risk, Reinsurance & ESI Impacting Insurance</h3>
+        <p class="sc-desc">History, Malhotra Committee, IRDAI Act, Bima Trinity, 7 Principles & Sec 45, Risk Pooling & Utility Theory in Pricing, Penetration & S-Curve, Underwriting, Bancassurance (9+9+9), Reinsurance & GIC 4%, Solvency 150%, Ind-RBC, Micro-Insurance, RSBY/PM-JAY & Corporate Governance.</p>
+        <div class="pillar-btns">
+          <a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_1.html" class="m-pill">Mock 1</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_2.html" class="m-pill">Mock 2</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_3.html" class="m-pill">Mock 3</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_4.html" class="m-pill">Mock 4</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_5.html" class="m-pill">Mock 5</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_6.html" class="m-pill">Mock 6</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_7.html" class="m-pill">Mock 7</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_8.html" class="m-pill">Mock 8</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_9.html" class="m-pill">Mock 9</a><a href="Insurance & Risk Management (IRDAI & IFSCA)/IRDAI_Insurance_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="NPS,PFRDA" style="border-top: 5px solid #be123c;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#be123c;">NPS Trust Exclusive Suite</span>
+          <span class="sc-badge">10 Ch • 148 PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🌟 NPS Trust Core (Unit D & E) • 🏛️ PFRDA (NPS Trust)</div>
+        <h3 class="sc-title">Data Analytics, Statistics, Econometrics, OR/LPP & Indian Trusts Act, 1882</h3>
+        <p class="sc-desc">4 Types of Analytics (Descriptive to Prescriptive), NOIR Scales, AM/GM/HM/Median/Mode, Dispersion, Skewness/Kurtosis, Box Plot, Sampling & CLT, Confidence Intervals, Hypothesis Testing (Z, t, Chi-Square, ANOVA), Correlation/OLS Regression, Linear Programming & Indian Trusts Act 1882 (Sec 1–96).</p>
+        <div class="pillar-btns">
+          <a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_1.html" class="m-pill">Mock 1</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_2.html" class="m-pill">Mock 2</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_3.html" class="m-pill">Mock 3</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_4.html" class="m-pill">Mock 4</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_5.html" class="m-pill">Mock 5</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_6.html" class="m-pill">Mock 6</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_7.html" class="m-pill">Mock 7</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_8.html" class="m-pill">Mock 8</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_9.html" class="m-pill">Mock 9</a><a href="Data Analytics, Statistics & Indian Trusts Act (NPS Trust)/NPS_Trust_Analytics_Trusts_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,IFSCA,NPS,IRDAI" style="border-top: 5px solid #0284c7;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#0284c7;">Subjects A & I • Pension Core</span>
+          <span class="sc-badge">10 Ch • 125 PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA (Unit 6) • 📊 NPS Trust (Unit G) • 🛡️ IRDAI</div>
+        <h3 class="sc-title">PFRDA Act, 2013 & Pension Sector in India and World</h3>
+        <p class="sc-desc">PFRDA Act (Sec 1–53), NPS Tier I & II, Unified Pension Scheme (UPS 2025), NPS Vatsalya, APY, ₹8L/₹5L/₹12L Exit Rules, Annuity Plans & Investment Basics.</p>
+        <div class="pillar-btns">
+          <a href="Pension Sector & PFRDA Act/PFRDA_Pension_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Pension Sector & PFRDA Act/PFRDA_Pension_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Pension Sector & PFRDA Act/PFRDA_Pension_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Pension Sector & PFRDA Act/PFRDA_Pension_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Pension Sector & PFRDA Act/PFRDA_Pension_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_1.html" class="m-pill">Mock 1</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_2.html" class="m-pill">Mock 2</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_3.html" class="m-pill">Mock 3</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_4.html" class="m-pill">Mock 4</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_5.html" class="m-pill">Mock 5</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_6.html" class="m-pill">Mock 6</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_7.html" class="m-pill">Mock 7</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_8.html" class="m-pill">Mock 8</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_9.html" class="m-pill">Mock 9</a><a href="Pension Sector & PFRDA Act/PFRDA_Pension_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,IFSCA,IRDAI,NPS" style="border-top: 5px solid #0d9488;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#0d9488;">Subject B • Fiscal & Macro</span>
+          <span class="sc-badge">7 Ch • 125 PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA (Phase II Unit 2) • 🛡️ IRDAI • 📊 NPS Trust</div>
+        <h3 class="sc-title">Union Budget (2025–26 / 2026–27) & Economic Survey</h3>
+        <p class="sc-desc">Constitutional Articles 112–267, Deficit Metrics, FRBM Glide Path, Union Budget Allocations, Tax Reforms & Economic Survey Highlights.</p>
+        <div class="pillar-btns">
+          <a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Master_Revision_and_Study_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Union Budget & Economic Survey/PFRDA_Union_Budget_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_1.html" class="m-pill">Mock 1</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_2.html" class="m-pill">Mock 2</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_3.html" class="m-pill">Mock 3</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_4.html" class="m-pill">Mock 4</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_5.html" class="m-pill">Mock 5</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_6.html" class="m-pill">Mock 6</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_7.html" class="m-pill">Mock 7</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_8.html" class="m-pill">Mock 8</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_9.html" class="m-pill">Mock 9</a><a href="Union Budget & Economic Survey/PFRDA_Union_Budget_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,IFSCA,NPS" style="border-top: 5px solid #1e3a8a;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#1e3a8a;">Subject C • Accounting Core</span>
+          <span class="sc-badge">23 Ch • 141 Official PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA (Phase I P2) • 📊 NPS Trust (Unit A)</div>
+        <h3 class="sc-title">Commerce & Accountancy (EduTap + CA Raman Luthra + ixamBee)</h3>
+        <p class="sc-desc">Financial Info System, AS vs Ind AS (AS 2, 3, 9, 10, 11, 13), Ratio & DuPont Analysis, Cash/Fund Flow, Share Capital, Bonus/Rights, ESOPs, Buy-Back & Schedule III Final Accounts.</p>
+        <div class="pillar-btns">
+          <a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_1.html" class="m-pill">Mock 1</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_2.html" class="m-pill">Mock 2</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_3.html" class="m-pill">Mock 3</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_4.html" class="m-pill">Mock 4</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_5.html" class="m-pill">Mock 5</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_6.html" class="m-pill">Mock 6</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_7.html" class="m-pill">Mock 7</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_8.html" class="m-pill">Mock 8</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_9.html" class="m-pill">Mock 9</a><a href="Commerce & Accountancy/PFRDA_Commerce_Accountancy_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,IFSCA,IRDAI,NPS" style="border-top: 5px solid #4f46e5;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#4f46e5;">Subject D • Management Core</span>
+          <span class="sc-badge">12 Ch • 263 Official PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA • 🛡️ IRDAI (Paper III Part 2) • 📊 NPS Trust (Unit B)</div>
+        <h3 class="sc-title">Management & Organizational Behaviour (EduTap + CA Raman Luthra)</h3>
+        <p class="sc-desc">Planning, Organizing, Staffing, Directing, Controlling, Leadership Theories & Grids, HRD (OCTAPACE, Appraisal, OD), Motivation (Content & Process), Morale & Communication.</p>
+        <div class="pillar-btns">
+          <a href="Management/PFRDA_Management_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Management/PFRDA_Management_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Management/PFRDA_Management_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Management/PFRDA_Management_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Management/PFRDA_Management_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Management/PFRDA_Management_Mock_1.html" class="m-pill">Mock 1</a><a href="Management/PFRDA_Management_Mock_2.html" class="m-pill">Mock 2</a><a href="Management/PFRDA_Management_Mock_3.html" class="m-pill">Mock 3</a><a href="Management/PFRDA_Management_Mock_4.html" class="m-pill">Mock 4</a><a href="Management/PFRDA_Management_Mock_5.html" class="m-pill">Mock 5</a><a href="Management/PFRDA_Management_Mock_6.html" class="m-pill">Mock 6</a><a href="Management/PFRDA_Management_Mock_7.html" class="m-pill">Mock 7</a><a href="Management/PFRDA_Management_Mock_8.html" class="m-pill">Mock 8</a><a href="Management/PFRDA_Management_Mock_9.html" class="m-pill">Mock 9</a><a href="Management/PFRDA_Management_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,IFSCA,IRDAI,NPS" style="border-top: 5px solid #0369a1;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#0369a1;">Subject E • Finance Core</span>
+          <span class="sc-badge">20 Ch • 298 Official PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA (Phase I & II) • 🛡️ IRDAI (Paper II) • 📊 NPS Trust (Unit C)</div>
+        <h3 class="sc-title">Finance, Banking & Capital Markets (EduTap + CA Raman Luthra + 2026 CA)</h3>
+        <p class="sc-desc">RBI, SEBI, PFRDA, AIFIs (SIDBI/EXIM/NABARD/NHB/NaBFID), Money/Bond/Equity/Forex Markets, Derivatives, Mutual Funds & SIFs, Financial Inclusion, PPP, GST, 16th FC, FRBM & Inflation.</p>
+        <div class="pillar-btns">
+          <a href="Finance/PFRDA_Finance_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Finance/PFRDA_Finance_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Finance/PFRDA_Finance_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Finance/PFRDA_Finance_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Finance/PFRDA_Finance_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Finance/PFRDA_Finance_Mock_1.html" class="m-pill">Mock 1</a><a href="Finance/PFRDA_Finance_Mock_2.html" class="m-pill">Mock 2</a><a href="Finance/PFRDA_Finance_Mock_3.html" class="m-pill">Mock 3</a><a href="Finance/PFRDA_Finance_Mock_4.html" class="m-pill">Mock 4</a><a href="Finance/PFRDA_Finance_Mock_5.html" class="m-pill">Mock 5</a><a href="Finance/PFRDA_Finance_Mock_6.html" class="m-pill">Mock 6</a><a href="Finance/PFRDA_Finance_Mock_7.html" class="m-pill">Mock 7</a><a href="Finance/PFRDA_Finance_Mock_8.html" class="m-pill">Mock 8</a><a href="Finance/PFRDA_Finance_Mock_9.html" class="m-pill">Mock 9</a><a href="Finance/PFRDA_Finance_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,IFSCA" style="border-top: 5px solid #b45309;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#b45309;">Subject F • Costing Core</span>
+          <span class="sc-badge">15 Ch • 126 Official PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA (Phase I Paper 2)</div>
+        <h3 class="sc-title">Cost & Management Accounting (EduTap + CA Raman Luthra)</h3>
+        <p class="sc-desc">Cost Overview (CAS 1–24), Material (EOQ), Labour, Overheads, ABC, Unit, Job, Batch, Contract, Process, Joint/By-Product, Service, Marginal (CVP), Standard Costing, Budgeting & Lean System (JIT, Kaizen, 5S, TPM, Six Sigma, BPR).</p>
+        <div class="pillar-btns">
+          <a href="Costing/PFRDA_Costing_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Costing/PFRDA_Costing_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Costing/PFRDA_Costing_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Costing/PFRDA_Costing_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Costing/PFRDA_Costing_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Costing/PFRDA_Costing_Mock_1.html" class="m-pill">Mock 1</a><a href="Costing/PFRDA_Costing_Mock_2.html" class="m-pill">Mock 2</a><a href="Costing/PFRDA_Costing_Mock_3.html" class="m-pill">Mock 3</a><a href="Costing/PFRDA_Costing_Mock_4.html" class="m-pill">Mock 4</a><a href="Costing/PFRDA_Costing_Mock_5.html" class="m-pill">Mock 5</a><a href="Costing/PFRDA_Costing_Mock_6.html" class="m-pill">Mock 6</a><a href="Costing/PFRDA_Costing_Mock_7.html" class="m-pill">Mock 7</a><a href="Costing/PFRDA_Costing_Mock_8.html" class="m-pill">Mock 8</a><a href="Costing/PFRDA_Costing_Mock_9.html" class="m-pill">Mock 9</a><a href="Costing/PFRDA_Costing_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,NPS,IFSCA,IRDAI" style="border-top: 5px solid #6d28d9;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#6d28d9;">Subject G • Corporate Law</span>
+          <span class="sc-badge">10 Ch • 113 Official PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 📊 NPS Trust (Unit E) • 🌍 IFSCA • 🛡️ IRDAI (Governance)</div>
+        <h3 class="sc-title">Companies Act, 2013 (Chapters III, IV, VIII, X, XI, XII & XXVII)</h3>
+        <p class="sc-desc">Chapters III (Prospectus), IV (Share Capital & Buyback), VIII (Dividend & IEPF), X (Audit & Auditors), XI (Appointment/Qualifications of Directors), XII (Board Meetings & Powers) & XXVII (NCLT/NCLAT).</p>
+        <div class="pillar-btns">
+          <a href="Companies Act/PFRDA_Companies_Act_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Companies Act/PFRDA_Companies_Act_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Companies Act/PFRDA_Companies_Act_Master_Revision_and_Study_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Companies Act/PFRDA_Companies_Act_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Companies Act/PFRDA_Companies_Act_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Companies Act/PFRDA_Companies_Act_Mock_1.html" class="m-pill">Mock 1</a><a href="Companies Act/PFRDA_Companies_Act_Mock_2.html" class="m-pill">Mock 2</a><a href="Companies Act/PFRDA_Companies_Act_Mock_3.html" class="m-pill">Mock 3</a><a href="Companies Act/PFRDA_Companies_Act_Mock_4.html" class="m-pill">Mock 4</a><a href="Companies Act/PFRDA_Companies_Act_Mock_5.html" class="m-pill">Mock 5</a><a href="Companies Act/PFRDA_Companies_Act_Mock_6.html" class="m-pill">Mock 6</a><a href="Companies Act/PFRDA_Companies_Act_Mock_7.html" class="m-pill">Mock 7</a><a href="Companies Act/PFRDA_Companies_Act_Mock_8.html" class="m-pill">Mock 8</a><a href="Companies Act/PFRDA_Companies_Act_Mock_9.html" class="m-pill">Mock 9</a><a href="Companies Act/PFRDA_Companies_Act_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,IFSCA,NPS,IRDAI" style="border-top: 5px solid #047857;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#047857;">Subject H • Economics Core</span>
+          <span class="sc-badge">16 Ch • 117 Official PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA (Phase I P2) • 📊 NPS Trust (Unit F) • 🛡️ IRDAI (Paper II)</div>
+        <h3 class="sc-title">Micro & Macroeconomics, Global Economy & NBFCs (EduTap + Raman Luthra)</h3>
+        <p class="sc-desc">Demand & Supply, Market Structures, National Income (2022–23 Base), Classical & Keynesian, Multiplier & Accelerator, IS-LM, Inflation & Phillips Curve, Business Cycles, BoP, Forex, Monetary/Fiscal Policy, IMF/WB/BIS/IOSCO & NBFCs.</p>
+        <div class="pillar-btns">
+          <a href="Economics/PFRDA_Economics_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Economics/PFRDA_Economics_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Economics/PFRDA_Economics_Master_Revision_and_Study_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Economics/PFRDA_Economics_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Economics/PFRDA_Economics_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Economics/PFRDA_Economics_Mock_1.html" class="m-pill">Mock 1</a><a href="Economics/PFRDA_Economics_Mock_2.html" class="m-pill">Mock 2</a><a href="Economics/PFRDA_Economics_Mock_3.html" class="m-pill">Mock 3</a><a href="Economics/PFRDA_Economics_Mock_4.html" class="m-pill">Mock 4</a><a href="Economics/PFRDA_Economics_Mock_5.html" class="m-pill">Mock 5</a><a href="Economics/PFRDA_Economics_Mock_6.html" class="m-pill">Mock 6</a><a href="Economics/PFRDA_Economics_Mock_7.html" class="m-pill">Mock 7</a><a href="Economics/PFRDA_Economics_Mock_8.html" class="m-pill">Mock 8</a><a href="Economics/PFRDA_Economics_Mock_9.html" class="m-pill">Mock 9</a><a href="Economics/PFRDA_Economics_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA" style="border-top: 5px solid #be123c;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#be123c;">Subject J • Emerging Tech</span>
+          <span class="sc-badge">8 Ch • 125 PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA Exclusive (Subject J)</div>
+        <h3 class="sc-title">Artificial Intelligence (AI) & Machine Learning (ML)</h3>
+        <p class="sc-desc">Supervised & Unsupervised Learning, Data Preprocessing, Evaluation Metrics, Overfitting/Underfitting, Cross-Validation, NLP & Sentiment Analysis, LLMs, RAG, Agentic AI, Reinforcement Learning & Responsible AI.</p>
+        <div class="pillar-btns">
+          <a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Artificial Intelligence & Machine Learning/PFRDA_AIML_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_1.html" class="m-pill">Mock 1</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_2.html" class="m-pill">Mock 2</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_3.html" class="m-pill">Mock 3</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_4.html" class="m-pill">Mock 4</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_5.html" class="m-pill">Mock 5</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_6.html" class="m-pill">Mock 6</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_7.html" class="m-pill">Mock 7</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_8.html" class="m-pill">Mock 8</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_9.html" class="m-pill">Mock 9</a><a href="Artificial Intelligence & Machine Learning/PFRDA_AI_ML_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA" style="border-top: 5px solid #7c3aed;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#7c3aed;">Subject K • Digital Media</span>
+          <span class="sc-badge">8 Ch • 125 PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA Exclusive (Subject K)</div>
+        <h3 class="sc-title">Media, Digital Convergence & Negotiation Skills</h3>
+        <p class="sc-desc">Micro-Targeting, Consumer Behaviour, Media Convergence, VR/AR/MR, Digital Divide, Audience Reception (Stuart Hall), Cultural Representation, OTT Platforms, Social Media Algorithms & Negotiation (BATNA/ZOPA).</p>
+        <div class="pillar-btns">
+          <a href="Media/PFRDA_Media_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Media/PFRDA_Media_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Media/PFRDA_Media_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Media/PFRDA_Media_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Media/PFRDA_Media_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Media/PFRDA_Media_Mock_1.html" class="m-pill">Mock 1</a><a href="Media/PFRDA_Media_Mock_2.html" class="m-pill">Mock 2</a><a href="Media/PFRDA_Media_Mock_3.html" class="m-pill">Mock 3</a><a href="Media/PFRDA_Media_Mock_4.html" class="m-pill">Mock 4</a><a href="Media/PFRDA_Media_Mock_5.html" class="m-pill">Mock 5</a><a href="Media/PFRDA_Media_Mock_6.html" class="m-pill">Mock 6</a><a href="Media/PFRDA_Media_Mock_7.html" class="m-pill">Mock 7</a><a href="Media/PFRDA_Media_Mock_8.html" class="m-pill">Mock 8</a><a href="Media/PFRDA_Media_Mock_9.html" class="m-pill">Mock 9</a><a href="Media/PFRDA_Media_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA" style="border-top: 5px solid #c2410c;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#c2410c;">Subject L • Marketing & EI</span>
+          <span class="sc-badge">7 Ch • 125 PYQs • 10 Mocks (500 Qs)</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA Exclusive (Subject L)</div>
+        <h3 class="sc-title">Marketing Management, Financial Literacy & Soft Skills</h3>
+        <p class="sc-desc">Marketing Management, Research, Strategy, Product & Brand Equity (Keller CBBE), Pricing, Distribution, IMC, Digital Marketing, Financial Literacy (NSFE) & Soft Skills (Active Listening, Conflict Resolution, EI).</p>
+        <div class="pillar-btns">
+          <a href="Marketing & Communication/PFRDA_Marketing_Communication_Hub.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Marketing & Communication/PFRDA_Marketing_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Marketing & Communication/PFRDA_Marketing_Communication_Master_Revision_Sheet.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Marketing & Communication/PFRDA_Marketing_Communication_All_Exams_PYQ_Practice.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Marketing & Communication/PFRDA_Marketing_Communication_Topic_Wise_Mocks.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_1.html" class="m-pill">Mock 1</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_2.html" class="m-pill">Mock 2</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_3.html" class="m-pill">Mock 3</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_4.html" class="m-pill">Mock 4</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_5.html" class="m-pill">Mock 5</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_6.html" class="m-pill">Mock 6</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_7.html" class="m-pill">Mock 7</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_8.html" class="m-pill">Mock 8</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_9.html" class="m-pill">Mock 9</a><a href="Marketing & Communication/PFRDA_Marketing_Communication_Mock_10.html" class="m-pill">Mock 10</a></div>
+        </div>
+    </div>
+    <div class="subj-card" data-exams="PFRDA,IFSCA,IRDAI,NPS" style="border-top: 5px solid #0f766e;">
+      <div>
+        <div class="sc-hdr">
+          <span class="sc-code" style="background:#0f766e;">Paper 1 — QRE (All 4 Exams)</span>
+          <span class="sc-badge">Concept Notes + Shortcut Tricks • 5 Mocks</span>
+        </div>
+        <div style="font-size:11.5px;font-weight:800;color:#0369a1;background:#f0f9ff;border:1px solid #bae6fd;padding:4px 10px;border-radius:6px;margin-bottom:8px;display:inline-block;">🏛️ PFRDA • 🌍 IFSCA • 🛡️ IRDAI (160M Prelims) • 📊 NPS Trust (75M Prelims)</div>
+        <h3 class="sc-title">Quantitative Aptitude, Reasoning Ability & English Language</h3>
+        <p class="sc-desc">Complete Phase I QRE Master Concept Notes, Shortcut Formulas, Worked Examples & 5 Full-Length Timed Mock Tests for PFRDA, IFSCA, IRDAI & NPS Trust Prelims.</p>
+        <div class="pillar-btns">
+          <a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Comprehensive_Master_Study_Notes.html" class="p-btn p-hub">🏛️ Subject Hub</a>
+          <a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Comprehensive_Master_Study_Notes.html" class="p-btn p-notes">📘 Detailed Study Notes</a>
+          <a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Master_Concept_Notes_with_Tricks_and_Examples.html" class="p-btn p-rev">⚡ Rapid Revision Sheet</a>
+          <a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Mock_Test_1.html" class="p-btn p-pyq">🎯 All-Exams PYQs</a>
+          <a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Master_Concept_Notes_with_Tricks_and_Examples.html" class="p-btn p-topic">🧩 Topic-Wise Mocks</a>
+        </div>
+      </div>
+      
+        <div class="mocks-strip">
+          <div class="ms-lbl">🏆 Full-Length Subject CBT Mocks (Balanced Options • A:10..E:10):</div>
+          <div class="ms-grid"><a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Mock_Test_1.html" class="m-pill">Mock 1</a><a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Mock_Test_2.html" class="m-pill">Mock 2</a><a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Mock_Test_3.html" class="m-pill">Mock 3</a><a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Mock_Test_4.html" class="m-pill">Mock 4</a><a href="Paper 1 - QRE Mocks & Study Notes/PFRDA_SEBI_QRE_Mock_Test_5.html" class="m-pill">Mock 5</a></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const examsData = {"PFRDA": {"name": "PFRDA Grade A (Assistant Manager)", "tag": "Pension Fund Regulatory & Development Authority", "color": "#0284c7", "p1": "Paper 1 (QRE + GA: 80 Qs, 100 Marks, 60 Mins) + Paper 2 (12 General Stream Subjects A–L: 50 Qs, 100 Marks, 40 Mins) | 1/4th Negative Marking | Qualifying for Phase II", "p2": "Paper 1 (Descriptive English: 3 Qs, 100 Marks, 60 Mins — 1/3rd Weightage) + Paper 2 (12 General Stream Subjects A–L: 50 Qs, 100 Marks, 40 Mins — 2/3rd Weightage) | Phase II (85%) + Interview (15%)", "subjects": ["Subjects A & I: PFRDA Act, 2013 & Pension Sector (NPS, UPS 2025, NPS Vatsalya, APY, Annuities)", "Subject B: Union Budget (Concepts, Approach, Trends) & Economic Survey", "Subject C: Commerce & Accountancy (AS 2, 3, 9, 10, 11, 13, Cash/Fund Flow, Ratios, Share Capital, ESOPs, Buy-Back, Final Accounts)", "Subject D: Management (Planning, Organizing, Staffing, Directing, Controlling, Leadership, HRD, Motivation, Morale, Communication)", "Subject E: Finance (Regulators, Primary/Secondary Markets, Derivatives, Financial Inclusion, PPP, GST, Finance Commission, FRBM, Inflation)", "Subject F: Costing (Overview, Unit/Job/Batch/Contract/Process/Service Costing, Standard/Marginal/Budgetary Control, Lean System: JIT, Kaizen, 5S, TPM, Six Sigma, BPR)", "Subject G: Companies Act, 2013 (Chapters III, IV, VIII, X, XI, XII & XXVII — Prospectus, Share Capital, Dividends, Auditors, Directors, Board Powers, NCLT/NCLAT)", "Subject H: Economics (Demand/Supply, Market Structures, National Income, Keynesian, Multiplier/Accelerator, IS-LM, Phillips Curve, Business Cycles, BoP, Forex, Monetary/Fiscal Policy, NBFCs)", "Subject J: Artificial Intelligence & Machine Learning (Supervised/Unsupervised, Preprocessing, Evaluation, NLP, Sentiment Analysis, Overfitting, LLMs, Agentic AI, Responsible AI, Cross-Validation, RL)", "Subject K: Media (Micro-Targeting, Consumer Behaviour, Convergence, VR/AR, Digital Divide, Audience Reception, Cultural Representation, OTT, Algorithms, Global Practices, Negotiation)", "Subject L: Marketing & Communication (Management, Research, Product/Brand, Pricing, Distribution, Promotion, Digital Marketing, Financial Literacy, Soft Skills & EI)"]}, "IFSCA": {"name": "IFSCA Grade A (Assistant Manager)", "tag": "International Financial Services Centres Authority (GIFT City)", "color": "#0d9488", "p1": "Paper 1 (GA Financial Sector 25M + English 25M + Quant 25M + Reasoning 25M = 100 Qs, 100 Marks, 60 Mins, 30% Cut-off) + Paper 2 (Economy, Social Dev, Five-Year Plans, Commerce, Management, Finance, Costing, Central Schemes = 50 Qs, 100 Marks, 60 Mins, 40% Cut-off; Aggregate Cut-off 40%)", "p2": "Paper 1 (Descriptive English: Precis 35M + Essay 30M + Comprehension 35M = 100 Marks, 60 Mins, 30% Cut-off, 1/3rd Weightage) + Paper 2 (IFSCA Act, GIFT City, GFCs, Union Budget/Survey, Banking, Capital Markets, Bullion/Precious Metals, Insurance, Pension = 50 Qs, 100 Marks, 60 Mins, 40% Cut-off, 2/3rd Weightage)", "subjects": ["Phase II Paper 2 Unit 1 (Exclusive): IFSCA Act 2019 (Sec 1–34), IFSCA, IFSC, GIFT IFSC, GIFT City (SEZ vs DTA, Sec 80LA Tax Holiday) & Global Financial Centres (GFCI)", "Phase II Paper 2 Unit 2: Union Budget (Concepts, Approach & Broad Trends) & Economic Survey", "Phase II Paper 2 Unit 3: Banking (Financial Institutions, RBI Functions, SIDBI, EXIM, NABARD, NHB, NaBFID, Global Financial System, IT in Banking, NBFCs, Digital Payments, IBUs $20M Capital)", "Phase II Paper 2 Unit 4: Capital Market (Regulators, Primary/Secondary Markets, Derivatives, FME Regs 2022, Direct Listing 2024, Spot & Derivative Market of Precious Metals / IIBX Bullion Exchange & BDRs)", "Phase II Paper 2 Unit 5: Insurance (History, Principles, Risk Pooling, Indemnity, Intermediation & Bancassurance, Insurer Functions, Property/Life/Health, Solvency, AIC/ECGC, Reinsurance, GIC, IIOs $1.5M Capital)", "Phase II Paper 2 Unit 6: Pension Sector (Status in India, Retirement Schemes, NPS, APY, Annuity Plans, Investment Basics)", "Phase I Paper 2 Stream Units: Commerce & Accountancy, Management, Finance, Costing, Indian & Global Economy (BIS, IOSCO, IMF, World Bank), Economic & Social Development, Five-Year Plans (1st–12th & NITI Aayog)"]}, "IRDAI": {"name": "IRDAI Grade A (Assistant Manager)", "tag": "Insurance Regulatory & Development Authority of India", "color": "#4f46e5", "p1": "Online Objective Screening (160 Qs, 160 Marks, 90 Mins): Reasoning (40 Qs, 40M) + English (40 Qs, 40M) + General Awareness with Financial/Insurance focus (40 Qs, 40M) + Quantitative Aptitude (40 Qs, 40M) | 1/4th Negative Marking | Sectional & Aggregate Cut-off", "p2": "Descriptive Mains (3 Papers × 100 Marks, 60 Mins each = 300 Marks; 85% Final Weightage + 15% Interview): Paper I (English: Essay, Precis, Comprehension & Business Correspondence) + Paper II (Economic & Social Issues Impacting Insurance) + Paper III (Insurance & Management)", "subjects": ["Paper II (a): Economic Growth, Business Cycles, Insurance Penetration (~3.7%–4.0%) & Density (~$95), Enz S-Curve, Demographic Age Structure, Utility Theory in Premium Setting, Catastrophes & Pandemics", "Paper II (b): Financial Markets, Financial Institutions & Integration, Interconnectedness Risks, Systemic Risk & Concentration Risk", "Paper II (c): Economic Capital & Risk-Based Capital (Ind-RBC / Solvency 150%), Economic Impact of Risk Transfer & Reinsurance, Sustainable Development (ESG), Insurance Investments in Infrastructure (Sec 27)", "Paper II (d): Economic & Insurance Reforms (Malhotra Committee), Financial & Market Conduct Regulations, Functions of IRDAI (IRDAI Act 1999, Bima Trinity), Role of Appointed Actuary, De-tariffing, Motor Business & FSLRC", "Paper II (e): Social Structure in India, Rural & Social Sector Obligations (2024 Gram Panchayat Saturation), Micro-Insurance, Social Security Laws (PMJJBY, PMSBY, PM-JAY, RSBY)", "Paper III Part 1 (Insurance): History & 7 Principles (Uberrimae Fidei, Insurable Interest, Indemnity, Subrogation, Contribution, Causa Proxima), Risk Pooling, Legal Foundations, Bancassurance (9+9+9), Product Design/Pricing/Underwriting/Claims, Life/Annuities/Health/Property-Liability, Valuation & Solvency, AIC & ECGC, Reinsurance & GIC Obligatory Cessions (4%)", "Paper III Part 2 (Management): Nature & Scope, Management Processes (POSDC), Role of Manager, Leadership Styles/Theories, HRD & Career Planning, Performance & Potential Appraisal, Counselling, Motivation/Morale/Incentives, Communication, Role of IT, Corporate Governance for Insurers (2024 Regs)"]}, "NPS": {"name": "NPS Trust Grade A & B (AM / Manager)", "tag": "National Pension System Trust (Under PFRDA)", "color": "#be123c", "p1": "Single Online Objective Paper (120 Qs, 120 Marks, 90 Mins): English (25 Qs, 25M) + Reasoning & Analytical Skills (25 Qs, 25M) + Quantitative Aptitude (25 Qs, 25M) + General Awareness (20 Qs, 20M) + Domain Stream Subjects A–G (25 Qs, 25M) | 1/4th Negative Marking", "p2": "Paper 1 (Descriptive English: Essay, Precis & Comprehension = 100 Marks, 60 Mins) + Paper 2 (Domain Stream MCQ Paper: 50 Qs, 100 Marks, 60 Mins covering Units A to G below)", "subjects": ["Unit A — Commerce & Accountancy: Financial Info System, AS (Depreciation, Inventories, Revenue, Fixed Assets, Forex, Investments), Cash/Fund Flow, Ratio Analysis, WACC/Capital Structure/NPV/IRR/CAPM, Share Capital, Bonus/Rights, ESOPs, Buy-Back, Final Accounts", "Unit B — Management: Nature & Scope, Management Processes (Planning, Organization, Staffing, Directing, Controlling), Role of Manager, Leadership Styles & Theories, HRD, Motivation, Morale & Incentives, Communication & Role of IT", "Unit C — Finance: Financial System & Regulators (India & World: RBI, SEBI, IRDAI, PFRDA, IMF, World Bank), Primary/Secondary/Commodity Markets, Mutual Funds, Derivatives, Credit Rating Agencies, Financial Inclusion, PPP, Taxes/GST/FRBM, Inflation (WPI/CPI), Sensitivity & Scenario Analysis", "Unit D — Data Analytics & Statistics (Exclusive): Central Tendency (AM, GM, HM, Median, Mode), Dispersion (QD, MD, SD, CV), Skewness & Kurtosis, Box Plot, Correlation & Regression, Sampling Methods/Funnel/Variation/Distribution, Central Limit Theorem, Confidence Intervals, Hypothesis Testing (Z, t, Chi-Square, ANOVA), Operations Research & Linear Programming, 4 Types of Data Analytics (Descriptive, Diagnostic, Predictive, Prescriptive) & Data Visualization", "Unit E — Companies Act, 2013 & The Indian Trusts Act, 1882 (Exclusive): Companies Act Chapters III, IV, VIII, X, XI, XII, XXVII + Indian Trusts Act, 1882 (Sections 1–96: Creation, 3 Certainties, Duties/Liabilities/Rights/Disabilities of Trustees, Beneficiary Rights, Extinction & NPS Trust Regulations 2015)", "Unit F — Economics: Demand/Supply, Market Structures, National Income, Classical & Keynesian, Consumption/Investment, Multiplier/Accelerator, IS-LM, Phillips Curve, Business Cycles, BoP, Forex, Monetary/Fiscal Policy, NBFCs", "Unit G — Pension Sector of India & World: Status of Pension Sector, Retirement Schemes, NPS, APY, Annuity Plans, Basics of Investment Decision Making & Portfolio Management (Sharpe, Treynor, Jensen's Alpha)"]}};
+function selectExam(examKey) {
+  document.querySelectorAll('.es-btn').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('tab-' + examKey);
+  if (btn) btn.classList.add('active');
+
+  const cards = document.querySelectorAll('.subj-card');
+  let shown = 0;
+  cards.forEach(c => {
+    const list = (c.getAttribute('data-exams') || '').split(',');
+    if (examKey === 'ALL' || list.includes(examKey)) {
+      c.style.display = 'flex';
+      shown++;
+    } else {
+      c.style.display = 'none';
+    }
+  });
+
+  const banner = document.getElementById('examBannerBox');
+  const heading = document.getElementById('gridHeadingText');
+
+  if (examKey === 'ALL') {
+    heading.textContent = `📚 Showing All ${shown} Subject Suites Across PFRDA, IFSCA, IRDAI & NPS Trust`;
+    banner.innerHTML = `
+      <div class="eb-hdr">
+        <div class="eb-title">🌐 Unified 4-Exam Regulatory Preparation Mode (PFRDA • IFSCA • IRDAI • NPS Trust)</div>
+        <span style="font-size:12px;font-weight:800;background:#dbeafe;color:#1e40af;padding:4px 12px;border-radius:999px;">100% Syllabus &amp; 2026 Current Affairs</span>
+      </div>
+      <p style="font-size:13.8px;color:#334155;margin-bottom:10px;">Click any of the 4 Exam tabs above (<strong>PFRDA Grade A</strong>, <strong>IFSCA Grade A</strong>, <strong>IRDAI Grade A</strong>, or <strong>NPS Trust Grade A/B</strong>) to filter the exact subjects, Phase I &amp; Phase II exam pattern, and topic-wise official syllabus for that exam.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <span style="font-size:12px;font-weight:700;background:#f1f5f9;padding:5px 11px;border-radius:6px;color:#0f172a;">✅ Common Core: Commerce, Management, Finance, Costing, Companies Act, Economics, Budget, Pension, QRE</span>
+        <span style="font-size:12px;font-weight:700;background:#e0f2fe;padding:5px 11px;border-radius:6px;color:#0369a1;">🌟 New Exclusive Suites Added: IFSCA Act &amp; GIFT City • IRDAI Insurance &amp; ESI • NPS Trust Analytics, Stats &amp; Indian Trusts Act</span>
+      </div>`;
+  } else {
+    const ed = examsData[examKey];
+    heading.textContent = `🎯 Showing ${shown} Official Syllabus Subject Suites for ${ed.name}`;
+    const subsHtml = ed.subjects.map(s => `<li style="margin-bottom:5px;">${s}</li>`).join('');
+    banner.style.borderLeftColor = ed.color;
+    banner.innerHTML = `
+      <div class="eb-hdr">
+        <div class="eb-title">${ed.name} — ${ed.tag}</div>
+        <span style="font-size:12px;font-weight:800;background:${ed.color};color:#fff;padding:4px 12px;border-radius:999px;">${shown} Active Subject Suites</span>
+      </div>
+      <div class="eb-grid">
+        <div class="eb-box"><strong>📝 Phase I (Screening / Prelims) Pattern:</strong>${ed.p1}</div>
+        <div class="eb-box"><strong>🏆 Phase II (Mains / Merit) Pattern:</strong>${ed.p2}</div>
+      </div>
+      <details open style="background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;padding:12px 16px;">
+        <summary style="font-size:13.5px;font-weight:800;color:#0f172a;cursor:pointer;">📋 Official Unit-Wise &amp; Topic-Wise Syllabus Checklist for ${ed.name} (Click to Toggle)</summary>
+        <ul style="padding-left:20px;margin-top:10px;font-size:13px;color:#1e293b;line-height:1.55;">${subsHtml}</ul>
+      </details>`;
+  }
+}
+selectExam('ALL');
+</script>
+</body>
+</html>

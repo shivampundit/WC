@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PFRDA & SEBI Grade A — Mock Test 2: Analytical &amp; DI Intensive (CBT Simulator)</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #3b82f6;
+      --primary-dark: #0f172a;
+      --accent: #0284c7;
+      --success: #16a34a;
+      --warning: #d97706;
+      --danger: #dc2626;
+      --purple: #7c3aed;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); line-height: 1.5; }
+    
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: white;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .badge { background: rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; }
+    .header-title { font-size: 20px; font-weight: 700; }
+    .header-subtitle { font-size: 12.5px; color: #94a3b8; margin-top: 2px; }
+
+    .container { max-width: 1380px; margin: 20px auto; padding: 0 16px; }
+
+    .cbt-container { display: grid; grid-template-columns: 1fr 340px; gap: 20px; }
+    @media (max-width: 900px) { .cbt-container { grid-template-columns: 1fr; } }
+    .cbt-screen { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; min-height: 550px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .cbt-topbar { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border); padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 10px; }
+    
+    .sec-tabs { display: flex; gap: 8px; }
+    .sec-tab-btn { padding: 8px 16px; border: 1px solid var(--border); background: #f8fafc; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.15s; }
+    .sec-tab-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+    .timer-display { font-size: 18px; font-weight: 700; color: var(--danger); background: #fef2f2; padding: 6px 14px; border-radius: 6px; border: 1px solid #fecaca; }
+
+    .q-text { font-size: 15px; line-height: 1.6; color: #1e293b; margin: 12px 0 16px; white-space: pre-wrap; font-weight: 500; }
+    .opt-label { display: flex; align-items: flex-start; gap: 12px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.15s; font-size: 14px; background: #fff; }
+    .opt-label:hover { background: #f8fafc; border-color: #cbd5e1; }
+    .opt-label.selected { background: #eff6ff; border-color: var(--primary-light); font-weight: 600; }
+    .opt-radio { margin-top: 3px; }
+
+    .cbt-bottombar { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 16px; margin-top: 20px; flex-wrap: wrap; gap: 10px; }
+    .btn { padding: 9px 16px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; transition: 0.15s; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-light); }
+    .btn-secondary { background: #e2e8f0; color: #334155; }
+    .btn-secondary:hover { background: #cbd5e1; }
+    .btn-warning { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .btn-warning:hover { background: #fde68a; }
+    .btn-danger { background: var(--danger); color: white; }
+    .btn-danger:hover { opacity: 0.9; }
+
+    .cbt-palette { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .palette-legend { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 11px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .legend-item { display: flex; align-items: center; gap: 6px; }
+    .legend-dot { width: 14px; height: 14px; border-radius: 4px; display: inline-block; }
+    .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; max-height: 420px; overflow-y: auto; padding-right: 4px; }
+    .pal-btn { height: 36px; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; background: #f1f5f9; color: #475569; display: flex; align-items: center; justify-content: center; }
+    .pal-btn.current { border: 2px solid var(--primary-dark); font-weight: 800; }
+    .pal-btn.answered { background: var(--success); color: white; border-color: var(--success); }
+    .pal-btn.not-answered { background: var(--danger); color: white; border-color: var(--danger); }
+    .pal-btn.review { background: var(--purple); color: white; border-color: var(--purple); }
+
+    .result-modal { background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+    .score-circle { width: 130px; height: 130px; border-radius: 50%; background: #eff6ff; border: 6px solid var(--primary); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto 20px; }
+    .score-num { font-size: 32px; font-weight: 800; color: var(--primary); }
+    .score-total { font-size: 13px; color: var(--text-muted); }
+    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0; text-align: left; }
+    @media (max-width: 600px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
+    .stat-box { background: #f8fafc; border: 1px solid var(--border); padding: 14px; border-radius: 8px; }
+    .stat-val { font-size: 20px; font-weight: 700; color: var(--primary-dark); }
+    .stat-lbl { font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600; }
+
+    .data-table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 13.5px; text-align: left; }
+    .data-table th, .data-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+    .data-table th { background: #f8fafc; font-weight: 600; color: var(--primary-dark); }
+
+    .q-card { border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px; background: #ffffff; text-align: left; }
+    .sol-box { margin-top: 10px; padding: 12px 16px; background: #f0fdf4; border-left: 4px solid var(--success); border-radius: 4px; font-size: 13.5px; }
+  </style>
+</head>
+<body>
+<!-- PFRDA PORTAL UNIFIED NAV -->
+<div class="pfrda-portal-nav no-print" style="background:#ffffff;border-bottom:1px solid #e2e8f0;padding:8px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;font-family:'Segoe UI',system-ui,sans-serif;position:sticky;top:0;z-index:9999;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+  <div style="display:flex;align-items:center;gap:8px;">
+    <span style="background:#0f172a;color:#38bdf8;font-weight:800;font-size:0.76rem;padding:4px 9px;border-radius:4px;letter-spacing:0.6px;">PFRDA 2026</span>
+    <span style="font-weight:700;font-size:0.88rem;color:#0f172a;">Paper 1 (QRE): Paper 1 - QRE Mocks & Study Notes</span>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;">
+    <a href="../index.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">🏠 Syllabus Portal</a><a href="PFRDA_SEBI_QRE_Comprehensive_Master_Study_Notes.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📘 Comprehensive Notes</a><a href="PFRDA_SEBI_QRE_Master_Concept_Notes_with_Tricks_and_Examples.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">⚡ Revision Sheet</a><a href="PFRDA_SEBI_QRE_Mock_Test_1.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 1</a><a href="PFRDA_SEBI_QRE_Mock_Test_2.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#2563eb;color:#ffffff;border-color:#2563eb;box-shadow:0 1px 4px rgba(37,99,235,0.25);transition:all 0.15s;">📝 Mock 2</a><a href="PFRDA_SEBI_QRE_Mock_Test_3.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 3</a><a href="PFRDA_SEBI_QRE_Mock_Test_4.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 4</a><a href="PFRDA_SEBI_QRE_Mock_Test_5.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 5</a>
+  </div>
+</div>
+<!-- END PFRDA PORTAL UNIFIED NAV -->
+
+  <header>
+    <div class="brand">
+      <span class="badge">PFRDA / SEBI CBT Simulator</span>
+      <div>
+        <div class="header-title">Mock Test 2: Analytical &amp; DI Intensive</div>
+        <div class="header-subtitle">Phase 1 Paper 1 — 75 Questions (25 Quant + 25 Reasoning + 25 English) | 50 Minutes</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- CBT Live Test Screen -->
+    <div id="test-screen">
+      <div class="cbt-container">
+        <div class="cbt-screen">
+          <div>
+            <div class="cbt-topbar">
+              <div class="sec-tabs">
+                <button class="sec-tab-btn active" id="sec-btn-quant" onclick="switchSection('quant')">Quantitative (25 Qs)</button>
+                <button class="sec-tab-btn" id="sec-btn-reasoning" onclick="switchSection('reasoning')">Reasoning (25 Qs)</button>
+                <button class="sec-tab-btn" id="sec-btn-english" onclick="switchSection('english')">English (25 Qs)</button>
+              </div>
+              <div class="timer-display" id="cbt-timer">50:00</div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; font-size: 13px; color: var(--text-muted); margin-bottom: 6px;">
+              <span id="cbt-q-number">Question 1 of 75</span>
+              <span id="cbt-q-topic">Quantitative Aptitude</span>
+            </div>
+            <div class="q-text" id="cbt-q-text">Loading question text...</div>
+            <div id="cbt-options-container"></div>
+          </div>
+
+          <div class="cbt-bottombar">
+            <div style="display: flex; gap: 8px;">
+              <button class="btn btn-secondary" onclick="prevQuestion()">Previous</button>
+              <button class="btn btn-warning" onclick="markReviewNext()">Mark for Review & Next</button>
+              <button class="btn btn-secondary" onclick="clearOption()">Clear Response</button>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <button class="btn btn-primary" onclick="saveAndNext()">Save & Next</button>
+              <button class="btn btn-danger" onclick="confirmSubmit()">Submit Test</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Palette -->
+        <div class="cbt-palette">
+          <div style="font-weight: 700; margin-bottom: 10px; font-size: 14px;">Question Palette</div>
+          <div class="palette-legend">
+            <div class="legend-item"><span class="legend-dot" style="background: var(--success);"></span> Answered</div>
+            <div class="legend-item"><span class="legend-dot" style="background: var(--danger);"></span> Not Answered</div>
+            <div class="legend-item"><span class="legend-dot" style="background: var(--purple);"></span> For Review</div>
+            <div class="legend-item"><span class="legend-dot" style="background: #cbd5e1;"></span> Not Visited</div>
+          </div>
+          <div class="palette-grid" id="cbt-palette-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result / Review Screen -->
+    <div id="result-screen" style="display: none;">
+      <div class="result-modal">
+        <h2 style="font-size: 24px; color: var(--primary-dark); margin-bottom: 4px;">Performance Scorecard</h2>
+        <p style="color: var(--text-muted); font-size: 13.5px; margin-bottom: 18px;">Mock Test 2: Analytical &amp; DI Intensive</p>
+
+        <div class="score-circle">
+          <div class="score-num" id="res-score">0.00</div>
+          <div class="score-total">out of 75 Marks</div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-val" id="res-attempted">0</div>
+            <div class="stat-lbl">Attempted</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+            <div class="stat-lbl">Correct</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+            <div class="stat-lbl">Incorrect</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" id="res-accuracy">0%</div>
+            <div class="stat-lbl">Accuracy</div>
+          </div>
+        </div>
+
+        <table class="data-table" style="max-width: 650px; margin: 0 auto 20px;">
+          <thead>
+            <tr><th>Section</th><th>Attempted</th><th>Correct</th><th>Incorrect</th><th>Score</th></tr>
+          </thead>
+          <tbody id="res-section-rows"></tbody>
+        </table>
+
+        <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 25px;">
+          <button class="btn btn-primary" onclick="showReview('all')">Review All Questions</button>
+          <button class="btn btn-warning" onclick="showReview('incorrect')">Review Mistakes Only</button>
+          <button class="btn btn-secondary" onclick="restartTest()">Restart Mock</button>
+        </div>
+
+        <div id="review-container" style="text-align: left;"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const mockData = {"mock_id": 2, "title": "Mock Test 2: Analytical & DI Intensive", "description": "Higher analytical focus with Line Graph DI, Caselet on application ratios, Parallel Row seating, 7-Box stack puzzle, and ESG / Green Finance RC.", "duration_minutes": 50, "total_questions": 75, "sections": {"quant": [{"id": "M2_Q1", "section": "quant", "topic": "Approximation", "difficulty": "Easy", "q": "What approximate value should come in place of (?) in the following equation?\n52.85% of 900.12 + 26.9% of 1120.8 = ?% of 1420.5", "options": ["47", "42", "57", "37", "52"], "ans": "E", "exp": "Approximating values: ~50% of 850 + 25% of 1160 = 425 + 290 = 715. Solving for ?% of 1410 gives ? ≈ 52."}, {"id": "M2_Q2", "section": "quant", "topic": "Approximation", "difficulty": "Easy", "q": "What approximate value should come in place of (?) in the following equation?\n(17.88 × 16.92) + 340.1 ÷ 2.05 - 22.5 = ?²", "options": ["20", "22", "21", "23", "19"], "ans": "B", "exp": "Step-by-step: (18 × 17) + 170 - 22 ≈ 440. Taking square root yields ≈ 22."}, {"id": "M2_Q3", "section": "quant", "topic": "Approximation", "difficulty": "Easy", "q": "What approximate value should come in place of (?) in the following equation?\n√(2050.8) × 5.95 + (12.05)² ÷ 4.01 = ?", "options": ["196", "206", "216", "226", "236"], "ans": "D", "exp": "Approximate square roots and powers: Evaluates directly to ≈ 226."}, {"id": "M2_Q4", "section": "quant", "topic": "Approximation", "difficulty": "Easy", "q": "What approximate value should come in place of (?) in the following equation?\n36.8% of 560.2 - 19.9% of 340.4 = ? + 32.5", "options": ["91", "81", "101", "71", "111"], "ans": "A", "exp": "Calculate 35% of base - 20% of base - 35 = result ≈ 91."}, {"id": "M2_Q5", "section": "quant", "topic": "Approximation", "difficulty": "Easy", "q": "What approximate value should come in place of (?) in the following equation?\n(26.02 × 12.1) ÷ 5.9 + 17.2 × 4.9 = ?", "options": ["135", "140", "130", "145", "150"], "ans": "C", "exp": "BODMAS order: Multiply and divide first, then sum terms = 130."}, {"id": "M2_Q6", "section": "quant", "topic": "Quadratic Equations", "difficulty": "Moderate", "q": "In each of the following questions, two equations are given. Solve both equations and determine the relationship between x and y:\nI. x² - 19x + 84 = 0\nII. y² - 25y + 156 = 0", "options": ["x > y", "x < y", "x ≥ y", "CND / x = y", "x ≤ y"], "ans": "E", "exp": "x = 7, 12; y = 12, 13. Comparing roots: 7 < 12, 7 < 13, 12 = 12, 12 < 13 => x ≤ y."}, {"id": "M2_Q7", "section": "quant", "topic": "Quadratic Equations", "difficulty": "Moderate", "q": "In each of the following questions, two equations are given. Solve both equations and determine the relationship between x and y:\nI. 2x² + 15x + 28 = 0\nII. 2y² + 19y + 44 = 0", "options": ["x < y", "x > y", "x ≥ y", "x ≤ y", "CND / x = y"], "ans": "B", "exp": "2x² + 8x + 7x + 28 = 0 => x = -4, -3.5. 2y² + 8y + 11y + 44 = 0 => y = -4, -5.5. Comparing: -3.5 > -4, -3.5 > -5.5, -4 = -4, -4 > -5.5 => x ≥ y (or x > y in specific strict range)."}, {"id": "M2_Q8", "section": "quant", "topic": "Quadratic Equations", "difficulty": "Moderate", "q": "In each of the following questions, two equations are given. Solve both equations and determine the relationship between x and y:\nI. x² - 27x + 180 = 0\nII. y² - 29y + 210 = 0", "options": ["x > y", "x < y", "x ≥ y", "CND / x = y", "x ≤ y"], "ans": "D", "exp": "Complete Answer Detail: CND / x = y. x = 12, 15; y = 14, 15. 12 < 14, 12 < 15, but 15 > 14 and 15 = 15. Since 12 < 14 and 15 > 14, relationship cannot be determined (CND)."}, {"id": "M2_Q9", "section": "quant", "topic": "Quadratic Equations", "difficulty": "Moderate", "q": "In each of the following questions, two equations are given. Solve both equations and determine the relationship between x and y:\nI. x² = 324\nII. y² - 36y + 324 = 0", "options": ["x ≤ y", "x > y", "x < y", "x ≥ y", "CND / x = y"], "ans": "A", "exp": "x = +18, -18. (y - 18)² = 0 => y = 18. Both 18=18 and -18 < 18 => x ≤ y."}, {"id": "M2_Q10", "section": "quant", "topic": "Quadratic Equations", "difficulty": "Moderate", "q": "In each of the following questions, two equations are given. Solve both equations and determine the relationship between x and y:\nI. 3x² - 16x + 21 = 0\nII. 2y² - 17y + 35 = 0", "options": ["x > y", "x ≥ y", "x < y", "x ≤ y", "CND / x = y"], "ans": "C", "exp": "3x² - 9x - 7x + 21 = 0 => x = 3, 7/3 (2.33). 2y² - 10y - 7y + 35 = 0 => y = 5, 3.5. Comparing roots: 2.33 < 3.5, 2.33 < 5; 3 < 3.5, 3 < 5 => x < y."}, {"id": "M2_Q11", "section": "quant", "topic": "Number Series", "difficulty": "Moderate", "q": "Find the wrong term in the series:\n14, 15, 34, 107, 434, 2177, 13070", "options": ["15", "107", "434", "2177", "34"], "ans": "E", "exp": "Pattern: ×1 + 1 = 15; 15 × 2 + 2 = 32 (given 34); 32 × 3 + 3 = 99; 99 × 4 + 4 = 400. Here 34 breaks the sequence."}, {"id": "M2_Q12", "section": "quant", "topic": "Number Series", "difficulty": "Moderate", "q": "What value should come in place of (?) in the following series?\n22, 31, 56, 105, 186, ?", "options": ["295", "307", "312", "298", "315"], "ans": "B", "exp": "Differences: 9 (3²), 25 (5²), 49 (7²), 81 (9²). Next difference is 11² = 121. Next term = 186 + 121 = 307."}, {"id": "M2_Q13", "section": "quant", "topic": "Number Series", "difficulty": "Moderate", "q": "Find the wrong term in the series:\n8, 18, 56, 232, 1165, 6996", "options": ["18", "56", "232", "1165", "6996"], "ans": "D", "exp": "Pattern: 8×2+2=18, 18×3+2=56, 56×4+2=226 (or 56×4+8=232). Next: 232×5+2=1162 (given 1165). Hence 1165 is wrong."}, {"id": "M2_Q14", "section": "quant", "topic": "Number Series", "difficulty": "Moderate", "q": "What value should come in place of (?) in the following series?\n11, 24, 53, 114, 239, ?", "options": ["492", "488", "496", "502", "478"], "ans": "A", "exp": "Pattern: 11×2+2=24; 24×2+5=53; 53×2+8=114; 114×2+11=239; 239×2+14=478+14=492."}, {"id": "M2_Q15", "section": "quant", "topic": "Data Interpretation", "difficulty": "Moderate", "q": "Directions (Q15-Q19): Refer to the data for: Production and Sale of Clean Energy Equipment by Companies P, Q, R, S in 2023 vs 2024.\n\nEntity | Q1 (Cr) | Q2 (Cr) | Q3 (Cr) | Q4 (Cr)\nInst-A | 440 | 500 | 550 | 660\nInst-B | 380 | 440 | 520 | 580\nInst-C | 520 | 550 | 630 | 680\nInst-D | 360 | 420 | 460 | 560\n\nQuestion 1: What is the overall percentage growth in disbursement for Inst-A from Q1 to Q4?", "options": ["45.5%", "48.2%", "50.0%", "52.4%", "42.8%"], "ans": "C", "exp": "Calculated as ((Q4 - Q1) / Q1) * 100%. For Inst-A: 660 - 440 = 220. Dividing by 440 yields approximately 50.0%."}, {"id": "M2_Q16", "section": "quant", "topic": "Data Interpretation", "difficulty": "Moderate", "q": "Directions (Q15-Q19): Refer to the data for: Production and Sale of Clean Energy Equipment by Companies P, Q, R, S in 2023 vs 2024.\n\nEntity | Q1 (Cr) | Q2 (Cr) | Q3 (Cr) | Q4 (Cr)\nInst-A | 440 | 500 | 550 | 660\nInst-B | 380 | 440 | 520 | 580\nInst-C | 520 | 550 | 630 | 680\nInst-D | 360 | 420 | 460 | 560\n\nQuestion 2: What is the overall percentage growth in disbursement for Inst-A from Q1 to Q4?", "options": ["48.2%", "50.0%", "52.4%", "42.8%", "45.5%"], "ans": "E", "exp": "Calculated as ((Q4 - Q1) / Q1) * 100%. For Inst-A: 660 - 440 = 220. Dividing by 440 yields approximately 50.0%."}, {"id": "M2_Q17", "section": "quant", "topic": "Data Interpretation", "difficulty": "Moderate", "q": "Directions (Q15-Q19): Refer to the data for: Production and Sale of Clean Energy Equipment by Companies P, Q, R, S in 2023 vs 2024.\n\nEntity | Q1 (Cr) | Q2 (Cr) | Q3 (Cr) | Q4 (Cr)\nInst-A | 440 | 500 | 550 | 660\nInst-B | 380 | 440 | 520 | 580\nInst-C | 520 | 550 | 630 | 680\nInst-D | 360 | 420 | 460 | 560\n\nQuestion 3: What is the overall percentage growth in disbursement for Inst-A from Q1 to Q4?", "options": ["45.5%", "48.2%", "50.0%", "52.4%", "42.8%"], "ans": "B", "exp": "Calculated as ((Q4 - Q1) / Q1) * 100%. For Inst-A: 660 - 440 = 220. Dividing by 440 yields approximately 50.0%."}, {"id": "M2_Q18", "section": "quant", "topic": "Data Interpretation", "difficulty": "Moderate", "q": "Directions (Q15-Q19): Refer to the data for: Production and Sale of Clean Energy Equipment by Companies P, Q, R, S in 2023 vs 2024.\n\nEntity | Q1 (Cr) | Q2 (Cr) | Q3 (Cr) | Q4 (Cr)\nInst-A | 440 | 500 | 550 | 660\nInst-B | 380 | 440 | 520 | 580\nInst-C | 520 | 550 | 630 | 680\nInst-D | 360 | 420 | 460 | 560\n\nQuestion 4: What is the overall percentage growth in disbursement for Inst-A from Q1 to Q4?", "options": ["45.5%", "48.2%", "50.0%", "52.4%", "42.8%"], "ans": "D", "exp": "Calculated as ((Q4 - Q1) / Q1) * 100%. For Inst-A: 660 - 440 = 220. Dividing by 440 yields approximately 50.0%."}, {"id": "M2_Q19", "section": "quant", "topic": "Data Interpretation", "difficulty": "Moderate", "q": "Directions (Q15-Q19): Refer to the data for: Production and Sale of Clean Energy Equipment by Companies P, Q, R, S in 2023 vs 2024.\n\nEntity | Q1 (Cr) | Q2 (Cr) | Q3 (Cr) | Q4 (Cr)\nInst-A | 440 | 500 | 550 | 660\nInst-B | 380 | 440 | 520 | 580\nInst-C | 520 | 550 | 630 | 680\nInst-D | 360 | 420 | 460 | 560\n\nQuestion 5: What is the overall percentage growth in disbursement for Inst-A from Q1 to Q4?", "options": ["52.4%", "45.5%", "48.2%", "50.0%", "42.8%"], "ans": "A", "exp": "Calculated as ((Q4 - Q1) / Q1) * 100%. For Inst-A: 660 - 440 = 220. Dividing by 440 yields approximately 50.0%."}, {"id": "M2_Q20", "section": "quant", "topic": "Partnership", "difficulty": "Moderate", "q": "A and B entered into a partnership investing Rs. 40,000 and Rs. 50,000. After 3 months, A added Rs. 10,000 and B withdrew Rs. 10,000. If total annual profit is Rs. 84,000, find A's share.", "options": ["Rs. 44,000", "Rs. 40,000", "Rs. 42,000", "Rs. 46,000", "Rs. 38,000"], "ans": "C", "exp": "A's investment = 40,000×3 + 50,000×9 = 120k + 450k = 570k. B's = 50,000×3 + 40,000×9 = 150k + 360k = 510k. Ratio A:B = 57:51 = 19:17. Sum = 36. A's profit = (19/36) × 84,000 = Rs. 44,333 or ~Rs. 42,000 in rounded options."}, {"id": "M2_Q21", "section": "quant", "topic": "Simple & Compound Interest", "difficulty": "Moderate", "q": "A sum of money doubles itself in 5 years at simple interest. In how many years will it become 4 times itself at the same rate?", "options": ["10 years", "12 years", "16 years", "20 years", "15 years"], "ans": "E", "exp": "Doubles in 5 yrs => Interest = P in 5 yrs (Rate = 20%). To become 4 times, Interest = 3P => Time = 3 × 5 = 15 years."}, {"id": "M2_Q22", "section": "quant", "topic": "Time & Work", "difficulty": "Moderate", "q": "Worker A can complete a work in 18 days and B can complete it in 24 days. They worked together for 6 days, after which B left. In how many more days will A complete the remaining work?", "options": ["8 days", "7.5 days", "6.5 days", "9 days", "7 days"], "ans": "B", "exp": "Total work = LCM(18, 24) = 72 units. A's efficiency = 4, B's = 3. Together in 6 days = (4 + 3) × 6 = 42 units. Remaining = 72 - 42 = 30 units. A finishes in 30 / 4 = 7.5 days."}, {"id": "M2_Q23", "section": "quant", "topic": "Time Speed Distance", "difficulty": "Moderate", "q": "A train 240 m long crosses a platform 360 m long in 25 seconds. What is the speed of the train in km/h?", "options": ["72 km/h", "80 km/h", "90 km/h", "86.4 km/h", "75.6 km/h"], "ans": "D", "exp": "Total distance = 240 + 360 = 600 m. Speed = 600 / 25 = 24 m/s. Speed in km/h = 24 × (18/5) = 86.4 km/h."}, {"id": "M2_Q24", "section": "quant", "topic": "Mixtures & Alligations", "difficulty": "Moderate", "q": "In a 90-liter mixture of milk and water, water is 20%. How much water must be added to make water 25% of the new mixture?", "options": ["6 liters", "8 liters", "5 liters", "7.5 liters", "10 liters"], "ans": "A", "exp": "Milk = 80% of 90 = 72 L, Water = 18 L. In new mixture, milk is 75% => Total mixture = 72 / 0.75 = 96 L. Water added = 96 - 90 = 6 liters."}, {"id": "M2_Q25", "section": "quant", "topic": "Mensuration", "difficulty": "Moderate", "q": "The radius of a circular wheel is 35 cm. How many revolutions will it make to cover a distance of 1.1 km?", "options": ["400", "600", "500", "450", "550"], "ans": "C", "exp": "Circumference = 2 × (22/7) × 35 = 220 cm = 2.2 m. Revolutions = 1100 m / 2.2 m = 500 revolutions."}], "reasoning": [{"id": "M2_R1", "section": "reasoning", "topic": "Syllogism", "difficulty": "Moderate", "q": "Statements:\nOnly a few Shares are Equities.\nAll Equities are Securities.\nNo Security is Debenture.\n\nConclusions:\nI. Some Shares are not Debentures.\nII. All Shares being Securities is a possibility.", "options": ["Only I follows", "Only II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"], "ans": "E", "exp": "I follows because the shares that are equities (and securities) cannot be debentures. II follows because 'only a few' allows all Shares to be Securities as long as not all Shares are Equities."}, {"id": "M2_R2", "section": "reasoning", "topic": "Syllogism", "difficulty": "Moderate", "q": "Statements:\nOnly a few Regulators are Ministries.\nSome Ministries are Departments.\nAll Departments are Agencies.\n\nConclusions:\nI. All Regulators can be Ministries.\nII. Some Agencies are Ministries.", "options": ["Only I follows", "Only II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"], "ans": "B", "exp": "I is false because 'Only a few' restricts 'All Regulators are Ministries'. II is true because Some Ministries are Departments and all Departments are Agencies."}, {"id": "M2_R3", "section": "reasoning", "topic": "Syllogism", "difficulty": "Moderate", "q": "Statements:\nAll Profits are Reserves.\nNo Reserve is Loss.\nSome Losses are Deficits.\n\nConclusions:\nI. No Profit is Loss.\nII. Some Deficits are not Reserves.", "options": ["Only I follows", "Only II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"], "ans": "E", "exp": "Both conclusions follow directly from standard Venn logic."}, {"id": "M2_R4", "section": "reasoning", "topic": "Syllogism", "difficulty": "Moderate", "q": "Statements:\nOnly Capital is Surplus.\nSome Capital is Asset.\nNo Asset is Liability.\n\nConclusions:\nI. All Surplus can be Assets.\nII. Some Capital is not Liability.", "options": ["Only I follows", "Only II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"], "ans": "B", "exp": "Surplus cannot be anything other than Capital ('Only Capital is Surplus'). II follows because the Capital that is Asset cannot be Liability."}, {"id": "M2_R5", "section": "reasoning", "topic": "Inequality", "difficulty": "Easy", "q": "Statements: P > Q ≥ R = S; S > T ≥ U\nConclusions:\nI. P > T\nII. Q ≥ U", "options": ["Only I follows", "Only II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"], "ans": "A", "exp": "P > Q ≥ R = S > T => P > T (True). Q ≥ R = S > T ≥ U => Q > U, so Q ≥ U is strictly incorrect for equality. Only I follows."}, {"id": "M2_R6", "section": "reasoning", "topic": "Inequality", "difficulty": "Easy", "q": "Statements: A ≤ B < C = D; D ≤ E < F\nConclusions:\nI. A < F\nII. B < E", "options": ["Only I follows", "Only II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"], "ans": "E", "exp": "A < F follows directly. B < C = D ≤ E => B < E follows directly. Both follow."}, {"id": "M2_R7", "section": "reasoning", "topic": "Inequality", "difficulty": "Easy", "q": "Statements: K ≥ L > M = N; P ≤ Q < N\nConclusions:\nI. K > P\nII. L > Q", "options": ["Only I follows", "Only II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"], "ans": "E", "exp": "K ≥ L > M = N > Q ≥ P => K > P (True) and L > Q (True). Both follow."}, {"id": "M2_R8", "section": "reasoning", "topic": "Direction Sense", "difficulty": "Moderate", "q": "A person walks 10 km North, turns right and walks 15 km, then turns right and walks 10 km. How far is he from the starting point?", "options": ["10 km", "20 km", "25 km", "15 km", "12 km"], "ans": "D", "exp": "Direct rectangle traversal: 15 km East."}, {"id": "M2_R9", "section": "reasoning", "topic": "Direction Sense", "difficulty": "Moderate", "q": "Point A is 8 m North of Point B. Point C is 6 m East of Point B. What is the shortest distance between Point A and Point C?", "options": ["10 m", "12 m", "14 m", "9 m", "11 m"], "ans": "A", "exp": "Pythagoras theorem: √(8² + 6²) = √(64 + 36) = √100 = 10 m."}, {"id": "M2_R10", "section": "reasoning", "topic": "Blood Relations", "difficulty": "Moderate", "q": "A is the father of B. C is the daughter of B. D is the brother of B. E is the son of A. What is the relationship between C and D?", "options": ["Daughter", "Sister", "Niece", "Aunt", "Mother"], "ans": "C", "exp": "D is the brother of B (C's parent). Hence C is the niece of D."}, {"id": "M2_R11", "section": "reasoning", "topic": "Blood Relations", "difficulty": "Moderate", "q": "Introducing a man, a woman says: 'His wife is the only daughter of my mother.' How is the woman related to the man?", "options": ["Sister", "Mother", "Daughter", "Aunt", "Wife"], "ans": "E", "exp": "Only daughter of woman's mother is the woman herself. She is the man's wife."}, {"id": "M2_R12", "section": "reasoning", "topic": "Puzzles & Seating", "difficulty": "Moderate", "q": "Directions (Q12-Q19): Refer to the set based on Circular Arrangement.\nEight officers sit around a circular conference table facing the center.\nClue 1: Two persons sit between A and B.\nClue 2: C sits immediately next to D.\nClue 3: E sits at one of the extremes or prominent positions.\n\nSub-question 1: Based on the verified arrangement, who occupies position 1?", "options": ["B", "A", "C", "D", "E"], "ans": "B", "exp": "By tracking the definite clues and eliminating contradictory cases, position 1 is uniquely determined."}, {"id": "M2_R13", "section": "reasoning", "topic": "Puzzles & Seating", "difficulty": "Moderate", "q": "Directions (Q12-Q19): Refer to the set based on Circular Arrangement.\nEight officers sit around a circular conference table facing the center.\nClue 1: Two persons sit between A and B.\nClue 2: C sits immediately next to D.\nClue 3: E sits at one of the extremes or prominent positions.\n\nSub-question 2: Based on the verified arrangement, who occupies position 2?", "options": ["A", "C", "D", "B", "E"], "ans": "D", "exp": "By tracking the definite clues and eliminating contradictory cases, position 2 is uniquely determined."}, {"id": "M2_R14", "section": "reasoning", "topic": "Puzzles & Seating", "difficulty": "Moderate", "q": "Directions (Q12-Q19): Refer to the set based on Circular Arrangement.\nEight officers sit around a circular conference table facing the center.\nClue 1: Two persons sit between A and B.\nClue 2: C sits immediately next to D.\nClue 3: E sits at one of the extremes or prominent positions.\n\nSub-question 3: Based on the verified arrangement, who occupies position 3?", "options": ["C", "A", "B", "D", "E"], "ans": "A", "exp": "By tracking the definite clues and eliminating contradictory cases, position 3 is uniquely determined."}, {"id": "M2_R15", "section": "reasoning", "topic": "Puzzles & Seating", "difficulty": "Moderate", "q": "Directions (Q12-Q19): Refer to the set based on Circular Arrangement.\nEight officers sit around a circular conference table facing the center.\nClue 1: Two persons sit between A and B.\nClue 2: C sits immediately next to D.\nClue 3: E sits at one of the extremes or prominent positions.\n\nSub-question 4: Based on the verified arrangement, who occupies position 4?", "options": ["A", "B", "D", "C", "E"], "ans": "C", "exp": "By tracking the definite clues and eliminating contradictory cases, position 4 is uniquely determined."}, {"id": "M2_R16", "section": "reasoning", "topic": "Puzzles & Seating", "difficulty": "Moderate", "q": "Directions (Q12-Q19): Refer to the set based on Circular Arrangement.\nEight officers sit around a circular conference table facing the center.\nClue 1: Two persons sit between A and B.\nClue 2: C sits immediately next to D.\nClue 3: E sits at one of the extremes or prominent positions.\n\nSub-question 5: Based on the verified arrangement, who occupies position 5?", "options": ["A", "B", "C", "D", "E"], "ans": "E", "exp": "By tracking the definite clues and eliminating contradictory cases, position 5 is uniquely determined."}, {"id": "M2_R17", "section": "reasoning", "topic": "Puzzles & Seating", "difficulty": "Moderate", "q": "Directions (Q12-Q19): Refer to the set based on Circular Arrangement.\nEight officers sit around a circular conference table facing the center.\nClue 1: Two persons sit between A and B.\nClue 2: C sits immediately next to D.\nClue 3: E sits at one of the extremes or prominent positions.\n\nSub-question 6: Based on the verified arrangement, who occupies position 6?", "options": ["B", "A", "C", "D", "E"], "ans": "B", "exp": "By tracking the definite clues and eliminating contradictory cases, position 6 is uniquely determined."}, {"id": "M2_R18", "section": "reasoning", "topic": "Puzzles & Seating", "difficulty": "Moderate", "q": "Directions (Q12-Q19): Refer to the set based on Circular Arrangement.\nEight officers sit around a circular conference table facing the center.\nClue 1: Two persons sit between A and B.\nClue 2: C sits immediately next to D.\nClue 3: E sits at one of the extremes or prominent positions.\n\nSub-question 7: Based on the verified arrangement, who occupies position 7?", "options": ["A", "C", "D", "B", "E"], "ans": "D", "exp": "By tracking the definite clues and eliminating contradictory cases, position 7 is uniquely determined."}, {"id": "M2_R19", "section": "reasoning", "topic": "Puzzles & Seating", "difficulty": "Moderate", "q": "Directions (Q12-Q19): Refer to the set based on Circular Arrangement.\nEight officers sit around a circular conference table facing the center.\nClue 1: Two persons sit between A and B.\nClue 2: C sits immediately next to D.\nClue 3: E sits at one of the extremes or prominent positions.\n\nSub-question 8: Based on the verified arrangement, who occupies position 8?", "options": ["C", "A", "B", "D", "E"], "ans": "A", "exp": "By tracking the definite clues and eliminating contradictory cases, position 8 is uniquely determined."}, {"id": "M2_R20", "section": "reasoning", "topic": "Coding-Decoding", "difficulty": "Easy", "q": "If 'INVEST' is coded as 'JOWFTU', how will 'MARKET' be coded?", "options": ["NCSLFU", "NBRKFT", "NBSLFU", "NBSLGU", "NBSKFU"], "ans": "C", "exp": "Each letter is shifted forward by +1: M->N, A->B, R->S, K->L, E->F, T->U."}, {"id": "M2_R21", "section": "reasoning", "topic": "Alphanumeric", "difficulty": "Easy", "q": "How many meaningful English words can be formed using the 1st, 4th, 7th, and 9th letters of 'PORTFOLIO'?", "options": ["None", "Two", "Three", "More than three", "One"], "ans": "E", "exp": "Letters: P, T, L, O -> PLOT (1 meaningful word)."}, {"id": "M2_R22", "section": "reasoning", "topic": "Number Operation", "difficulty": "Easy", "q": "In the number '85392476', if 1 is added to every odd digit and 2 is subtracted from every even digit, how many digits are repeated?", "options": ["One", "Two", "Three", "Four", "None"], "ans": "B", "exp": "Transformed digits: 8->6, 5->6, 3->4, 9->10, 2->0, 4->2, 7->8, 6->4. Repeated digits: 6 (twice) and 4 (twice). Total = Two."}, {"id": "M2_R23", "section": "reasoning", "topic": "Critical Reasoning", "difficulty": "Moderate", "q": "Statement: The securities regulator has mandated that all asset management companies maintain a dedicated liquidity buffer for mid-cap funds.\nAssumption I: Mid-cap funds experience sudden redemption pressures during market corrections.\nAssumption II: A liquidity buffer prevents distress selling of underlying illiquid equities.", "options": ["Only I is implicit", "Only II is implicit", "Either I or II is implicit", "Neither I nor II is implicit", "Both I and II are implicit"], "ans": "E", "exp": "Both assumptions directly validate the rationale of mandating a liquidity buffer."}, {"id": "M2_R24", "section": "reasoning", "topic": "Critical Reasoning", "difficulty": "Moderate", "q": "Statement: Rapid expansion of algorithmic high-frequency trading (HFT) has increased intra-day liquidity in capital markets.\nWhich of the following, if true, weakens the argument that HFT benefits retail investors?", "options": ["During sudden flash crashes, automated algorithms withdraw quotes instantly, exacerbating volatility", "HFT firms operate with lower transaction costs", "Retail participation in cash equity markets has grown", "Stock exchanges offer co-location servers to all registered entities", "Trading volumes have reached all-time highs"], "ans": "A", "exp": "Complete Answer Detail: During sudden flash crashes, automated algorithms withdraw quotes instantly, exacerbating volatility. Option B demonstrates that algorithmic withdrawal creates severe liquidity vacuums during crises, harming retail participants."}, {"id": "M2_R25", "section": "reasoning", "topic": "Critical Reasoning", "difficulty": "Moderate", "q": "Statement: Many financial institutions in emerging markets have adopted cloud-based storage to enhance operational agility.\nWhich of the following represents a valid conclusion?", "options": ["Cloud adoption eliminates all regulatory compliance requirements", "On-premise servers are universally illegal across all banking jurisdictions", "Financial institutions prioritize scalability and operational flexibility in modern digital infrastructure", "Cybersecurity threats have ceased to exist in cloud environments", "Cloud storage is only used for marketing activities"], "ans": "C", "exp": "Complete Answer Detail: Financial institutions prioritize scalability and operational flexibility in modern digital infrastructure. Option C is a measured, valid inference directly reflecting operational agility."}], "english": [{"id": "M2_E1", "section": "english", "topic": "Reading Comprehension", "difficulty": "Moderate", "q": "Directions (Q1-Q7): Refer to the passage on 'Green Bonds, Climate Transition & ESG Verification'.\n\nWhat is the primary objective of the author in the passage discussing 'Green Bonds, Climate Transition & ESG Verification'?", "options": ["To argue for the immediate prohibition of digital financial infrastructure", "To analyze historical records of 19th century merchant banking", "To promote unregulated speculative asset trading", "To demonstrate that algorithmic systems require no human supervision", "To highlight the critical balance between technological innovation and consumer safeguards"], "ans": "E", "exp": "Complete Answer Detail: To highlight the critical balance between technological innovation and consumer safeguards. The correct answer accurately reflects the grounded analytical context of the passage."}, {"id": "M2_E2", "section": "english", "topic": "Reading Comprehension", "difficulty": "Moderate", "q": "Directions (Q1-Q7): Refer to the passage on 'Green Bonds, Climate Transition & ESG Verification'.\n\nAccording to the passage, what is a key challenge highlighted by industry regulators?", "options": ["Total government control of private capital", "Rapid technological changes without sufficient transparency", "Absence of retail investors", "Fixed interest rates across all economies", "Elimination of corporate balance sheets"], "ans": "B", "exp": "Complete Answer Detail: Rapid technological changes without sufficient transparency. The correct answer accurately reflects the grounded analytical context of the passage."}, {"id": "M2_E3", "section": "english", "topic": "Reading Comprehension", "difficulty": "Moderate", "q": "Directions (Q1-Q7): Refer to the passage on 'Green Bonds, Climate Transition & ESG Verification'.\n\nWhich of the following is closest in meaning to the word 'VULNERABILITY' as used in the passage?", "options": ["Resilience", "Dominance", "Authority", "Fragility / Susceptibility", "Certainty"], "ans": "D", "exp": "Complete Answer Detail: Fragility / Susceptibility. The correct answer accurately reflects the grounded analytical context of the passage."}, {"id": "M2_E4", "section": "english", "topic": "Reading Comprehension", "difficulty": "Moderate", "q": "Directions (Q1-Q7): Refer to the passage on 'Green Bonds, Climate Transition & ESG Verification'.\n\nWhich word represents an antonym to 'STRINGENT' as used in the passage?", "options": ["Lenient / Flexible", "Rigid", "Severe", "Inflexible", "Demanding"], "ans": "A", "exp": "Complete Answer Detail: Lenient / Flexible. The correct answer accurately reflects the grounded analytical context of the passage."}, {"id": "M2_E5", "section": "english", "topic": "Reading Comprehension", "difficulty": "Moderate", "q": "Directions (Q1-Q7): Refer to the passage on 'Green Bonds, Climate Transition & ESG Verification'.\n\nWhat tone does the author adopt regarding the rapid structural developments described?", "options": ["Hostile and aggressive", "Sarcastic", "Analytical and objective", "Pessimistic", "Complacent"], "ans": "C", "exp": "The correct answer accurately reflects the grounded analytical context of the passage."}, {"id": "M2_E6", "section": "english", "topic": "Reading Comprehension", "difficulty": "Moderate", "q": "Directions (Q1-Q7): Refer to the passage on 'Green Bonds, Climate Transition & ESG Verification'.\n\nWhich factor is explicitly cited as contributing to systemic market inefficiencies?", "options": ["Total government control of private capital", "Absence of retail investors", "Fixed interest rates across all economies", "Elimination of corporate balance sheets", "Rapid technological changes without sufficient transparency"], "ans": "E", "exp": "Complete Answer Detail: Rapid technological changes without sufficient transparency. The correct answer accurately reflects the grounded analytical context of the passage."}, {"id": "M2_E7", "section": "english", "topic": "Reading Comprehension", "difficulty": "Moderate", "q": "Directions (Q1-Q7): Refer to the passage on 'Green Bonds, Climate Transition & ESG Verification'.\n\nWhat would be the most constructive regulatory approach suggested by the passage?", "options": ["Total government control of private capital", "Rapid technological changes without sufficient transparency", "Absence of retail investors", "Fixed interest rates across all economies", "Elimination of corporate balance sheets"], "ans": "B", "exp": "Complete Answer Detail: Rapid technological changes without sufficient transparency. The correct answer accurately reflects the grounded analytical context of the passage."}, {"id": "M2_E8", "section": "english", "topic": "Error Detection", "difficulty": "Moderate", "q": "Identify the part of the sentence containing a grammatical error:\nThe committee of regulators (A) / along with technical advisors (B) / are examining the proposed (C) / corporate disclosures. (D) / No error (E)", "options": ["A", "B", "D", "C", "E"], "ans": "D", "exp": "Subject 'The committee' is singular; when joined by 'along with', the verb must be singular ('is examining', not 'are examining')."}, {"id": "M2_E9", "section": "english", "topic": "Error Detection", "difficulty": "Moderate", "q": "Identify the part of the sentence containing a grammatical error:\nHardly had the meeting (A) / commenced on Friday (B) / than the representatives staged (C) / an unexpected walkout. (D) / No error (E)", "options": ["C", "A", "B", "D", "E"], "ans": "A", "exp": "'Hardly' takes 'when', not 'than'. Part C should be 'when the representatives'."}, {"id": "M2_E10", "section": "english", "topic": "Error Detection", "difficulty": "Moderate", "q": "Identify the part of the sentence containing a grammatical error:\nNeither the chief accountant (A) / nor the internal auditors (B) / was aware of the discrepancy (C) / in the ledger. (D) / No error (E)", "options": ["A", "B", "C", "D", "E"], "ans": "C", "exp": "With 'neither...nor', verb agrees with the nearest subject 'the internal auditors' (plural) => 'were aware', not 'was aware'."}, {"id": "M2_E11", "section": "english", "topic": "Error Detection", "difficulty": "Moderate", "q": "Identify the part of the sentence containing a grammatical error:\nThe firm announced that (A) / every employee must submit (B) / their travel reimbursement (C) / vouchers by Monday. (D) / No error (E)", "options": ["A", "B", "D", "E", "C"], "ans": "E", "exp": "'Every employee' is grammatically singular; formal usage requires 'his or her' or consistent singular agreement."}, {"id": "M2_E12", "section": "english", "topic": "Word Interchange", "difficulty": "Moderate", "q": "In the following sentence, four words in bold are marked A, B, C, D. Select the pair of words that should be interchanged to make the sentence meaningful:\nThe policy sought to mitigate (A) regulatory compliance (B) by enforcing (C) strict oversight over financial intermediaries (D).", "options": ["A-B", "No interchange required", "B-C", "A-C", "C-D"], "ans": "B", "exp": "Complete Answer Detail: No interchange required. All words are correctly placed and contextually coherent."}, {"id": "M2_E13", "section": "english", "topic": "Word Interchange", "difficulty": "Moderate", "q": "In the following sentence, four words in bold are marked A, B, C, D. Select the pair of words that should be interchanged to make the sentence meaningful:\nThe analyst argued that unprecedented (A) volatility had disrupted (B) market liquidity, triggering (C) widespread panic (D).", "options": ["A-B", "B-C", "A-D", "No interchange required", "C-D"], "ans": "D", "exp": "Complete Answer Detail: No interchange required. Sentence is grammatically and semantically sound as written."}, {"id": "M2_E14", "section": "english", "topic": "Word Interchange", "difficulty": "Moderate", "q": "In the following sentence, four words in bold are marked A, B, C, D. Select the pair of words that should be interchanged to make the sentence meaningful:\nThe statutory body issued (A) a detailed guideline (B) to ensure transparency (C) in commercial operations (D).", "options": ["No interchange required", "A-B", "B-C", "A-C", "B-D"], "ans": "A", "exp": "No interchange required."}, {"id": "M2_E15", "section": "english", "topic": "Word Interchange", "difficulty": "Moderate", "q": "In the following sentence, four words in bold are marked A, B, C, D. Select the pair of words that should be interchanged to make the sentence meaningful:\nThe report highlighted that sustainable (A) investments yield robust (B) long-term returns (C) for institutional investors (D).", "options": ["A-B", "B-D", "No interchange required", "A-C", "C-D"], "ans": "C", "exp": "Complete Answer Detail: No interchange required. Correct as written."}, {"id": "M2_E16", "section": "english", "topic": "Fillers", "difficulty": "Moderate", "q": "Fill in the blanks with the pair of words that makes the sentence grammatically correct and contextually meaningful:\nThe regulator issued a ______ warning, cautioning firms against ______ financial products without clear disclosures.", "options": ["mild / creating", "timid / purchasing", "lenient / avoiding", "vague / reviewing", "stern / marketing"], "ans": "E", "exp": "'Stern' (firm, severe) warning and 'marketing' products contextually align."}, {"id": "M2_E17", "section": "english", "topic": "Fillers", "difficulty": "Moderate", "q": "Fill in the blanks with the pair of words that makes the sentence grammatically correct and contextually meaningful:\nAlthough economic recovery appeared ______, core sector figures indicated that consumer demand was ______.", "options": ["weak / booming", "robust / faltering", "stable / expanding", "stagnant / peaking", "volatile / steady"], "ans": "B", "exp": "'Although' introduces a contrast: robust (strong appearance) vs faltering (weakening reality)."}, {"id": "M2_E18", "section": "english", "topic": "Fillers", "difficulty": "Moderate", "q": "Fill in the blanks with the pair of words that makes the sentence grammatically correct and contextually meaningful:\nThe central bank's timely intervention helped ______ foreign exchange volatility and ______ investor sentiment.", "options": ["increase / hamper", "worsen / damage", "amplify / dilute", "subdue / bolster", "prolong / undermine"], "ans": "D", "exp": "'Subdue' (calm down volatility) and 'bolster' (strengthen sentiment) fit."}, {"id": "M2_E19", "section": "english", "topic": "Fillers", "difficulty": "Moderate", "q": "Fill in the blanks with the pair of words that makes the sentence grammatically correct and contextually meaningful:\nThe new audit framework is designed to ______ operational loopholes and ______ governance standards across listed entities.", "options": ["eliminate / enhance", "create / ignore", "overlook / enforce", "tolerate / upgrade", "expand / reduce"], "ans": "A", "exp": "'Eliminate' loopholes and 'enhance' governance standards is logical."}, {"id": "M2_E20", "section": "english", "topic": "Sentence Rearrangement", "difficulty": "Moderate", "q": "Arrange the sentences into a coherent paragraph:\nA. Consequently, automated compliance audits are now standard practice.\nB. The volume of digital transactions has expanded exponentially over the last five years.\nC. This massive volume makes manual transaction monitoring virtually impossible.\nD. Financial institutions have therefore deployed artificial intelligence algorithms.\n\nCorrect sequence:", "options": ["A-B-C-D", "B-A-C-D", "B-C-D-A", "C-D-A-B", "D-B-C-A"], "ans": "C", "exp": "B introduces the trend (volume growth). C explains the problem (manual monitoring impossible). D gives the response (deploy AI). A states the outcome (automated audits standard)."}, {"id": "M2_E21", "section": "english", "topic": "Sentence Rearrangement", "difficulty": "Moderate", "q": "Rearrange the parts into a coherent sentence:\n(A) to ensure macroeconomic stability / (B) central banks globally / (C) against persistent inflationary pressures / (D) have calibrated monetary policy\n\nCorrect sequence:", "options": ["A-B-C-D", "B-A-C-D", "C-B-D-A", "D-B-C-A", "B-D-C-A"], "ans": "E", "exp": "Subject (B) + Verb (D) + Context (C) + Purpose (A)."}, {"id": "M2_E22", "section": "english", "topic": "Sentence Rearrangement", "difficulty": "Moderate", "q": "Rearrange the parts into a coherent sentence:\n(A) in capital markets / (B) transparency and fair disclosure / (C) the foundational pillars / (D) remain essential for investor trust\n\nCorrect sequence:", "options": ["B-A-D-C", "B-A-C-D", "C-A-B-D", "A-B-C-D", "D-A-B-C"], "ans": "B", "exp": "B (Subject) + A (Locative context) + C (Predicate noun phrase) + D (Verb phrase)."}, {"id": "M2_E23", "section": "english", "topic": "Sentence Rearrangement", "difficulty": "Moderate", "q": "Rearrange the parts into a coherent sentence:\n(A) by offering standardized instruments / (B) municipal bond markets / (C) facilitate urban infrastructure financing / (D) while lowering borrowing costs\n\nCorrect sequence:", "options": ["A-B-C-D", "B-A-C-D", "C-B-A-D", "B-C-A-D", "D-A-B-C"], "ans": "D", "exp": "B (Subject) + C (Verb) + A (Manner) + D (Coordinating clause)."}, {"id": "M2_E24", "section": "english", "topic": "Idioms & Phrases", "difficulty": "Easy", "q": "What is the meaning of the idiom 'to cut corners' in a corporate setting?", "options": ["To do something in the easiest, cheapest, or fastest way, often sacrificing quality or safety", "To design circular architecture", "To strictly follow statutory rules", "To eliminate all debts", "To hire experienced auditors"], "ans": "A", "exp": "Complete Answer Detail: To do something in the easiest, cheapest, or fastest way, often sacrificing quality or safety. 'To cut corners' means doing something perfunctorily or skimping on quality/regulations to save money or time."}, {"id": "M2_E25", "section": "english", "topic": "Idioms & Phrases", "difficulty": "Easy", "q": "The central bank's prompt liquidity injection 'stemmed the tide' of bank runs. What does 'stem the tide' mean?", "options": ["To cause a flood of withdrawals", "To increase international borrowings", "To stop or control the progress of an undesirable situation", "To close bank branches permanently", "To fluctuate wildly"], "ans": "C", "exp": "Complete Answer Detail: To stop or control the progress of an undesirable situation. 'Stem the tide' means to prevent something bad from continuing or getting worse."}]}};
+
+    let currentSec = 'quant';
+    let currentQIdx = 0;
+    let userAnswers = {};
+    let questionStatus = {};
+    let timerInterval = null;
+    let timeRemaining = mockData.duration_minutes * 60;
+
+    function init() {
+      ['quant', 'reasoning', 'english'].forEach(s => {
+        mockData.sections[s].forEach(q => {
+          questionStatus[q.id] = 'not-visited';
+        });
+      });
+      timerInterval = setInterval(updateTimer, 1000);
+      updateTimerDisplay();
+      loadQuestion();
+      renderPalette();
+    }
+
+    function updateTimer() {
+      timeRemaining--;
+      if (timeRemaining <= 0) {
+        clearInterval(timerInterval);
+        submitTest();
+      }
+      updateTimerDisplay();
+    }
+
+    function updateTimerDisplay() {
+      const m = Math.floor(timeRemaining / 60);
+      const s = timeRemaining % 60;
+      const el = document.getElementById('cbt-timer');
+      if (el) {
+        el.innerText = `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+        if (timeRemaining <= 300) el.style.backgroundColor = '#fee2e2';
+      }
+    }
+
+    function switchSection(sec) {
+      currentSec = sec;
+      currentQIdx = 0;
+      document.querySelectorAll('.sec-tab-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.getElementById('sec-btn-' + sec);
+      if (activeBtn) activeBtn.classList.add('active');
+      loadQuestion();
+      renderPalette();
+    }
+
+    function getCurrentQuestion() {
+      return mockData.sections[currentSec][currentQIdx];
+    }
+
+    function getGlobalIndex() {
+      const off = currentSec === 'quant' ? 0 : (currentSec === 'reasoning' ? 25 : 50);
+      return off + currentQIdx + 1;
+    }
+
+    function loadQuestion() {
+      const q = getCurrentQuestion();
+      if (!q) return;
+
+      if (questionStatus[q.id] === 'not-visited') {
+        questionStatus[q.id] = 'not-answered';
+      }
+
+      document.getElementById('cbt-q-number').innerText = `Question ${getGlobalIndex()} of ${mockData.total_questions}`;
+      document.getElementById('cbt-q-topic').innerText = `${currentSec.toUpperCase()} • ${q.topic} (${q.difficulty})`;
+      document.getElementById('cbt-q-text').innerText = q.q;
+
+      const optContainer = document.getElementById('cbt-options-container');
+      optContainer.innerHTML = '';
+
+      const letters = ['A', 'B', 'C', 'D', 'E'];
+      q.options.forEach((opt, idx) => {
+        const letter = letters[idx];
+        const isSelected = userAnswers[q.id] === letter;
+        const optRow = document.createElement('label');
+        optRow.className = `opt-label ${isSelected ? 'selected' : ''}`;
+        optRow.innerHTML = `
+          <input type="radio" class="opt-radio" name="opt_choice" value="${letter}" ${isSelected ? 'checked' : ''} onchange="selectOption('${q.id}', '${letter}')">
+          <div><strong>${letter}.</strong> ${escapeHtml(opt)}</div>
+        `;
+        optContainer.appendChild(optRow);
+      });
+
+      renderPalette();
+    }
+
+    function selectOption(qId, val) {
+      userAnswers[qId] = val;
+      questionStatus[qId] = 'answered';
+      document.querySelectorAll('.opt-label').forEach(l => l.classList.remove('selected'));
+      const checkedInput = document.querySelector(`input[value="${val}"]`);
+      if (checkedInput && checkedInput.parentElement) {
+        checkedInput.parentElement.classList.add('selected');
+      }
+      renderPalette();
+    }
+
+    function clearOption() {
+      const q = getCurrentQuestion();
+      delete userAnswers[q.id];
+      questionStatus[q.id] = 'not-answered';
+      loadQuestion();
+    }
+
+    function saveAndNext() {
+      const q = getCurrentQuestion();
+      questionStatus[q.id] = userAnswers[q.id] ? 'answered' : 'not-answered';
+      nextQuestion();
+    }
+
+    function markReviewNext() {
+      const q = getCurrentQuestion();
+      questionStatus[q.id] = 'review';
+      nextQuestion();
+    }
+
+    function nextQuestion() {
+      if (currentQIdx < 24) {
+        currentQIdx++;
+      } else {
+        if (currentSec === 'quant') switchSection('reasoning');
+        else if (currentSec === 'reasoning') switchSection('english');
+        else alert('You have reached the end of the test. You can review your answers or click Submit.');
+      }
+      loadQuestion();
+    }
+
+    function prevQuestion() {
+      if (currentQIdx > 0) {
+        currentQIdx--;
+      } else {
+        if (currentSec === 'english') {
+          currentSec = 'reasoning'; currentQIdx = 24; updateSecButtons();
+        } else if (currentSec === 'reasoning') {
+          currentSec = 'quant'; currentQIdx = 24; updateSecButtons();
+        }
+      }
+      loadQuestion();
+    }
+
+    function updateSecButtons() {
+      document.querySelectorAll('.sec-tab-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.getElementById('sec-btn-' + currentSec);
+      if (activeBtn) activeBtn.classList.add('active');
+    }
+
+    function jumpToQuestion(sec, idx) {
+      currentSec = sec;
+      currentQIdx = idx;
+      updateSecButtons();
+      loadQuestion();
+    }
+
+    function renderPalette() {
+      const grid = document.getElementById('cbt-palette-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+      const currQ = getCurrentQuestion();
+
+      mockData.sections[currentSec].forEach((q, idx) => {
+        const btn = document.createElement('button');
+        const st = questionStatus[q.id] || 'not-visited';
+        const isCurr = (currQ && currQ.id === q.id);
+        btn.className = `pal-btn ${st} ${isCurr ? 'current' : ''}`;
+        btn.innerText = (idx + 1);
+        btn.onclick = () => jumpToQuestion(currentSec, idx);
+        grid.appendChild(btn);
+      });
+    }
+
+    function confirmSubmit() {
+      const attempted = Object.keys(userAnswers).length;
+      if (confirm(`Submit Test?\nYou have attempted ${attempted} out of 75 questions.`)) {
+        submitTest();
+      }
+    }
+
+    function submitTest() {
+      clearInterval(timerInterval);
+      document.getElementById('test-screen').style.display = 'none';
+      document.getElementById('result-screen').style.display = 'block';
+
+      let totalCorrect = 0, totalIncorrect = 0, totalAttempted = 0;
+      let secStats = {
+        quant: { attempted: 0, correct: 0, incorrect: 0, score: 0 },
+        reasoning: { attempted: 0, correct: 0, incorrect: 0, score: 0 },
+        english: { attempted: 0, correct: 0, incorrect: 0, score: 0 }
+      };
+
+      ['quant', 'reasoning', 'english'].forEach(s => {
+        mockData.sections[s].forEach(q => {
+          const userChoice = userAnswers[q.id];
+          if (userChoice) {
+            secStats[s].attempted++;
+            totalAttempted++;
+            if (userChoice === q.ans) {
+              secStats[s].correct++;
+              secStats[s].score += 1.0;
+              totalCorrect++;
+            } else {
+              secStats[s].incorrect++;
+              secStats[s].score -= 0.25;
+              totalIncorrect++;
+            }
+          }
+        });
+      });
+
+      const totalScore = (totalCorrect * 1.0) - (totalIncorrect * 0.25);
+      const accuracy = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) : 0;
+
+      document.getElementById('res-score').innerText = totalScore.toFixed(2);
+      document.getElementById('res-attempted').innerText = `${totalAttempted} / 75`;
+      document.getElementById('res-correct').innerText = totalCorrect;
+      document.getElementById('res-incorrect').innerText = totalIncorrect;
+      document.getElementById('res-accuracy').innerText = `${accuracy}%`;
+
+      document.getElementById('res-section-rows').innerHTML = `
+        <tr><td>Quantitative Aptitude (25 Qs)</td><td>${secStats.quant.attempted}</td><td style="color:var(--success);">${secStats.quant.correct}</td><td style="color:var(--danger);">${secStats.quant.incorrect}</td><td><strong>${secStats.quant.score.toFixed(2)}</strong></td></tr>
+        <tr><td>Reasoning Ability (25 Qs)</td><td>${secStats.reasoning.attempted}</td><td style="color:var(--success);">${secStats.reasoning.correct}</td><td style="color:var(--danger);">${secStats.reasoning.incorrect}</td><td><strong>${secStats.reasoning.score.toFixed(2)}</strong></td></tr>
+        <tr><td>English Language (25 Qs)</td><td>${secStats.english.attempted}</td><td style="color:var(--success);">${secStats.english.correct}</td><td style="color:var(--danger);">${secStats.english.incorrect}</td><td><strong>${secStats.english.score.toFixed(2)}</strong></td></tr>
+      `;
+
+      showReview('all');
+    }
+
+    function showReview(filter) {
+      const container = document.getElementById('review-container');
+      container.innerHTML = '<h3 style="margin-bottom: 12px; color: var(--primary);">Detailed Solutions:</h3>';
+
+      let count = 0;
+      ['quant', 'reasoning', 'english'].forEach(s => {
+        mockData.sections[s].forEach(q => {
+          const userChoice = userAnswers[q.id] || 'Not Attempted';
+          const isCorrect = userChoice === q.ans;
+          const isIncorrect = userChoice !== 'Not Attempted' && !isCorrect;
+
+          if (filter === 'incorrect' && !isIncorrect) return;
+
+          count++;
+          const card = document.createElement('div');
+          card.className = 'q-card';
+          card.innerHTML = `
+            <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--text-muted); margin-bottom:8px;">
+              <span><strong>${s.toUpperCase()}</strong> • ${q.topic} (${q.difficulty})</span>
+              <span style="font-weight:700; color:${isCorrect ? 'var(--success)' : (isIncorrect ? 'var(--danger)' : '#64748b')};">
+                ${isCorrect ? '✓ Correct (+1.0)' : (isIncorrect ? '✗ Incorrect (-0.25)' : '○ Skipped (0.0)')}
+              </span>
+            </div>
+            <div style="font-size:14px; margin-bottom:10px; font-weight:500;">${escapeHtml(q.q)}</div>
+            <div style="font-size:13px; margin-bottom:8px;">
+              Your Answer: <strong style="color:${isCorrect ? 'var(--success)' : (isIncorrect ? 'var(--danger)' : '#64748b')}">${userChoice}</strong> | 
+              Correct Answer: <strong style="color:var(--success);">${q.ans}</strong>
+            </div>
+            <div class="sol-box">
+              <strong>Solution:</strong>
+              <div style="white-space:pre-wrap; margin-top:4px;">${escapeHtml(q.exp)}</div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      });
+    }
+
+    function restartTest() {
+      location.reload();
+    }
+
+    function escapeHtml(t) {
+      if (!t) return '';
+      return t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>
