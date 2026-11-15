@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PFRDA Grade A - Union Budget &amp; Economic Survey Comprehensive Master Study Notes - SHIVAM</title>
+<style>
+        :root {
+            --primary: #0f4c81;
+            --primary-dark: #092c4c;
+            --secondary: #0d9488;
+            --accent: #d97706;
+            --danger: #b91c1c;
+            --success: #15803d;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray-border: #cbd5e1;
+            --text-main: #334155;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f1f5f9;
+            color: var(--text-main);
+            line-height: 1.68;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f4c81 0%, #092c4c 100%);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+        }
+        .header h1 {
+            margin: 0 0 12px 0;
+            font-size: 2.3rem;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            margin: 0;
+            font-size: 1.15rem;
+            color: #bae6fd;
+            font-weight: 500;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .print-btn-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .btn-print {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 11px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(15,76,129,0.25);
+            transition: all 0.2s;
+        }
+        .btn-print:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        .nav-pills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .nav-pills a {
+            background: white;
+            border: 1px solid var(--gray-border);
+            padding: 6px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .nav-pills a:hover {
+            background: var(--primary);
+            color: white;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 28px;
+            border: 1px solid var(--gray-border);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            page-break-inside: avoid;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+            border-bottom: 2px solid #e0f2fe;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card h3 {
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--secondary);
+            padding-left: 10px;
+        }
+        .table-custom {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.95rem;
+        }
+        .table-custom th, .table-custom td {
+            border: 1px solid var(--gray-border);
+            padding: 11px 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+        .table-custom tr:nth-child(even) {
+            background-color: #fbfcfe;
+        }
+        /* Formula Card Styling */
+        .formula-card {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .formula-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .math-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.25rem;
+            color: #1e293b;
+            padding: 12px 16px;
+            background: #f8fafc;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        .math-frac {
+            display: inline-flex;
+            flex-direction: column;
+            vertical-align: middle;
+            text-align: center;
+            padding: 0 4px;
+        }
+        .math-num {
+            border-bottom: 1.5px solid #1e293b;
+            padding-bottom: 2px;
+        }
+        .math-den {
+            padding-top: 2px;
+        }
+        .variable-legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 8px 16px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #e2e8f0;
+            font-size: 0.85rem;
+            color: #475569;
+        }
+        .var-item b {
+            color: #0f172a;
+        }
+        .callout-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid var(--secondary);
+            padding: 16px;
+            border-radius: 6px;
+            margin: 16px 0;
+        }
+        .callout-title {
+            font-weight: 700;
+            color: #065f46;
+            margin-bottom: 6px;
+        }
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            margin: 14px 0;
+            color: #1e3a8a;
+            border-radius: 0 8px 8px 0;
+        }
+        .tag {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 6px;
+        }
+        .bullet-list {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+        .bullet-list li {
+            margin-bottom: 6px;
+        }
+        .highlight {
+            font-weight: 600;
+            color: var(--primary-dark);
+            background: #fef3c7;
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+        .chart-box {
+            margin: 25px 0;
+            background: #f8fafc;
+            border: 1px solid var(--gray-border);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .chart-caption {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--gray-border);
+            margin-top: 40px;
+        }
+        @media print {
+            body { background: white; color: black; }
+            .header { background: none; color: black; padding: 15px 0; border-bottom: 2px solid #000; }
+            .header p { color: #555; }
+            .badge { border-color: #000; color: #000; }
+            .print-btn-bar { display: none; }
+            .card { border: 1px solid #ccc; box-shadow: none; padding: 15px; margin-bottom: 20px; }
+            .formula-card, .callout-box, .highlight-box { background: #f5f5f5; border-left-color: #333; color: #000; }
+        }
+    
+  .desc-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+    border: 1.5px solid #93c5fd;
+    border-left: 6px solid #1d4ed8;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+  .desc-header {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .desc-q-card {
+    background: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(29, 78, 216, 0.04);
+  }
+  .desc-q-card:last-child { margin-bottom: 0; }
+  .desc-q-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #cbd5e1;
+  }
+  .desc-struct {
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 1.65;
+  }
+  .desc-struct p { margin-bottom: 8px; }
+  .desc-tag {
+    display: inline-block;
+    background: #1d4ed8;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-right: 8px;
+  }
+
+</style>
+</head>
+<body>
+<style>
+.fin-unified-nav { background: #0f172a; border-bottom: 2px solid #0284c7; padding: 10px 16px; position: sticky; top: 0; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-family: 'Inter', -apple-system, sans-serif; }
+.fin-unified-nav-inner { max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.fnav-btn { color: #cbd5e1; text-decoration: none; font-size: 12.5px; font-weight: 600; padding: 6px 11px; border-radius: 6px; background: #1e293b; border: 1px solid #334155; transition: all 0.15s ease; white-space: nowrap; }
+.fnav-btn:hover { background: #334155; color: #ffffff; border-color: #38bdf8; }
+.fnav-btn.active { background: #0284c7; color: #ffffff; border-color: #38bdf8; box-shadow: 0 0 0 2px rgba(56,189,248,0.3); }
+.fnav-home { background: #0f766e; border-color: #14b8a6; color: #f0fdfa; }
+.fnav-mock { padding: 6px 8.5px; font-size: 12px; }
+</style>
+<div class="fin-unified-nav"><div class="fin-unified-nav-inner"><a class="fnav-btn fnav-home" href="../index.html">🏠 All Subjects Portal</a><a class="fnav-btn" href="PFRDA_Union_Budget_Hub.html">🏛️ Union Budget &amp; Survey Hub</a><a class="fnav-btn active" href="PFRDA_Union_Budget_Comprehensive_Master_Study_Notes.html">📘 Detailed Notes (7 Ch)</a><a class="fnav-btn" href="PFRDA_Union_Budget_Master_Revision_and_Study_Sheet.html">⚡ Revision Sheet</a><a class="fnav-btn" href="PFRDA_Union_Budget_All_Exams_PYQ_Practice.html">🎯 All-Exams PYQs (125)</a><a class="fnav-btn" href="PFRDA_Union_Budget_Topic_Wise_Mocks.html">🧩 Topic-Wise Mocks (7 Ch)</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_1.html">M1</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_2.html">M2</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_3.html">M3</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_4.html">M4</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_5.html">M5</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_6.html">M6</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_7.html">M7</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_8.html">M8</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_9.html">M9</a><a class="fnav-btn fnav-mock" href="PFRDA_Union_Budget_Mock_10.html">M10</a></div></div>
+<!-- PFRDA PORTAL UNIFIED NAV -->
+<div class="pfrda-portal-nav no-print" style="background:#ffffff;border-bottom:1px solid #e2e8f0;padding:8px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;font-family:'Segoe UI',system-ui,sans-serif;position:sticky;top:0;z-index:9999;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+<div style="display:flex;align-items:center;gap:8px;">
+<span style="background:#0f172a;color:#38bdf8;font-weight:800;font-size:0.76rem;padding:4px 9px;border-radius:4px;letter-spacing:0.6px;">PFRDA 2026</span>
+<span style="font-weight:700;font-size:0.88rem;color:#0f172a;">Subject B: Union Budget &amp; Economic Survey</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;">
+<a href="../index.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">🏠 Syllabus Portal</a><a href="PFRDA_Union_Budget_Comprehensive_Master_Study_Notes.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#2563eb;color:#ffffff;border-color:#2563eb;box-shadow:0 1px 4px rgba(37,99,235,0.25);transition:all 0.15s;">📘 Comprehensive Notes</a><a href="PFRDA_Union_Budget_Master_Revision_and_Study_Sheet.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">⚡ Revision Sheet</a><a href="PFRDA_Union_Budget_Mock_1.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 1</a><a href="PFRDA_Union_Budget_Mock_2.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 2</a><a href="PFRDA_Union_Budget_Mock_3.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 3</a><a href="PFRDA_Union_Budget_Mock_4.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 4</a><a href="PFRDA_Union_Budget_Mock_5.html" style="text-decoration:none;padding:6px 12px;border-radius:6px;font-size:0.82rem;font-weight:600;border:1px solid;background:#f8fafc;color:#1e293b;border-color:#cbd5e1;transition:all 0.15s;">📝 Mock 5</a>
+</div>
+</div>
+<!-- END PFRDA PORTAL UNIFIED NAV -->
+<div class="header">
+<div class="badge">PFRDA · SHIVAM · MASTER STUDY SUITE</div>
+<h1>Union Budget &amp; Economic Survey — Comprehensive Master Notes</h1>
+<p>Complete In-Depth Conceptual &amp; Empirical Reference Capsule · PFRDA Grade A / SEBI Grade A Specialist Officer · Paper 2</p>
+</div>
+<div class="container">
+<div class="print-btn-bar">
+<div class="nav-pills">
+<a href="#sec-constitutional">1. Constitutional Framework</a>
+<a href="#sec-receipts">2. Receipts &amp; Expenditures</a>
+<a href="#sec-deficits">3. Deficit Architecture</a>
+<a href="#sec-frbm">4. FRBM &amp; Fiscal Rules</a>
+<a href="#sec-reforms">5. Budget Reforms &amp; Federalism</a>
+<a href="#sec-trends">6. Recent Budget Trends</a>
+<a href="#sec-survey-macro">7. Economic Survey Macro</a>
+<a href="#sec-survey-sectoral">8. Sectoral &amp; Structural Drivers</a>
+</div>
+<button class="btn-print" onclick="window.print()">Print / Save as PDF (Ctrl + P)</button>
+</div>
+<!-- Section 1 -->
+<div class="card" id="sec-constitutional">
+<h2>1. Constitutional &amp; Statutory Architecture of the Union Budget</h2>
+<p>In the Indian constitutional framework, the term "Budget" does not appear verbatim; instead, <strong>Article 112</strong> mandates the laying of an <em>"Annual Financial Statement"</em> (AFS) before both Houses of Parliament for each financial year.</p>
+<h3>1.1 Cardinal Constitutional Articles</h3>
+<table class="table-custom">
+<tr>
+<th style="width: 15%;">Article</th>
+<th style="width: 25%;">Constitutional Subject</th>
+<th>Core Statutory Mandate &amp; Operational Rule</th>
+</tr>
+<tr>
+<td><strong>Article 112</strong></td>
+<td>Annual Financial Statement (AFS)</td>
+<td>President causes to be laid before both Houses estimated receipts and expenditure of GoI for the financial year. Distinguishes expenditure charged upon Consolidated Fund from other expenditures, and revenue expenditure from capital expenditure.</td>
+</tr>
+<tr>
+<td><strong>Article 110</strong></td>
+<td>Definition of 'Money Bill'</td>
+<td>Deals exclusively with: (a) imposition/alteration of any tax, (b) regulation of borrowing, (c) custody of Consolidated/Contingency Funds, (d) appropriation of money out of Consolidated Fund. Speaker of Lok Sabha holds final deciding authority. Rajya Sabha cannot amend or reject; must return within 14 days.</td>
+</tr>
+<tr>
+<td><strong>Article 113</strong></td>
+<td>Procedure regarding Estimates</td>
+<td>Charged expenditure can be discussed in Parliament but <strong>not submitted to vote</strong>. Other expenditures submitted in form of <strong>Demands for Grants</strong> to Lok Sabha, which has power to assent, refuse, or reduce.</td>
+</tr>
+<tr>
+<td><strong>Article 114</strong></td>
+<td>Appropriation Bill</td>
+<td>No money can be withdrawn from the Consolidated Fund of India except under appropriation made by law passed by Parliament. Legal sanction for expenditure.</td>
+</tr>
+<tr>
+<td><strong>Article 115</strong></td>
+<td>Supplementary, Additional &amp; Excess Grants</td>
+<td>Supplementary/Additional: Insufficiency or unforeseen service. Excess Grant: When expenditure exceeded granted amount; regularized only after examination by Public Accounts Committee (PAC).</td>
+</tr>
+<tr>
+<td><strong>Article 116</strong></td>
+<td>Votes on Account, Votes of Credit &amp; Exceptional Grants</td>
+<td>Vote on Account: Advance grant for part of financial year (typically 2 months / one-sixth) pending full Appropriation Bill enactment. (Largely redundant since 2017 reform advancing budget to Feb 1).</td>
+</tr>
+<tr>
+<td><strong>Article 265</strong></td>
+<td>Taxes not to be imposed save by authority of law</td>
+<td>Fundamental democratic safeguard: No tax shall be levied or collected except by authority of law enacted by competent legislature.</td>
+</tr>
+<tr>
+<td><strong>Article 266</strong></td>
+<td>Consolidated Fund &amp; Public Account of India</td>
+<td><strong>Consolidated Fund (266(1)):</strong> All revenues, loans raised, and loan recoveries. Requires parliamentary appropriation.<br/><strong>Public Account (266(2)):</strong> All other public moneys (NSSF, PF, judicial deposits). Operated as banking/trust account by executive.</td>
+</tr>
+<tr>
+<td><strong>Article 267</strong></td>
+<td>Contingency Fund of India</td>
+<td>Imprest at disposal of President for unforeseen emergent expenditures pending parliamentary authorization. <strong>Corpus raised to ₹30,000 Crore</strong> via Finance Act, 2021 (from ₹500 Cr).</td>
+</tr>
+</table>
+<!-- SVG Diagram 1: Constitutional Funds -->
+<div class="chart-box">
+<svg height="220" viewbox="0 0 900 220" width="100%" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#eff6ff" height="200" rx="10" stroke="#1d4ed8" stroke-width="2" width="270" x="10" y="10"></rect>
+<text fill="#1e3a8a" font-size="16" font-weight="700" text-anchor="middle" x="145" y="40">Consolidated Fund of India</text>
+<text fill="#3b82f6" font-size="12" font-weight="600" text-anchor="middle" x="145" y="65">Article 266(1)</text>
+<text fill="#334155" font-size="11" x="25" y="95">• All Tax &amp; Non-Tax Revenues</text>
+<text fill="#334155" font-size="11" x="25" y="120">• Market Loans (G-Secs, T-Bills)</text>
+<text fill="#334155" font-size="11" x="25" y="145">• Principal Loan Recoveries</text>
+<rect fill="#dbeafe" height="30" rx="6" width="240" x="25" y="165"></rect>
+<text fill="#1e40af" font-size="11" font-weight="700" text-anchor="middle" x="145" y="185">Parliamentary Sanction Mandatory (Art 114)</text>
+<rect fill="#f0fdf4" height="200" rx="10" stroke="#15803d" stroke-width="2" width="270" x="315" y="10"></rect>
+<text fill="#14532d" font-size="16" font-weight="700" text-anchor="middle" x="450" y="40">Public Account of India</text>
+<text fill="#16a34a" font-size="12" font-weight="600" text-anchor="middle" x="450" y="65">Article 266(2)</text>
+<text fill="#334155" font-size="11" x="330" y="95">• National Small Savings (NSSF)</text>
+<text fill="#334155" font-size="11" x="330" y="120">• Provident Funds (GPF, EPF)</text>
+<text fill="#334155" font-size="11" x="330" y="145">• Judicial Deposits &amp; Reserves</text>
+<rect fill="#dcfce7" height="30" rx="6" width="240" x="330" y="165"></rect>
+<text fill="#15803d" font-size="11" font-weight="700" text-anchor="middle" x="450" y="185">Executive/Trust Action (No Vote Needed)</text>
+<rect fill="#fffbeb" height="200" rx="10" stroke="#b45309" stroke-width="2" width="270" x="620" y="10"></rect>
+<text fill="#78350f" font-size="16" font-weight="700" text-anchor="middle" x="755" y="40">Contingency Fund of India</text>
+<text fill="#d97706" font-size="12" font-weight="600" text-anchor="middle" x="755" y="65">Article 267(1)</text>
+<text fill="#334155" font-size="11" x="635" y="95">• Imprest at disposal of President</text>
+<text fill="#334155" font-size="11" x="635" y="120">• Meets emergent, unforeseen needs</text>
+<text fill="#334155" font-size="11" x="635" y="145">• Recouped via Supplementary Grants</text>
+<rect fill="#fef3c7" height="30" rx="6" width="240" x="635" y="165"></rect>
+<text fill="#92400e" font-size="11" font-weight="700" text-anchor="middle" x="755" y="185">Corpus: ₹30,000 Crore (Finance Act 2021)</text>
+</svg>
+<div class="chart-caption">Figure 1: Constitutional Triad of Sovereign Accounts under Articles 266 &amp; 267</div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 1. Constitutional &amp; Statutory Architecture of the Union Budget</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '1. Constitutional &amp; Statutory Architecture of the Union Budget'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> In the Indian constitutional framework, the term "Budget" does not appear verbatim; instead, Article 112 mandates the laying of an "Annual Financial Statement" (AFS) before both Houses of Parliament for each financial year.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 1. Constitutional &amp; Statutory Architecture of the Union Budget.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Article 112 | Annual Financial Statement (AFS) | President causes to be laid before both Houses estimated receipts and expenditure of GoI for the financial year. Distinguishes expenditure charged upon Consolidated Fund from other expenditures, and revenue expenditure from capital expenditure.; Article 110 | Definition of 'Money Bill' | Deals exclusively with: (a) imposition/alteration of any tax, (b) regulation of borrowing, (c) custody of Consol</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Article 112 | Annual Financial Statement (AFS) | President causes to be laid before both Houses estimated receipts and expenditure of GoI for the financial year. Distinguishes expenditure charged upon Consolidated Fund from other expenditures, and revenue expenditure from capital expenditure.; Article 110 | Definition of 'Money Bill' | Deals exclusively with: (a) imposition/alteration of any tax, (b) regulation of borrowing, (c) custody of Consol</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 1. Constitutional &amp; Statutory Architecture of the Union Budget is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 1. Constitutional &amp; Statutory Architecture of the Union Budget.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 1. Constitutional &amp; Statutory Architecture of the Union Budget.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> In the Indian constitutional framework, the term "Budget" does not appear verbatim; instead, Article 112 mandates the laying of an "Annual Financial Statement" (AFS) before both Houses of Parliament for each financial year. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 2 -->
+<div class="card" id="sec-receipts">
+<h2>2. Classification of Government Receipts and Expenditures</h2>
+<p>Budgetary accounting bifurcates all government flows into <strong>Revenue Account</strong> (operating/current) and <strong>Capital Account</strong> (assets and liabilities).</p>
+<table class="table-custom">
+<tr>
+<th style="width: 20%;">Budget Category</th>
+<th style="width: 40%;">Constituent Inflows / Receipts</th>
+<th>Constituent Outflows / Expenditures</th>
+</tr>
+<tr>
+<td><strong>Revenue Account</strong><br/><em>(No impact on assets/liabilities)</em></td>
+<td>
+<strong>Tax Revenue:</strong><br/>
+                        • Direct: Personal Income Tax, Corporate Tax.<br/>
+                        • Indirect: GST (CGST, IGST), Customs, Union Excise.<br/>
+<em>(Less: States' share of devolution &amp; NCCD/cess transfers)</em><br/><br/>
+<strong>Non-Tax Revenue:</strong><br/>
+                        • Interest receipts on loans to States/UTs.<br/>
+                        • Dividends &amp; profits from RBI, PSBs, and CPSEs.<br/>
+                        • Petroleum/telecom license fees, spectrum receipts, user fees.
+                    </td>
+<td>
+<strong>Revenue Expenditure:</strong><br/>
+                        • <em>Interest Payments:</em> Single largest item (~24% of budget).<br/>
+                        • <em>Major Subsidies:</em> Food (NFSA/PMGKAY), Fertilizer (Urea, NBS), Petroleum.<br/>
+                        • <em>Defence Revenue:</em> Pay, pensions, operational maintenance.<br/>
+                        • <em>Salaries &amp; Civil Pensions:</em> General administration.<br/>
+                        • <em>Grants-in-Aid to States:</em> Including finance commission grants and disaster relief.<br/>
+                        • <strong>Grants for Creation of Capital Assets:</strong> Transferred to States for building infrastructure.
+                    </td>
+</tr>
+<tr>
+<td><strong>Capital Account</strong><br/><em>(Creates/reduces assets or liabilities)</em></td>
+<td>
+<strong>Non-Debt Capital Receipts (NDCR):</strong><br/>
+                        • Recovery of loans and advances from States/UTs.<br/>
+                        • Disinvestment proceeds &amp; asset monetization (NMP).<br/><br/>
+<strong>Debt Capital Receipts (Borrowings):</strong><br/>
+                        • Market loans (Dated G-Secs &amp; T-Bills) — Largest share.<br/>
+                        • Securities against Small Savings Fund (NSSF).<br/>
+                        • External assistance (bilateral/multilateral loans).<br/>
+                        • Short-term borrowings &amp; Provident Funds.
+                    </td>
+<td>
+<strong>Capital Expenditure (Capex):</strong><br/>
+                        • <em>Capital Outlay:</em> Physical assets (Highways, Railways, Port berths, Power grids, Defense hardware).<br/>
+                        • <em>Loans &amp; Advances by Centre:</em> Loans to State Govts (e.g., 50-year interest-free capex loans), UTs, and CPSEs.<br/>
+                        • <em>Repayment of Sovereign Debt:</em> Retiring maturing internal/external debt liabilities.
+                    </td>
+</tr>
+</table>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 2. Classification of Government Receipts and Expenditures</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '2. Classification of Government Receipts and Expenditures'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Budgetary accounting bifurcates all government flows into Revenue Account (operating/current) and Capital Account (assets and liabilities).</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 2. Classification of Government Receipts and Expenditures.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Revenue Account | (No impact on assets/liabilities) | Tax Revenue: | • Direct: Personal Income Tax, Corporate Tax. | • Indirect: GST (CGST, IGST), Customs, Union Excise. | (Less: States' share of devolution &amp; NCCD/cess transfers) | Non-Tax Revenue: | • Interest receipts on loans to States/UTs. | • Dividends &amp; profits from RBI, PSBs, and CPSEs. | • Petroleum/telecom license fees, spectrum receipts, user fees. | Revenue Expenditure: | • | Interest </li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Revenue Account | (No impact on assets/liabilities) | Tax Revenue: | • Direct: Personal Income Tax, Corporate Tax. | • Indirect: GST (CGST, IGST), Customs, Union Excise. | (Less: States' share of devolution &amp; NCCD/cess transfers) | Non-Tax Revenue: | • Interest receipts on loans to States/UTs. | • Dividends &amp; profits from RBI, PSBs, and CPSEs. | • Petroleum/telecom license fees, spectrum receipts, user fees. | Revenue Expenditure: | • | Interest </li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 2. Classification of Government Receipts and Expenditures is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 2. Classification of Government Receipts and Expenditures.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 2. Classification of Government Receipts and Expenditures.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Budgetary accounting bifurcates all government flows into Revenue Account (operating/current) and Capital Account (assets and liabilities). Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 3 -->
+<div class="card" id="sec-deficits">
+<h2>3. Deficit Architecture &amp; Analytical Formulas</h2>
+<p>Understanding deficits is the core analytical foundation of macro-fiscal policy. The Union Budget tracks four principal deficit metrics:</p>
+<div class="formula-card">
+<div class="formula-title">📐 Fiscal Deficit (FD) — Total Sovereign Borrowing Requirement</div>
+<div class="math-display">
+<span>Fiscal Deficit</span>
+<span>=</span>
+<span>Total Expenditure</span>
+<span>−</span>
+<span style="font-size: 1.4rem;">[</span>
+<span>Revenue Receipts</span>
+<span>+</span>
+<span>Non-Debt Capital Receipts (NDCR)</span>
+<span style="font-size: 1.4rem;">]</span>
+</div>
+<div class="variable-legend">
+<div class="var-item"><b>Total Expenditure:</b> Revenue Expenditure + Capital Expenditure</div>
+<div class="var-item"><b>NDCR:</b> Loan Recoveries + Disinvestment / Asset Monetization Proceeds</div>
+<div class="var-item"><b>Core Insight:</b> Fiscal Deficit is exactly equal to the <em>Total Net Borrowings of the Government</em> from all domestic and external sources.</div>
+</div>
+</div>
+<div class="formula-card">
+<div class="formula-title">📐 Revenue Deficit (RD) — Current Account Dis-saving</div>
+<div class="math-display">
+<span>Revenue Deficit</span>
+<span>=</span>
+<span>Revenue Expenditure</span>
+<span>−</span>
+<span>Revenue Receipts</span>
+</div>
+<div class="variable-legend">
+<div class="var-item"><b>Significance:</b> Indicates government consumption exceeds current earnings; reflects dis-saving that eats into capital investment.</div>
+</div>
+</div>
+<div class="formula-card">
+<div class="formula-title">📐 Effective Revenue Deficit (ERD) — Productive Adjusted Revenue Gap</div>
+<div class="math-display">
+<span>Effective Revenue Deficit (ERD)</span>
+<span>=</span>
+<span>Revenue Deficit</span>
+<span>−</span>
+<span>Grants for Creation of Capital Assets</span>
+</div>
+<div class="variable-legend">
+<div class="var-item"><b>Introduced:</b> Budget 2011-12 &amp; Finance Act, 2012 amendment to FRBM Act.</div>
+<div class="var-item"><b>Rationale:</b> Excludes grants given to States which, though technically revenue expenditure for the Centre, result in physical asset creation (roads, schools, canals) in States.</div>
+</div>
+</div>
+<div class="formula-card">
+<div class="formula-title">📐 Primary Deficit (PD) — Current Fiscal Stance Ex-Interest</div>
+<div class="math-display">
+<span>Primary Deficit</span>
+<span>=</span>
+<span>Fiscal Deficit</span>
+<span>−</span>
+<span>Net Interest Payments</span>
+</div>
+<div class="variable-legend">
+<div class="var-item"><b>Primary Deficit = 0:</b> The government is borrowing <em>only</em> to pay interest on past accumulated debts; current operations are fully self-financed.</div>
+</div>
+</div>
+<div class="formula-card">
+<div class="formula-title">📐 Domar Debt Sustainability Condition &amp; Growth-Interest Differential</div>
+<div class="math-display">
+<span>Δ</span>
+<span>d</span>
+<span>=</span>
+<span style="font-size: 1.4rem;">(</span>
+<span class="math-frac">
+<span class="math-num">r − g</span>
+<span class="math-den">1 + g</span>
+</span>
+<span style="font-size: 1.4rem;">)</span>
+<span>d<sub>t-1</sub></span>
+<span>+</span>
+<span>pd<sub>t</sub></span>
+</div>
+<div class="variable-legend">
+<div class="var-item"><b>d:</b> Debt-to-GDP ratio; <b>pd:</b> Primary Deficit as % of GDP</div>
+<div class="var-item"><b>g:</b> Real GDP growth rate; <b>r:</b> Real interest rate on public debt</div>
+<div class="var-item"><b>Domar Stability Criterion:</b> When <b>g &gt; r</b> (positive Growth-Interest Rate Differential, GIRD), the debt-to-GDP ratio naturally declines, ensuring long-term fiscal solvency even with modest primary deficits.</div>
+</div>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 3. Deficit Architecture &amp; Analytical Formulas</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '3. Deficit Architecture &amp; Analytical Formulas'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Understanding deficits is the core analytical foundation of macro-fiscal policy. The Union Budget tracks four principal deficit metrics:</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Covers core conceptual, statutory, and quantitative frameworks under 3. Deficit Architecture &amp; Analytical Formulas.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Integrates multi-column comparative benchmarks and regulatory compliance thresholds.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Applies 2025–2026 regulatory notifications, numerical formulas, and case-study applications.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 3. Deficit Architecture &amp; Analytical Formulas is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 3. Deficit Architecture &amp; Analytical Formulas.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 3. Deficit Architecture &amp; Analytical Formulas.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Understanding deficits is the core analytical foundation of macro-fiscal policy. The Union Budget tracks four principal deficit metrics: Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 4 -->
+<div class="card" id="sec-frbm">
+<h2>4. FRBM Act, 2003 &amp; Fiscal Rules Architecture</h2>
+<p>The <strong>Fiscal Responsibility and Budget Management (FRBM) Act, 2003</strong> institutionalized fiscal discipline and inter-generational equity in Indian public finance.</p>
+<h3>4.1 Statutory Documents Mandated under Section 3</h3>
+<ul class="bullet-list">
+<li><strong>Macroeconomic Framework Statement:</strong> Assesses GDP growth rate, fiscal balance, external balance, and inflation trajectory.</li>
+<li><strong>Medium-Term Fiscal Policy Statement (MTFPS):</strong> Sets 3-year rolling quantitative targets for Revenue Deficit, Fiscal Deficit, Tax-to-GDP ratio, and Total Outstanding Debt.</li>
+<li><strong>Fiscal Policy Strategy Statement (FPSS):</strong> Outlines the strategic rationale, tax policy decisions, subsidy reforms, and expenditure prioritization for the coming fiscal year.</li>
+<li><strong>Medium-Term Expenditure Framework Statement (MTEF):</strong> Lays down rolling 3-year expenditure projections across individual ministries.</li>
+</ul>
+<h3>4.2 N.K. Singh Committee Recommendations (2017) vs. Current Targets</h3>
+<table class="table-custom">
+<tr>
+<th>Fiscal Dimension</th>
+<th>N.K. Singh FRBM Committee Recommendation</th>
+<th>Current Status &amp; Glide Path (2024–2026)</th>
+</tr>
+<tr>
+<td><strong>Primary Fiscal Anchor</strong></td>
+<td>Shift from Fiscal Deficit to <strong>General Government Debt-to-GDP</strong></td>
+<td>Debt anchor recognized; target of 60% combined debt. Central debt currently ~56-57% of GDP.</td>
+</tr>
+<tr>
+<td><strong>Debt-to-GDP Targets</strong></td>
+<td><strong>60% Combined:</strong> 40% for Centre, 20% for States (by FY 2023)</td>
+<td>COVID shock expanded combined debt to ~88% in FY21; steadily consolidating towards targets.</td>
+</tr>
+<tr>
+<td><strong>Fiscal Deficit Target</strong></td>
+<td><strong>3.0% of GDP</strong> for Centre by FY 2023</td>
+<td>Post-COVID glide path: Fiscal Deficit targeted <strong>below 4.5% of GDP by FY 2025-26</strong> (FY24: 5.6%, FY25 BE: 4.9%).</td>
+</tr>
+<tr>
+<td><strong>Escape Clause</strong><br/><em>(Section 4(2))</em></td>
+<td>Permits deviation up to <strong>0.5% of GDP</strong> for exceptional grounds: war, national calamity, collapse of agriculture, structural reforms, real growth drop ≥ 3%.</td>
+<td>Invoked during major disruptions; requires time-bound consolidation plan.</td>
+</tr>
+<tr>
+<td><strong>Buoyancy Clause</strong></td>
+<td>Mandatory reduction of 0.5% of GDP below target during sharp cyclical economic expansions.</td>
+<td>Counter-cyclical fiscal buffer mechanism.</td>
+</tr>
+<tr>
+<td><strong>Fiscal Council</strong></td>
+<td>Autonomous statutory body under Ministry of Finance for independent fiscal audit.</td>
+<td>Independent evaluation currently conducted by CAG under Section 7A of FRBM.</td>
+</tr>
+</table>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 4. FRBM Act, 2003 &amp; Fiscal Rules Architecture</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '4. FRBM Act, 2003 &amp; Fiscal Rules Architecture'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> The Fiscal Responsibility and Budget Management (FRBM) Act, 2003 institutionalized fiscal discipline and inter-generational equity in Indian public finance.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Macroeconomic Framework Statement: Assesses GDP growth rate, fiscal balance, external balance, and inflation trajectory.; Medium-Term Fiscal Policy Statement (MTFPS): Sets 3-year rolling quantitative targets for Revenue Deficit, Fiscal Deficit, Tax-to-GDP ratio, and Total Outstanding Debt.; Fiscal Policy Strategy Statement (FPSS): Outlines the strategic rationale, tax policy decisions, subsidy reforms, and expenditure prioritization for the comin</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Medium-Term Expenditure Framework Statement (MTEF): Lays down rolling 3-year expenditure projections across individual ministries.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Primary Fiscal Anchor | Shift from Fiscal Deficit to | General Government Debt-to-GDP | Debt anchor recognized; target of 60% combined debt. Central debt currently ~56-57% of GDP.; Debt-to-GDP Targets | 60% Combined: | 40% for Centre, 20% for States (by FY 2023) | COVID shock expanded combined debt to ~88% in FY21; steadily consolidating towards targets.; Fiscal Deficit Target | 3.0% of GDP | for Centre by FY 2023 | Post-COVID glide path: Fiscal </li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 4. FRBM Act, 2003 &amp; Fiscal Rules Architecture is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 4. FRBM Act, 2003 &amp; Fiscal Rules Architecture.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 4. FRBM Act, 2003 &amp; Fiscal Rules Architecture.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Medium-Term Expenditure Framework Statement (MTEF): Lays down rolling 3-year expenditure projections across individual ministries. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 5 -->
+<div class="card" id="sec-reforms">
+<h2>5. Modern Budgetary Reforms, Paradigms &amp; Fiscal Federalism</h2>
+<h3>5.1 Landmark Budgetary Process Reforms (2017 Onwards)</h3>
+<ul class="bullet-list">
+<li><strong>Advancing Presentation Date to February 1:</strong> Replaced the British-era practice of end-February presentation. Enabled Parliament to enact Appropriation and Finance Bills before March 31, eliminating the need for a 'Vote on Account' and allowing departments to spend capital from Day 1 of the fiscal year (April 1).</li>
+<li><strong>Merger of Railway Budget with Union Budget:</strong> Ended a 92-year-old separate budget tradition (begun in 1924 via Acworth Committee). Recommended by the <strong>Bibek Debroy Committee</strong> (NITI Aayog) in 2016, integrating multimodal transport financing into a unified balance sheet.</li>
+<li><strong>Abolition of Plan vs. Non-Plan Distinction:</strong> Implemented in Budget 2017-18 upon C. Rangarajan Committee recommendations. Shifted classification strictly to <em>Revenue and Capital</em>, removing the historical bias where capital asset maintenance (Non-Plan) was starved of funds.</li>
+</ul>
+<h3>5.2 Modern Budgetary Methodologies</h3>
+<table class="table-custom">
+<tr>
+<th>Budgetary Approach</th>
+<th>Pioneering Framework</th>
+<th>Core Mechanism &amp; Indian Implementation</th>
+</tr>
+<tr>
+<td><strong>Zero-Based Budgeting (ZBB)</strong></td>
+<td>Peter Pyhrr (1970s)</td>
+<td>Every proposed line-item expenditure must be justified from ground zero as if starting afresh. Past allocations are not taken as a baseline. Evaluated via decision packages.</td>
+</tr>
+<tr>
+<td><strong>Gender Budgeting</strong></td>
+<td>Australia (1984); India (2005)</td>
+<td>Statement 20 of Expenditure Profile: <strong>Part A</strong> (100% women-specific allocation, e.g. Sukanya Samriddhi, Beti Bachao) and <strong>Part B</strong> (30% to 99% allocation targeted towards women, e.g. PMAY, MGNREGS). Total allocation crosses ₹3 Lakh Crore.</td>
+</tr>
+<tr>
+<td><strong>Outcome Budgeting</strong></td>
+<td>Introduced in India in 2005-06</td>
+<td>Shifts focus from <em>Outlays</em> (financial allocation) to <em>Outputs</em> (physical deliverable, e.g., km of highway) and <em>Outcomes</em> (socio-economic impact, e.g., reduced freight transit time).</td>
+</tr>
+<tr>
+<td><strong>Green Budgeting</strong></td>
+<td>OECD / MoEFCC frameworks</td>
+<td>Identifies, tags, and evaluates budgetary allocations contributing to climate adaptation, renewable energy transition, and pollution abatement.</td>
+</tr>
+</table>
+<h3>5.3 Fiscal Federalism: 15th &amp; 16th Finance Commission Devolution</h3>
+<div class="callout-box">
+<div class="callout-title">Vertical &amp; Horizontal Tax Sharing Framework</div>
+<ul>
+<li><strong>Vertical Devolution:</strong> The 15th Finance Commission (chaired by N.K. Singh) recommended devolving <span class="highlight">41%</span> of the net proceeds of the divisible pool of central taxes to States (retaining 1% adjustment from 14th FC's 42% on account of the newly formed Union Territories of Jammu &amp; Kashmir and Ladakh).</li>
+<li><strong>Horizontal Sharing Criteria (15th FC):</strong>
+<br/>• <em>Income Distance:</em> <span class="highlight">45.0%</span> (Highest weight, measuring distance from highest per-capita income state).
+                        <br/>• <em>Population (2011 Census):</em> <span class="highlight">15.0%</span>.
+                        <br/>• <em>Area:</em> <span class="highlight">15.0%</span>.
+                        <br/>• <em>Forest and Ecology:</em> <span class="highlight">10.0%</span>.
+                        <br/>• <em>Demographic Performance (TFR reduction):</em> <span class="highlight">12.5%</span> (Rewards states that controlled fertility).
+                        <br/>• <em>Tax and Fiscal Effort:</em> <span class="highlight">2.5%</span>.
+                    </li>
+<li><strong>16th Finance Commission:</strong> Constituted in December 2023 under the Chairmanship of <strong>Dr. Arvind Panagariya</strong> (former Vice-Chairman, NITI Aayog), covering the 5-year award period from <strong>April 1, 2026 to March 31, 2031</strong>.</li>
+</ul>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 5. Modern Budgetary Reforms, Paradigms &amp; Fiscal Federalism</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '5. Modern Budgetary Reforms, Paradigms &amp; Fiscal Federalism'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 5. Modern Budgetary Reforms, Paradigms &amp; Fiscal Federalism is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Advancing Presentation Date to February 1: Replaced the British-era practice of end-February presentation. Enabled Parliament to enact Appropriation and Finance Bills before March 31, eliminating the need for a 'Vote on Account' and allowing departments to spend capital from Day 1 of the fiscal year (April 1).; Merger of Railway Budget with Union Budget: Ended a 92-year-old separate budget tradition (begun in 1924 via Acworth Committee). Recommen</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Vertical Devolution: The 15th Finance Commission (chaired by N.K. Singh) recommended devolving 41% of the net proceeds of the divisible pool of central taxes to States (retaining 1% adjustment from 14th FC's 42% on account of the newly formed Union Territories of Jammu &amp; Kashmir and Ladakh).; Horizontal Sharing Criteria (15th FC): • Income Distance: 45.0% (Highest weight, measuring distance from highest per-capita income state). • Population (201</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Zero-Based Budgeting (ZBB) | Peter Pyhrr (1970s) | Every proposed line-item expenditure must be justified from ground zero as if starting afresh. Past allocations are not taken as a baseline. Evaluated via decision packages.; Gender Budgeting | Australia (1984); India (2005) | Statement 20 of Expenditure Profile: | Part A | (100% women-specific allocation, e.g. Sukanya Samriddhi, Beti Bachao) and | Part B | (30% to 99% allocation targeted towards</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 5. Modern Budgetary Reforms, Paradigms &amp; Fiscal Federalism is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 5. Modern Budgetary Reforms, Paradigms &amp; Fiscal Federalism.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 5. Modern Budgetary Reforms, Paradigms &amp; Fiscal Federalism.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> 16th Finance Commission: Constituted in December 2023 under the Chairmanship of Dr. Arvind Panagariya (former Vice-Chairman, NITI Aayog), covering the 5-year award period from April 1, 2026 to March 31, 2031 . Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 6 -->
+<div class="card" id="sec-trends">
+<h2>6. Recent Union Budget Broad Trends (2024–2026)</h2>
+<h3>6.1 Macro-Fiscal Aggregates &amp; Capital Expenditure Thrust</h3>
+<table class="table-custom">
+<tr>
+<th>Macro Parameter</th>
+<th>Budget Figures &amp; Policy Direction</th>
+<th>Analytical Significance</th>
+</tr>
+<tr>
+<td><strong>Capital Expenditure (Capex)</strong></td>
+<td><strong>₹11,11,111 Crore (₹11.11 Lakh Cr)</strong> — 3.4% of GDP</td>
+<td>More than triple the FY20 level (₹3.36L Cr). Directly powers infrastructure engines under PM Gati Shakti.</td>
+</tr>
+<tr>
+<td><strong>Effective Capital Expenditure</strong></td>
+<td><strong>₹15,02,904 Crore (₹15.02 Lakh Cr)</strong> — 4.6% of GDP</td>
+<td>Combines Centre's capex + ₹3.91 Lakh Cr in capital asset creation grants to States. Strong crowding-in of private capex.</td>
+</tr>
+<tr>
+<td><strong>Fiscal Deficit Glide Path</strong></td>
+<td>FY24 RE: <strong>5.6%</strong> → FY25 BE: <strong>4.9%</strong> → FY26: <strong>&lt; 4.5%</strong></td>
+<td>Disciplined consolidation trajectory; supported by record RBI surplus dividend transfer of ₹2.11 Lakh Crore.</td>
+</tr>
+<tr>
+<td><strong>50-Year Interest-Free Capex Loan to States</strong></td>
+<td><strong>₹1.50 Lakh Crore</strong> allocated for FY25</td>
+<td>Provided under Special Assistance to States for Capital Investment; boosts state capex without adding current debt service.</td>
+</tr>
+</table>
+<h3>6.2 Major Direct &amp; Indirect Tax Policy Reforms</h3>
+<table class="table-custom">
+<tr>
+<th>Tax Reform Item</th>
+<th>Statutory Provision</th>
+<th>Updated Rule / Rate Architecture</th>
+</tr>
+<tr>
+<td><strong>New Income Tax Regime Slabs</strong></td>
+<td>Section 115BAC</td>
+<td>
+                        • 0 to ₹3 Lakh: <strong>Nil</strong><br/>
+                        • ₹3L to ₹7L: <strong>5%</strong><br/>
+                        • ₹7L to ₹10L: <strong>10%</strong><br/>
+                        • ₹10L to ₹12L: <strong>15%</strong><br/>
+                        • ₹12L to ₹15L: <strong>20%</strong><br/>
+                        • Above ₹15 Lakh: <strong>30%</strong>
+</td>
+</tr>
+<tr>
+<td><strong>Standard Deduction &amp; 87A Rebate</strong></td>
+<td>Section 16(ia) &amp; Sec 87A</td>
+<td>Standard deduction raised to <span class="highlight">₹75,000</span> (from ₹50k). Section 87A rebate makes taxable income up to ₹7 Lakh completely tax-free. Salaried individual pays <strong>zero tax on salary up to ₹7.75 Lakh</strong>.</td>
+</tr>
+<tr>
+<td><strong>Angel Tax Abolition</strong></td>
+<td>Section 56(2)(viib)</td>
+<td><strong>Completely Abolished</strong> for all classes of investors in Indian start-ups to unleash venture capital innovation.</td>
+</tr>
+<tr>
+<td><strong>Capital Gains Tax Rationalization</strong></td>
+<td>Sections 111A, 112, 112A</td>
+<td>
+                        • <em>STCG on listed financial assets:</em> Increased from 15% to <strong>20%</strong>.<br/>
+                        • <em>LTCG on all financial &amp; non-financial assets:</em> Standardized at <strong>12.5%</strong>.<br/>
+                        • <em>Exemption on listed LTCG:</em> Enhanced from ₹1 Lakh to <strong>₹1.25 Lakh per year</strong>.<br/>
+                        • <em>Holding Periods:</em> 12 months for all listed securities; 24 months for unlisted/real estate.<br/>
+                        • <em>Grandfathering:</em> Real estate acquired before July 23, 2024 can choose 12.5% without indexation OR 20% with indexation.
+                    </td>
+</tr>
+<tr>
+<td><strong>Foreign Corporate Tax Cut</strong></td>
+<td>Section 115A / Schedule</td>
+<td>Corporate tax rate for foreign companies slashed from <strong>40% to 35%</strong> to invite global investment.</td>
+</tr>
+<tr>
+<td><strong>Customs Duty Rationalization</strong></td>
+<td>Customs Tariff Act</td>
+<td>Gold and silver import duty slashed to <strong>6%</strong> (from 15%). 25 critical minerals (Lithium, Cobalt, Copper) fully exempted from BCD.</td>
+</tr>
+</table>
+<h3>6.3 Prime Minister’s Package for Youth &amp; Employment</h3>
+<ul class="bullet-list">
+<li><strong>PM Package Outlay:</strong> <span class="highlight">₹2 Lakh Crore</span> over 5 years benefiting 4.1 crore youth.</li>
+<li><strong>Scheme A (First Timers):</strong> 1-month wage DBT (up to ₹15,000 in 3 installments) to first-time formal employees registered with EPFO earning up to ₹1 Lakh/month.</li>
+<li><strong>Scheme B (Manufacturing Jobs):</strong> Incentives on EPFO contributions directly to employees and employers for first 4 years.</li>
+<li><strong>Scheme C (Support to Employers):</strong> Reimbursement up to ₹3,000/month for 2 years towards EPFO contribution for each additional hire.</li>
+<li><strong>Mudra Loan Limit Enhanced:</strong> Tarun category loan cap doubled from <span class="highlight">₹10 Lakh to ₹20 Lakh</span> for repeat borrowers.</li>
+</ul>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 6. Recent Union Budget Broad Trends (2024–2026)</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '6. Recent Union Budget Broad Trends (2024–2026)'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 6. Recent Union Budget Broad Trends (2024–2026) is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> PM Package Outlay: ₹2 Lakh Crore over 5 years benefiting 4.1 crore youth.; Scheme A (First Timers): 1-month wage DBT (up to ₹15,000 in 3 installments) to first-time formal employees registered with EPFO earning up to ₹1 Lakh/month.; Scheme B (Manufacturing Jobs): Incentives on EPFO contributions directly to employees and employers for first 4 years.</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Scheme C (Support to Employers): Reimbursement up to ₹3,000/month for 2 years towards EPFO contribution for each additional hire.; Mudra Loan Limit Enhanced: Tarun category loan cap doubled from ₹10 Lakh to ₹20 Lakh for repeat borrowers.</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Capital Expenditure (Capex) | ₹11,11,111 Crore (₹11.11 Lakh Cr) | — 3.4% of GDP | More than triple the FY20 level (₹3.36L Cr). Directly powers infrastructure engines under PM Gati Shakti.; Effective Capital Expenditure | ₹15,02,904 Crore (₹15.02 Lakh Cr) | — 4.6% of GDP | Combines Centre's capex + ₹3.91 Lakh Cr in capital asset creation grants to States. Strong crowding-in of private capex.; Fiscal Deficit Glide Path | FY24 RE: | 5.6% | → FY25 BE</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 6. Recent Union Budget Broad Trends (2024–2026) is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 6. Recent Union Budget Broad Trends (2024–2026).</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 6. Recent Union Budget Broad Trends (2024–2026).</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Mudra Loan Limit Enhanced: Tarun category loan cap doubled from ₹10 Lakh to ₹20 Lakh for repeat borrowers. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 7 -->
+<div class="card" id="sec-survey-macro">
+<h2>7. Economic Survey — Macroeconomic Analytical Framework</h2>
+<p>Authored by the Chief Economic Adviser (CEA), the Economic Survey provides an authoritative evaluation of macroeconomic fundamentals, structural shifts, and systemic risks.</p>
+<h3>7.1 National Income Aggregates &amp; Growth Accounting</h3>
+<table class="table-custom">
+<tr>
+<th>Component</th>
+<th>Analytical Concept &amp; Weight</th>
+<th>Key Observations &amp; Trends</th>
+</tr>
+<tr>
+<td><strong>Real vs. Nominal GDP</strong></td>
+<td>$	ext{GDP Deflator} = (	ext{Nominal} / 	ext{Real}) 	imes 100$</td>
+<td>Real GDP growth consistently outperforms global peers at 6.5%–7.0%+. Modest deflator reflects benign WPI and manufactured inflation.</td>
+</tr>
+<tr>
+<td><strong>PFCE (Private Consumption)</strong></td>
+<td>~58% to 60% of GDP</td>
+<td>Primary engine of domestic economic growth; resilient urban demand complemented by rural recovery supported by normal monsoons.</td>
+</tr>
+<tr>
+<td><strong>GFCF (Fixed Investment)</strong></td>
+<td>~31% to 33% of GDP</td>
+<td>Strongest investment rate in a decade, powered by government capex and private corporate balance sheet deleveraging.</td>
+</tr>
+<tr>
+<td><strong>External Sector &amp; CAD</strong></td>
+<td>$	ext{CAD} = 	ext{Trade Deficit} + 	ext{Net Invisibles}$</td>
+<td>Current Account Deficit remains safe and manageable at <strong>0.7% to 1.2% of GDP</strong>. Off-set by massive Services Exports surplus ($150B+) and World #1 Inward Remittances ($115B+).</td>
+</tr>
+<tr>
+<td><strong>Forex Reserves &amp; Import Cover</strong></td>
+<td>$650 Billion to $700 Billion cushion</td>
+<td>Comfortable import cover of <strong>10 to 11+ months</strong>. Greenspan-Guidotti rule comfortably satisfied (Forex reserves cover &gt; 100% of short-term external debt).</td>
+</tr>
+<tr>
+<td><strong>External Debt-to-GDP</strong></td>
+<td>~18.7% of GDP</td>
+<td>Among the lowest external debt ratios in the G20; long-term debt accounts for over 80% of total liabilities.</td>
+</tr>
+</table>
+<h3>7.2 Inflation Dynamics: CPI vs. WPI Divergence</h3>
+<div class="callout-box">
+<div class="callout-title">Structural Composition of Inflation Indices</div>
+<ul>
+<li><strong>CPI-Combined (Base 2012):</strong> Food &amp; Beverages carries <span class="highlight">45.86%</span> weight. Fuel &amp; Light carries 6.84%. Core inflation (excluding Food &amp; Fuel) dropped to multi-year lows of ~3.1%–3.5%, demonstrating that headline inflation spikes were driven overwhelmingly by supply-side food shocks (Tomato, Onion, Potato - TOP).</li>
+<li><strong>WPI (Base 2011-12):</strong> Manufactured Products carries <span class="highlight">64.23%</span> weight; Primary Articles 22.62%; Fuel &amp; Power 13.15%. Zero services weighting.</li>
+<li><strong>Divergence Mechanism:</strong> When global crude oil and metal commodity prices drop, WPI can register negative growth (deflation), while domestic food weather shocks can simultaneously keep CPI elevated.</li>
+</ul>
+</div>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 7. Economic Survey — Macroeconomic Analytical Framework</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '7. Economic Survey — Macroeconomic Analytical Framework'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> Authored by the Chief Economic Adviser (CEA), the Economic Survey provides an authoritative evaluation of macroeconomic fundamentals, structural shifts, and systemic risks.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> CPI-Combined (Base 2012): Food &amp; Beverages carries 45.86% weight. Fuel &amp; Light carries 6.84%. Core inflation (excluding Food &amp; Fuel) dropped to multi-year lows of ~3.1%–3.5%, demonstrating that headline inflation spikes were driven overwhelmingly by supply-side food shocks (Tomato, Onion, Potato - TOP).; WPI (Base 2011-12): Manufactured Products carries 64.23% weight; Primary Articles 22.62%; Fuel &amp; Power 13.15%. Zero services weighting.; Diverge</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Real vs. Nominal GDP | $	ext{GDP Deflator} = (	ext{Nominal} / 	ext{Real}) 	imes 100$ | Real GDP growth consistently outperforms global peers at 6.5%–7.0%+. Modest deflator reflects benign WPI and manufactured inflation.; PFCE (Private Consumption) | ~58% to 60% of GDP | Primary engine of domestic economic growth; resilient urban demand complemented by rural recovery supported by normal monsoons.; GFCF (Fixed Investment) | ~31% to 33% of GDP | Str</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Real vs. Nominal GDP | $	ext{GDP Deflator} = (	ext{Nominal} / 	ext{Real}) 	imes 100$ | Real GDP growth consistently outperforms global peers at 6.5%–7.0%+. Modest deflator reflects benign WPI and manufactured inflation.; PFCE (Private Consumption) | ~58% to 60% of GDP | Primary engine of domestic economic growth; resilient urban demand complemented by rural recovery supported by normal monsoons.; GFCF (Fixed Investment) | ~31% to 33% of GDP | Str</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 7. Economic Survey — Macroeconomic Analytical Framework is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 7. Economic Survey — Macroeconomic Analytical Framework.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 7. Economic Survey — Macroeconomic Analytical Framework.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Divergence Mechanism: When global crude oil and metal commodity prices drop, WPI can register negative growth (deflation), while domestic food weather shocks can simultaneously keep CPI elevated. Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- Section 8 -->
+<div class="card" id="sec-survey-sectoral">
+<h2>8. Sectoral &amp; Structural Drivers in the Economic Survey</h2>
+<h3>8.1 Banking Renaissance: The 'Twin Balance Sheet Advantage'</h3>
+<table class="table-custom">
+<tr>
+<th>Banking Metric</th>
+<th>Pre-Reform Crisis (2018)</th>
+<th>Current Status (2024–2026)</th>
+<th>Policy Drivers &amp; Systemic Impact</th>
+</tr>
+<tr>
+<td><strong>Gross NPA Ratio</strong></td>
+<td>11.2% (Peak: 11.5%)</td>
+<td><strong>2.8%</strong> (12-year historic low)</td>
+<td>IBC resolutions, asset cleanups, NARCL transfer, conservative underwriting.</td>
+</tr>
+<tr>
+<td><strong>Net NPA Ratio</strong></td>
+<td>6.0%</td>
+<td><strong>0.6%</strong> (Multi-decade low)</td>
+<td>Provisioning Coverage Ratio (PCR) elevated above 76%.</td>
+</tr>
+<tr>
+<td><strong>Capital Adequacy (CRAR)</strong></td>
+<td>13.8%</td>
+<td><strong>16.8%</strong> (Well above 11.5% Basel III norms)</td>
+<td>Robust internal capital accruals, state bank profitability exceeding ₹1.4 Lakh Crore.</td>
+</tr>
+<tr>
+<td><strong>Corporate Debt-to-Equity</strong></td>
+<td>Elevated leverage &gt; 1.0</td>
+<td>Multi-decade low (~0.4)</td>
+<td>Deleveraged corporate balance sheets enabling a sustained private capex cycle.</td>
+</tr>
+</table>
+<h3>8.2 Manufacturing &amp; Logistics Transformation</h3>
+<ul class="bullet-list">
+<li><strong>Production Linked Incentive (PLI) Schemes:</strong> Operational across 14 sectors (₹1.97 Lakh Crore outlay); attracted over ₹1.28 Lakh Crore in actual investments, generating ₹10.8 Lakh Crore in production/sales and over 8.5 lakh jobs.</li>
+<li><strong>India Semiconductor Mission (ISM):</strong> ₹76,000 Crore fiscal incentive program; 5 semiconductor units approved (Micron ATMP in Sanand, Tata Electronics Fab in Dholera, CG Power, etc.).</li>
+<li><strong>National Logistics Policy (NLP):</strong> Integrates PM GatiShakti National Master Plan with Unified Logistics Interface Platform (ULIP). Aims to reduce logistics costs from ~13%–14% to ~8%–9% of GDP by 2030.</li>
+</ul>
+<h3>8.3 Energy Transition, Panchamrit &amp; Sustainable Development</h3>
+<table class="table-custom">
+<tr>
+<th>Commitment / Mission</th>
+<th>Statutory Target / Outlay</th>
+<th>Execution Milestone &amp; Status</th>
+</tr>
+<tr>
+<td><strong>Panchamrit Targets (COP26)</strong></td>
+<td>
+                        • 500 GW non-fossil capacity by 2030.<br/>
+                        • 50% electric power capacity from renewables by 2030.<br/>
+                        • 1 Billion tonnes carbon reduction by 2030.<br/>
+                        • 45% carbon intensity reduction from 2005 levels.<br/>
+                        • <strong>Net Zero by 2070</strong>.
+                    </td>
+<td>Achieved original NDC target of 40% non-fossil electric capacity in 2021 (9 years ahead of time). Non-fossil installed capacity exceeds 45%.</td>
+</tr>
+<tr>
+<td><strong>National Green Hydrogen Mission</strong></td>
+<td><strong>₹19,744 Crore</strong> outlay</td>
+<td>Target: 5 MMT annual green hydrogen production by 2030. SIGHT program operationalized for electrolyser and hydrogen production incentives.</td>
+</tr>
+<tr>
+<td><strong>PM Surya Ghar: Muft Bijli Yojana</strong></td>
+<td><strong>₹75,021 Crore</strong> outlay</td>
+<td>Rooftop solar systems for 1 crore households, delivering up to 300 units of free power monthly.</td>
+</tr>
+<tr>
+<td><strong>Mission LiFE</strong></td>
+<td>Global P3 (Pro-Planet People) Movement</td>
+<td>Nudges individual behavioral demand shifts towards sustainable lifestyles.</td>
+</tr>
+</table>
+<h3>8.4 Social Sector &amp; Demographic Transformation</h3>
+<ul class="bullet-list">
+<li><strong>Multidimensional Poverty Decline:</strong> NITI Aayog National MPI revealed that nearly <span class="highlight">24.8 crore people</span> escaped multidimensional poverty between 2013-14 and 2022-23 (MPI dropped from 29.17% to 11.28%).</li>
+<li><strong>Out-of-Pocket Health Spending (OOPE):</strong> Declined sharply from 64.2% in 2013-14 to <span class="highlight">39.4%</span> of total health expenditure in 2021-22, driven by PM-JAY and free essential drugs.</li>
+<li><strong>Universal Senior Health Insurance:</strong> AB PM-JAY expanded to provide ₹5 Lakh/year coverage to all seniors aged 70+ regardless of economic standing.</li>
+<li><strong>Housing &amp; Water:</strong> Over 3.5 crore houses completed under PMAY; additional 3 crore sanctioned in Budget 2024-25. Jal Jeevan Mission rural tap water coverage expanded from 16.8% (2019) to over 77%.</li>
+<li><strong>Demographic Dividend Window:</strong> Median age of 28.4 years; working-age population share ~64%; window remains open until roughly 2055-56, peaking around 2041 to power the vision of <strong>Viksit Bharat @ 2047</strong>.</li>
+</ul>
+
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 8. Sectoral &amp; Structural Drivers in the Economic Survey</span>
+<span style="font-size:11.5px;background:#1e3a8a;color:#fff;padding:3px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Blueprints</span>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin-bottom:12px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#1d4ed8;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">15 Marks • 250 Words</span>Q1 (Descriptive Mains): Critically examine the theoretical framework, statutory norms, and 2025–2026 policy developments governing '8. Sectoral &amp; Structural Drivers in the Economic Survey'.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Introduction &amp; Statutory Context:</strong> 8. Sectoral &amp; Structural Drivers in the Economic Survey is a high-weightage syllabus module across PFRDA, IFSCA, IRDAI, and NPS Trust examinations.</p>
+<p style="margin-bottom:4px;"><strong>2. Core Analytical &amp; Regulatory Pillars:</strong></p>
+<ul style="margin:4px 0 8px 20px;">
+<li><strong>Conceptual &amp; Statutory Foundation:</strong> Production Linked Incentive (PLI) Schemes: Operational across 14 sectors (₹1.97 Lakh Crore outlay); attracted over ₹1.28 Lakh Crore in actual investments, generating ₹10.8 Lakh Crore in production/sales and over 8.5 lakh jobs.; India Semiconductor Mission (ISM): ₹76,000 Crore fiscal incentive program; 5 semiconductor units approved (Micron ATMP in Sanand, Tata Electronics Fab in Dholera, CG Power, etc.).; National Logistics Policy (NLP): Integrat</li>
+<li><strong>Operational &amp; Quantitative Benchmarks:</strong> Multidimensional Poverty Decline: NITI Aayog National MPI revealed that nearly 24.8 crore people escaped multidimensional poverty between 2013-14 and 2022-23 (MPI dropped from 29.17% to 11.28%).; Out-of-Pocket Health Spending (OOPE): Declined sharply from 64.2% in 2013-14 to 39.4% of total health expenditure in 2021-22, driven by PM-JAY and free essential drugs.; Universal Senior Health Insurance: AB PM-JAY expanded to provide ₹5 Lakh/year covera</li>
+<li><strong>Comparative Matrix &amp; Recent Reforms:</strong> Gross NPA Ratio | 11.2% (Peak: 11.5%) | 2.8% | (12-year historic low) | IBC resolutions, asset cleanups, NARCL transfer, conservative underwriting.; Net NPA Ratio | 6.0% | 0.6% | (Multi-decade low) | Provisioning Coverage Ratio (PCR) elevated above 76%.; Capital Adequacy (CRAR) | 13.8% | 16.8% | (Well above 11.5% Basel III norms) | Robust internal capital accruals, state bank profitability exceeding ₹1.4 Lakh Crore.</li>
+</ul>
+<p><strong>3. Way Forward (Vision 2047):</strong> Strengthening principle-based supervision, technology adoption, and stakeholder transparency across 8. Sectoral &amp; Structural Drivers in the Economic Survey is vital for long-term market depth and resilience.</p>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;">
+<div style="font-size:14.5px;font-weight:800;color:#0f172a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px dashed #cbd5e1;"><span style="background:#059669;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-right:8px;">10 Marks • 180 Words</span>Q2 (Applied Case &amp; Sub-Topic Analysis): Discuss the practical implementation mechanisms, key formulas/thresholds, and risk-mitigation safeguards under 8. Sectoral &amp; Structural Drivers in the Economic Survey.</div>
+<div style="font-size:13.8px;color:#1e293b;line-height:1.62;">
+<p style="margin-bottom:6px;"><strong>1. Operational Scope:</strong> Evaluates applied problem-solving and statutory compliance in 8. Sectoral &amp; Structural Drivers in the Economic Survey.</p>
+<p><strong>2. Key Takeaways &amp; Safeguards:</strong> Demographic Dividend Window: Median age of 28.4 years; working-age population share ~64%; window remains open until roughly 2055-56, peaking around 2041 to power the vision of Viksit Bharat @ 2047 . Combined with periodic audit and transparent disclosures, this prevents adverse selection and governance lapses.</p>
+</div>
+</div>
+</div></div>
+<!-- PFRDA VISUAL & EXPANSION PACK -->
+<div class="visual-diagram-box" style="background:#ffffff;border:1.5px solid #cbd5e1;border-radius:12px;padding:18px;margin:22px 0;box-shadow:0 2px 10px rgba(15,23,42,0.05);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;">
+<span style="font-weight:800;color:#0f4c81;font-size:1.02rem;">📊 Union Budget 2026–27 Macro-Fiscal &amp; Deficit Consolidation Glide Path</span>
+<span style="background:#e0f2fe;color:#0369a1;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:12px;">Union Budget 2026-27 (BE) Official Data</span>
+</div>
+<svg style="width:100%;height:auto;display:block;font-family:'Segoe UI',system-ui,sans-serif;" viewbox="0 0 900 230">
+<defs><lineargradient id="grad_4861" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#0f4c81"></stop><stop offset="100%" stop-color="#0d9488"></stop></lineargradient></defs>
+<rect fill="#f8fafc" height="230" rx="10" width="900" x="0" y="0"></rect>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="30" y="22"></rect>
+<rect fill="url(#grad_4861)" height="38" rx="8" width="189" x="30" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="124.5" y="46">Total Expenditure</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="124.5" y="94">FY 2026-27 (BE)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="124.5" y="120">Receipts: ₹36.52L Cr</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="42" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="124.5" y="172">₹53.47 Lakh Crore (+7.7%)</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="222" x2="244" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="244,115.0 237,110.0 237,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="247" y="22"></rect>
+<rect fill="url(#grad_4861)" height="38" rx="8" width="189" x="247" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="341.5" y="46">Capital Expenditure</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="341.5" y="94">Infrastructure Thrust</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="341.5" y="120">+11.5% over FY26 RE</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="259" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="341.5" y="172">₹12.22 Lakh Crore</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="439" x2="461" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="461,115.0 454,110.0 454,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="464" y="22"></rect>
+<rect fill="url(#grad_4861)" height="38" rx="8" width="189" x="464" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="558.5" y="46">Fiscal Deficit Target</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="558.5" y="94">FY27 BE (vs 4.4% FY26)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="558.5" y="120">₹16.96 Lakh Crore</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="476" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="558.5" y="172">4.3% of GDP</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="656" x2="678" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="678,115.0 671,110.0 671,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="681" y="22"></rect>
+<rect fill="url(#grad_4861)" height="38" rx="8" width="189" x="681" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="775.5" y="46">Revenue Deficit &amp; Debt</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="775.5" y="94">Revenue Deficit: 1.5%</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="775.5" y="120">Target ~50±1% by FY31</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="693" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="775.5" y="172">Debt-to-GDP: 55.6%</text>
+</svg></div>
+<div class="visual-diagram-box" style="background:#ffffff;border:1.5px solid #cbd5e1;border-radius:12px;padding:18px;margin:22px 0;box-shadow:0 2px 10px rgba(15,23,42,0.05);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;">
+<span style="font-weight:800;color:#0f4c81;font-size:1.02rem;">📈 16th Finance Commission (2026–2031) Horizontal Tax Devolution Formula</span>
+<span style="background:#fef3c7;color:#b45309;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:12px;">Tabled Feb 1, 2026 | Chair: Dr. Arvind Panagariya (Vertical Share: 41%)</span>
+</div>
+<svg style="width:100%;height:auto;display:block;font-family:'Segoe UI',system-ui,sans-serif;" viewbox="0 0 900 240">
+<rect fill="#f8fafc" height="240" rx="10" width="900" x="0" y="0"></rect>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="40">1. Income Distance</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="25"></rect>
+<rect fill="#0f4c81" height="22" rx="5" width="357" x="240" y="25"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="605" y="40">42.5% Weight</text>
+<text fill="#475569" font-size="11" x="735" y="40">Down from 45% in 15th FC</text>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="80">2. Population (2011)</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="65"></rect>
+<rect fill="#0d9488" height="22" rx="5" width="189" x="240" y="65"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="437" y="80">17.5% Weight</text>
+<text fill="#475569" font-size="11" x="735" y="80">Up from 15% in 15th FC</text>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="120">3. Demographic Perf.</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="105"></rect>
+<rect fill="#0f4c81" height="22" rx="5" width="126" x="240" y="105"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="374" y="120">10.0% Weight</text>
+<text fill="#475569" font-size="11" x="735" y="120">Down from 12.5% in 15th FC</text>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="160">4. Area &amp; Forest/Ecology</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="145"></rect>
+<rect fill="#0d9488" height="22" rx="5" width="126" x="240" y="145"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="374" y="160">10.0% + 10.0%</text>
+<text fill="#475569" font-size="11" x="735" y="160">Area 10% | Forest (incl Open) 10%</text>
+<text fill="#0f172a" font-size="12" font-weight="700" x="20" y="200">5. GDP Contribution</text>
+<rect fill="#e2e8f0" height="22" rx="5" width="420" x="240" y="185"></rect>
+<rect fill="#0f4c81" height="22" rx="5" width="126" x="240" y="185"></rect>
+<text fill="#0f172a" font-size="11.5" font-weight="800" x="374" y="200">10.0% Weight (New)</text>
+<text fill="#475569" font-size="11" x="735" y="200">Replaces Tax Effort (2.5%)</text>
+</svg></div>
+<div class="visual-diagram-box" style="background:#ffffff;border:1.5px solid #cbd5e1;border-radius:12px;padding:18px;margin:22px 0;box-shadow:0 2px 10px rgba(15,23,42,0.05);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;">
+<span style="font-weight:800;color:#0f4c81;font-size:1.02rem;">📊 Economic Survey 2025–26 Macroeconomic &amp; External Resilience Dashboard</span>
+<span style="background:#e0f2fe;color:#0369a1;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:12px;">Ministry of Finance | Jan 2026</span>
+</div>
+<svg style="width:100%;height:auto;display:block;font-family:'Segoe UI',system-ui,sans-serif;" viewbox="0 0 900 230">
+<defs><lineargradient id="grad_347" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#0f4c81"></stop><stop offset="100%" stop-color="#0d9488"></stop></lineargradient></defs>
+<rect fill="#f8fafc" height="230" rx="10" width="900" x="0" y="0"></rect>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="30" y="22"></rect>
+<rect fill="url(#grad_347)" height="38" rx="8" width="189" x="30" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="124.5" y="46">Real GDP &amp; GVA (FY26)</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="124.5" y="94">First Advance Estimate</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="124.5" y="120">Potential Growth ~7.0%+</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="42" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="124.5" y="172">GDP: 7.4% | GVA: 7.3%</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="222" x2="244" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="244,115.0 237,110.0 237,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="247" y="22"></rect>
+<rect fill="url(#grad_347)" height="38" rx="8" width="189" x="247" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="341.5" y="46">Forex Reserves</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="341.5" y="94">As of Jan 16, 2026</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="341.5" y="120">11+ Months Import Cover</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="259" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="341.5" y="172">USD 701.4 Billion</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="439" x2="461" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="461,115.0 454,110.0 454,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="464" y="22"></rect>
+<rect fill="url(#grad_347)" height="38" rx="8" width="189" x="464" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="558.5" y="46">External Balance</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="558.5" y="94">Current Account Deficit</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="558.5" y="120">Services Surplus Cushion</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="476" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="558.5" y="172">CAD ~1.3% of GDP</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="656" x2="678" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="678,115.0 671,110.0 671,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="681" y="22"></rect>
+<rect fill="url(#grad_347)" height="38" rx="8" width="189" x="681" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="775.5" y="46">New Income Tax Act</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="775.5" y="94">Income Tax Act, 2025</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="775.5" y="120">Replaces 1961 Act</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="693" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="775.5" y="172">Effective April 1, 2026</text>
+</svg></div>
+<div class="visual-diagram-box" style="background:#ffffff;border:1.5px solid #cbd5e1;border-radius:12px;padding:18px;margin:22px 0;box-shadow:0 2px 10px rgba(15,23,42,0.05);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;">
+<span style="font-weight:800;color:#0f4c81;font-size:1.02rem;">📊 Constitutional Architecture of Government Funds &amp; Deficit Chain</span>
+<span style="background:#e0f2fe;color:#0369a1;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:12px;">Articles 112, 266(1), 266(2) &amp; 267</span>
+</div>
+<svg style="width:100%;height:auto;display:block;font-family:'Segoe UI',system-ui,sans-serif;" viewbox="0 0 900 230">
+<defs><lineargradient id="grad_3035" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#0f4c81"></stop><stop offset="100%" stop-color="#0d9488"></stop></lineargradient></defs>
+<rect fill="#f8fafc" height="230" rx="10" width="900" x="0" y="0"></rect>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="30" y="22"></rect>
+<rect fill="url(#grad_3035)" height="38" rx="8" width="189" x="30" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="124.5" y="46">Consolidated Fund</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="124.5" y="94">Article 266(1)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="124.5" y="120">All Tax/Non-Tax &amp; Loans</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="42" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="124.5" y="172">Requires Appropriation Act</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="222" x2="244" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="244,115.0 237,110.0 237,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="247" y="22"></rect>
+<rect fill="url(#grad_3035)" height="38" rx="8" width="189" x="247" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="341.5" y="46">Public Account</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="341.5" y="94">Article 266(2)</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="341.5" y="120">NSSF, PF, Postal Deposits</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="259" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="341.5" y="172">Executive Action (Fiduciary)</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="439" x2="461" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="461,115.0 454,110.0 454,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="464" y="22"></rect>
+<rect fill="url(#grad_3035)" height="38" rx="8" width="189" x="464" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="558.5" y="46">Contingency Fund</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="558.5" y="94">Article 267</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="558.5" y="120">Unforeseen Emergencies</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="476" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="558.5" y="172">₹30,000 Cr Corpus (Secy DEA)</text>
+<line stroke="#0d9488" stroke-width="2.5" x1="656" x2="678" y1="115.0" y2="115.0"></line>
+<polygon fill="#0d9488" points="678,115.0 671,110.0 671,120.0"></polygon>
+<rect fill="#ffffff" height="186" rx="8" stroke="#0f4c81" stroke-width="1.8" width="189" x="681" y="22"></rect>
+<rect fill="url(#grad_3035)" height="38" rx="8" width="189" x="681" y="22"></rect>
+<text fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle" x="775.5" y="46">Deficit Hierarchy</text>
+<text fill="#1e293b" font-size="11.5" font-weight="600" text-anchor="middle" x="775.5" y="94">FD = Total Exp - Non-Debt</text>
+<text fill="#475569" font-size="11" text-anchor="middle" x="775.5" y="120">ERD = RD - Cap Grants</text>
+<rect fill="#f0fdf4" height="42" rx="6" stroke="#86efac" stroke-width="1.2" width="165" x="693" y="147"></rect>
+<text fill="#15803d" font-size="11.5" font-weight="700" text-anchor="middle" x="775.5" y="172">PD = Fiscal Deficit - Interest</text>
+</svg></div>
+<div class="section-card module-card" style="background:white;border-radius:12px;padding:28px;margin-bottom:28px;border:1px solid #cbd5e1;box-shadow:0 2px 10px rgba(0,0,0,0.04);">
+<h2 style="color:#0f4c81;border-bottom:2px solid #e0f2fe;padding-bottom:10px;margin-top:0;">9. Latest Union Budget 2026–27, Economic Survey 2025–26 &amp; 16th Finance Commission (2026–31) Master Synthesis</h2>
+<p><strong>1. Union Budget 2026–27 (Presented Feb 1, 2026) Official Macro-Fiscal Aggregates:</strong> Total Expenditure is budgeted at <strong>₹53.47 Lakh Crore</strong> (+7.7% over FY26 RE); Total Receipts (excluding borrowings) at <strong>₹36.52 Lakh Crore</strong> (+7.2%); Centre's Net Tax Receipts at <strong>₹28.7 Lakh Crore</strong>; Capital Expenditure (Capex) outlay increased by 11.5% to <strong>₹12,21,821 Crore (₹12.22 Lakh Crore)</strong> (following ₹11.21 Lakh Crore in FY26 and ₹11.11 Lakh Crore in FY25). The <strong>Fiscal Deficit for FY 2026–27 (BE)</strong> is pegged at <strong>4.3% of GDP (₹16.96 Lakh Crore)</strong> (down from 4.4% in FY 2025–26 RE and 4.8% in FY 2024–25), while the <strong>Revenue Deficit</strong> is targeted at <strong>1.5% of GDP (₹5.24 Lakh Crore)</strong>. Central Government Debt-to-GDP is projected at <strong>55.6% in FY 2026–27</strong> on a steady consolidation glide path toward <strong>50±1% of GDP by FY 2030–31</strong>.</p>
+<p><strong>2. Rollout of the New Income Tax Act, 2025 (Effective April 1, 2026):</strong> Replacing the six-decade-old Income-tax Act, 1961, the simplified <strong>Income Tax Act, 2025</strong> takes effect from April 1, 2026. It replaces the confusing <em>Previous Year (PY) vs. Assessment Year (AY)</em> dichotomy with a single unified <strong>'Tax Year'</strong> concept, reduces statutory text volume by ~50%, and retains the individual income tax slabs and ₹75,000 Standard Deduction under the default New Tax Regime.</p>
+<p><strong>3. 16th Finance Commission Report (Award Period: April 1, 2026 – March 31, 2031):</strong> Chaired by <strong>Dr. Arvind Panagariya</strong> (tabled in Parliament on February 1, 2026), the 16th Finance Commission retained <strong>Vertical Devolution at 41%</strong> of the divisible pool of central taxes to States, and overhauled the <strong>Horizontal Devolution Formula (100% total)</strong> across 6 criteria: (1) <strong>Income Distance: 42.5%</strong> (down from 45% in 15th FC); (2) <strong>Population (2011 Census): 17.5%</strong> (up from 15%); (3) <strong>Demographic Performance: 10.0%</strong> (down from 12.5%); (4) <strong>Area: 10.0%</strong> (down from 15%); (5) <strong>Forest &amp; Ecology: 10.0%</strong> (now broadened to include open forests alongside dense/moderately dense forests); and (6) <strong>Contribution to National GDP: 10.0%</strong> (a brand-new efficiency criterion replacing Tax &amp; Fiscal Effort [2.5%]).</p>
+<p><strong>4. Economic Survey 2025–26 Key Highlights (Presented Jan 29–30, 2026):</strong> First Advance Estimates project India's <strong>Real GDP growth at 7.4%</strong> and <strong>Real GVA growth at 7.3%</strong> for FY 2025–26, with medium-term potential GDP growth estimated at ~7.0%+. Foreign Exchange Reserves stood at <strong>USD 701.4 Billion</strong> (as of January 16, 2026, covering 11+ months of imports), and the <strong>Current Account Deficit (CAD)</strong> remained comfortably contained at <strong>~1.3% of GDP</strong>, supported by robust services exports and remittances.</p>
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 9. Latest Union Budget 2026–27, Economic Survey 2025–26 &amp; 16th Finance Commission (2026–31) Master Synthesis</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of '9. Latest Union Budget 2026–27, Economic Survey 2025–26 &amp; 16th Finance Commission (2026–31) Master Synthesis' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> 1. Union Budget 2026–27 (Presented Feb 1, 2026) Official Macro-Fiscal Aggregates: Total Expenditure is budgeted at ₹53.47 Lakh Crore (+7.7% over FY26 RE); Total Receipts (excluding borrowings) at ₹36.52 Lakh Crore (+7.2%); Centre's Net Tax Receipts at ₹28.7 Lakh Crore ; Capital Expenditure (Capex) outlay increased by 11.5% to ₹12,21,821 Crore (₹12.22 Lakh Crore) (following ₹11.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Covers fundamental theoretical principles, statutory provisions, and quantitative norms under 9. Latest Union Budget 2026–27, Economic Survey 2025–26 &amp; 16th Finance Commission (2026–31) Master Synthesis.</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Integrates multi-column comparative benchmarks and regulatory compliance limits.</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Applies latest 2025–2026 regulatory circulars, empirical formulas, and practical case scenarios.</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across 9. Latest Union Budget 2026–27, Economic Survey 2025–26 &amp; 16th Finance Commission (2026–31) Master Synthesis ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with 9. Latest Union Budget 2026–27, Economic Survey 2025–26 &amp; 16th Finance Commission (2026–31) Master Synthesis.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, 9. Latest Union Budget 2026–27, Economic Survey 2025–26 &amp; 16th Finance Commission (2026–31) Master Synthesis is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> 1. Union Budget 2026–27 (Presented Feb 1, 2026) Official Macro-Fiscal Aggregates: Total Expenditure is budgeted at ₹53.47 Lakh Crore (+7.7% over FY26 RE); Total Receipts (excluding borrowings) at ₹36.52 Lakh Crore (+7.2%); Centre's Net Tax Receipts at ₹28.7 Lakh Crore ; Capital Expenditure (Capex) outlay increased by 11.5% to ₹12,21,821 Crore (₹12.22 Lakh Crore) (following ₹11.21 Lakh Crore in FY26 and ₹11.11 Lakh Cr</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in 9. Latest Union Budget 2026–27, Economic Survey 2025–26 &amp; 16th Finance Commission (2026–31) Master Synthesis.</p>
+</div>
+</div>
+</div></div>
+<div class="section-card module-card" style="background:#f8fafc;border-radius:12px;padding:24px;margin-top:28px;margin-bottom:28px;border:1.5px solid #93c5fd;">
+<h3 style="margin-top:0;color:#1e3a8a;">🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject B)</h3>
+<p style="margin-bottom:12px;">Test your mastery of <strong>Union Budget &amp; Economic Survey</strong> with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</p>
+<div style="margin-bottom:16px;"><a href="PFRDA_Union_Budget_Mock_1.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 1 (50 Qs)</a> <a href="PFRDA_Union_Budget_Mock_2.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 2 (50 Qs)</a> <a href="PFRDA_Union_Budget_Mock_3.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 3 (50 Qs)</a> <a href="PFRDA_Union_Budget_Mock_4.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 4 (50 Qs)</a> <a href="PFRDA_Union_Budget_Mock_5.html" style="display:inline-block;background:#1e3a8a;color:white;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:0.86rem;margin:4px;">🚀 Launch Mock Test 5 (50 Qs)</a></div>
+<div style="font-size:0.86rem;color:#475569;border-top:1px solid #cbd5e1;padding-top:10px;">
+<strong>Verified Regulatory &amp; Statutory Sources (Updated October 2026):</strong>
+<a href="https://www.pfrda.org.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">PFRDA Official Portal</a> ·
+    <a href="https://npstrust.org.in/act-and-regulations" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">NPS Trust Regulations (2025–26)</a> ·
+    <a href="https://www.sebi.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">SEBI Circulars &amp; Regulations</a> ·
+    <a href="https://www.rbi.org.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">RBI Monetary Policy (Oct 2026)</a> ·
+    <a href="https://www.indiabudget.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">Union Budget 2026–27 &amp; Economic Survey 2025–26</a> ·
+    <a href="https://prsindia.org/policy/report-summaries/report-of-the-16th-finance-commission-for-2026-31" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">16th Finance Commission Report (2026–31)</a> ·
+    <a href="https://www.mca.gov.in" rel="noopener" style="color:#2563eb;margin-left:8px;" target="_blank">MCA Companies Act, 2013</a>
+</div>
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject B)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of '🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject B)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Test your mastery of Union Budget &amp; Economic Survey with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Covers fundamental theoretical principles, statutory provisions, and quantitative norms under 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject B).</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Integrates multi-column comparative benchmarks and regulatory compliance limits.</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Applies latest 2025–2026 regulatory circulars, empirical formulas, and practical case scenarios.</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject B) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject B).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject B) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Test your mastery of Union Budget &amp; Economic Survey with 5 full-length 50-question CBT Mock Tests featuring balanced option lengths and detailed explanations:</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in 🔗 Practice CBT Mock Tests &amp; Authoritative Regulatory Sources (Subject B).</p>
+</div>
+</div>
+</div></div>
+<!-- END PFRDA VISUAL & EXPANSION PACK -->
+<div class="footer">
+            PFRDA Grade A Specialist Officer Examination · Master Union Budget &amp; Economic Survey Suite · Designed for SHIVAM · © 2026
+        </div>
+
+<div class="card" style="background:#fff;border:1.5px solid #cbd5e1;border-top:5px solid #0284c7;border-radius:16px;padding:28px;margin:26px 0;box-shadow:0 6px 18px rgba(15,23,42,0.05);">
+<span style="display:inline-block;background:#0284c7;color:#fff;font-size:11.5px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:8px;">EXHAUSTIVE SYLLABUS &amp; DESCRIPTIVE SUPPLEMENT</span>
+<h2 style="font-size:22px;font-weight:800;color:#0f172a;margin-bottom:6px;">Chapter 08: Complete Constitutional &amp; Parliamentary Budgetary Procedure (Articles 109 to 117 &amp; 266 to 293)</h2>
+<p style="font-size:14px;font-weight:600;color:#475569;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid #e2e8f0;">Money Bills (Art 110), Annual Financial Statement (Art 112), Charged Expenditure (Art 112(3)), Demands for Grants (Art 113), Appropriation Bill (Art 114), Vote on Account (Art 116) &amp; Cut Motions</p>
+<ul style="padding-left:22px;color:#1e293b;font-size:14.8px;"><li style="margin-bottom:8px;line-height:1.65;">3 Types of Parliamentary Cut Motions in Lok Sabha: (1) Policy Cut Motion ('That the amount of the demand be reduced to Re. 1' — expresses disapproval of underlying policy); (2) Economy Cut Motion ('That the amount of the demand be reduced by a specified lump sum' — seeks economy in expenditure); and (3) Token Cut Motion ('That the amount of the demand be reduced by ₹100' — ventilates a specific grievance within the sphere of responsibility of the Government of India!).</li><li style="margin-bottom:8px;line-height:1.65;">3 Constitutional Funds of India: (1) Consolidated Fund of India [Article 266(1)] — all revenues, loans raised, and loan recoveries; requires Parliamentary Appropriation Act under Art 114 to withdraw a single rupee; (2) Public Account of India [Article 266(2)] — provident funds, small savings, postal deposits held by Government as a banker/trustee; operated by executive action without Parliamentary vote; and (3) Contingency Fund of India [Article 267(1)] — ₹30,000 Crore corpus (enhanced from ₹500 Cr in 2021) held by Finance Secretary on behalf of the President for unforeseen emergencies pending Parliamentary authorization.</li><li style="margin-bottom:8px;line-height:1.65;">FRBM Act, 2003 &amp; N.K. Singh Committee (2017) Debt-to-GDP Glide Path: Recommended Debt-to-GDP ceiling of 60% for General Government (40% Central Government + 20% State Governments) and an Escape Clause allowing up to 0.5% (50 bps) fiscal deficit deviation for national security, war, calamity, or structural agricultural/economic shocks. In Union Budget 2025–26 / 2026–27, the Central Government anchored medium-term fiscal consolidation on a declining Central Government Debt-to-GDP path aiming toward ~50%±1% by March 2031.</li></ul>
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:10px;">✍️ Phase II Descriptive Mains Model Answer — Chapter 08: Complete Constitutional &amp; Parliamentary Budgetary Procedure (Articles 109 to 117 &amp; 266 to 293) (15 Marks)</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;font-size:13.8px;color:#1e293b;line-height:1.65;">
+<p style="margin-bottom:6px;"><strong>1. Introduction:</strong> Chapter 08: Complete Constitutional &amp; Parliamentary Budgetary Procedure (Articles 109 to 117 &amp; 266 to 293) (Money Bills (Art 110), Annual Financial Statement (Art 112), Charged Expenditure (Art 112(3)), Demands for Grants (Art 113), Appropriation Bill (Art 114), Vote on Account (Art 116) &amp; Cut Motions) represents a cornerstone of the updated 2026–2027 regulatory examination syllabus.</p>
+<p style="margin-bottom:6px;"><strong>2. Core Analytical Synthesis:</strong> 3 Types of Parliamentary Cut Motions in Lok Sabha: (1) Policy Cut Motion ('That the amount of the demand be reduced to Re. 1' — expresses disapproval of underlying policy); (2) Economy Cut Motion ('That the amount of the demand be reduced by a specified lump sum' — seeks economy in expenditure); and (3) Token Cut Motion ('That the amount of the demand be reduced by ₹100' — ventilates a specific grievance within the sphere of responsibility of the Government of India!). | 3 Constitutional Funds of India: (1) Consolidated Fund of India [Article 266(1)] — all revenues, loans raised, and loan recoveries; requires Parliamentary Appropriation Act under Art 114 to withdraw a single rupee; (2) Public Account of India [Article 266(2)] — provident funds, small savings, postal deposits held by Government as a banker/trustee; operated by executive action without Parliamentary vote; and (3) Contingency Fund of India [Article 267(1)] — ₹30,000 Crore corpus (enhanced from ₹500 Cr in 2021) held by Finance Secretary on behalf of the President for unforeseen emergencies pending Parliamentary authorization. | FRBM Act, 2003 &amp; N.K. Singh Committee (2017) Debt-to-GDP Glide Path: Recommended Debt-to-GDP ceiling of 60% for General Government (40% Central Government + 20% State Governments) and an Escape Clause allowing up to 0.5% (50 bps) fiscal deficit deviation for national security, war, calamity, or structural agricultural/economic shocks. In Union Budget 2025–26 / 2026–27, the Central Government anchored medium-term fiscal consolidation on a declining Central Government Debt-to-GDP path aiming toward ~50%±1% by March 2031.</p>
+<p><strong>3. Way Forward:</strong> Aligning statutory rules with global best practices (IOSCO, IAIS, IOPS, Basel III, and OECD norms) ensures robust market development and consumer protection.</p>
+</div>
+</div>
+</div>
+<div class="card" style="background:#fff;border:1.5px solid #cbd5e1;border-top:5px solid #0284c7;border-radius:16px;padding:28px;margin:26px 0;box-shadow:0 6px 18px rgba(15,23,42,0.05);">
+<span style="display:inline-block;background:#0284c7;color:#fff;font-size:11.5px;font-weight:800;padding:4px 12px;border-radius:999px;margin-bottom:8px;">EXHAUSTIVE SYLLABUS &amp; DESCRIPTIVE SUPPLEMENT</span>
+<h2 style="font-size:22px;font-weight:800;color:#0f172a;margin-bottom:6px;">Chapter 09: Economic Survey &amp; Union Budget Sectoral Deep-Dive (Macro Indicators, Tax Reforms, Capex &amp; Welfare Schemes)</h2>
+<p style="font-size:14px;font-weight:600;color:#475569;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid #e2e8f0;">Real GDP Growth, Gross Fixed Capital Formation (GFCF), Effective Capital Expenditure, Angel Tax Abolition, Capital Gains Rationalization (12.5% LTCG / 20% STCG) &amp; 9 Budget Priorities</p>
+<ul style="padding-left:22px;color:#1e293b;font-size:14.8px;"><li style="margin-bottom:8px;line-height:1.65;">Landmark Direct Tax Reforms in Recent Union Budgets: (1) Complete abolition of 'Angel Tax' [Section 56(2)(viib)] for all classes of investors to boost Indian startups; (2) Reduction of Corporate Tax rate on Foreign Companies from 40% to 35%; (3) Rationalization of Capital Gains Tax: Short-Term Capital Gains (STCG under Sec 111A on STT-paid listed equity/equity MF) set at 20%, Long-Term Capital Gains (LTCG under Sec 112A) set at 12.5% across all financial and non-financial assets with annual LTCG exemption limit raised from ₹1 Lakh to ₹1.25 Lakh!; and (4) New Tax Regime Standard Deduction for salaried employees/pensioners enhanced to ₹75,000 (and Employer NPS contribution deduction under Sec 80CCD(2) for private-sector employees raised from 10% to 14% under the New Tax Regime!).</li><li style="margin-bottom:8px;line-height:1.65;">Effective Capital Expenditure (Eff-Capex): Defined as Budgetary Capital Expenditure (Capex) PLUS Grants-in-Aid for Creation of Capital Assets (given to States/autonomous bodies) + 50-Year Interest-Free Capex Loans to States.</li></ul>
+<div class="desc-box" style="background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 100%);border:1.5px solid #93c5fd;border-left:6px solid #1d4ed8;border-radius:14px;padding:20px 24px;margin-top:22px;">
+<div style="font-size:15.5px;font-weight:800;color:#1e3a8a;margin-bottom:10px;">✍️ Phase II Descriptive Mains Model Answer — Chapter 09: Economic Survey &amp; Union Budget Sectoral Deep-Dive (Macro Indicators, Tax Reforms, Capex &amp; Welfare Schemes) (15 Marks)</div>
+<div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;font-size:13.8px;color:#1e293b;line-height:1.65;">
+<p style="margin-bottom:6px;"><strong>1. Introduction:</strong> Chapter 09: Economic Survey &amp; Union Budget Sectoral Deep-Dive (Macro Indicators, Tax Reforms, Capex &amp; Welfare Schemes) (Real GDP Growth, Gross Fixed Capital Formation (GFCF), Effective Capital Expenditure, Angel Tax Abolition, Capital Gains Rationalization (12.5% LTCG / 20% STCG) &amp; 9 Budget Priorities) represents a cornerstone of the updated 2026–2027 regulatory examination syllabus.</p>
+<p style="margin-bottom:6px;"><strong>2. Core Analytical Synthesis:</strong> Landmark Direct Tax Reforms in Recent Union Budgets: (1) Complete abolition of 'Angel Tax' [Section 56(2)(viib)] for all classes of investors to boost Indian startups; (2) Reduction of Corporate Tax rate on Foreign Companies from 40% to 35%; (3) Rationalization of Capital Gains Tax: Short-Term Capital Gains (STCG under Sec 111A on STT-paid listed equity/equity MF) set at 20%, Long-Term Capital Gains (LTCG under Sec 112A) set at 12.5% across all financial and non-financial assets with annual LTCG exemption limit raised from ₹1 Lakh to ₹1.25 Lakh!; and (4) New Tax Regime Standard Deduction for salaried employees/pensioners enhanced to ₹75,000 (and Employer NPS contribution deduction under Sec 80CCD(2) for private-sector employees raised from 10% to 14% under the New Tax Regime!). | Effective Capital Expenditure (Eff-Capex): Defined as Budgetary Capital Expenditure (Capex) PLUS Grants-in-Aid for Creation of Capital Assets (given to States/autonomous bodies) + 50-Year Interest-Free Capex Loans to States.</p>
+<p><strong>3. Way Forward:</strong> Aligning statutory rules with global best practices (IOSCO, IAIS, IOPS, Basel III, and OECD norms) ensures robust market development and consumer protection.</p>
+</div>
+</div>
+</div></div>
+</body>
+</html>
