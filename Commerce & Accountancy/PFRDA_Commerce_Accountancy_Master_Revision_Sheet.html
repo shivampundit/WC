@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PFRDA Grade A — Subject C — Commerce &amp; Accountancy Master Revision &amp; Formula Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --primary: #1e3a8a;
+    --primary-mid: #1d4ed8;
+    --primary-light: #eff6ff;
+    --accent: #0284c7;
+    --success: #059669;
+    --success-bg: #ecfdf5;
+    --warn: #d97706;
+    --warn-bg: #fffbeb;
+    --danger: #dc2626;
+    --purple: #6d28d9;
+    --purple-bg: #f5f3ff;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --border: #e2e8f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.68;
+    font-size: 15.5px;
+    padding-bottom: 64px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 1180px;
+    margin: 28px auto;
+    padding: 0 20px;
+  }
+  /* Hero Banner */
+  .hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 58%, #0369a1 100%);
+    color: #ffffff;
+    padding: 36px 36px;
+    border-radius: 18px;
+    margin-bottom: 28px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .hero h1 {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+    line-height: 1.28;
+    color: #ffffff;
+  }
+  .hero p {
+    font-size: 15px;
+    color: #e0f2fe;
+    max-width: 980px;
+    line-height: 1.6;
+  }
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .hero-badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    color: #f8fafc;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  /* TOC Box */
+  .toc-box {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  }
+  .toc-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 12px;
+  }
+  .toc-pill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: none;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #1e293b;
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: all 0.18s ease;
+  }
+  .toc-pill:hover {
+    background: #eff6ff;
+    border-color: #93c5fd;
+    color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(29, 78, 216, 0.08);
+  }
+  .toc-num {
+    background: #1e3a8a;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  .toc-cnt {
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+  /* Chapter Card */
+  .chapter-card {
+    background: var(--card);
+    border-radius: 18px;
+    border: 1px solid #cbd5e1;
+    padding: 32px;
+    margin-bottom: 36px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+    scroll-margin-top: 84px;
+  }
+  .chapter-header {
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+  }
+  .ch-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px 14px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+  .ch-title {
+    font-size: 23px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .ch-sub {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+  }
+  /* Dynamic / Statutory Box */
+  .dyn-box {
+    background: linear-gradient(to right, #fffbeb, #fef3c7);
+    border: 1px solid #fcd34d;
+    border-left: 5px solid #d97706;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+  }
+  .dyn-header {
+    font-size: 14.5px;
+    font-weight: 800;
+    color: #92400e;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .dyn-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #78350f;
+    font-size: 14.5px;
+  }
+  .dyn-list li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+  }
+  /* SVG Visual Flowchart Box */
+  .svg-card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 18px;
+    margin: 22px 0;
+    text-align: center;
+    overflow-x: auto;
+  }
+  .svg-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: #334155;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+  }
+  .svg-card svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  /* Deep Notes Sections */
+  .deep-notes-section {
+    margin: 24px 0;
+  }
+  .sec-h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dbeafe;
+  }
+  .deep-subcard {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.02);
+  }
+  .deep-subtitle {
+    font-size: 16.5px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+  }
+  .deep-body {
+    font-size: 15px;
+    color: #1e293b;
+    line-height: 1.68;
+  }
+  .deep-body p {
+    margin-bottom: 10px;
+  }
+  .ch-ul {
+    margin: 8px 0 12px 22px;
+    padding: 0;
+  }
+  .ch-ul li {
+    margin-bottom: 8px;
+    color: #1e293b;
+    line-height: 1.62;
+  }
+  /* Concept Tables */
+  .table-wrap {
+    margin: 22px 0;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  }
+  .table-caption {
+    background: #f1f5f9;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #0f172a;
+    border-bottom: 1px solid #cbd5e1;
+  }
+  .concept-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 580px;
+  }
+  .concept-table th {
+    background: #1e3a8a;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #1e40af;
+    font-size: 13.5px;
+  }
+  .concept-table td {
+    padding: 11px 15px;
+    border: 1px solid #e2e8f0;
+    color: #1e293b;
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .concept-table tr:nth-child(even) td {
+    background: #f8fafc;
+  }
+  .concept-table tr:hover td {
+    background: #eff6ff;
+  }
+  /* Formula & Worked Numerical Card */
+  .formula-card {
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+    border: 1px solid #c4b5fd;
+    border-left: 5px solid #6d28d9;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .formula-header {
+    font-size: 15.5px;
+    font-weight: 800;
+    color: #4c1d95;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .formula-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .formula-item {
+    background: #ffffff;
+    border: 1px solid #ddd6fe;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #1e1b4b;
+    line-height: 1.55;
+  }
+  .worked-box {
+    background: #ffffff;
+    border: 1px dashed #8b5cf6;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  /* PYQ Spotlight Box */
+  .pyq-spot-box {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-left: 5px solid #059669;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-top: 26px;
+  }
+  .pyq-spot-header {
+    font-size: 15.5px;
+    font-weight: 800;
+    color: #065f46;
+    margin-bottom: 14px;
+  }
+  .pyq-spot-item {
+    background: #ffffff;
+    border: 1px solid #dcfce7;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+  .pyq-spot-item:last-child {
+    margin-bottom: 0;
+  }
+  .pyq-spot-meta {
+    margin-bottom: 6px;
+  }
+  .pyq-badge {
+    display: inline-block;
+    background: #059669;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+  .pyq-spot-q {
+    font-size: 14.5px;
+    color: #0f172a;
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+  .pyq-spot-a {
+    font-size: 13.5px;
+    color: #065f46;
+    background: #ecfdf5;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-left: 3px solid #10b981;
+    line-height: 1.55;
+  }
+  /* Revision Sheet Card */
+  .rev-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  }
+  .rev-hdr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+  .rev-badge {
+    background: #1e3a8a;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 999px;
+    text-transform: uppercase;
+  }
+  .rev-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+  .rev-pyq-cnt {
+    margin-left: auto;
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  @media (max-width: 768px) {
+    .container { padding: 0 12px; margin: 16px auto; }
+    .hero { padding: 24px 20px; border-radius: 14px; }
+    .hero h1 { font-size: 21px; }
+    .chapter-card, .rev-card { padding: 20px 16px; border-radius: 14px; }
+    .ch-title { font-size: 19px; }
+    .toc-grid { grid-template-columns: 1fr; }
+    .formula-grid { grid-template-columns: 1fr; }
+  }
+
+  .desc-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+    border: 1.5px solid #93c5fd;
+    border-left: 6px solid #1d4ed8;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+  .desc-header {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .desc-q-card {
+    background: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(29, 78, 216, 0.04);
+  }
+  .desc-q-card:last-child { margin-bottom: 0; }
+  .desc-q-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #cbd5e1;
+  }
+  .desc-struct {
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 1.65;
+  }
+  .desc-struct p { margin-bottom: 8px; }
+  .desc-tag {
+    display: inline-block;
+    background: #1d4ed8;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-right: 8px;
+  }
+
+</style>
+</head>
+<body>
+<style>
+.fin-unified-nav { background: #0f172a; border-bottom: 2px solid #0284c7; padding: 10px 16px; position: sticky; top: 0; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-family: 'Inter', -apple-system, sans-serif; }
+.fin-unified-nav-inner { max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.fnav-btn { color: #cbd5e1; text-decoration: none; font-size: 12.5px; font-weight: 600; padding: 6px 11px; border-radius: 6px; background: #1e293b; border: 1px solid #334155; transition: all 0.15s ease; white-space: nowrap; }
+.fnav-btn:hover { background: #334155; color: #ffffff; border-color: #38bdf8; }
+.fnav-btn.active { background: #0284c7; color: #ffffff; border-color: #38bdf8; box-shadow: 0 0 0 2px rgba(56,189,248,0.3); }
+.fnav-home { background: #0f766e; border-color: #14b8a6; color: #f0fdfa; }
+.fnav-mock { padding: 6px 8.5px; font-size: 12px; }
+</style>
+<div class="fin-unified-nav"><div class="fin-unified-nav-inner"><a class="fnav-btn fnav-home" href="../index.html">🏠 All Subjects Portal</a><a class="fnav-btn" href="PFRDA_Commerce_Accountancy_Hub.html">🏛️ Commerce &amp; Accountancy Hub</a><a class="fnav-btn" href="PFRDA_Commerce_Accountancy_Comprehensive_Master_Study_Notes.html">📘 Detailed Notes (23 Ch)</a><a class="fnav-btn active" href="PFRDA_Commerce_Accountancy_Master_Revision_Sheet.html">⚡ Revision Sheet</a><a class="fnav-btn" href="PFRDA_Commerce_Accountancy_All_Exams_PYQ_Practice.html">🎯 All-Exams PYQs (141)</a><a class="fnav-btn" href="PFRDA_Commerce_Accountancy_Topic_Wise_Mocks.html">🧩 Topic-Wise Mocks (23 Ch)</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_1.html">M1</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_2.html">M2</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_3.html">M3</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_4.html">M4</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_5.html">M5</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_6.html">M6</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_7.html">M7</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_8.html">M8</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_9.html">M9</a><a class="fnav-btn fnav-mock" href="PFRDA_Commerce_Accountancy_Mock_10.html">M10</a></div></div>
+<div class="container">
+<div class="hero" style="background: linear-gradient(135deg, #0f766e 0%, #0369a1 55%, #1e3a8a 100%);">
+<h1>⚡ Subject C — Commerce &amp; Accountancy: Master Rapid Revision &amp; Formula Sheet</h1>
+<p>High-Density Last-Minute Exam Revision Sheet • Comparison Tables, Formulas, Statutory Thresholds, Worked Examples &amp; 2025–2026 Updates across All 23 Chapters</p>
+<div class="hero-badges">
+<span class="hero-badge">⚡ 23 Rapid-Revision Cards</span>
+<span class="hero-badge">📐 All Formulas &amp; Limits</span>
+<span class="hero-badge">🏛️ EduTap + CA Raman Luthra Synthesis</span>
+</div>
+</div>
+<section class="rev-card" id="rev-ch01" style="border-left: 5px solid #1e3a8a;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#1e3a8a;">CH 01</span>
+<h3 class="rev-title">Introduction to Accounting &amp; Financial Information System</h3>
+<span class="rev-pyq-cnt">7 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Mandatory Audit Trail (Edit Log) in Accounting Software (Rule 3(1) &amp; Rule 11(g)):</strong> Every company using accounting software to maintain its books of account must use software that records an immutable <strong>audit trail (edit log) of every transaction</strong> and preserves it for <strong>8 financial years</strong> (Sec 128(5)).</li><li><strong>Qualitative Characteristics of Financial Information (ICAI Conceptual Framework):</strong> Divided into <strong>Fundamental Qualitative Characteristics</strong> (Relevance [Predictive + Confirmatory Value + Materiality] and Faithful Representation [Completeness + Neutrality + Free from Error]) and <strong>Enhancing Qualitative Characteristics</strong> (Comparability, Verifiability, Timeliness, Understandability).</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Distinction Between Book-Keeping and Accounting &amp; Sub-Fields of Accounting (CA Raman Luthra Table)</div>
+<table class="concept-table">
+<thead><tr><th>Dimension / Sub-Field</th><th>Book-Keeping / Core Scope</th><th>Accounting / Decision Focus</th><th>Key Exam Trap / PYQ Point</th></tr></thead>
+<tbody><tr><td>Scope &amp; Stage of Process</td><td>Confined to identifying, measuring, recording in Journal/Subsidiary Books, and posting to Ledger.</td><td>Starts where book-keeping ends: encompasses summarising (Trial Balance &amp; Final Accounts), analysing, interpreting, and communicating.</td><td>Financial Statements (P&amp;L and Balance Sheet) are part of Accounting, NOT Book-Keeping!</td></tr><tr><td>Decision-Making &amp; Skill Level</td><td>Routine and clerical in nature; managerial decisions cannot be taken directly from raw book-keeping records.</td><td>Analytical and executive in nature; management relies on accounting reports and ratios for strategic decisions.</td><td>Every accountant knows book-keeping, but a book-keeper need not possess full accounting expertise.</td></tr><tr><td>Sub-Fields of Accounting</td><td>Financial Accounting (Historical stewardship for external users); Cost Accounting (Cost ascertainment &amp; control); Management Accounting (Internal decision-making).</td><td>Human Resource Accounting (Lev &amp; Schwartz / Flamholtz valuation); Social Responsibility / ESG Accounting; Inflation Accounting (CPP &amp; CCA methods).</td><td>Current Purchasing Power (CPP) uses general price index; Current Cost Accounting (CCA) uses specific replacement cost.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Logical Sequence of Accounting Process (7 Steps): (1) Identifying → (2) Measuring in Money Terms → (3) Recording (Journal) → (4) Classifying (Ledger) → (5) Summarising (Trial Balance, P&amp;L, B/S) → (6) Analysing &amp; Interpreting → (7) Communicating</code></div><div class="formula-item"><code>Hierarchy of Scope: Book-Keeping (Recording &amp; Classifying)  ⊂  Accounting (Recording to Communicating)  ⊂  Accountancy (Body of theoretical knowledge &amp; rules)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Internal vs External Users: Internal Users manage operations directly (Board of Directors, Partners, Managers, Officers). External Users lie outside management: Investors/Shareholders (ROI &amp; risk), Lenders/Debenture-holders (solvency &amp; interest coverage), Suppliers/Trade Creditors (short-term liquidity), Tax Authorities, Regulators (SEBI, RBI, PFRDA, RoC), Employees/Trade Unions, Customers, and Public.</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Introduction to Accounting &amp; Financial Information System</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Introduction to Accounting &amp; Financial Information System' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Introduction to Accounting &amp; Financial Information System is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Mandatory Audit Trail (Edit Log) in Accounting Software (Rule 3(1) &amp; Rule 11(g)): Every company using accounting software to maintain its books of account must use software that records an immutable audit trail (edit log) of every transaction and preserves it for 8 financial years (Sec 128(5)).; Qualitative Characteristics of Financial Information (ICAI Conceptual Framework): Divided into Fundamental Qualitative Characteristics (Relevance [Predic</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Scope &amp; Stage of Process | Confined to identifying, measuring, recording in Journal/Subsidiary Books, and posting to Ledger. | Starts where book-keeping ends: encompasses summarising (Trial Balance &amp; Final Accounts), analysing, interpreting, and communicating. | Financial Statements (P&amp;L and Balance Sheet) are part of Accounting, NOT Book-Keeping!; Decision-Making &amp; Skill Level | Routine and clerical in nature; managerial decisions cannot be take</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Scope &amp; Stage of Process | Confined to identifying, measuring, recording in Journal/Subsidiary Books, and posting to Ledger. | Starts where book-keeping ends: encompasses summarising (Trial Balance &amp; Final Accounts), analysing, interpreting, and communicating. | Financial Statements (P&amp;L and Balance Sheet) are part of Accounting, NOT Book-Keeping!; Decision-Making &amp; Skill Level | Routine and clerical in nature; managerial decisions cannot be take</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Introduction to Accounting &amp; Financial Information System ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Introduction to Accounting &amp; Financial Information System.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Introduction to Accounting &amp; Financial Information System is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Qualitative Characteristics of Financial Information (ICAI Conceptual Framework): Divided into Fundamental Qualitative Characteristics (Relevance [Predictive + Confirmatory Value + Materiality] and Faithful Representation [Completeness + Neutrality + Free from Error]) and Enhancing Qualitative Characteristics (Comparability, Verifiability, Timeliness, Understandability).</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Introduction to Accounting &amp; Financial Information System.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch02" style="border-left: 5px solid #0d9488;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0d9488;">CH 02</span>
+<h3 class="rev-title">Theory Base of Accounting — Concepts, Principles &amp; Conventions</h3>
+<span class="rev-pyq-cnt">5 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>AS-1 Three Fundamental Accounting Assumptions (G-C-A Mnemonic):</strong> Under ICAI AS-1, there are <strong>ONLY THREE Fundamental Accounting Assumptions</strong>: (1) <strong>Going Concern</strong>, (2) <strong>Consistency</strong>, and (3) <strong>Accrual</strong>! If followed, no disclosure is needed; if ANY is not followed, non-compliance must be disclosed!</li><li><strong>AS-1 Three Policy Selection Considerations:</strong> (1) <strong>Prudence (Conservatism)</strong>, (2) <strong>Substance over Form</strong>, and (3) <strong>Materiality</strong>.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Matrix of All Accounting Concepts &amp; Conventions and Their Practical Applications</div>
+<table class="concept-table">
+<thead><tr><th>Accounting Concept / Convention</th><th>Core Principle &amp; Assumption</th><th>Direct Accounting Application / Entry</th><th>High-Yield Exam Trap / Exception</th></tr></thead>
+<tbody><tr><td>1. Business Entity Concept</td><td>Business enterprise is treated as a distinct accounting unit separate from its owners.</td><td>Owner's capital is recorded as an internal LIABILITY; personal withdrawals are debited to Drawings A/c.</td><td>Applies to ALL forms of business in accounting (even Sole Proprietorships!).</td></tr><tr><td>2. Money Measurement Concept</td><td>Only transactions capable of being expressed in monetary terms are recorded.</td><td>Excludes qualitative factors such as dedicated workforce, CEO health, brand loyalty, or managerial conflict.</td><td>Assumes stable monetary unit (ignores inflation).</td></tr><tr><td>3. Going Concern Concept (AS-1 #1)</td><td>Enterprise will continue in operation for the foreseeable future without liquidation.</td><td>Justifies recording Fixed Assets at Historical Cost less Depreciation rather than liquidation value.</td><td>If invalid, assets are valued at Net Realizable / Liquidation Value.</td></tr><tr><td>4. Periodicity &amp; Matching Concepts</td><td>Expenses incurred in an accounting period must be matched against revenues earned in that period.</td><td>Requires year-end adjustments for Outstanding/Prepaid Expenses, Accrued/Unearned Income, and Closing Stock.</td><td>Revenue is recognized first (Realisation), and related costs are matched against it.</td></tr><tr><td>5. Conservatism (Prudence) Convention</td><td>'Anticipate no profit, but provide for all possible losses.'</td><td>Valuation of Inventories at Lower of Cost or NRV (AS-2); Provision for Doubtful Debts.</td><td>Providing for Discount on Creditors violates Conservatism because it anticipates a future gain!</td></tr><tr><td>6. Materiality vs Full Disclosure</td><td>Full Disclosure: Disclose all significant facts (Contingent Liabilities). Materiality: Exception permitting insignificant items to be expensed.</td><td>A ₹150 stapler lasting 5 years is expensed immediately to Stationery A/c instead of being depreciated.</td><td>Materiality depends on both size and nature of the item.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Fundamental Accounting Equation (Dual Aspect Concept): Assets (A) = Equity / Capital (C) + Liabilities (L)</code></div><div class="formula-item"><code>Expanded Accounting Equation: Closing Capital = Opening Capital + Additional Capital + Revenue − Expenses (Net Profit) − Drawings</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Expanded Equation Numerical: Opening Assets = ₹8,00,000, Opening Liabilities = ₹3,00,000 (so Opening Capital = ₹5,00,000). Additional Capital = ₹1,00,000, Drawings = ₹60,000. Closing Assets = ₹10,50,000, Closing Liabilities = ₹3,50,000 (so Closing Capital = ₹7,00,000). Net Profit = ₹7,00,000 − (₹5,00,000 + ₹1,00,000 − ₹60,000) = <strong>₹1,60,000</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Theory Base of Accounting — Concepts, Principles &amp; Conventions</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Theory Base of Accounting — Concepts, Principles &amp; Conventions' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Theory Base of Accounting — Concepts, Principles &amp; Conventions is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> AS-1 Three Fundamental Accounting Assumptions (G-C-A Mnemonic): Under ICAI AS-1, there are ONLY THREE Fundamental Accounting Assumptions : (1) Going Concern , (2) Consistency , and (3) Accrual ! If followed, no disclosure is needed; if ANY is not followed, non-compliance must be disclosed!; AS-1 Three Policy Selection Considerations: (1) Prudence (Conservatism) , (2) Substance over Form , and (3) Materiality .</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> 1. Business Entity Concept | Business enterprise is treated as a distinct accounting unit separate from its owners. | Owner's capital is recorded as an internal LIABILITY; personal withdrawals are debited to Drawings A/c. | Applies to ALL forms of business in accounting (even Sole Proprietorships!).; 2. Money Measurement Concept | Only transactions capable of being expressed in monetary terms are recorded. | Excludes qualitative factors such as d</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> 1. Business Entity Concept | Business enterprise is treated as a distinct accounting unit separate from its owners. | Owner's capital is recorded as an internal LIABILITY; personal withdrawals are debited to Drawings A/c. | Applies to ALL forms of business in accounting (even Sole Proprietorships!).; 2. Money Measurement Concept | Only transactions capable of being expressed in monetary terms are recorded. | Excludes qualitative factors such as d</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Theory Base of Accounting — Concepts, Principles &amp; Conventions ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Theory Base of Accounting — Concepts, Principles &amp; Conventions.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Theory Base of Accounting — Concepts, Principles &amp; Conventions is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> AS-1 Three Policy Selection Considerations: (1) Prudence (Conservatism) , (2) Substance over Form , and (3) Materiality .</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Theory Base of Accounting — Concepts, Principles &amp; Conventions.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch03" style="border-left: 5px solid #4f46e5;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#4f46e5;">CH 03</span>
+<h3 class="rev-title">Recording of Transactions Part 1 — Vouchers, Golden Rules, Journal &amp; Ledger</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Representative Personal Account Rule:</strong> Whenever any prefix or suffix (<em>Outstanding, Prepaid, Accrued, Unearned/Advance</em>) is added to a Nominal Account (Salary, Rent, Interest, Insurance, Commission), it becomes a <strong>Representative Personal Account</strong>!</li><li><strong>Trade Discount vs Cash Discount:</strong> Trade Discount is deducted on the invoice and NEVER entered in ledger accounts; Cash Discount is recorded as a Nominal Account.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Classification of Accounts (Personal, Real &amp; Nominal — CA Raman Luthra Exam Table)</div>
+<table class="concept-table">
+<thead><tr><th>Account Category</th><th>Sub-Category &amp; Rule</th><th>Classic &amp; Tricky Examples</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Personal — Natural &amp; Artificial</td><td>Dr Receiver, Cr Giver.</td><td>Natural: Proprietor's Capital A/c, Drawings A/c, Debtors, Creditors. Artificial: Bank A/c, Bank Overdraft A/c, LIC A/c, Companies.</td><td>Bank A/c and Bank Overdraft A/c are Artificial Personal Accounts (whereas Cash A/c is Real!).</td></tr><tr><td>Personal — Representative</td><td>Represents a person or group of persons.</td><td>Outstanding Salary/Rent A/c, Prepaid Insurance A/c, Accrued Interest A/c, Unearned Commission A/c.</td><td>Salary is Nominal, but Outstanding Salary is Representative Personal!</td></tr><tr><td>Real Accounts</td><td>Tangible &amp; Intangible Assets.</td><td>Tangible: Cash, Land, Building, Plant, Stock. Intangible: Goodwill, Patents, Trademarks, Copyrights.</td><td>Goodwill, Patents, and Copyrights are Intangible REAL Accounts!</td></tr><tr><td>Nominal Accounts</td><td>Expenses, Losses, Incomes, Gains.</td><td>Salary, Rent, Wages, Depreciation, Bad Debts, Bad Debts Recovered, Discount Allowed/Received.</td><td>Closed to Trading or P&amp;L A/c at year-end.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Traditional Golden Rules: Personal = Dr Receiver, Cr Giver  |  Real = Dr What Comes In, Cr What Goes Out  |  Nominal = Dr All Expenses &amp; Losses, Cr All Incomes &amp; Gains</code></div><div class="formula-item"><code>Modern Rules (DEALER): Debit increases Drawings, Expenses/Losses, Assets  |  Credit increases Liabilities, Equity/Capital, Revenue/Gains</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Goods Withdrawn / Lost by Fire / Free Samples: Whenever goods leave the business other than by sale, <strong>Purchases A/c is CREDITED at COST PRICE</strong>! E.g., Goods costing ₹20,000 destroyed by fire with ₹15,000 insurance claim admitted: Dr Insurance Co A/c ₹15,000, Dr Loss by Fire A/c ₹5,000, Cr Purchases A/c ₹20,000.</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Recording of Transactions Part 1 — Vouchers, Golden Rules, Journal &amp; Ledger</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Recording of Transactions Part 1 — Vouchers, Golden Rules, Journal &amp; Ledger' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Recording of Transactions Part 1 — Vouchers, Golden Rules, Journal &amp; Ledger is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Representative Personal Account Rule: Whenever any prefix or suffix ( Outstanding, Prepaid, Accrued, Unearned/Advance ) is added to a Nominal Account (Salary, Rent, Interest, Insurance, Commission), it becomes a Representative Personal Account !; Trade Discount vs Cash Discount: Trade Discount is deducted on the invoice and NEVER entered in ledger accounts; Cash Discount is recorded as a Nominal Account.</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Personal — Natural &amp; Artificial | Dr Receiver, Cr Giver. | Natural: Proprietor's Capital A/c, Drawings A/c, Debtors, Creditors. Artificial: Bank A/c, Bank Overdraft A/c, LIC A/c, Companies. | Bank A/c and Bank Overdraft A/c are Artificial Personal Accounts (whereas Cash A/c is Real!).; Personal — Representative | Represents a person or group of persons. | Outstanding Salary/Rent A/c, Prepaid Insurance A/c, Accrued Interest A/c, Unearned Commissio</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Personal — Natural &amp; Artificial | Dr Receiver, Cr Giver. | Natural: Proprietor's Capital A/c, Drawings A/c, Debtors, Creditors. Artificial: Bank A/c, Bank Overdraft A/c, LIC A/c, Companies. | Bank A/c and Bank Overdraft A/c are Artificial Personal Accounts (whereas Cash A/c is Real!).; Personal — Representative | Represents a person or group of persons. | Outstanding Salary/Rent A/c, Prepaid Insurance A/c, Accrued Interest A/c, Unearned Commissio</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Recording of Transactions Part 1 — Vouchers, Golden Rules, Journal &amp; Ledger ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Recording of Transactions Part 1 — Vouchers, Golden Rules, Journal &amp; Ledger.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Recording of Transactions Part 1 — Vouchers, Golden Rules, Journal &amp; Ledger is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Trade Discount vs Cash Discount: Trade Discount is deducted on the invoice and NEVER entered in ledger accounts; Cash Discount is recorded as a Nominal Account.</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Recording of Transactions Part 1 — Vouchers, Golden Rules, Journal &amp; Ledger.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch04" style="border-left: 5px solid #b45309;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#b45309;">CH 04</span>
+<h3 class="rev-title">Recording of Transactions Part 2 — Cash Book, Subsidiary Books &amp; Bank Reconciliation Statement (BRS)</h3>
+<span class="rev-pyq-cnt">0 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Cash Book Dual Role:</strong> Cash Book is BOTH a Book of Original Entry (Journal) AND a Principal Book (Ledger). Cash column can NEVER have a credit balance; Bank column CAN have a credit balance (Overdraft).</li><li><strong>Subsidiary Book Exclusions:</strong> Purchases Book records ONLY credit purchases of goods (excludes cash purchases and credit purchases of fixed assets!).</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Subsidiary Books (Special Journals) &amp; Exact Transaction Routing</div>
+<table class="concept-table">
+<thead><tr><th>Subsidiary Book</th><th>Transactions Recorded</th><th>Source Document</th><th>Strictly EXCLUDED (Exam Trap!)</th></tr></thead>
+<tbody><tr><td>Cash Book</td><td>All Cash &amp; Bank receipts and payments (including Cash Sales &amp; Cash Purchases).</td><td>Receipts, cheques, pay-in-slips. Contra ('C') for Cash ↔ Bank.</td><td>Drawing cash from Bank for PERSONAL use is NOT a Contra Entry (Dr Drawings, Cr Bank)!</td></tr><tr><td>Purchases Book &amp; Sales Book</td><td>ONLY Credit Purchases / Credit Sales of GOODS dealt in.</td><td>Inward &amp; Outward Invoices (net of Trade Discount).</td><td>EXCLUDES Cash Purchases/Sales (Cash Book) and Credit Purchase/Sale of Fixed Assets (Journal Proper)!</td></tr><tr><td>Purchase Return &amp; Sales Return Books</td><td>Return of goods bought/sold on credit.</td><td>Debit Note (Purchase Return) &amp; Credit Note (Sales Return).</td><td>Cash returns go to Cash Book.</td></tr><tr><td>Journal Proper</td><td>All residual transactions.</td><td>Opening, Closing, Adjustment, Rectification, Credit Purchase/Sale of Fixed Assets.</td><td>Dishonour/endorsement of bills goes to Journal Proper.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>BRS Normal vs Overdraft Balances: Favourable = Dr as per Cash Book = Cr as per Pass Book  |  Overdraft = Cr as per Cash Book = Dr as per Pass Book</code></div><div class="formula-item"><code>BRS Equation (from Cash Book Dr Balance): Pass Book Balance = Cash Book Dr + Unpresented Cheques + Direct Credits/Interest − Uncleared Deposits − Bank Charges/Direct Debits</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked BRS with Overdraft: Overdraft as per Cash Book (Cr) = ₹45,000. Unpresented cheques = ₹12,000; Uncleared deposits = ₹18,000; Bank overdraft interest debited in Pass Book = ₹1,500; Direct deposit by customer = ₹6,500. Algebraic balance: `−45,000 + 12,000 − 18,000 − 1,500 + 6,500 = −₹46,000` → <strong>Overdraft (Debit Balance) as per Pass Book = ₹46,000</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Recording of Transactions Part 2 — Cash Book, Subsidiary Books &amp; Bank Reconciliation Statement (BRS)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Recording of Transactions Part 2 — Cash Book, Subsidiary Books &amp; Bank Reconciliation Statement (BRS)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Recording of Transactions Part 2 — Cash Book, Subsidiary Books &amp; Bank Reconciliation Statement (BRS) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Cash Book Dual Role: Cash Book is BOTH a Book of Original Entry (Journal) AND a Principal Book (Ledger). Cash column can NEVER have a credit balance; Bank column CAN have a credit balance (Overdraft).; Subsidiary Book Exclusions: Purchases Book records ONLY credit purchases of goods (excludes cash purchases and credit purchases of fixed assets!).</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Cash Book | All Cash &amp; Bank receipts and payments (including Cash Sales &amp; Cash Purchases). | Receipts, cheques, pay-in-slips. Contra ('C') for Cash ↔ Bank. | Drawing cash from Bank for PERSONAL use is NOT a Contra Entry (Dr Drawings, Cr Bank)!; Purchases Book &amp; Sales Book | ONLY Credit Purchases / Credit Sales of GOODS dealt in. | Inward &amp; Outward Invoices (net of Trade Discount). | EXCLUDES Cash Purchases/Sales (Cash Book) and Credit Purchase/Sa</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Cash Book | All Cash &amp; Bank receipts and payments (including Cash Sales &amp; Cash Purchases). | Receipts, cheques, pay-in-slips. Contra ('C') for Cash ↔ Bank. | Drawing cash from Bank for PERSONAL use is NOT a Contra Entry (Dr Drawings, Cr Bank)!; Purchases Book &amp; Sales Book | ONLY Credit Purchases / Credit Sales of GOODS dealt in. | Inward &amp; Outward Invoices (net of Trade Discount). | EXCLUDES Cash Purchases/Sales (Cash Book) and Credit Purchase/Sa</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Recording of Transactions Part 2 — Cash Book, Subsidiary Books &amp; Bank Reconciliation Statement (BRS) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Recording of Transactions Part 2 — Cash Book, Subsidiary Books &amp; Bank Reconciliation Statement (BRS).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Recording of Transactions Part 2 — Cash Book, Subsidiary Books &amp; Bank Reconciliation Statement (BRS) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Subsidiary Book Exclusions: Purchases Book records ONLY credit purchases of goods (excludes cash purchases and credit purchases of fixed assets!).</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Recording of Transactions Part 2 — Cash Book, Subsidiary Books &amp; Bank Reconciliation Statement (BRS).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch05" style="border-left: 5px solid #047857;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#047857;">CH 05</span>
+<h3 class="rev-title">Trial Balance and Rectification of Errors (Suspense Account)</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Trial Balance Agreement Rule:</strong> Two-sided errors (Complete Omission, Error of Principle, Compensating Errors, Wrong amount in Subsidiary Book, Posting to wrong account on the correct side) DO NOT affect Trial Balance agreement! One-sided errors (Partial omission, Wrong casting of subsidiary book, Posting to wrong side or wrong amount) DO affect Trial Balance agreement and require a <strong>Suspense Account</strong>.</li><li><strong>Effect on Net Profit:</strong> Net Profit changes ONLY when a rectification entry debits or credits a <strong>Nominal Account</strong>!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Classification of Accounting Errors &amp; Impact on Trial Balance</div>
+<table class="concept-table">
+<thead><tr><th>Type of Error</th><th>Definition &amp; Mechanism</th><th>Does Trial Balance Agree?</th><th>Concrete Exam Example</th></tr></thead>
+<tbody><tr><td>Error of Principle</td><td>Treating Capital Expenditure as Revenue Expenditure (or vice versa).</td><td>YES (Agrees).</td><td>Installation wages of new machinery debited to Wages A/c instead of Machinery A/c.</td></tr><tr><td>Complete vs Partial Omission</td><td>Complete: Omitted from original book. Partial: Omitted from one ledger posting.</td><td>Complete: YES. Partial: NO (Disagrees).</td><td>Sale to Mohan recorded in Sales Book but not posted to Mohan's A/c.</td></tr><tr><td>Error of Commission</td><td>Clerical error in casting, carry-forward, or posting.</td><td>Wrong account on right side → YES; Wrong side/amount/casting → NO.</td><td>Credit purchase of ₹7,500 from Ramesh debited as ₹5,700 to Ramesh → Disagrees by ₹13,200!</td></tr><tr><td>Compensating Errors</td><td>Two errors cancelling each other's Dr and Cr amounts.</td><td>YES (Agrees).</td><td>Purchases Book and Sales Book both undercast by ₹2,000.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Effect of Rectification on Net Profit: Nominal A/c Debited in Rectification → Net Profit Decreases  |  Nominal A/c Credited → Net Profit Increases  |  Only Real/Personal/Suspense A/cs → ZERO Effect on Net Profit</code></div><div class="formula-item"><code>Next-Period Rectification: Replace every Nominal Account with 'Profit and Loss Adjustment Account'</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Double Discrepancy Numerical: Credit purchase from Ramesh ₹7,500 was debited to Ramesh's A/c as ₹5,700. Trial Balance Debit exceeds Credit by `₹7,500 + ₹5,700 = ₹13,200`. Rectification: Dr Suspense A/c ₹13,200, Cr Ramesh's A/c ₹13,200 (Zero effect on Net Profit since neither is a Nominal Account!).</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Trial Balance and Rectification of Errors (Suspense Account)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Trial Balance and Rectification of Errors (Suspense Account)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Trial Balance and Rectification of Errors (Suspense Account) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Trial Balance Agreement Rule: Two-sided errors (Complete Omission, Error of Principle, Compensating Errors, Wrong amount in Subsidiary Book, Posting to wrong account on the correct side) DO NOT affect Trial Balance agreement! One-sided errors (Partial omission, Wrong casting of subsidiary book, Posting to wrong side or wrong amount) DO affect Trial Balance agreement and require a Suspense Account .; Effect on Net Profit: Net Profit changes ONLY w</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Error of Principle | Treating Capital Expenditure as Revenue Expenditure (or vice versa). | YES (Agrees). | Installation wages of new machinery debited to Wages A/c instead of Machinery A/c.; Complete vs Partial Omission | Complete: Omitted from original book. Partial: Omitted from one ledger posting. | Complete: YES. Partial: NO (Disagrees). | Sale to Mohan recorded in Sales Book but not posted to Mohan's A/c.; Error of Commission | Clerical err</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Error of Principle | Treating Capital Expenditure as Revenue Expenditure (or vice versa). | YES (Agrees). | Installation wages of new machinery debited to Wages A/c instead of Machinery A/c.; Complete vs Partial Omission | Complete: Omitted from original book. Partial: Omitted from one ledger posting. | Complete: YES. Partial: NO (Disagrees). | Sale to Mohan recorded in Sales Book but not posted to Mohan's A/c.; Error of Commission | Clerical err</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Trial Balance and Rectification of Errors (Suspense Account) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Trial Balance and Rectification of Errors (Suspense Account).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Trial Balance and Rectification of Errors (Suspense Account) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Effect on Net Profit: Net Profit changes ONLY when a rectification entry debits or credits a Nominal Account !</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Trial Balance and Rectification of Errors (Suspense Account).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch06" style="border-left: 5px solid #7c3aed;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#7c3aed;">CH 06</span>
+<h3 class="rev-title">Bills of Exchange and Promissory Notes</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Public Holiday vs Emergency Holiday Maturity Rule (Sec 25 of NI Act, 1881):</strong> If maturity falls on a <strong>Scheduled / Public Holiday</strong> (Sunday, Aug 15, Oct 2, Jan 26) → due on the <strong>NEXT PRECEDING BUSINESS DAY (1 day earlier)</strong>! If it falls on an <strong>unforeseen Emergency Holiday</strong> → due on the <strong>NEXT SUCCEEDING BUSINESS DAY (1 day later)</strong>!</li><li><strong>Noting Charges Rule:</strong> Always recoverable from Drawee (debited to Drawee's Personal A/c in Drawer's books, and debited as Noting Charges Expense in Drawee's books).</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Bill of Exchange (Sec 5) vs Promissory Note (Sec 4) &amp; Dishonour Rules</div>
+<table class="concept-table">
+<thead><tr><th>Dimension</th><th>Bill of Exchange (Sec 5)</th><th>Promissory Note (Sec 4)</th><th>Universal Dishonour Rule in Drawer's Books</th></tr></thead>
+<tbody><tr><td>Creator, Nature &amp; Parties</td><td>Drawn by Creditor (Drawer); unconditional ORDER to pay; 3 parties (Drawer, Drawee, Payee).</td><td>Made by Debtor (Maker); unconditional PROMISE to pay; 2 parties (Maker, Payee).</td><td>Cannot be made payable to bearer on demand (Sec 31 RBI Act).</td></tr><tr><td>Acceptance &amp; Liability</td><td>Requires formal acceptance by Drawee; Drawer's liability is secondary/conditional.</td><td>No acceptance needed; Maker's liability is primary and absolute.</td><td>In all 4 dishonour cases in Drawer's books: ALWAYS Debit Drawee's A/c (Bill + Noting Charges) and Credit Holder (B/R, Bank, Endorsee, or Bill for Collection)!</td></tr><tr><td>Retirement vs Renewal vs Accommodation</td><td>Retirement: Early payment before maturity with Rebate (expense to Drawer, gain to Drawee).</td><td>Renewal: Cancel old bill + charge interest for extended period + draw new bill.</td><td>Accommodation Bills: Drawn for mutual financial help without trade consideration; discount shared in ratio of proceeds shared.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Maturity Date = Nominal Date + Tenure + 3 Days of Grace  (Zero days of grace for bills payable On Demand / At Sight)</code></div><div class="formula-item"><code>Bank Discount = Face Value × Discount Rate % × (Unexpired Period ÷ 12)   |   Rebate on Retirement = Face Value × Rebate Rate % × (Early Payment Period ÷ 12)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Maturity Date Numerical: Bill drawn on June 12, 2026 for 2 months after date. Nominal due date = Aug 12 + 3 days grace = Aug 15, 2026 (Independence Day — Public Holiday) → Legal due date is <strong>August 14, 2026 (preceding business day)</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Bills of Exchange and Promissory Notes</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Bills of Exchange and Promissory Notes' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Bills of Exchange and Promissory Notes is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Public Holiday vs Emergency Holiday Maturity Rule (Sec 25 of NI Act, 1881): If maturity falls on a Scheduled / Public Holiday (Sunday, Aug 15, Oct 2, Jan 26) → due on the NEXT PRECEDING BUSINESS DAY (1 day earlier) ! If it falls on an unforeseen Emergency Holiday → due on the NEXT SUCCEEDING BUSINESS DAY (1 day later) !; Noting Charges Rule: Always recoverable from Drawee (debited to Drawee's Personal A/c in Drawer's books, and debited as Noting </li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Creator, Nature &amp; Parties | Drawn by Creditor (Drawer); unconditional ORDER to pay; 3 parties (Drawer, Drawee, Payee). | Made by Debtor (Maker); unconditional PROMISE to pay; 2 parties (Maker, Payee). | Cannot be made payable to bearer on demand (Sec 31 RBI Act).; Acceptance &amp; Liability | Requires formal acceptance by Drawee; Drawer's liability is secondary/conditional. | No acceptance needed; Maker's liability is primary and absolute. | In all 4</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Creator, Nature &amp; Parties | Drawn by Creditor (Drawer); unconditional ORDER to pay; 3 parties (Drawer, Drawee, Payee). | Made by Debtor (Maker); unconditional PROMISE to pay; 2 parties (Maker, Payee). | Cannot be made payable to bearer on demand (Sec 31 RBI Act).; Acceptance &amp; Liability | Requires formal acceptance by Drawee; Drawer's liability is secondary/conditional. | No acceptance needed; Maker's liability is primary and absolute. | In all 4</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Bills of Exchange and Promissory Notes ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Bills of Exchange and Promissory Notes.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Bills of Exchange and Promissory Notes is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Noting Charges Rule: Always recoverable from Drawee (debited to Drawee's Personal A/c in Drawer's books, and debited as Noting Charges Expense in Drawee's books).</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Bills of Exchange and Promissory Notes.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch07" style="border-left: 5px solid #be123c;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#be123c;">CH 07</span>
+<h3 class="rev-title">Financial Statements — Income Statement (Trading and Profit &amp; Loss Account)</h3>
+<span class="rev-pyq-cnt">1 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Direct Expenses (Trading A/c) vs Indirect Expenses (P&amp;L A/c):</strong> Direct: Wages, Carriage/Freight Inward, Octroi, Customs Duty, Dock Charges, Factory Rent/Fuel/Power, Royalty on Production. Indirect: Salaries, Carriage Outward, Office Rent, Bad Debts, Depreciation, Packing for Sale, Royalty on Sales.</li><li><strong>Closing Stock Inside Trial Balance Trap:</strong> If Closing Stock is given INSIDE the Trial Balance, it means it has already been deducted from Purchases (Adjusted Purchases), so it appears ONLY ONCE in the Balance Sheet (Current Asset) and NEVER in the Trading Account!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Capital vs Revenue Expenditure &amp; Receipts and Trading vs P&amp;L Classification</div>
+<table class="concept-table">
+<thead><tr><th>Category</th><th>Core Criterion</th><th>High-Yield Exam Examples</th><th>Financial Statement Treatment</th></tr></thead>
+<tbody><tr><td>Capital vs Revenue Expenditure</td><td>Capital: Acquires fixed asset or enhances earning capacity/life (&gt;1 yr). Revenue: Maintains existing capacity.</td><td>Capital: Overhaul of 2nd-hand machine at purchase, installation wages, legal fee for land. Revenue: Routine repairs, whitewashing.</td><td>Capital Exp → Balance Sheet Asset; Revenue Exp → Trading/P&amp;L Debit.</td></tr><tr><td>Capital vs Revenue Receipts</td><td>Capital: Creates liability (Loan/Shares) or reduces fixed asset (Sale of Land). Revenue: Routine operating income.</td><td>Sale of machine costing ₹10L for ₹12L: ₹12L is Capital Receipt, while ₹2L gain is Revenue Profit credited to P&amp;L.</td><td>Capital Receipts → Balance Sheet; Revenue Receipts → P&amp;L Credit.</td></tr><tr><td>Wages &amp; Salaries vs Salaries &amp; Wages</td><td>First word dictates the account head.</td><td>'Wages and Salaries' → Trading A/c (Direct); 'Salaries and Wages' → P&amp;L A/c (Indirect).</td><td>Freight/Carriage Inward → Trading A/c; Freight/Carriage Outward → P&amp;L A/c.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Cost of Goods Sold (COGS) = Opening Stock + Net Purchases + Direct Expenses − Closing Stock</code></div><div class="formula-item"><code>Gross Profit = Net Sales − COGS   |   Operating Profit (EBIT) = Gross Profit − Operating Expenses (Admin + Selling &amp; Distribution)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> COGS &amp; Operating Profit Numerical: Op Stock ₹80k, Net Purchases ₹5,00k, Carriage Inward ₹15k, Wages ₹35k, Cl Stock ₹90k, Net Sales ₹7,50k, Carriage Outward ₹12k, Office Salaries ₹68k, Loss by Fire ₹10k. COGS = 80k + 500k + 50k − 90k = <strong>₹5,40,000</strong>; Gross Profit = 750k − 540k = <strong>₹2,10,000</strong>; Operating Profit = 210k − (12k + 68k) = <strong>₹1,30,000</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Financial Statements — Income Statement (Trading and Profit &amp; Loss Account)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Financial Statements — Income Statement (Trading and Profit &amp; Loss Account)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Financial Statements — Income Statement (Trading and Profit &amp; Loss Account) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Direct Expenses (Trading A/c) vs Indirect Expenses (P&amp;L A/c): Direct: Wages, Carriage/Freight Inward, Octroi, Customs Duty, Dock Charges, Factory Rent/Fuel/Power, Royalty on Production. Indirect: Salaries, Carriage Outward, Office Rent, Bad Debts, Depreciation, Packing for Sale, Royalty on Sales.; Closing Stock Inside Trial Balance Trap: If Closing Stock is given INSIDE the Trial Balance, it means it has already been deducted from Purchases (Adju</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Capital vs Revenue Expenditure | Capital: Acquires fixed asset or enhances earning capacity/life (&gt;1 yr). Revenue: Maintains existing capacity. | Capital: Overhaul of 2nd-hand machine at purchase, installation wages, legal fee for land. Revenue: Routine repairs, whitewashing. | Capital Exp → Balance Sheet Asset; Revenue Exp → Trading/P&amp;L Debit.; Capital vs Revenue Receipts | Capital: Creates liability (Loan/Shares) or reduces fixed asset (Sale of</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Capital vs Revenue Expenditure | Capital: Acquires fixed asset or enhances earning capacity/life (&gt;1 yr). Revenue: Maintains existing capacity. | Capital: Overhaul of 2nd-hand machine at purchase, installation wages, legal fee for land. Revenue: Routine repairs, whitewashing. | Capital Exp → Balance Sheet Asset; Revenue Exp → Trading/P&amp;L Debit.; Capital vs Revenue Receipts | Capital: Creates liability (Loan/Shares) or reduces fixed asset (Sale of</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Financial Statements — Income Statement (Trading and Profit &amp; Loss Account) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Financial Statements — Income Statement (Trading and Profit &amp; Loss Account).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Financial Statements — Income Statement (Trading and Profit &amp; Loss Account) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Closing Stock Inside Trial Balance Trap: If Closing Stock is given INSIDE the Trial Balance, it means it has already been deducted from Purchases (Adjusted Purchases), so it appears ONLY ONCE in the Balance Sheet (Current Asset) and NEVER in the Trading Account!</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Financial Statements — Income Statement (Trading and Profit &amp; Loss Account).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch08" style="border-left: 5px solid #0369a1;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0369a1;">CH 08</span>
+<h3 class="rev-title">Financial Statements — Balance Sheet and Final Account Adjustments</h3>
+<span class="rev-pyq-cnt">5 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Sequential Debtors Adjustment Chain:</strong> From Trial Balance Debtors: (1) First deduct <strong>Further Bad Debts</strong> (given outside TB) → (2) Compute <strong>New Provision for Doubtful Debts (%)</strong> on remaining Debtors → (3) Compute <strong>Provision for Discount on Debtors (%)</strong> on the remaining GOOD Debtors!</li><li><strong>Manager's Commission Formula:</strong> Before charging = `NP × R/100`; After charging such commission = `NP × R/(100 + R)`.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Dual Impact of Final Account Adjustments on P&amp;L and Balance Sheet</div>
+<table class="concept-table">
+<thead><tr><th>Adjustment Item</th><th>Trading / P&amp;L Treatment</th><th>Balance Sheet Treatment</th><th>Nature of Account</th></tr></thead>
+<tbody><tr><td>Outstanding Expenses</td><td>Added to respective Expense.</td><td>Shown under Current Liabilities.</td><td>Representative Personal Account (Liability).</td></tr><tr><td>Prepaid Expenses</td><td>Deducted from respective Expense.</td><td>Shown under Current Assets.</td><td>Representative Personal Account (Asset).</td></tr><tr><td>Accrued Income</td><td>Added to respective Income.</td><td>Shown under Current Assets.</td><td>Representative Personal Account (Asset).</td></tr><tr><td>Income Received in Advance (Unearned)</td><td>Deducted from respective Income.</td><td>Shown under Current Liabilities.</td><td>Representative Personal Account (Liability).</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Manager's Commission After Charging Such Commission = Net Profit before Commission × [ Rate ÷ (100 + Rate) ]</code></div><div class="formula-item"><code>Net P&amp;L Charge for Bad &amp; Doubtful Debts = Bad Debts (in TB) + Further Bad Debts (in Adj) + New Provision − Old Provision (in TB)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Debtors &amp; Commission Numerical: TB Debtors = ₹1,04,000; Further Bad Debts = ₹4,000 (Net = ₹1,00,000); New Prov for Doubtful Debts @ 5% = ₹5,000 (Good Debtors = ₹95,000); Prov for Discount @ 2% on ₹95,000 = ₹1,900 → Net Debtors in B/S = <strong>₹93,100</strong>. If NP before commission is ₹1,10,000 and Manager gets 10% after charging commission: `1,10,000 × 10/110 = ₹10,000`.</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Financial Statements — Balance Sheet and Final Account Adjustments</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Financial Statements — Balance Sheet and Final Account Adjustments' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Financial Statements — Balance Sheet and Final Account Adjustments is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Sequential Debtors Adjustment Chain: From Trial Balance Debtors: (1) First deduct Further Bad Debts (given outside TB) → (2) Compute New Provision for Doubtful Debts (%) on remaining Debtors → (3) Compute Provision for Discount on Debtors (%) on the remaining GOOD Debtors!; Manager's Commission Formula: Before charging = `NP × R/100`; After charging such commission = `NP × R/(100 + R)`.</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Outstanding Expenses | Added to respective Expense. | Shown under Current Liabilities. | Representative Personal Account (Liability).; Prepaid Expenses | Deducted from respective Expense. | Shown under Current Assets. | Representative Personal Account (Asset).; Accrued Income | Added to respective Income. | Shown under Current Assets. | Representative Personal Account (Asset).</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Outstanding Expenses | Added to respective Expense. | Shown under Current Liabilities. | Representative Personal Account (Liability).; Prepaid Expenses | Deducted from respective Expense. | Shown under Current Assets. | Representative Personal Account (Asset).; Accrued Income | Added to respective Income. | Shown under Current Assets. | Representative Personal Account (Asset).</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Financial Statements — Balance Sheet and Final Account Adjustments ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Financial Statements — Balance Sheet and Final Account Adjustments.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Financial Statements — Balance Sheet and Final Account Adjustments is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Manager's Commission Formula: Before charging = `NP × R/100`; After charging such commission = `NP × R/(100 + R)`.</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Financial Statements — Balance Sheet and Final Account Adjustments.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch09" style="border-left: 5px solid #6d28d9;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#6d28d9;">CH 09</span>
+<h3 class="rev-title">Financial Statement Analysis — Ratio Analysis and DuPont Analysis</h3>
+<span class="rev-pyq-cnt">32 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>32 Official PYQs in Ratio Analysis Alone!</strong> Master every formula, the effect of transactions on Current Ratio, the <strong>Operating Cost Ratio + Operating Profit Ratio = 100%</strong> identity, and the <strong>DuPont ROE = Net Profit Margin × Asset Turnover × Equity Multiplier</strong> equation!</li><li><strong>Schedule III Mandatory Ratio Disclosure:</strong> Companies must disclose 11 ratios in Notes to Accounts and explain any variance &gt; <strong>25%</strong> year-on-year.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Ratio Analysis Matrix &amp; Effect of Transactions on Current Ratio</div>
+<table class="concept-table">
+<thead><tr><th>Ratio / Scenario</th><th>Formula / Rule</th><th>Benchmark &amp; Meaning</th><th>Exam Trap / Shortcut</th></tr></thead>
+<tbody><tr><td>Current Ratio (when CR &gt; 1, e.g., 2:1)</td><td>CA ÷ CL (excludes Loose Tools &amp; Stores/Spares from CA).</td><td>Equal decrease in CA &amp; CL (paying creditors) INCREASES CR; Equal increase in CA &amp; CL (buying stock on credit) DECREASES CR.</td><td>Purely CA-to-CA transactions (collecting cash from debtors) leave CR unchanged!</td></tr><tr><td>Proprietary Ratio &amp; Capital Employed</td><td>Proprietary Ratio = Shareholders' Equity ÷ Total Assets.</td><td>Proprietary Ratio + Total Debt-to-Assets Ratio = 100%.</td><td>Capital Employed = Equity + Long-Term Debt = Total Assets − Current Liabilities.</td></tr><tr><td>Operating Cost Ratio vs Operating Profit Ratio</td><td>Operating Cost = COGS + Operating Expenses.</td><td>Operating Cost Ratio + Operating Profit Ratio = 100%.</td><td>If Operating Ratio is 78%, Operating Profit Ratio is automatically 22%!</td></tr><tr><td>3-Factor &amp; 5-Factor DuPont ROE</td><td>ROE = Net Profit Margin × Total Asset Turnover × Equity Multiplier.</td><td>ROA = Net Profit Margin × Asset Turnover; ROE = ROA × (Assets / Equity).</td><td>Shows whether ROE is driven by margin, efficiency, or leverage.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Liquidity: Current Ratio = CA ÷ CL (2:1)  |  Quick Ratio = (CA − Inventory − Prepaid Exp) ÷ CL (1:1)</code></div><div class="formula-item"><code>Solvency: Debt-Equity = Long-Term Debt ÷ Equity  |  Proprietary Ratio = Equity ÷ Total Assets  |  Interest Coverage = EBIT ÷ Interest  |  DSCR = (PAT + Dep + Interest) ÷ (Interest + Principal)</code></div><div class="formula-item"><code>Turnover: Inventory Turnover (ITR) = COGS ÷ Avg Inventory  |  Receivables Turnover = Net Credit Sales ÷ Avg Receivables  |  Payables Turnover = Net Credit Purchases ÷ Avg Payables</code></div><div class="formula-item"><code>Profitability: GP Ratio = GP/Sales  |  Operating Profit Ratio = 100% − Operating Cost Ratio  |  ROCE = EBIT ÷ Capital Employed  |  DuPont ROE = (PAT/Sales) × (Sales/Assets) × (Assets/Equity)</code></div><div class="formula-item"><code>Market: EPS = (PAT − Pref Div) ÷ Equity Shares  |  P/E = MPS ÷ EPS  |  Payout Ratio + Retention Ratio = 100%</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> DuPont &amp; ITR Numerical: Net Sales = ₹12,00,000, GP = 25% on Sales (so COGS = ₹9,00,000), Avg Inventory = ₹1,50,000 → <strong>ITR = 9,00,000 / 1,50,000 = 6 times</strong>. PAT = ₹96,000 (NP Margin = 8%), Total Assets = ₹8,00,000 (Asset Turnover = 1.5x), Equity = ₹4,00,000 (Equity Multiplier = 2.0x) → <strong>ROE = 8% × 1.5 × 2.0 = 24%</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Financial Statement Analysis — Ratio Analysis and DuPont Analysis</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Financial Statement Analysis — Ratio Analysis and DuPont Analysis' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Financial Statement Analysis — Ratio Analysis and DuPont Analysis is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> 32 Official PYQs in Ratio Analysis Alone! Master every formula, the effect of transactions on Current Ratio, the Operating Cost Ratio + Operating Profit Ratio = 100% identity, and the DuPont ROE = Net Profit Margin × Asset Turnover × Equity Multiplier equation!; Schedule III Mandatory Ratio Disclosure: Companies must disclose 11 ratios in Notes to Accounts and explain any variance &gt; 25% year-on-year.</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Current Ratio (when CR &gt; 1, e.g., 2:1) | CA ÷ CL (excludes Loose Tools &amp; Stores/Spares from CA). | Equal decrease in CA &amp; CL (paying creditors) INCREASES CR; Equal increase in CA &amp; CL (buying stock on credit) DECREASES CR. | Purely CA-to-CA transactions (collecting cash from debtors) leave CR unchanged!; Proprietary Ratio &amp; Capital Employed | Proprietary Ratio = Shareholders' Equity ÷ Total Assets. | Proprietary Ratio + Total Debt-to-Assets Ratio</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Current Ratio (when CR &gt; 1, e.g., 2:1) | CA ÷ CL (excludes Loose Tools &amp; Stores/Spares from CA). | Equal decrease in CA &amp; CL (paying creditors) INCREASES CR; Equal increase in CA &amp; CL (buying stock on credit) DECREASES CR. | Purely CA-to-CA transactions (collecting cash from debtors) leave CR unchanged!; Proprietary Ratio &amp; Capital Employed | Proprietary Ratio = Shareholders' Equity ÷ Total Assets. | Proprietary Ratio + Total Debt-to-Assets Ratio</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Financial Statement Analysis — Ratio Analysis and DuPont Analysis ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Financial Statement Analysis — Ratio Analysis and DuPont Analysis.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Financial Statement Analysis — Ratio Analysis and DuPont Analysis is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Schedule III Mandatory Ratio Disclosure: Companies must disclose 11 ratios in Notes to Accounts and explain any variance &gt; 25% year-on-year.</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Financial Statement Analysis — Ratio Analysis and DuPont Analysis.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch10" style="border-left: 5px solid #0f766e;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0f766e;">CH 10</span>
+<h3 class="rev-title">Cash Flow Statement (AS 3 and Ind AS 7)</h3>
+<span class="rev-pyq-cnt">7 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Interest &amp; Dividend Classification (Non-Financial vs Financial Enterprise — #1 Exam Trap!):</strong> For a <strong>Non-Financial Enterprise</strong>: Interest Paid &amp; Dividend Paid = <strong>Financing</strong>; Interest Received &amp; Dividend Received = <strong>Investing</strong>. For a <strong>Financial Enterprise (Bank/NBFC)</strong>: Interest Paid, Interest Received &amp; Dividend Received = <strong>Operating</strong>, while <strong>Dividend Paid is ALWAYS a Financing Activity for ALL enterprises</strong>!</li><li><strong>Cash Equivalents Maturity Limit:</strong> Short-term highly liquid investments with an original maturity of <strong>3 months (90 days) or less from the date of acquisition</strong>.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Classification of Cash Flows into Operating, Investing &amp; Financing (AS 3 / Ind AS 7)</div>
+<table class="concept-table">
+<thead><tr><th>Cash Flow Item</th><th>Non-Financial Enterprise</th><th>Financial Enterprise (Bank / NBFC)</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Interest Paid</td><td>Financing Activity</td><td>Operating Activity</td><td>Deducted in Financing, so added back to PBT in Indirect CFO!</td></tr><tr><td>Interest &amp; Dividend Received</td><td>Investing Activity</td><td>Operating Activity</td><td>Deducted from PBT in Indirect CFO (for non-financial firms).</td></tr><tr><td>Dividend Paid to Shareholders</td><td>Financing Activity</td><td>Financing Activity</td><td>ALWAYS Financing for both Financial and Non-Financial companies!</td></tr><tr><td>Purchase/Sale of PPE &amp; Non-Cash Transactions</td><td>Investing Activity</td><td>Investing (Loans given by Bank = Operating!).</td><td>Buying machinery by issuing shares is a NON-CASH transaction (excluded from CFS!).</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Indirect Method CFO = Net Profit Before Tax + Non-Cash/Non-Operating Expenses (Dep, Interest Paid, Loss on Sale) − Non-Operating Incomes (Div/Int Recd, Gain on Sale) − ↑CA + ↓CA + ↑CL − ↓CL − Income Tax Paid</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Indirect CFO Numerical: PAT ₹2,40k + Tax Provision ₹60k = PBT ₹3,00k. Add Dep ₹45k + Loss on sale ₹15k − Div Recd ₹10k = Op Profit before WC ₹3,50k. Adjust WC: − ↑Receivables ₹30k + ↓Inventory ₹20k + ↑Payables ₹25k = ₹3,65k. Less Tax Paid ₹50k = <strong>Net CFO ₹3,15,000</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Cash Flow Statement (AS 3 and Ind AS 7)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Cash Flow Statement (AS 3 and Ind AS 7)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Cash Flow Statement (AS 3 and Ind AS 7) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Interest &amp; Dividend Classification (Non-Financial vs Financial Enterprise — #1 Exam Trap!): For a Non-Financial Enterprise : Interest Paid &amp; Dividend Paid = Financing ; Interest Received &amp; Dividend Received = Investing . For a Financial Enterprise (Bank/NBFC) : Interest Paid, Interest Received &amp; Dividend Received = Operating , while Dividend Paid is ALWAYS a Financing Activity for ALL enterprises !; Cash Equivalents Maturity Limit: Short-term hig</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Interest Paid | Financing Activity | Operating Activity | Deducted in Financing, so added back to PBT in Indirect CFO!; Interest &amp; Dividend Received | Investing Activity | Operating Activity | Deducted from PBT in Indirect CFO (for non-financial firms).; Dividend Paid to Shareholders | Financing Activity | Financing Activity | ALWAYS Financing for both Financial and Non-Financial companies!</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Interest Paid | Financing Activity | Operating Activity | Deducted in Financing, so added back to PBT in Indirect CFO!; Interest &amp; Dividend Received | Investing Activity | Operating Activity | Deducted from PBT in Indirect CFO (for non-financial firms).; Dividend Paid to Shareholders | Financing Activity | Financing Activity | ALWAYS Financing for both Financial and Non-Financial companies!</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Cash Flow Statement (AS 3 and Ind AS 7) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Cash Flow Statement (AS 3 and Ind AS 7).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Cash Flow Statement (AS 3 and Ind AS 7) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Cash Equivalents Maturity Limit: Short-term highly liquid investments with an original maturity of 3 months (90 days) or less from the date of acquisition .</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Cash Flow Statement (AS 3 and Ind AS 7).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch11" style="border-left: 5px solid #c2410c;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#c2410c;">CH 11</span>
+<h3 class="rev-title">Accounting for Share Capital Transactions (Issue, Forfeiture &amp; Reissue)</h3>
+<span class="rev-pyq-cnt">5 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Table F Interest Rates:</strong> Calls in Arrears = <strong>10% p.a.</strong>; Calls in Advance = <strong>12% p.a.</strong></li><li><strong>Forfeiture &amp; Reissue Golden Rules:</strong> (1) Debit Share Capital with <strong>Called-Up Value</strong>; (2) Never debit Securities Premium if already received; (3) Max Reissue Discount = Amount Forfeited on those shares; (4) Transfer `(Proportionate Forfeited Amount on Reissued Shares − Reissue Discount)` to <strong>Capital Reserve</strong>!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Reserve Capital vs Capital Reserve &amp; Forfeiture/Reissue Rules</div>
+<table class="concept-table">
+<thead><tr><th>Concept</th><th>Statutory / Accounting Rule</th><th>Balance Sheet Disclosure</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Reserve Capital (Sec 65) vs Capital Reserve</td><td>Reserve Capital: Uncalled capital callable only in winding up. Capital Reserve: Created out of capital profits (e.g., reissue gain).</td><td>Reserve Capital is NOT shown in Balance Sheet; Capital Reserve is shown under Reserves &amp; Surplus.</td><td>Calls in Advance are shown under 'Other Current Liabilities' (not Share Capital).</td></tr><tr><td>Forfeiture &amp; Partial Reissue</td><td>Debit Share Capital with Called-Up Value; credit Share Forfeiture with capital received (excl. premium).</td><td>Un-reissued shares' forfeiture balance stays in Share Forfeiture A/c (added to Subscribed Capital).</td><td>Only the gain on REISSUED shares goes to Capital Reserve!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Transfer to Capital Reserve on Reissue = [ (Total Amount Forfeited ÷ Total Shares Forfeited) × Shares Reissued ] − Reissue Discount on Reissued Shares</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Forfeiture &amp; Partial Reissue Numerical: 500 shares of ₹10 (issued at ₹2 premium, already paid) forfeited for non-payment of ₹3 final call (so ₹7 capital/share was received = ₹3,500). 300 shares reissued at ₹8 as fully paid (₹2 discount/share). Transfer to Capital Reserve = `300 × (₹7 − ₹2) = ₹1,500`! Balance in Share Forfeiture A/c = `200 × ₹7 = ₹1,400`.</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting for Share Capital Transactions (Issue, Forfeiture &amp; Reissue)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting for Share Capital Transactions (Issue, Forfeiture &amp; Reissue)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting for Share Capital Transactions (Issue, Forfeiture &amp; Reissue) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Table F Interest Rates: Calls in Arrears = 10% p.a. ; Calls in Advance = 12% p.a.; Forfeiture &amp; Reissue Golden Rules: (1) Debit Share Capital with Called-Up Value ; (2) Never debit Securities Premium if already received; (3) Max Reissue Discount = Amount Forfeited on those shares; (4) Transfer `(Proportionate Forfeited Amount on Reissued Shares − Reissue Discount)` to Capital Reserve !</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Reserve Capital (Sec 65) vs Capital Reserve | Reserve Capital: Uncalled capital callable only in winding up. Capital Reserve: Created out of capital profits (e.g., reissue gain). | Reserve Capital is NOT shown in Balance Sheet; Capital Reserve is shown under Reserves &amp; Surplus. | Calls in Advance are shown under 'Other Current Liabilities' (not Share Capital).; Forfeiture &amp; Partial Reissue | Debit Share Capital with Called-Up Value; credit Share </li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Reserve Capital (Sec 65) vs Capital Reserve | Reserve Capital: Uncalled capital callable only in winding up. Capital Reserve: Created out of capital profits (e.g., reissue gain). | Reserve Capital is NOT shown in Balance Sheet; Capital Reserve is shown under Reserves &amp; Surplus. | Calls in Advance are shown under 'Other Current Liabilities' (not Share Capital).; Forfeiture &amp; Partial Reissue | Debit Share Capital with Called-Up Value; credit Share </li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting for Share Capital Transactions (Issue, Forfeiture &amp; Reissue) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting for Share Capital Transactions (Issue, Forfeiture &amp; Reissue).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting for Share Capital Transactions (Issue, Forfeiture &amp; Reissue) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Forfeiture &amp; Reissue Golden Rules: (1) Debit Share Capital with Called-Up Value ; (2) Never debit Securities Premium if already received; (3) Max Reissue Discount = Amount Forfeited on those shares; (4) Transfer `(Proportionate Forfeited Amount on Reissued Shares − Reissue Discount)` to Capital Reserve !</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting for Share Capital Transactions (Issue, Forfeiture &amp; Reissue).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch12" style="border-left: 5px solid #15803d;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#15803d;">CH 12</span>
+<h3 class="rev-title">Accounting for Bonus Issue and Rights Issue</h3>
+<span class="rev-pyq-cnt">11 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Permitted vs Prohibited Reserves for Bonus Issue (Sec 63):</strong> Permitted: (1) Capital Redemption Reserve (CRR), (2) Securities Premium (in cash), (3) Capital Reserve (realized in cash), (4) Free Reserves / General Reserve / P&amp;L. <strong>PROHIBITED: Revaluation Reserve and issue in lieu of dividend!</strong></li><li><strong>Impact of Bonus Issue on Net Worth &amp; Debt-Equity Ratio:</strong> Bonus issue converts Reserves into Share Capital—so <strong>Total Shareholders' Equity (Net Worth) and Debt-Equity Ratio remain 100% UNCHANGED</strong>!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Bonus Issue (Sec 63) vs Rights Issue (Sec 62(1)(a)) Comparison</div>
+<table class="concept-table">
+<thead><tr><th>Dimension</th><th>Bonus Issue (Sec 63)</th><th>Rights Issue (Sec 62(1)(a))</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Cash Inflow &amp; Net Worth</td><td>Zero fresh cash inflow; Net Worth &amp; Debt-Equity Ratio unchanged.</td><td>Brings fresh cash; increases Net Worth and lowers Debt-Equity Ratio.</td><td>Partly paid shares can be made fully paid ONLY out of Free Reserves (NEVER out of CRR or Securities Premium!).</td></tr><tr><td>TERP &amp; Value of Right</td><td>Post-bonus price adjusts in ratio of `Old Shares / (Old + Bonus)`.</td><td>Shareholders can exercise or renounce (sell) Rights Entitlements.</td><td>Once announced by the Board, a Bonus Issue CANNOT be withdrawn!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Theoretical Ex-Right Price (TERP) = [ (N × Cum-Right Price) + (R × Rights Subscription Price) ] ÷ (N + R)</code></div><div class="formula-item"><code>Value of a Right (per Existing Share) = Cum-Right Price − TERP   |   Value of a Right (per New Right Share) = TERP − Subscription Price</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> TERP &amp; Value of Right Numerical: Cum-Right Price = ₹250; Rights Ratio = 1:4 (`N=4, R=1`) at Subscription Price = ₹150. <strong>TERP</strong> = `[(4 × 250) + (1 × 150)] ÷ 5 = ₹1,150 ÷ 5 = ₹230/share`. Value of Right per existing share = `₹250 − ₹230 = ₹20`; Value of Right per new share = `₹230 − ₹150 = ₹80`!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting for Bonus Issue and Rights Issue</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting for Bonus Issue and Rights Issue' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting for Bonus Issue and Rights Issue is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Permitted vs Prohibited Reserves for Bonus Issue (Sec 63): Permitted: (1) Capital Redemption Reserve (CRR), (2) Securities Premium (in cash), (3) Capital Reserve (realized in cash), (4) Free Reserves / General Reserve / P&amp;L. PROHIBITED: Revaluation Reserve and issue in lieu of dividend!; Impact of Bonus Issue on Net Worth &amp; Debt-Equity Ratio: Bonus issue converts Reserves into Share Capital—so Total Shareholders' Equity (Net Worth) and Debt-Equit</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Cash Inflow &amp; Net Worth | Zero fresh cash inflow; Net Worth &amp; Debt-Equity Ratio unchanged. | Brings fresh cash; increases Net Worth and lowers Debt-Equity Ratio. | Partly paid shares can be made fully paid ONLY out of Free Reserves (NEVER out of CRR or Securities Premium!).; TERP &amp; Value of Right | Post-bonus price adjusts in ratio of `Old Shares / (Old + Bonus)`. | Shareholders can exercise or renounce (sell) Rights Entitlements. | Once announce</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Cash Inflow &amp; Net Worth | Zero fresh cash inflow; Net Worth &amp; Debt-Equity Ratio unchanged. | Brings fresh cash; increases Net Worth and lowers Debt-Equity Ratio. | Partly paid shares can be made fully paid ONLY out of Free Reserves (NEVER out of CRR or Securities Premium!).; TERP &amp; Value of Right | Post-bonus price adjusts in ratio of `Old Shares / (Old + Bonus)`. | Shareholders can exercise or renounce (sell) Rights Entitlements. | Once announce</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting for Bonus Issue and Rights Issue ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting for Bonus Issue and Rights Issue.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting for Bonus Issue and Rights Issue is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Impact of Bonus Issue on Net Worth &amp; Debt-Equity Ratio: Bonus issue converts Reserves into Share Capital—so Total Shareholders' Equity (Net Worth) and Debt-Equity Ratio remain 100% UNCHANGED !</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting for Bonus Issue and Rights Issue.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch13" style="border-left: 5px solid #4338ca;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#4338ca;">CH 13</span>
+<h3 class="rev-title">Accounting for Employee Stock Option Plans (ESOPs — Ind AS 102 &amp; Guidance Note)</h3>
+<span class="rev-pyq-cnt">4 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Mandatory Fair Value Method under Ind AS 102 &amp; Minimum 1-Year Vesting Period (Sec 62(1)(b) &amp; SEBI SBEB Regulations):</strong> Minimum vesting period for ESOPs is <strong>1 Year from Grant Date</strong>. Under Ind AS 102, equity-settled ESOPs are measured at <strong>Grant-Date Fair Value</strong> and amortized over the Vesting Period.</li><li><strong>Lapse of Vested vs Unvested Options:</strong> If <em>Unvested</em> options lapse during the vesting period → adjust cumulative expense in P&amp;L; if <em>Vested</em> options lapse unexercised after vesting → transfer ESOO balance to <strong>General Reserve</strong>!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 ESOP Stages, Accounting Entries &amp; Lapsed Option Rules</div>
+<table class="concept-table">
+<thead><tr><th>ESOP Stage</th><th>Statutory / Accounting Rule</th><th>Journal Entry</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Grant Date &amp; Vesting Period</td><td>Min 1 year between Grant and Vesting.</td><td>Dr Employee Benefit Expense A/c → Cr Employee Stock Options Outstanding (ESOO) A/c.</td><td>Market price changes AFTER Grant Date do NOT alter equity-settled ESOP valuation!</td></tr><tr><td>Exercise of Options</td><td>Employee pays Exercise Price during Exercise Period.</td><td>Dr Bank A/c (Exercise Price) + Dr ESOO A/c (Option Value) → Cr Equity Share Capital (Face Value) + Cr Securities Premium.</td><td>Securities Premium = (Exercise Price − Face Value) + Option Value!</td></tr><tr><td>Lapse of Vested Options</td><td>Employee completes vesting but does not exercise.</td><td>Dr ESOO A/c → Cr General Reserve A/c.</td><td>Never credit P&amp;L when vested options expire unexercised—credit General Reserve!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Intrinsic Value per Option (on Grant Date) = Market Price on Grant Date − Exercise Price</code></div><div class="formula-item"><code>Cumulative Expense at End of Year t = (Options Expected to Vest) × (Grant-Date Value per Option) × (t ÷ Total Vesting Years)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> ESOP Numerical (PFRDA 2021 PYQ): 1,000 options granted at Exercise Price ₹75 when Grant-Date Market Price is ₹90 (Face Value ₹10; Vesting = 3 yrs; Market price on exercise = ₹84). Value per option = `₹90 − ₹75 = ₹15` (ignore ₹84 exercise-date price!). Annual Expense = `(1,000 × ₹15) / 3 = ₹5,000/yr`. On exercise: Dr Bank ₹75,000 + Dr ESOO ₹15,000 → Cr Share Capital ₹10,000 + Cr Securities Premium ₹80,000!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting for Employee Stock Option Plans (ESOPs — Ind AS 102 &amp; Guidance Note)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting for Employee Stock Option Plans (ESOPs — Ind AS 102 &amp; Guidance Note)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting for Employee Stock Option Plans (ESOPs — Ind AS 102 &amp; Guidance Note) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Mandatory Fair Value Method under Ind AS 102 &amp; Minimum 1-Year Vesting Period (Sec 62(1)(b) &amp; SEBI SBEB Regulations): Minimum vesting period for ESOPs is 1 Year from Grant Date . Under Ind AS 102, equity-settled ESOPs are measured at Grant-Date Fair Value and amortized over the Vesting Period.; Lapse of Vested vs Unvested Options: If Unvested options lapse during the vesting period → adjust cumulative expense in P&amp;L; if Vested options lapse unexer</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Grant Date &amp; Vesting Period | Min 1 year between Grant and Vesting. | Dr Employee Benefit Expense A/c → Cr Employee Stock Options Outstanding (ESOO) A/c. | Market price changes AFTER Grant Date do NOT alter equity-settled ESOP valuation!; Exercise of Options | Employee pays Exercise Price during Exercise Period. | Dr Bank A/c (Exercise Price) + Dr ESOO A/c (Option Value) → Cr Equity Share Capital (Face Value) + Cr Securities Premium. | Securities</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Grant Date &amp; Vesting Period | Min 1 year between Grant and Vesting. | Dr Employee Benefit Expense A/c → Cr Employee Stock Options Outstanding (ESOO) A/c. | Market price changes AFTER Grant Date do NOT alter equity-settled ESOP valuation!; Exercise of Options | Employee pays Exercise Price during Exercise Period. | Dr Bank A/c (Exercise Price) + Dr ESOO A/c (Option Value) → Cr Equity Share Capital (Face Value) + Cr Securities Premium. | Securities</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting for Employee Stock Option Plans (ESOPs — Ind AS 102 &amp; Guidance Note) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting for Employee Stock Option Plans (ESOPs — Ind AS 102 &amp; Guidance Note).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting for Employee Stock Option Plans (ESOPs — Ind AS 102 &amp; Guidance Note) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Lapse of Vested vs Unvested Options: If Unvested options lapse during the vesting period → adjust cumulative expense in P&amp;L; if Vested options lapse unexercised after vesting → transfer ESOO balance to General Reserve !</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting for Employee Stock Option Plans (ESOPs — Ind AS 102 &amp; Guidance Note).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch14" style="border-left: 5px solid #0284c7;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0284c7;">CH 14</span>
+<h3 class="rev-title">Accounting for Buy-Back of Securities &amp; Redemption of Preference Shares</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Section 52(3) Rule on Redemption Premium:</strong> For prescribed companies complying with Sec 133 AS, <strong>Premium on Redemption of Preference Shares must be provided out of Divisible Profits (Free Reserves/P&amp;L)</strong> and NOT out of Securities Premium!</li><li><strong>CRR Golden Formula (Sec 55 &amp; Sec 69):</strong> `CRR = Nominal Value of Shares Redeemed/Bought Back out of Free Reserves/Divisible Profits` (`Nominal Redeemed − Nominal Fresh Issue`). CRR can be used <strong>ONLY to issue fully paid Bonus Shares</strong>!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Preference Redemption (Sec 55) vs Equity Buy-Back (Sec 68–69)</div>
+<table class="concept-table">
+<thead><tr><th>Dimension</th><th>Preference Redemption (Sec 55)</th><th>Equity Buy-Back (Sec 68–69)</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Paid-Up Pre-condition &amp; Sources</td><td>Must be fully paid-up. Redeemed out of Divisible Profits (CRR) or Fresh Issue of Shares.</td><td>Must be fully paid-up. Funded out of Free Reserves, Securities Premium, or Fresh Issue of different kind.</td><td>For Preference Redemption, 'Proceeds of Fresh Issue' means ONLY Nominal (Face) Value of new shares (excludes premium on fresh issue)!</td></tr><tr><td>Limits &amp; Post-Buyback Debt:Equity</td><td>Max tenure 20 yrs (30 yrs for Infra with 10%/yr redemption from 21st yr).</td><td>Board ≤ 10% (Paid-up Equity + Free Reserves); SR ≤ 25%; Post-buyback Debt:Equity ≤ 2:1.</td><td>1-year cooling between two buy-backs; 6-month bar on fresh issue of same kind.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>CRR on Preference Share Redemption (Sec 55) = Nominal Value of Preference Shares Redeemed − Nominal (Face) Value of Fresh Shares Issued</code></div><div class="formula-item"><code>CRR on Buy-Back of Equity Shares (Sec 69) = Nominal Value of Equity Shares Bought Back out of Free Reserves and Securities Premium</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Minimum Fresh Issue Numerical: Redeem ₹10,00,000 Preference Shares at 10% premium (₹1,00,000 premium). General Reserve available = ₹6,50,000. First use ₹1,00,000 from General Reserve to write off Redemption Premium (Sec 52(3)), leaving ₹5,50,000 for CRR. Nominal Value of Fresh Issue needed = `₹10,00,000 − ₹5,50,000 = ₹4,50,000` (45,000 shares of ₹10 each, regardless of whether issued at par or premium!).</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting for Buy-Back of Securities &amp; Redemption of Preference Shares</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting for Buy-Back of Securities &amp; Redemption of Preference Shares' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting for Buy-Back of Securities &amp; Redemption of Preference Shares is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Section 52(3) Rule on Redemption Premium: For prescribed companies complying with Sec 133 AS, Premium on Redemption of Preference Shares must be provided out of Divisible Profits (Free Reserves/P&amp;L) and NOT out of Securities Premium!; CRR Golden Formula (Sec 55 &amp; Sec 69): `CRR = Nominal Value of Shares Redeemed/Bought Back out of Free Reserves/Divisible Profits` (`Nominal Redeemed − Nominal Fresh Issue`). CRR can be used ONLY to issue fully paid </li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Paid-Up Pre-condition &amp; Sources | Must be fully paid-up. Redeemed out of Divisible Profits (CRR) or Fresh Issue of Shares. | Must be fully paid-up. Funded out of Free Reserves, Securities Premium, or Fresh Issue of different kind. | For Preference Redemption, 'Proceeds of Fresh Issue' means ONLY Nominal (Face) Value of new shares (excludes premium on fresh issue)!; Limits &amp; Post-Buyback Debt:Equity | Max tenure 20 yrs (30 yrs for Infra with 10%/y</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Paid-Up Pre-condition &amp; Sources | Must be fully paid-up. Redeemed out of Divisible Profits (CRR) or Fresh Issue of Shares. | Must be fully paid-up. Funded out of Free Reserves, Securities Premium, or Fresh Issue of different kind. | For Preference Redemption, 'Proceeds of Fresh Issue' means ONLY Nominal (Face) Value of new shares (excludes premium on fresh issue)!; Limits &amp; Post-Buyback Debt:Equity | Max tenure 20 yrs (30 yrs for Infra with 10%/y</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting for Buy-Back of Securities &amp; Redemption of Preference Shares ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting for Buy-Back of Securities &amp; Redemption of Preference Shares.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting for Buy-Back of Securities &amp; Redemption of Preference Shares is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> CRR Golden Formula (Sec 55 &amp; Sec 69): `CRR = Nominal Value of Shares Redeemed/Bought Back out of Free Reserves/Divisible Profits` (`Nominal Redeemed − Nominal Fresh Issue`). CRR can be used ONLY to issue fully paid Bonus Shares !</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting for Buy-Back of Securities &amp; Redemption of Preference Shares.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch15" style="border-left: 5px solid #dc2626;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#dc2626;">CH 15</span>
+<h3 class="rev-title">Introduction to Accounting Standards — Complete AS vs Ind AS Framework</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Ind AS Mandatory Applicability:</strong> All Listed Companies + Unlisted Companies &amp; NBFCs with <strong>Net Worth ≥ ₹250 Crore</strong> (+ their Holding, Subsidiary, JV, and Associate companies). Revaluation Reserve is EXCLUDED when calculating Net Worth!</li><li><strong>Exact AS ↔ Ind AS Syllabus Number Pairing:</strong> Inventories: <strong>AS 2 ↔ Ind AS 2</strong>; Cash Flow: <strong>AS 3 ↔ Ind AS 7</strong>; Revenue: <strong>AS 9 ↔ Ind AS 115</strong>; PPE &amp; Depreciation: <strong>AS 10 ↔ Ind AS 16</strong>; Foreign Exchange: <strong>AS 11 ↔ Ind AS 21</strong>; Investments: <strong>AS 13 ↔ Ind AS 109 / Ind AS 40</strong>!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master AS (1–29) vs Ind AS (1–41 &amp; 101–116) Number-to-Title Mapping</div>
+<table class="concept-table">
+<thead><tr><th>Standard Topic</th><th>ICAI AS Number</th><th>Ind AS Number</th><th>Core Conceptual Difference</th></tr></thead>
+<tbody><tr><td>Policies, Presentation &amp; Inventories</td><td>AS 1 &amp; AS 2</td><td>Ind AS 1 &amp; Ind AS 2</td><td>Ind AS 1 adds SOCIE and OCI; both AS 2 &amp; Ind AS 2 prohibit LIFO and value at Lower of Cost &amp; NRV.</td></tr><tr><td>Cash Flows, Events after BS &amp; Errors</td><td>AS 3, AS 4, AS 5</td><td>Ind AS 7, Ind AS 10, Ind AS 8</td><td>Ind AS 8 requires retrospective restatement of material prior-period errors.</td></tr><tr><td>Revenue &amp; Construction Contracts</td><td>AS 9 &amp; AS 7</td><td>Ind AS 115</td><td>Shifts from Risks &amp; Rewards (AS 9) to 5-Step Control Model (Ind AS 115).</td></tr><tr><td>PPE, Foreign Exchange &amp; Investments</td><td>AS 10, AS 11, AS 13</td><td>Ind AS 16, Ind AS 21, Ind AS 109 / 40</td><td>Ind AS 21 uses Functional Currency; Ind AS 109 uses Amortised Cost, FVOCI &amp; FVTPL.</td></tr><tr><td>Borrowing, Leases, EPS, Taxes, Intangibles, Impairment, Provisions</td><td>AS 16, AS 19, AS 20, AS 22, AS 26, AS 28, AS 29</td><td>Ind AS 23, Ind AS 116, Ind AS 33, Ind AS 12, Ind AS 38, Ind AS 36, Ind AS 37</td><td>Ind AS 116 puts all Lessee leases on-balance-sheet (ROU Asset + Lease Liability); Ind AS 12 uses Balance Sheet Approach for Deferred Tax.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Net Worth (Sec 2(57)) = Paid-up Share Capital + Reserves out of Profits + Securities Premium − (Accumulated Losses + Deferred/Misc Expenditure)  [Excludes Revaluation Reserve!]</code></div><div class="formula-item"><code>SMC Thresholds (Companies AS Rules, 2021): Turnover ≤ ₹250 Crore AND Borrowings ≤ ₹50 Crore (Unlisted Non-Bank/Non-Insurance)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Net Worth Check for Ind AS: A company has Paid-up Capital ₹100 Cr, General Reserve ₹110 Cr, Securities Premium ₹30 Cr, Revaluation Reserve ₹40 Cr, and Accumulated Losses ₹10 Cr. Net Worth = `100 + 110 + 30 − 10 = ₹230 Crore` (Revaluation Reserve ₹40 Cr is excluded, so Net Worth &lt; ₹250 Cr!).</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Introduction to Accounting Standards — Complete AS vs Ind AS Framework</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Introduction to Accounting Standards — Complete AS vs Ind AS Framework' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Introduction to Accounting Standards — Complete AS vs Ind AS Framework is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Ind AS Mandatory Applicability: All Listed Companies + Unlisted Companies &amp; NBFCs with Net Worth ≥ ₹250 Crore (+ their Holding, Subsidiary, JV, and Associate companies). Revaluation Reserve is EXCLUDED when calculating Net Worth!; Exact AS ↔ Ind AS Syllabus Number Pairing: Inventories: AS 2 ↔ Ind AS 2 ; Cash Flow: AS 3 ↔ Ind AS 7 ; Revenue: AS 9 ↔ Ind AS 115 ; PPE &amp; Depreciation: AS 10 ↔ Ind AS 16 ; Foreign Exchange: AS 11 ↔ Ind AS 21 ; Investmen</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Policies, Presentation &amp; Inventories | AS 1 &amp; AS 2 | Ind AS 1 &amp; Ind AS 2 | Ind AS 1 adds SOCIE and OCI; both AS 2 &amp; Ind AS 2 prohibit LIFO and value at Lower of Cost &amp; NRV.; Cash Flows, Events after BS &amp; Errors | AS 3, AS 4, AS 5 | Ind AS 7, Ind AS 10, Ind AS 8 | Ind AS 8 requires retrospective restatement of material prior-period errors.; Revenue &amp; Construction Contracts | AS 9 &amp; AS 7 | Ind AS 115 | Shifts from Risks &amp; Rewards (AS 9) to 5-Step C</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Policies, Presentation &amp; Inventories | AS 1 &amp; AS 2 | Ind AS 1 &amp; Ind AS 2 | Ind AS 1 adds SOCIE and OCI; both AS 2 &amp; Ind AS 2 prohibit LIFO and value at Lower of Cost &amp; NRV.; Cash Flows, Events after BS &amp; Errors | AS 3, AS 4, AS 5 | Ind AS 7, Ind AS 10, Ind AS 8 | Ind AS 8 requires retrospective restatement of material prior-period errors.; Revenue &amp; Construction Contracts | AS 9 &amp; AS 7 | Ind AS 115 | Shifts from Risks &amp; Rewards (AS 9) to 5-Step C</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Introduction to Accounting Standards — Complete AS vs Ind AS Framework ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Introduction to Accounting Standards — Complete AS vs Ind AS Framework.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Introduction to Accounting Standards — Complete AS vs Ind AS Framework is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Exact AS ↔ Ind AS Syllabus Number Pairing: Inventories: AS 2 ↔ Ind AS 2 ; Cash Flow: AS 3 ↔ Ind AS 7 ; Revenue: AS 9 ↔ Ind AS 115 ; PPE &amp; Depreciation: AS 10 ↔ Ind AS 16 ; Foreign Exchange: AS 11 ↔ Ind AS 21 ; Investments: AS 13 ↔ Ind AS 109 / Ind AS 40 !</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Introduction to Accounting Standards — Complete AS vs Ind AS Framework.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch16" style="border-left: 5px solid #1e3a8a;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#1e3a8a;">CH 16</span>
+<h3 class="rev-title">Accounting Standard for Inventories (AS 2 and Ind AS 2)</h3>
+<span class="rev-pyq-cnt">6 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Raw Material Valuation Rule (AS 2 / Ind AS 2):</strong> Raw materials are NOT written down below cost if the finished goods in which they will be incorporated are expected to be sold <strong>at or above cost</strong>! Only when finished goods' cost exceeds NRV are raw materials written down to <strong>Replacement Cost</strong>.</li><li><strong>4 Mandatory Cost Exclusions:</strong> Abnormal waste, post-production storage costs, general administrative overheads, and selling &amp; distribution costs (plus interest/borrowing costs) are NEVER included in inventory cost!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 AS 2 / Ind AS 2 Inclusions, Exclusions &amp; Fixed Overhead Allocation Rules</div>
+<table class="concept-table">
+<thead><tr><th>Dimension</th><th>Rule / Inclusion</th><th>Exclusion / Prohibition</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Cost of Purchase &amp; Conversion</td><td>Purchase price + Import duty + Freight inward − Trade discount + Direct labour + Fixed/Variable Production OH.</td><td>Excludes Abnormal waste, Storage cost (after production), Admin OH, Selling &amp; Distribution cost.</td><td>Storage cost IS included ONLY if required during production (e.g., maturing/curing stage).</td></tr><tr><td>Fixed Production Overhead Absorption</td><td>Allocated on NORMAL CAPACITY (if Actual &lt; Normal, unallocated FOH is expensed).</td><td>If Actual Production &gt; Normal Capacity, allocate on ACTUAL production so inventory is not overstated.</td><td>Variable Production OH is always allocated on ACTUAL production.</td></tr><tr><td>Permitted Cost Formulas</td><td>Specific Identification, FIFO, and Weighted Average.</td><td>LIFO is strictly PROHIBITED under both AS 2 and Ind AS 2!</td><td>Standard Cost and Retail Method allowed for convenience if approximating actual cost.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Inventory Valuation Rule: LOWER of Cost and Net Realizable Value (NRV) applied item-by-item</code></div><div class="formula-item"><code>NRV = Estimated Selling Price in Ordinary Course of Business − Estimated Cost of Completion − Estimated Cost Necessary to Make the Sale</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Item-by-Item Lower of Cost &amp; NRV: Item A (Cost ₹50k, NRV ₹60k → ₹50k), Item B (Cost ₹80k, NRV ₹70k → ₹70k), Item C (Cost ₹40k, NRV ₹35k → ₹35k). Total Inventory Value = `50k + 70k + 35k = ₹1,55,000` (NOT `min(170k, 165k) = ₹1,65,000`!).</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting Standard for Inventories (AS 2 and Ind AS 2)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting Standard for Inventories (AS 2 and Ind AS 2)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting Standard for Inventories (AS 2 and Ind AS 2) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Raw Material Valuation Rule (AS 2 / Ind AS 2): Raw materials are NOT written down below cost if the finished goods in which they will be incorporated are expected to be sold at or above cost ! Only when finished goods' cost exceeds NRV are raw materials written down to Replacement Cost .; 4 Mandatory Cost Exclusions: Abnormal waste, post-production storage costs, general administrative overheads, and selling &amp; distribution costs (plus interest/bo</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Cost of Purchase &amp; Conversion | Purchase price + Import duty + Freight inward − Trade discount + Direct labour + Fixed/Variable Production OH. | Excludes Abnormal waste, Storage cost (after production), Admin OH, Selling &amp; Distribution cost. | Storage cost IS included ONLY if required during production (e.g., maturing/curing stage).; Fixed Production Overhead Absorption | Allocated on NORMAL CAPACITY (if Actual &lt; Normal, unallocated FOH is expens</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Cost of Purchase &amp; Conversion | Purchase price + Import duty + Freight inward − Trade discount + Direct labour + Fixed/Variable Production OH. | Excludes Abnormal waste, Storage cost (after production), Admin OH, Selling &amp; Distribution cost. | Storage cost IS included ONLY if required during production (e.g., maturing/curing stage).; Fixed Production Overhead Absorption | Allocated on NORMAL CAPACITY (if Actual &lt; Normal, unallocated FOH is expens</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting Standard for Inventories (AS 2 and Ind AS 2) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting Standard for Inventories (AS 2 and Ind AS 2).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting Standard for Inventories (AS 2 and Ind AS 2) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> 4 Mandatory Cost Exclusions: Abnormal waste, post-production storage costs, general administrative overheads, and selling &amp; distribution costs (plus interest/borrowing costs) are NEVER included in inventory cost!</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting Standard for Inventories (AS 2 and Ind AS 2).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch17" style="border-left: 5px solid #0d9488;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0d9488;">CH 17</span>
+<h3 class="rev-title">Accounting Standard for Revenue Recognition (AS 9 and Ind AS 115)</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Ind AS 115 Five-Step Model (C-P-P-P-R):</strong> (1) Identify <strong>C</strong>ontract → (2) Identify <strong>P</strong>erformance Obligations → (3) Determine Transaction <strong>P</strong>rice → (4) Allocate Transaction <strong>P</strong>rice (by Standalone Selling Price) → (5) <strong>R</strong>ecognize Revenue when control is transferred (Over Time or Point in Time)!</li><li><strong>AS 9 Other Revenue Trio:</strong> <strong>Interest</strong> = Time Proportion basis; <strong>Royalties</strong> = Accrual basis as per agreement; <strong>Dividends</strong> = When owner's right to receive payment is established!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Revenue Recognition Timing across Special Commercial Cases (AS 9 &amp; Ind AS 115)</div>
+<table class="concept-table">
+<thead><tr><th>Scenario</th><th>Exact Point of Revenue Recognition</th><th>Underlying Principle</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Goods on 'Sale or Approval'</td><td>When buyer formally accepts, does an act adopting the transaction, or return window expires.</td><td>No transfer of risks/rewards or control upon mere dispatch.</td><td>Unapproved goods at year-end are included in Seller's Closing Stock at COST.</td></tr><tr><td>Consignment Sales</td><td>ONLY when Consignee (Agent) sells goods to a third-party buyer.</td><td>Consignee is merely an agent of the Consignor.</td><td>Agent's own revenue is ONLY his Commission, not gross sales proceeds!</td></tr><tr><td>Installation / COD / Advertising</td><td>Installation: When installed &amp; inspected. COD: When cash received. Advertising: When ad appears before public.</td><td>Completion of critical performance obligation.</td><td>If collection uncertainty arises AFTER valid sale, make Provision for Doubtful Debts (do NOT reverse revenue!).</td></tr><tr><td>Contract Asset vs Receivable vs Contract Liability (Ind AS 115)</td><td>Contract Asset: Right to payment depends on future performance. Receivable: Unconditional right (only time passes).</td><td>Contract Liability: Advance received from customer before transferring goods/services.</td><td>GST collected on behalf of Govt is excluded from Revenue.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Ind AS 115 Step 4 Price Allocation: Allocated Revenue for Obligation i = Total Transaction Price × [ Standalone Selling Price_i ÷ Σ Standalone Selling Prices ]</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Ind AS 115 Allocation Numerical: Handset (SSP ₹24,000) + 12-Month Data Plan (SSP ₹16,000; Total SSP = ₹40,000) sold together for a bundled Transaction Price of ₹30,000. Handset Revenue (recognized on Day 1) = `₹30,000 × (24/40) = ₹18,000`; Data Revenue = `₹30,000 × (16/40) = ₹12,000` (₹1,000/month over 12 months)!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting Standard for Revenue Recognition (AS 9 and Ind AS 115)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting Standard for Revenue Recognition (AS 9 and Ind AS 115)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting Standard for Revenue Recognition (AS 9 and Ind AS 115) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Ind AS 115 Five-Step Model (C-P-P-P-R): (1) Identify C ontract → (2) Identify P erformance Obligations → (3) Determine Transaction P rice → (4) Allocate Transaction P rice (by Standalone Selling Price) → (5) R ecognize Revenue when control is transferred (Over Time or Point in Time)!; AS 9 Other Revenue Trio: Interest = Time Proportion basis; Royalties = Accrual basis as per agreement; Dividends = When owner's right to receive payment is establis</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Goods on 'Sale or Approval' | When buyer formally accepts, does an act adopting the transaction, or return window expires. | No transfer of risks/rewards or control upon mere dispatch. | Unapproved goods at year-end are included in Seller's Closing Stock at COST.; Consignment Sales | ONLY when Consignee (Agent) sells goods to a third-party buyer. | Consignee is merely an agent of the Consignor. | Agent's own revenue is ONLY his Commission, not gr</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Goods on 'Sale or Approval' | When buyer formally accepts, does an act adopting the transaction, or return window expires. | No transfer of risks/rewards or control upon mere dispatch. | Unapproved goods at year-end are included in Seller's Closing Stock at COST.; Consignment Sales | ONLY when Consignee (Agent) sells goods to a third-party buyer. | Consignee is merely an agent of the Consignor. | Agent's own revenue is ONLY his Commission, not gr</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting Standard for Revenue Recognition (AS 9 and Ind AS 115) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting Standard for Revenue Recognition (AS 9 and Ind AS 115).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting Standard for Revenue Recognition (AS 9 and Ind AS 115) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> AS 9 Other Revenue Trio: Interest = Time Proportion basis; Royalties = Accrual basis as per agreement; Dividends = When owner's right to receive payment is established!</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting Standard for Revenue Recognition (AS 9 and Ind AS 115).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch18" style="border-left: 5px solid #b45309;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#b45309;">CH 18</span>
+<h3 class="rev-title">Accounting Standard for Foreign Exchange Transactions (AS 11 and Ind AS 21)</h3>
+<span class="rev-pyq-cnt">7 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Monetary vs Non-Monetary Translation at Balance Sheet Date (Tested in SEBI 2020, 2022, 2024 &amp; PFRDA!):</strong> <strong>Monetary Items</strong> (Cash, Bank, Debtors, Creditors, Loans) are translated at the <strong>Closing Rate</strong>! <strong>Non-Monetary Items carried at Historical Cost</strong> (PPE, Cost Inventory, Equity Investments, Advances) are kept at the <strong>Transaction Date Exchange Rate</strong>! <strong>Non-Monetary Items carried at Fair Value</strong> use the rate on the <strong>Date Fair Value was Determined</strong>!</li><li><strong>Integral vs Non-Integral Operations (AS 11):</strong> Exchange differences on translating a <strong>Non-Integral Foreign Operation (NFO)</strong> are accumulated in <strong>Foreign Currency Translation Reserve (FCTR)</strong> until disposal!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Monetary vs Non-Monetary Items &amp; Integral vs Non-Integral Operations (AS 11 / Ind AS 21)</div>
+<table class="concept-table">
+<thead><tr><th>Category</th><th>Examples</th><th>Balance Sheet Translation Rate</th><th>Treatment of Exchange Difference</th></tr></thead>
+<tbody><tr><td>Monetary Items</td><td>Cash, Bank, Trade Receivables, Trade Payables, Foreign Currency Loans, Debentures.</td><td>Closing Exchange Rate on Balance Sheet Date.</td><td>Recognized immediately in Profit &amp; Loss Account!</td></tr><tr><td>Non-Monetary Items (Historical Cost vs Fair Value)</td><td>PPE, Intangible Assets, Inventories, Equity Shares, Prepaid Advances.</td><td>Historical Cost → Date of Transaction Rate; Fair Value → Date of Fair Valuation Rate.</td><td>No retranslation for historical-cost non-monetary items at BS date.</td></tr><tr><td>Integral vs Non-Integral Foreign Operation (AS 11)</td><td>Integral (IFO) = Extension of parent; Non-Integral (NFO) = Autonomous foreign operation.</td><td>NFO translates ALL Assets &amp; Liabilities (Monetary &amp; Non-Monetary) at Closing Rate!</td><td>IFO → P&amp;L Account; NFO → Foreign Currency Translation Reserve (FCTR)!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Exchange Gain / Loss on Foreign Currency Monetary Item = (Closing / Settlement Exchange Rate − Initial / Opening Exchange Rate) × Foreign Currency Amount</code></div><div class="formula-item"><code>Forward Contract for Hedging: Forward Premium/Discount = (Forward Rate − Spot Rate) × FC Amount  →  Amortized over life of contract</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Official SEBI PYQ Numerical: Goods worth USD 1,00,000 purchased on March 23, 2025 at ₹82.60/$. Rate on March 31, 2025 = ₹83.00/$. Payment made in May 2025 at ₹83.50/$. Loss in FY 2024–25 = `(83.00 − 82.60) × 1,00,000 = ₹40,000 Loss`; Loss in FY 2025–26 = `(83.50 − 83.00) × 1,00,000 = ₹50,000 Loss` (Total Loss = ₹90,000)!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting Standard for Foreign Exchange Transactions (AS 11 and Ind AS 21)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting Standard for Foreign Exchange Transactions (AS 11 and Ind AS 21)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting Standard for Foreign Exchange Transactions (AS 11 and Ind AS 21) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Monetary vs Non-Monetary Translation at Balance Sheet Date (Tested in SEBI 2020, 2022, 2024 &amp; PFRDA!): Monetary Items (Cash, Bank, Debtors, Creditors, Loans) are translated at the Closing Rate ! Non-Monetary Items carried at Historical Cost (PPE, Cost Inventory, Equity Investments, Advances) are kept at the Transaction Date Exchange Rate ! Non-Monetary Items carried at Fair Value use the rate on the Date Fair Value was Determined !; Integral vs N</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Monetary Items | Cash, Bank, Trade Receivables, Trade Payables, Foreign Currency Loans, Debentures. | Closing Exchange Rate on Balance Sheet Date. | Recognized immediately in Profit &amp; Loss Account!; Non-Monetary Items (Historical Cost vs Fair Value) | PPE, Intangible Assets, Inventories, Equity Shares, Prepaid Advances. | Historical Cost → Date of Transaction Rate; Fair Value → Date of Fair Valuation Rate. | No retranslation for historical-cost n</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Monetary Items | Cash, Bank, Trade Receivables, Trade Payables, Foreign Currency Loans, Debentures. | Closing Exchange Rate on Balance Sheet Date. | Recognized immediately in Profit &amp; Loss Account!; Non-Monetary Items (Historical Cost vs Fair Value) | PPE, Intangible Assets, Inventories, Equity Shares, Prepaid Advances. | Historical Cost → Date of Transaction Rate; Fair Value → Date of Fair Valuation Rate. | No retranslation for historical-cost n</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting Standard for Foreign Exchange Transactions (AS 11 and Ind AS 21) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting Standard for Foreign Exchange Transactions (AS 11 and Ind AS 21).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting Standard for Foreign Exchange Transactions (AS 11 and Ind AS 21) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Integral vs Non-Integral Operations (AS 11): Exchange differences on translating a Non-Integral Foreign Operation (NFO) are accumulated in Foreign Currency Translation Reserve (FCTR) until disposal!</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting Standard for Foreign Exchange Transactions (AS 11 and Ind AS 21).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch19" style="border-left: 5px solid #047857;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#047857;">CH 19</span>
+<h3 class="rev-title">Accounting Standard for Property, Plant &amp; Equipment and Depreciation (AS 10 &amp; Ind AS 16)</h3>
+<span class="rev-pyq-cnt">12 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>12 Official PYQs in PPE &amp; Depreciation (AS 10 / Ind AS 16):</strong> Old AS 6 was merged into AS 10 in 2016! Under revised AS 10 and Ind AS 16: (1) Change in <strong>Method of Depreciation</strong> is a <strong>Change in Accounting Estimate</strong> (applied <strong>prospectively</strong>); (2) Depreciation begins when the asset is <strong>Available for Use</strong>; (3) <strong>Bearer Plants</strong> are included in AS 10 / Ind AS 16; and (4) <strong>Component Accounting</strong> is mandatory!</li><li><strong>Costs Excluded from PPE:</strong> Staff training cost, inauguration ceremony, advertising/introducing new product, and initial operating losses are NEVER capitalized!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 AS 10 / Ind AS 16 Capitalization, Revaluation &amp; Depreciation Rules</div>
+<table class="concept-table">
+<thead><tr><th>Provision</th><th>Statutory Rule (AS 10 &amp; Ind AS 16)</th><th>Accounting Entry / Effect</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Initial Cost Inclusions vs Exclusions</td><td>Includes purchase, site prep, delivery, installation, net trial run cost, PV of dismantling.</td><td>Excludes: Staff training, opening ceremony, general admin OH, initial operating losses.</td><td>Capitalization stops once asset is in location/condition CAPABLE of operating as intended!</td></tr><tr><td>Component Accounting &amp; Major Inspections</td><td>Significant parts with different useful lives must be depreciated separately.</td><td>Major periodic inspection/overhaul is capitalized as replacement (old inspection carrying value derecognized).</td><td>Routine day-to-day repairs &amp; servicing are expensed in P&amp;L.</td></tr><tr><td>Revaluation Model (Upward vs Downward)</td><td>Upward → Credited to Revaluation Surplus (OCI). Downward → Debited to P&amp;L.</td><td>Upward after prior Downward → First credit P&amp;L to reverse prior P&amp;L loss, excess to Revaluation Surplus!</td><td>Downward after prior Upward → First debit existing Revaluation Surplus, excess to P&amp;L!</td></tr><tr><td>Depreciation Rules &amp; Schedule II</td><td>Begins when Available for Use; continues even if asset is temporarily idle.</td><td>Reviewed annually; change in method/life/RV is applied PROSPECTIVELY as Change in Estimate.</td><td>Schedule II general Residual Value cap = ≤ 5% of Original Cost; Freehold Land is NOT depreciated.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Initial Cost of PPE = Purchase Price + Non-Refundable Duties + Freight &amp; Installation + Professional Fees + Net Trial Run Cost (Testing Cost − Sale of Trial Samples) + Present Value of Decommissioning/Restoration Liability</code></div><div class="formula-item"><code>SLM Depreciation = (Cost − Residual Value) ÷ Useful Life   |   WDV Depreciation = Opening Carrying Amount × [ 1 − (RV/Cost)^(1/n) ]</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> PPE Initial Cost Numerical: Machine price ₹20,00,000 + Custom duty ₹2,00,000 + Installation ₹1,50,000 + Testing ₹80,000 − Sale of trial samples ₹20,000 + PV of dismantling ₹1,40,000 = <strong>₹25,50,000</strong> (Exclude refundable GST ₹3.6L, Staff training ₹50k, and Inauguration ₹30k!).</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting Standard for Property, Plant &amp; Equipment and Depreciation (AS 10 &amp; Ind AS 16)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting Standard for Property, Plant &amp; Equipment and Depreciation (AS 10 &amp; Ind AS 16)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting Standard for Property, Plant &amp; Equipment and Depreciation (AS 10 &amp; Ind AS 16) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> 12 Official PYQs in PPE &amp; Depreciation (AS 10 / Ind AS 16): Old AS 6 was merged into AS 10 in 2016! Under revised AS 10 and Ind AS 16: (1) Change in Method of Depreciation is a Change in Accounting Estimate (applied prospectively ); (2) Depreciation begins when the asset is Available for Use ; (3) Bearer Plants are included in AS 10 / Ind AS 16; and (4) Component Accounting is mandatory!; Costs Excluded from PPE: Staff training cost, inauguration</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Initial Cost Inclusions vs Exclusions | Includes purchase, site prep, delivery, installation, net trial run cost, PV of dismantling. | Excludes: Staff training, opening ceremony, general admin OH, initial operating losses. | Capitalization stops once asset is in location/condition CAPABLE of operating as intended!; Component Accounting &amp; Major Inspections | Significant parts with different useful lives must be depreciated separately. | Major peri</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Initial Cost Inclusions vs Exclusions | Includes purchase, site prep, delivery, installation, net trial run cost, PV of dismantling. | Excludes: Staff training, opening ceremony, general admin OH, initial operating losses. | Capitalization stops once asset is in location/condition CAPABLE of operating as intended!; Component Accounting &amp; Major Inspections | Significant parts with different useful lives must be depreciated separately. | Major peri</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting Standard for Property, Plant &amp; Equipment and Depreciation (AS 10 &amp; Ind AS 16) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting Standard for Property, Plant &amp; Equipment and Depreciation (AS 10 &amp; Ind AS 16).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting Standard for Property, Plant &amp; Equipment and Depreciation (AS 10 &amp; Ind AS 16) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Costs Excluded from PPE: Staff training cost, inauguration ceremony, advertising/introducing new product, and initial operating losses are NEVER capitalized!</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting Standard for Property, Plant &amp; Equipment and Depreciation (AS 10 &amp; Ind AS 16).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch20" style="border-left: 5px solid #7c3aed;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#7c3aed;">CH 20</span>
+<h3 class="rev-title">Accounting Standard for Investments (AS 13, Ind AS 109 &amp; Ind AS 40)</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Current vs Long-Term Investment (AS 13):</strong> Current Investment = readily realizable AND intended to be held for <strong>≤ 1 year from the date on which such investment is made</strong> (valued at <strong>Lower of Cost and Fair Value</strong>). Long-Term Investment = carried at <strong>Cost</strong> (written down only for permanent / other-than-temporary decline).</li><li><strong>Ind AS 109 Financial Asset Categories:</strong> (1) <strong>Amortised Cost</strong> (SPPI + Hold to Collect), (2) <strong>FVOCI</strong> (SPPI + Hold to Collect &amp; Sell), (3) <strong>FVTPL</strong> (Residual / Trading / Equity without OCI election).</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 AS 13 Accounting for Shares, Debentures, Bonus/Rights &amp; Reclassification</div>
+<table class="concept-table">
+<thead><tr><th>Scenario</th><th>AS 13 Accounting Rule</th><th>Investment Account Effect</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Bonus Shares &amp; Rights Shares</td><td>Bonus: Added to Units column at ZERO cost (reduces average cost/share). Rights Subscribed: Added at subscription cost.</td><td>Rights Sold (Renounced): Sale proceeds credited to P&amp;L (EXCEPT if bought Cum-Right and Ex-Right market price &lt; cost → credit Investment A/c!).</td><td>Part disposal of holdings uses AVERAGE COST (Weighted Average) under AS 13!</td></tr><tr><td>Pre-Acquisition vs Post-Acquisition Dividend</td><td>Pre-acquisition dividend is credited to Investment A/c (reduces cost); Post-acquisition dividend is credited to P&amp;L.</td><td>Under Ind AS 109, all dividends go to P&amp;L unless clearly a recovery of cost.</td><td>Investment Property (rental/capital appreciation land/building) follows Cost Model under AS 13 &amp; Ind AS 40.</td></tr><tr><td>Reclassification of Investments (AS 13)</td><td>Long-Term → Current: Lower of Cost and Carrying Amount at transfer date.</td><td>Current → Long-Term: Lower of Cost and Fair Value at transfer date.</td><td>Frequently tested contrast between Carrying Amount and Fair Value!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Cum-Interest Purchase Capital Cost = Cum-Interest Purchase Price + Brokerage − Accrued Interest from Last Coupon Date to Purchase Date</code></div><div class="formula-item"><code>Ex-Interest Purchase Capital Cost = Ex-Interest Purchase Price + Brokerage  (Accrued Interest is paid extra and debited to Interest A/c)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Cum-Interest Numerical: 1,000 12% Debentures of ₹100 bought on June 1 at ₹105 Cum-Interest + 1% Brokerage (Interest dates: March 31 &amp; Sept 30). Gross price + brokerage = `₹1,05,000 + ₹1,050 = ₹1,06,050`. Deduct 2 months' accrued interest (April–May) = `₹1,00,000 × 12% × 2/12 = ₹2,000` → <strong>Cost of Investment = ₹1,04,050</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting Standard for Investments (AS 13, Ind AS 109 &amp; Ind AS 40)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting Standard for Investments (AS 13, Ind AS 109 &amp; Ind AS 40)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting Standard for Investments (AS 13, Ind AS 109 &amp; Ind AS 40) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Current vs Long-Term Investment (AS 13): Current Investment = readily realizable AND intended to be held for ≤ 1 year from the date on which such investment is made (valued at Lower of Cost and Fair Value ). Long-Term Investment = carried at Cost (written down only for permanent / other-than-temporary decline).; Ind AS 109 Financial Asset Categories: (1) Amortised Cost (SPPI + Hold to Collect), (2) FVOCI (SPPI + Hold to Collect &amp; Sell), (3) FVTPL</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Bonus Shares &amp; Rights Shares | Bonus: Added to Units column at ZERO cost (reduces average cost/share). Rights Subscribed: Added at subscription cost. | Rights Sold (Renounced): Sale proceeds credited to P&amp;L (EXCEPT if bought Cum-Right and Ex-Right market price &lt; cost → credit Investment A/c!). | Part disposal of holdings uses AVERAGE COST (Weighted Average) under AS 13!; Pre-Acquisition vs Post-Acquisition Dividend | Pre-acquisition dividend is c</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Bonus Shares &amp; Rights Shares | Bonus: Added to Units column at ZERO cost (reduces average cost/share). Rights Subscribed: Added at subscription cost. | Rights Sold (Renounced): Sale proceeds credited to P&amp;L (EXCEPT if bought Cum-Right and Ex-Right market price &lt; cost → credit Investment A/c!). | Part disposal of holdings uses AVERAGE COST (Weighted Average) under AS 13!; Pre-Acquisition vs Post-Acquisition Dividend | Pre-acquisition dividend is c</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting Standard for Investments (AS 13, Ind AS 109 &amp; Ind AS 40) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting Standard for Investments (AS 13, Ind AS 109 &amp; Ind AS 40).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting Standard for Investments (AS 13, Ind AS 109 &amp; Ind AS 40) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Ind AS 109 Financial Asset Categories: (1) Amortised Cost (SPPI + Hold to Collect), (2) FVOCI (SPPI + Hold to Collect &amp; Sell), (3) FVTPL (Residual / Trading / Equity without OCI election).</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting Standard for Investments (AS 13, Ind AS 109 &amp; Ind AS 40).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch21" style="border-left: 5px solid #be123c;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#be123c;">CH 21</span>
+<h3 class="rev-title">Preparation of Company Final Accounts (Schedule III of Companies Act, 2013)</h3>
+<span class="rev-pyq-cnt">16 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>16 Official PYQs in Company Final Accounts (Schedule III)!</strong> Memorize exact Schedule III line-item placements: <strong>Current Maturities of Long-Term Debt</strong> → <em>Short-Term Borrowings</em>; <strong>Debit Balance of P&amp;L</strong> → <em>Negative figure under Reserves &amp; Surplus</em>; <strong>Unpaid Dividend &amp; Calls in Advance</strong> → <em>Other Current Liabilities</em>; <strong>Loose Tools &amp; Stores/Spares</strong> → <em>Inventories</em>; <strong>Security Deposits</strong> → <em>Other Non-Current Assets</em>!</li><li><strong>Section 197 Managerial Remuneration Caps (Public Companies):</strong> Overall = <strong>11% of Net Profits</strong>; 1 MD/WTD/Manager = <strong>5%</strong>; &gt;1 MD/WTD = <strong>10%</strong>; Non-Executive Directors = <strong>1%</strong> (if MD/WTD exists) or <strong>3%</strong> (if no MD/WTD); Max Sitting Fee = <strong>₹1,00,000 per meeting</strong>!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Schedule III Division I &amp; II Line-Item Placement &amp; Banking Act Schedules (1–16)</div>
+<table class="concept-table">
+<thead><tr><th>Item / Provision</th><th>Exact Schedule III Head &amp; Sub-Head</th><th>Rule / Threshold</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Current vs Non-Current Classification</td><td>Current if realized/settled within Normal Operating Cycle OR within 12 months from reporting date.</td><td>If operating cycle is not identifiable, assumed to be 12 months.</td><td>A receivable realized in 14 months is STILL Current if the company's Normal Operating Cycle is 15 months!</td></tr><tr><td>Tricky Schedule III Line Items</td><td>Current Maturities of Long-Term Debt → Short-Term Borrowings; Share Forfeiture A/c → Subscribed Share Capital.</td><td>Debit balance of P&amp;L → Deducted inside Reserves &amp; Surplus; Calls in Advance &amp; Unpaid Dividend → Other Current Liabilities.</td><td>Mandatory Rounding Off: Total Income &lt; ₹100 Cr (to 100s/1000s/Lakhs/Millions); ≥ ₹100 Cr (to Lakhs/Millions/Crores).</td></tr><tr><td>Banking Company Final Accounts (3rd Schedule BR Act)</td><td>Form A (Balance Sheet): Schedules 1 to 12. Form B (P&amp;L): Schedules 13 to 16.</td><td>Sch 1 Capital, Sch 2 Reserves, Sch 3 Deposits, Sch 4 Borrowings, Sch 5 Other Liab, Sch 6 Cash/RBI, Sch 7 Call Money, Sch 8 Investments, Sch 9 Advances, Sch 10 Fixed Assets, Sch 11 Other Assets, Sch 12 Contingent Liabilities.</td><td>Sch 13 Interest Earned, Sch 14 Other Income, Sch 15 Interest Expended, Sch 16 Operating Expenses!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Sec 197 Managerial Remuneration Ceilings (% of Sec 198 Net Profits): Overall ≤ 11%  |  1 MD/WTD ≤ 5%  |  &gt;1 MD/WTD ≤ 10%  |  Non-Exec Directors ≤ 1% (with MD) or ≤ 3% (without MD)</code></div><div class="formula-item"><code>Schedule V Effective Capital Slabs (Inadequate Profits without SR): &lt; ₹5 Cr → ₹60L p.a.  |  ₹5 Cr to &lt; ₹100 Cr → ₹84L p.a.  |  ₹100 Cr to &lt; ₹250 Cr → ₹120L p.a.  |  ≥ ₹250 Cr → ₹120L + 0.01% of excess</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Operating Cycle Classification: If Operating Cycle = 10 months and realization = 11 months → <strong>Current Asset</strong> (since ≤ 12 months). If Operating Cycle = 15 months and realization = 14 months → <strong>Current Asset</strong> (since ≤ 15-month operating cycle). If Operating Cycle = 11 months and realization = 14 months → <strong>Non-Current Asset</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Preparation of Company Final Accounts (Schedule III of Companies Act, 2013)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Preparation of Company Final Accounts (Schedule III of Companies Act, 2013)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Preparation of Company Final Accounts (Schedule III of Companies Act, 2013) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> 16 Official PYQs in Company Final Accounts (Schedule III)! Memorize exact Schedule III line-item placements: Current Maturities of Long-Term Debt → Short-Term Borrowings ; Debit Balance of P&amp;L → Negative figure under Reserves &amp; Surplus ; Unpaid Dividend &amp; Calls in Advance → Other Current Liabilities ; Loose Tools &amp; Stores/Spares → Inventories ; Security Deposits → Other Non-Current Assets !; Section 197 Managerial Remuneration Caps (Public Compan</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Current vs Non-Current Classification | Current if realized/settled within Normal Operating Cycle OR within 12 months from reporting date. | If operating cycle is not identifiable, assumed to be 12 months. | A receivable realized in 14 months is STILL Current if the company's Normal Operating Cycle is 15 months!; Tricky Schedule III Line Items | Current Maturities of Long-Term Debt → Short-Term Borrowings; Share Forfeiture A/c → Subscribed Share </li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Current vs Non-Current Classification | Current if realized/settled within Normal Operating Cycle OR within 12 months from reporting date. | If operating cycle is not identifiable, assumed to be 12 months. | A receivable realized in 14 months is STILL Current if the company's Normal Operating Cycle is 15 months!; Tricky Schedule III Line Items | Current Maturities of Long-Term Debt → Short-Term Borrowings; Share Forfeiture A/c → Subscribed Share </li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Preparation of Company Final Accounts (Schedule III of Companies Act, 2013) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Preparation of Company Final Accounts (Schedule III of Companies Act, 2013).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Preparation of Company Final Accounts (Schedule III of Companies Act, 2013) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Section 197 Managerial Remuneration Caps (Public Companies): Overall = 11% of Net Profits ; 1 MD/WTD/Manager = 5% ; &gt;1 MD/WTD = 10% ; Non-Executive Directors = 1% (if MD/WTD exists) or 3% (if no MD/WTD); Max Sitting Fee = ₹1,00,000 per meeting !</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Preparation of Company Final Accounts (Schedule III of Companies Act, 2013).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch22" style="border-left: 5px solid #0369a1;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0369a1;">CH 22</span>
+<h3 class="rev-title">Fund Flow Statement and Working Capital Analysis</h3>
+<span class="rev-pyq-cnt">7 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Cross-Transaction Rule (7 Official PYQs!):</strong> A flow of funds occurs ONLY when one account is a <strong>Current Account (CA or CL)</strong> and the other is a <strong>Non-Current Account (Fixed Asset, Long-Term Debt, or Equity)</strong>! Transactions wholly within Current Accounts (collecting from debtors, paying creditors) or wholly within Non-Current Accounts (bonus issue, buying machinery by issuing shares) cause <strong>ZERO flow of funds</strong>!</li><li><strong>Schedule of Changes in Working Capital vs Cash Flow CFO:</strong> In Fund Flow, `Increase in Current Asset = Increase in Working Capital`; in Cash Flow, `Increase in Current Asset = Cash Outflow`!</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Fund Flow vs Cash Flow &amp; Sources vs Applications of Funds</div>
+<table class="concept-table">
+<thead><tr><th>Category</th><th>Fund Flow Statement</th><th>Cash Flow Statement</th><th>Exam Trap</th></tr></thead>
+<tbody><tr><td>Concept &amp; Basis</td><td>Net Working Capital (CA − CL); Accrual basis.</td><td>Cash &amp; Cash Equivalents; Cash basis.</td><td>Collection from debtors changes Cash, but does NOT change Net Working Capital!</td></tr><tr><td>Sources of Funds</td><td>FFO, Issue of Shares/Debentures for cash, Long-Term Loans raised, Total Sale Proceeds of Fixed Assets.</td><td>Operating, Investing, Financing Cash Inflows.</td><td>Full sale proceeds of fixed asset go to Sources (gain/loss is removed in FFO)!</td></tr><tr><td>Applications of Funds</td><td>Funds lost in operations, Purchase of Fixed Assets, Repayment of Long-Term Debt/Redemption, Tax/Dividend paid, Net Increase in WC.</td><td>Operating, Investing, Financing Cash Outflows.</td><td>Bonus shares or conversion of debentures into shares is NOT a source or application of funds!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Net Working Capital (Fund) = Current Assets (CA) − Current Liabilities (CL)</code></div><div class="formula-item"><code>Funds from Operations (FFO) = Net Profit + Non-Fund/Non-Operating Debits (Depreciation, Goodwill written off, Loss on sale of fixed asset) − Non-Operating Credits (Profit on sale of fixed asset, Dividend received)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> FFO Numerical: Net Profit ₹1,80,000 + Depreciation ₹40,000 + Goodwill written off ₹15,000 + Loss on sale of machine ₹5,000 − Profit on sale of land ₹25,000 = <strong>FFO ₹2,15,000</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Fund Flow Statement and Working Capital Analysis</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Fund Flow Statement and Working Capital Analysis' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Fund Flow Statement and Working Capital Analysis is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Cross-Transaction Rule (7 Official PYQs!): A flow of funds occurs ONLY when one account is a Current Account (CA or CL) and the other is a Non-Current Account (Fixed Asset, Long-Term Debt, or Equity) ! Transactions wholly within Current Accounts (collecting from debtors, paying creditors) or wholly within Non-Current Accounts (bonus issue, buying machinery by issuing shares) cause ZERO flow of funds !; Schedule of Changes in Working Capital vs Ca</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Concept &amp; Basis | Net Working Capital (CA − CL); Accrual basis. | Cash &amp; Cash Equivalents; Cash basis. | Collection from debtors changes Cash, but does NOT change Net Working Capital!; Sources of Funds | FFO, Issue of Shares/Debentures for cash, Long-Term Loans raised, Total Sale Proceeds of Fixed Assets. | Operating, Investing, Financing Cash Inflows. | Full sale proceeds of fixed asset go to Sources (gain/loss is removed in FFO)!; Applications </li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Concept &amp; Basis | Net Working Capital (CA − CL); Accrual basis. | Cash &amp; Cash Equivalents; Cash basis. | Collection from debtors changes Cash, but does NOT change Net Working Capital!; Sources of Funds | FFO, Issue of Shares/Debentures for cash, Long-Term Loans raised, Total Sale Proceeds of Fixed Assets. | Operating, Investing, Financing Cash Inflows. | Full sale proceeds of fixed asset go to Sources (gain/loss is removed in FFO)!; Applications </li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Fund Flow Statement and Working Capital Analysis ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Fund Flow Statement and Working Capital Analysis.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Fund Flow Statement and Working Capital Analysis is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Schedule of Changes in Working Capital vs Cash Flow CFO: In Fund Flow, `Increase in Current Asset = Increase in Working Capital`; in Cash Flow, `Increase in Current Asset = Cash Outflow`!</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Fund Flow Statement and Working Capital Analysis.</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch23" style="border-left: 5px solid #6d28d9;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#6d28d9;">CH 23</span>
+<h3 class="rev-title">Accounting as a Financial Information System &amp; Computerised Accounting</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Account Codification Types (Official PYQ Topic!):</strong> (1) <strong>Sequential</strong> (`001, 002`), (2) <strong>Block</strong> (`100–199 Assets, 200–299 Liabilities`), (3) <strong>Mnemonic</strong> (`SLR, PUR, MUM-HQ`), (4) <strong>Hierarchical / Group</strong> (`1.1.01`).</li><li><strong>XBRL Filing Mandate (Form AOC-4 XBRL):</strong> Mandatory for Listed Cos + Paid-up Capital ≥ ₹5 Cr + Turnover ≥ ₹100 Cr + All Ind AS Companies.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Codification Schemes, File Types &amp; Accounting Software Categories</div>
+<table class="concept-table">
+<thead><tr><th>Concept</th><th>Mechanism</th><th>Examples</th><th>Exam Point</th></tr></thead>
+<tbody><tr><td>Codification Schemes</td><td>Sequential, Block, Mnemonic, Hierarchical.</td><td>Block: 100–199 Fixed Assets; Mnemonic: 'ACC-DEL'.</td><td>Block &amp; Hierarchical codes enable instant Schedule III roll-up.</td></tr><tr><td>Master File vs Transaction File</td><td>Master: Permanent reference data; Transaction: Daily vouchers.</td><td>Master: Chart of Accounts, Customer Credit Limit; Transaction: Sales Invoices.</td><td>Transaction files dynamically update Master file balances.</td></tr><tr><td>Ready-to-Use vs Customized vs Tailored (ERP)</td><td>Ready-to-Use: Small firms (Tally); Tailored/ERP: Large enterprises (SAP/Oracle).</td><td>XBRL uses XML tags (Taxonomy + Instance Document) for regulatory filing.</td><td>Rule 11(g) mandates immutable Edit Log (Audit Trail) preserved for 8 years.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>AIS Flow: Input (Vouchers) → Storage (Master Files &amp; Transaction Files) → Processing (Validation &amp; Posting) → Output (Financial Statements, MIS, XBRL)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Codification Identification: Assigning `100–199` to Non-Current Assets and `200–299` to Current Assets is <strong>Block Coding</strong>; using `SJ` for Sales Journal and `PJ` for Purchase Journal is <strong>Mnemonic Coding</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Accounting as a Financial Information System &amp; Computerised Accounting</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Accounting as a Financial Information System &amp; Computerised Accounting' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Accounting as a Financial Information System &amp; Computerised Accounting is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Account Codification Types (Official PYQ Topic!): (1) Sequential (`001, 002`), (2) Block (`100–199 Assets, 200–299 Liabilities`), (3) Mnemonic (`SLR, PUR, MUM-HQ`), (4) Hierarchical / Group (`1.1.01`).; XBRL Filing Mandate (Form AOC-4 XBRL): Mandatory for Listed Cos + Paid-up Capital ≥ ₹5 Cr + Turnover ≥ ₹100 Cr + All Ind AS Companies.</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Codification Schemes | Sequential, Block, Mnemonic, Hierarchical. | Block: 100–199 Fixed Assets; Mnemonic: 'ACC-DEL'. | Block &amp; Hierarchical codes enable instant Schedule III roll-up.; Master File vs Transaction File | Master: Permanent reference data; Transaction: Daily vouchers. | Master: Chart of Accounts, Customer Credit Limit; Transaction: Sales Invoices. | Transaction files dynamically update Master file balances.; Ready-to-Use vs Customize</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Codification Schemes | Sequential, Block, Mnemonic, Hierarchical. | Block: 100–199 Fixed Assets; Mnemonic: 'ACC-DEL'. | Block &amp; Hierarchical codes enable instant Schedule III roll-up.; Master File vs Transaction File | Master: Permanent reference data; Transaction: Daily vouchers. | Master: Chart of Accounts, Customer Credit Limit; Transaction: Sales Invoices. | Transaction files dynamically update Master file balances.; Ready-to-Use vs Customize</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Accounting as a Financial Information System &amp; Computerised Accounting ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Accounting as a Financial Information System &amp; Computerised Accounting.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Accounting as a Financial Information System &amp; Computerised Accounting is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> XBRL Filing Mandate (Form AOC-4 XBRL): Mandatory for Listed Cos + Paid-up Capital ≥ ₹5 Cr + Turnover ≥ ₹100 Cr + All Ind AS Companies.</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Accounting as a Financial Information System &amp; Computerised Accounting.</p>
+</div>
+</div>
+</div></section>
+</div>
+</body>
+</html>

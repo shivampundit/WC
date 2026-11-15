@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PFRDA Grade A — Subject G — Companies Act, 2013 Master Revision &amp; Formula Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --primary: #1e3a8a;
+    --primary-mid: #1d4ed8;
+    --primary-light: #eff6ff;
+    --accent: #0284c7;
+    --success: #059669;
+    --success-bg: #ecfdf5;
+    --warn: #d97706;
+    --warn-bg: #fffbeb;
+    --danger: #dc2626;
+    --purple: #6d28d9;
+    --purple-bg: #f5f3ff;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --border: #e2e8f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.68;
+    font-size: 15.5px;
+    padding-bottom: 64px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 1180px;
+    margin: 28px auto;
+    padding: 0 20px;
+  }
+  /* Hero Banner */
+  .hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 58%, #0369a1 100%);
+    color: #ffffff;
+    padding: 36px 36px;
+    border-radius: 18px;
+    margin-bottom: 28px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .hero h1 {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+    line-height: 1.28;
+    color: #ffffff;
+  }
+  .hero p {
+    font-size: 15px;
+    color: #e0f2fe;
+    max-width: 980px;
+    line-height: 1.6;
+  }
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .hero-badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    color: #f8fafc;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  /* TOC Box */
+  .toc-box {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  }
+  .toc-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 12px;
+  }
+  .toc-pill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: none;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #1e293b;
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: all 0.18s ease;
+  }
+  .toc-pill:hover {
+    background: #eff6ff;
+    border-color: #93c5fd;
+    color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(29, 78, 216, 0.08);
+  }
+  .toc-num {
+    background: #1e3a8a;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  .toc-cnt {
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+  /* Chapter Card */
+  .chapter-card {
+    background: var(--card);
+    border-radius: 18px;
+    border: 1px solid #cbd5e1;
+    padding: 32px;
+    margin-bottom: 36px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+    scroll-margin-top: 84px;
+  }
+  .chapter-header {
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+  }
+  .ch-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px 14px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+  .ch-title {
+    font-size: 23px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .ch-sub {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+  }
+  /* Dynamic / Statutory Box */
+  .dyn-box {
+    background: linear-gradient(to right, #fffbeb, #fef3c7);
+    border: 1px solid #fcd34d;
+    border-left: 5px solid #d97706;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+  }
+  .dyn-header {
+    font-size: 14.5px;
+    font-weight: 800;
+    color: #92400e;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .dyn-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #78350f;
+    font-size: 14.5px;
+  }
+  .dyn-list li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+  }
+  /* SVG Visual Flowchart Box */
+  .svg-card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 18px;
+    margin: 22px 0;
+    text-align: center;
+    overflow-x: auto;
+  }
+  .svg-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: #334155;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+  }
+  .svg-card svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  /* Deep Notes Sections */
+  .deep-notes-section {
+    margin: 24px 0;
+  }
+  .sec-h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dbeafe;
+  }
+  .deep-subcard {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.02);
+  }
+  .deep-subtitle {
+    font-size: 16.5px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+  }
+  .deep-body {
+    font-size: 15px;
+    color: #1e293b;
+    line-height: 1.68;
+  }
+  .deep-body p {
+    margin-bottom: 10px;
+  }
+  .ch-ul {
+    margin: 8px 0 12px 22px;
+    padding: 0;
+  }
+  .ch-ul li {
+    margin-bottom: 8px;
+    color: #1e293b;
+    line-height: 1.62;
+  }
+  /* Concept Tables */
+  .table-wrap {
+    margin: 22px 0;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  }
+  .table-caption {
+    background: #f1f5f9;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #0f172a;
+    border-bottom: 1px solid #cbd5e1;
+  }
+  .concept-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 580px;
+  }
+  .concept-table th {
+    background: #1e3a8a;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #1e40af;
+    font-size: 13.5px;
+  }
+  .concept-table td {
+    padding: 11px 15px;
+    border: 1px solid #e2e8f0;
+    color: #1e293b;
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .concept-table tr:nth-child(even) td {
+    background: #f8fafc;
+  }
+  .concept-table tr:hover td {
+    background: #eff6ff;
+  }
+  /* Formula & Worked Numerical Card */
+  .formula-card {
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+    border: 1px solid #c4b5fd;
+    border-left: 5px solid #6d28d9;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .formula-header {
+    font-size: 15.5px;
+    font-weight: 800;
+    color: #4c1d95;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .formula-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .formula-item {
+    background: #ffffff;
+    border: 1px solid #ddd6fe;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #1e1b4b;
+    line-height: 1.55;
+  }
+  .worked-box {
+    background: #ffffff;
+    border: 1px dashed #8b5cf6;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  /* PYQ Spotlight Box */
+  .pyq-spot-box {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-left: 5px solid #059669;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-top: 26px;
+  }
+  .pyq-spot-header {
+    font-size: 15.5px;
+    font-weight: 800;
+    color: #065f46;
+    margin-bottom: 14px;
+  }
+  .pyq-spot-item {
+    background: #ffffff;
+    border: 1px solid #dcfce7;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+  .pyq-spot-item:last-child {
+    margin-bottom: 0;
+  }
+  .pyq-spot-meta {
+    margin-bottom: 6px;
+  }
+  .pyq-badge {
+    display: inline-block;
+    background: #059669;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+  .pyq-spot-q {
+    font-size: 14.5px;
+    color: #0f172a;
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+  .pyq-spot-a {
+    font-size: 13.5px;
+    color: #065f46;
+    background: #ecfdf5;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-left: 3px solid #10b981;
+    line-height: 1.55;
+  }
+  /* Revision Sheet Card */
+  .rev-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  }
+  .rev-hdr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+  .rev-badge {
+    background: #1e3a8a;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 999px;
+    text-transform: uppercase;
+  }
+  .rev-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+  .rev-pyq-cnt {
+    margin-left: auto;
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  @media (max-width: 768px) {
+    .container { padding: 0 12px; margin: 16px auto; }
+    .hero { padding: 24px 20px; border-radius: 14px; }
+    .hero h1 { font-size: 21px; }
+    .chapter-card, .rev-card { padding: 20px 16px; border-radius: 14px; }
+    .ch-title { font-size: 19px; }
+    .toc-grid { grid-template-columns: 1fr; }
+    .formula-grid { grid-template-columns: 1fr; }
+  }
+
+  .desc-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+    border: 1.5px solid #93c5fd;
+    border-left: 6px solid #1d4ed8;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+  .desc-header {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .desc-q-card {
+    background: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(29, 78, 216, 0.04);
+  }
+  .desc-q-card:last-child { margin-bottom: 0; }
+  .desc-q-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #cbd5e1;
+  }
+  .desc-struct {
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 1.65;
+  }
+  .desc-struct p { margin-bottom: 8px; }
+  .desc-tag {
+    display: inline-block;
+    background: #1d4ed8;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-right: 8px;
+  }
+
+</style>
+</head>
+<body>
+<style>
+.fin-unified-nav { background: #0f172a; border-bottom: 2px solid #0284c7; padding: 10px 16px; position: sticky; top: 0; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-family: 'Inter', -apple-system, sans-serif; }
+.fin-unified-nav-inner { max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.fnav-btn { color: #cbd5e1; text-decoration: none; font-size: 12.5px; font-weight: 600; padding: 6px 11px; border-radius: 6px; background: #1e293b; border: 1px solid #334155; transition: all 0.15s ease; white-space: nowrap; }
+.fnav-btn:hover { background: #334155; color: #ffffff; border-color: #38bdf8; }
+.fnav-btn.active { background: #0284c7; color: #ffffff; border-color: #38bdf8; box-shadow: 0 0 0 2px rgba(56,189,248,0.3); }
+.fnav-home { background: #0f766e; border-color: #14b8a6; color: #f0fdfa; }
+.fnav-mock { padding: 6px 8.5px; font-size: 12px; }
+</style>
+<div class="fin-unified-nav"><div class="fin-unified-nav-inner"><a class="fnav-btn fnav-home" href="../index.html">🏠 All Subjects Portal</a><a class="fnav-btn" href="PFRDA_Companies_Act_Hub.html">🏛️ Companies Act Hub</a><a class="fnav-btn" href="PFRDA_Companies_Act_Comprehensive_Master_Study_Notes.html">📘 Detailed Notes (10 Ch)</a><a class="fnav-btn active" href="PFRDA_Companies_Act_Master_Revision_and_Study_Sheet.html">⚡ Revision Sheet</a><a class="fnav-btn" href="PFRDA_Companies_Act_All_Exams_PYQ_Practice.html">🎯 All-Exams PYQs (113)</a><a class="fnav-btn" href="PFRDA_Companies_Act_Topic_Wise_Mocks.html">🧩 Topic-Wise Mocks (10 Ch)</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_1.html">M1</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_2.html">M2</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_3.html">M3</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_4.html">M4</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_5.html">M5</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_6.html">M6</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_7.html">M7</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_8.html">M8</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_9.html">M9</a><a class="fnav-btn fnav-mock" href="PFRDA_Companies_Act_Mock_10.html">M10</a></div></div>
+<div class="container">
+<div class="hero" style="background: linear-gradient(135deg, #0f766e 0%, #0369a1 55%, #1e3a8a 100%);">
+<h1>⚡ Subject G — Companies Act, 2013: Master Rapid Revision &amp; Formula Sheet</h1>
+<p>High-Density Last-Minute Exam Revision Sheet • Comparison Tables, Formulas, Statutory Thresholds, Worked Examples &amp; 2025–2026 Updates across All 10 Chapters</p>
+<div class="hero-badges">
+<span class="hero-badge">⚡ 10 Rapid-Revision Cards</span>
+<span class="hero-badge">📐 All Formulas &amp; Limits</span>
+<span class="hero-badge">🏛️ EduTap + CA Raman Luthra Synthesis</span>
+</div>
+</div>
+<section class="rev-card" id="rev-ch01" style="border-left: 5px solid #1e3a8a;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#1e3a8a;">CH 01</span>
+<h3 class="rev-title">Chapter III — Prospectus and Allotment of Securities (Sections 23 to 42)</h3>
+<span class="rev-pyq-cnt">17 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Mandatory Dematerialization for Public &amp; Private Companies (Sec 29 &amp; PAS Rules 2024–2026):</strong> Under Section 29(1A) and Rule 9B of the Companies (Prospectus and Allotment of Securities) Rules, <strong>all Public Companies</strong> and <strong>all Private Companies (other than Small Companies)</strong> must issue securities exclusively in dematerialized form and facilitate dematerialization of all existing securities via NSDL/CDSL.</li><li><strong>Direct Listing of Indian Companies on Permitted Foreign Exchanges (Sec 23(3) — GIFT-IFSC):</strong> Pursuant to Section 23(3) of the Companies Act, 2013 and the Direct Listing Scheme (2024–2026), public Indian companies are permitted to issue and list equity shares directly on international exchanges in GIFT-IFSC (India INX and NSE IFSC).</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Section-by-Section Master Matrix of Chapter III (Sections 23 to 42) &amp; Types of Prospectus</div>
+<table class="concept-table">
+<thead><tr><th>Section &amp; Provision</th><th>Core Statutory Rule &amp; Applicability</th><th>Prescribed Timelines, Limits &amp; Forms</th><th>High-Yield Exam Trap / Penalty</th></tr></thead>
+<tbody><tr><td>Sec 23 &amp; Sec 24: Modes of Issue &amp; Power of SEBI</td><td>Public Company: Public Offer (IPO/FPO via Prospectus), Private Placement, or Rights/Bonus Issue. Private Company: Rights/Bonus Issue or Private Placement ONLY (cannot issue Prospectus).</td><td>Sec 24: SEBI administers provisions relating to (i) issue &amp; transfer of securities and (ii) non-payment of dividend by listed/to-be-listed companies.</td><td>All other matters (unlisted companies) are administered by Central Govt / Tribunal / RoC. (Asked in SEBI 2020 &amp; PFRDA 2022).</td></tr><tr><td>Sec 25 &amp; Sec 28: Deemed Prospectus &amp; Offer for Sale (OFS)</td><td>Sec 25: Document by which an Issuing House offers securities allotted to it for sale to public. Deemed a prospectus if offer is made within 6 months of allotment OR whole consideration was not received.</td><td>Sec 28: Members (in consultation with Board) may offer whole/part of their shareholding to public; document is deemed a prospectus.</td><td>Under Sec 25(3), deemed prospectus must additionally state net consideration received and time/place for inspecting allotment contract.</td></tr><tr><td>Sec 26 &amp; Sec 27: Matters in Prospectus &amp; Variation of Terms</td><td>Sec 26: Prospectus must be dated (date of publication = date of issue), signed by all directors, filed with RoC, and issued within 90 days of registration with RoC.</td><td>Sec 27: Variation of contract/objects in prospectus requires Special Resolution (postal ballot) + newspaper notice (Form PAS-1) + Exit Offer to dissenting shareholders.</td><td>Company cannot use amount raised through prospectus for buying, trading, or otherwise dealing in equity shares of any other listed company!</td></tr><tr><td>Sec 31: Shelf Prospectus</td><td>Prospectus in respect of which securities are issued for subscription in one or more issues over a certain period without issuing a further prospectus.</td><td>Validity: Maximum 1 year from date of opening of first offer. For 2nd/subsequent offers, file Information Memorandum (Form PAS-2) within 1 month prior to issue.</td><td>Eligible entities are prescribed by SEBI (e.g., Public Financial Institutions, Scheduled Banks, Listed/High-rated Debt Issuers).</td></tr><tr><td>Sec 32 &amp; Sec 33: Red Herring Prospectus (RHP) &amp; Abridged Prospectus</td><td>Sec 32 (RHP): Prospectus which does NOT include complete particulars of the quantum or price of the securities included therein.</td><td>RHP must be filed with RoC at least 3 days prior to opening of subscription list and offer. Sec 33: Every application form must be accompanied by an Abridged Prospectus.</td><td>Upon closing of offer, final Prospectus stating total capital raised and closing price is filed with RoC and SEBI. (Asked in SEBI 2025).</td></tr><tr><td>Sec 34, 35, 36 &amp; 447: Civil &amp; Criminal Liability for Mis-statements</td><td>Sec 34 (Criminal Liability): Punishable under Section 447 (Fraud). Sec 35 (Civil Liability): Compensation to every person who sustained loss/damage.</td><td>Sec 447 (Fraud ≥ ₹10 Lakh or 1% of turnover): Imprisonment 6 months to 10 years (min 3 yrs if public interest involved) + Fine 1x to 3x of fraud amount.</td><td>Fraud &lt; ₹10 Lakh AND &lt; 1% of turnover (no public interest): Imprisonment up to 5 years OR Fine up to ₹50 Lakh OR both.</td></tr><tr><td>Sec 42: Offer or Invitation for Subscription on Private Placement</td><td>Offer made via Private Placement Offer-cum-Application Letter (Form PAS-4) to a select group of identified persons (record kept in Form PAS-5).</td><td>Max 200 persons in aggregate in a FY (excluding QIBs and ESOPs). Money paid via banking channels (NO cash). Return of allotment in Form PAS-3 within 15 days.</td><td>Default Penalty (Sec 42(10)): Penalty equal to amount raised OR ₹2 Crore, whichever is lower, PLUS refund all monies with 12% p.a. interest within 30 days.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Minimum Subscription (Sec 39(1) &amp; SEBI ICDR): Minimum 90% of issue size must be received within 30 days (or SEBI timeline); else refund within 15 days from closure (default interest = 15% p.a.)</code></div><div class="formula-item"><code>Minimum Application Money (Sec 39(2) vs SEBI ICDR): Under Companies Act Sec 39(2) ≥ 5% of nominal value  |  Under SEBI ICDR Regulations ≥ 25% of issue price</code></div><div class="formula-item"><code>Private Placement Limit (Sec 42(2) &amp; Rule 14): Max 50 (prescribed as 200 persons in aggregate in a Financial Year across each kind of security, excluding QIBs &amp; ESOP employees)</code></div><div class="formula-item"><code>Private Placement Timelines (Sec 42): Allotment within 60 days of receipt of application money → Else repay within 15 days (after 60th day) → Else 12% p.a. interest from 61st day; Return of Allotment (Form PAS-3) within 15 days of allotment</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Statutory Case (Section 42 Private Placement Ceiling &amp; Consequences): Alpha FinTech Pvt Ltd makes private placement offers in FY 2026–27 to 180 retail investors for Equity Shares, 150 retail investors for Preference Shares, 40 Qualified Institutional Buyers (QIBs), and 35 employees under an ESOP scheme. Is this deemed a Public Offer? NO! Under Rule 14(2) of the PAS Rules, the limit of 200 persons in a financial year is reckoned SEPARATELY for each kind of security (Equity Share, Preference Share, and Debenture), and QIBs + ESOP employees are completely excluded. However, if Alpha offered Equity Shares to 205 non-QIB investors in FY 2026–27, the entire issue would be deemed a Public Offer under Section 42(11)!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter III — Prospectus and Allotment of Securities (Sections 23 to 42)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter III — Prospectus and Allotment of Securities (Sections 23 to 42)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter III — Prospectus and Allotment of Securities (Sections 23 to 42) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Mandatory Dematerialization for Public &amp; Private Companies (Sec 29 &amp; PAS Rules 2024–2026): Under Section 29(1A) and Rule 9B of the Companies (Prospectus and Allotment of Securities) Rules, all Public Companies and all Private Companies (other than Small Companies) must issue securities exclusively in dematerialized form and facilitate dematerialization of all existing securities via NSDL/CDSL.; Direct Listing of Indian Companies on Permitted Fore</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Sec 23 &amp; Sec 24: Modes of Issue &amp; Power of SEBI | Public Company: Public Offer (IPO/FPO via Prospectus), Private Placement, or Rights/Bonus Issue. Private Company: Rights/Bonus Issue or Private Placement ONLY (cannot issue Prospectus). | Sec 24: SEBI administers provisions relating to (i) issue &amp; transfer of securities and (ii) non-payment of dividend by listed/to-be-listed companies. | All other matters (unlisted companies) are administered by C</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Sec 23 &amp; Sec 24: Modes of Issue &amp; Power of SEBI | Public Company: Public Offer (IPO/FPO via Prospectus), Private Placement, or Rights/Bonus Issue. Private Company: Rights/Bonus Issue or Private Placement ONLY (cannot issue Prospectus). | Sec 24: SEBI administers provisions relating to (i) issue &amp; transfer of securities and (ii) non-payment of dividend by listed/to-be-listed companies. | All other matters (unlisted companies) are administered by C</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter III — Prospectus and Allotment of Securities (Sections 23 to 42) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter III — Prospectus and Allotment of Securities (Sections 23 to 42).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter III — Prospectus and Allotment of Securities (Sections 23 to 42) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Direct Listing of Indian Companies on Permitted Foreign Exchanges (Sec 23(3) — GIFT-IFSC): Pursuant to Section 23(3) of the Companies Act, 2013 and the Direct Listing Scheme (2024–2026), public Indian companies are permitted to issue and list equity shares directly on international exchanges in GIFT-IFSC (India INX and NSE IFSC).</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter III — Prospectus and Allotment of Securities (Sections 23 to 42).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch02" style="border-left: 5px solid #0d9488;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0d9488;">CH 02</span>
+<h3 class="rev-title">Chapter IV — Share Capital and Debentures (Sections 43 to 72)</h3>
+<span class="rev-pyq-cnt">19 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>DVR Shares &amp; Sweat Equity Startup Relaxations (Companies Share Capital &amp; Debentures Rules):</strong> Under Rule 4, voting power in respect of <strong>Shares with Differential Voting Rights (DVRs)</strong> shall not exceed <strong>74% of total voting power</strong> at any point of time (replacing the old 26% cap on post-issue paid-up equity). Under Rule 8(4), a <strong>Startup recognized by DPIIT</strong> may issue <strong>Sweat Equity Shares up to 50% of its paid-up capital</strong> for up to <strong>10 years</strong> from incorporation (vs 25% for normal companies).</li><li><strong>Debenture Redemption Reserve (DRR) Exemption (Rule 18(7)):</strong> All-India Financial Institutions, Banking Companies, Listed Companies, and Listed NBFCs/HFCs are <strong>100% exempt from creating DRR</strong> (0% DRR). Only <strong>Unlisted Non-NBFC/Non-HFC Companies</strong> are required to maintain DRR equal to <strong>10% of the value of outstanding debentures</strong>.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Comprehensive Section Matrix of Chapter IV (Share Capital, Sweat Equity, Rights, Bonus, Buy-Back &amp; Debentures)</div>
+<table class="concept-table">
+<thead><tr><th>Section &amp; Instrument</th><th>Resolution &amp; Eligibility Norms</th><th>Statutory Caps, Lock-In &amp; Timelines</th><th>Permitted Sources / Key Restrictions</th></tr></thead>
+<tbody><tr><td>Sec 43 &amp; Rule 4: Equity Shares with Differential Rights (DVR)</td><td>Authorized by AoA + Ordinary Resolution in General Meeting (Postal Ballot if listed). Consistent track record of distributable profits is NO LONGER required.</td><td>Total voting power of DVR shares ≤ 74% of total voting power including DVRs. Company cannot convert existing ordinary equity into DVR or vice versa.</td><td>Must not have defaulted in filing financial statements/annual returns for 3 immediately preceding FYs or in repaying matured deposits/debentures/dividends.</td></tr><tr><td>Sec 52: Application of Securities Premium Account</td><td>No resolution required for the 5 statutory uses under Sec 52(2) (3 uses under Sec 52(3) for prescribed Ind AS classes).</td><td>5 Uses: (1) Fully paid Bonus Shares, (2) Writing off Preliminary Expenses, (3) Writing off commission/discount on issue of shares/debentures, (4) Premium on redemption of preference shares/debentures, (5) Buy-back under Sec 68.</td><td>Under Sec 52(3), prescribed companies complying with AS/Ind AS can ONLY use Securities Premium for (1) Bonus Shares, (2) Issue expenses/discount of equity shares, and (3) Buy-back under Sec 68.</td></tr><tr><td>Sec 53 &amp; Sec 54: Prohibition on Discount &amp; Sweat Equity Shares</td><td>Sec 53: Issue at discount is VOID (except Sweat Equity Sec 54 &amp; conversion of debt under statutory restructuring). Sec 54: Special Resolution valid for 12 months.</td><td>Sweat Equity Lock-in: 3 years from allotment. Max per year = 15% of paid-up equity or ₹5 Cr (whichever is higher); Overall ≤ 25% of paid-up equity (50% for Startups up to 10 yrs).</td><td>Default under Sec 53: Penalty equal to amount raised at discount or ₹5 Lakh (whichever is less) + refund money with 12% p.a. interest.</td></tr><tr><td>Sec 55: Issue &amp; Redemption of Preference Shares</td><td>Special Resolution + AoA authorization; no subsisting default in redemption/dividend. Irredeemable preference shares are strictly prohibited.</td><td>Max Tenure: 20 years (Up to 30 years for Infrastructure Projects, provided ≥10% is redeemed annually from 21st year onwards at option of shareholders).</td><td>Redeemed ONLY out of (a) Profits available for dividend (transfer nominal value to CRR) OR (b) Proceeds of fresh issue of shares made for redemption.</td></tr><tr><td>Sec 56: Transfer, Transmission &amp; Certificate Delivery Timelines</td><td>Transfer Instrument: Form SH-4 delivered within 60 days of execution. Transmission: Operation of law (death/insolvency) — no instrument of transfer required.</td><td>Delivery of Certificates: Within 2 months of incorporation (subscribers); Within 2 months of allotment (shares); Within 6 months of allotment (debentures); Within 1 month of receipt of transfer/transmission.</td><td>Penalty for non-compliance (Sec 56(6)): Flat penalty of ₹50,000 on the company and every officer in default.</td></tr><tr><td>Sec 62: Further Issue of Share Capital (Rights Issue, ESOP, Preferential)</td><td>Sec 62(1)(a) Rights Issue: Offered to existing equity holders with right to renounce (unless AoA restricts). Sec 62(1)(b) ESOP: Special Resolution (Ordinary Resolution for Private Co).</td><td>Rights Offer Window: Min 15 days (can be reduced to ≥7 days by CG rules) and Max 30 days; notice dispatched ≥3 days before opening. ESOP min vesting period = 1 year.</td><td>Sec 62(3)/(4): Central/State Govt can direct conversion of Govt debentures/loans into equity in public interest (even if not in terms of issue); appeal to NCLT within 60 days.</td></tr><tr><td>Sec 63: Issue of Fully Paid-Up Bonus Shares</td><td>Authorized by AoA + recommended by Board + authorized in General Meeting (Ordinary Resolution). Partly paid-up shares must first be made fully paid-up.</td><td>Permitted Sources ONLY: (1) Free Reserves, (2) Securities Premium Account, (3) Capital Redemption Reserve (CRR). Once announced by Board, bonus issue CANNOT be withdrawn.</td><td>PROHIBITED: Cannot issue bonus shares by capitalizing Revaluation Reserve, and cannot issue bonus shares in lieu of dividend!</td></tr><tr><td>Sec 68, 69 &amp; 70: Buy-Back of Securities</td><td>Board Resolution: ≤10% of (Paid-up Equity + Free Reserves). Special Resolution: ≤25% of (Total Paid-up Capital + Free Reserves); Max 25% of Paid-up Equity in any FY.</td><td>Completion within 1 year of passing SR/BR; Extinguish physical shares within 7 days of completion; Post-buyback Debt:Equity ≤ 2:1 (6:1 for NBFC/HFC); 1-year cooling between two buy-backs; 6-month bar on fresh issue of same kind.</td><td>Sources: Free Reserves, Securities Premium, or Proceeds of earlier issue of DIFFERENT kind of shares. Transfer nominal value bought back from Free Reserves/SP to CRR (Sec 69).</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Duplicate Share Certificate Fraud Penalty (Sec 46(5)): Company Fine = Min 5x face value up to Max 10x face value OR ₹10 Crore (whichever is higher); Officer liable under Sec 447</code></div><div class="formula-item"><code>Sweat Equity Ceiling (Sec 54 &amp; Rule 8): Annual Limit = Higher of 15% of existing Paid-up Equity Capital OR ₹5 Crore issue value  |  Overall Cumulative Cap = 25% of Paid-up Equity (50% for Startups up to 10 yrs)  |  Lock-in = 3 Years</code></div><div class="formula-item"><code>Buy-Back Limits (Sec 68): Board Resolution ≤ 10% of (Paid-up Equity + Free Reserves)  |  Special Resolution ≤ 25% of (Total Paid-up Capital + Free Reserves) &amp; ≤ 25% of Paid-up Equity in a FY  |  Post-Buyback Debt : Equity ≤ 2 : 1</code></div><div class="formula-item"><code>Capital Redemption Reserve (CRR — Sec 55 &amp; Sec 69): CRR = Nominal Value of Shares Redeemed/Bought Back out of Free Reserves/Securities Premium  (Used ONLY to issue fully paid Bonus Shares)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Numerical (Section 68 Buy-Back Maximum Permissible Quantum): Zenith Ltd has Paid-up Equity Capital = ₹40 Crore (4 Crore shares of ₹10 each), Paid-up Preference Capital = ₹10 Crore, Free Reserves + Securities Premium = ₹110 Crore, and Secured + Unsecured Debt = ₹220 Crore. The company wants to buy back Equity Shares at ₹50 per share via Special Resolution. Let's apply the 3 statutory tests of Section 68(2): (1) Resource Test: 25% of (Total Paid-up Capital ₹50 Cr + Free Reserves ₹110 Cr = ₹160 Cr) = ₹40 Crore (which at ₹50/share allows 80 Lakh shares); (2) Share Outstanding Test: Max 25% of Paid-up Equity Capital in a FY = 25% of 4 Crore shares = 1 Crore shares (₹10 Cr face value); (3) Debt-Equity Ratio Test: Post-buyback Equity + Free Reserves must be at least half of Debt (₹220 Cr / 2 = ₹110 Cr minimum post-buyback net worth, plus CRR created equals nominal value bought back).</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter IV — Share Capital and Debentures (Sections 43 to 72)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter IV — Share Capital and Debentures (Sections 43 to 72)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter IV — Share Capital and Debentures (Sections 43 to 72) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> DVR Shares &amp; Sweat Equity Startup Relaxations (Companies Share Capital &amp; Debentures Rules): Under Rule 4, voting power in respect of Shares with Differential Voting Rights (DVRs) shall not exceed 74% of total voting power at any point of time (replacing the old 26% cap on post-issue paid-up equity). Under Rule 8(4), a Startup recognized by DPIIT may issue Sweat Equity Shares up to 50% of its paid-up capital for up to 10 years from incorporation (</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Sec 43 &amp; Rule 4: Equity Shares with Differential Rights (DVR) | Authorized by AoA + Ordinary Resolution in General Meeting (Postal Ballot if listed). Consistent track record of distributable profits is NO LONGER required. | Total voting power of DVR shares ≤ 74% of total voting power including DVRs. Company cannot convert existing ordinary equity into DVR or vice versa. | Must not have defaulted in filing financial statements/annual returns for 3</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Sec 43 &amp; Rule 4: Equity Shares with Differential Rights (DVR) | Authorized by AoA + Ordinary Resolution in General Meeting (Postal Ballot if listed). Consistent track record of distributable profits is NO LONGER required. | Total voting power of DVR shares ≤ 74% of total voting power including DVRs. Company cannot convert existing ordinary equity into DVR or vice versa. | Must not have defaulted in filing financial statements/annual returns for 3</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter IV — Share Capital and Debentures (Sections 43 to 72) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter IV — Share Capital and Debentures (Sections 43 to 72).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter IV — Share Capital and Debentures (Sections 43 to 72) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Debenture Redemption Reserve (DRR) Exemption (Rule 18(7)): All-India Financial Institutions, Banking Companies, Listed Companies, and Listed NBFCs/HFCs are 100% exempt from creating DRR (0% DRR). Only Unlisted Non-NBFC/Non-HFC Companies are required to maintain DRR equal to 10% of the value of outstanding debentures .</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter IV — Share Capital and Debentures (Sections 43 to 72).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch03" style="border-left: 5px solid #4f46e5;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#4f46e5;">CH 03</span>
+<h3 class="rev-title">Chapter VIII — Declaration and Payment of Dividend (Sections 123 to 127)</h3>
+<span class="rev-pyq-cnt">17 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Integrated IEPF Portal &amp; Simplified Claim Refund Workflow (2025–2026):</strong> Under the revised IEPF Authority (Accounting, Audit, Transfer and Refund) Rules, claimants file consolidated online Web-Form <strong>IEPF-5</strong> with digital verification report submitted by the company's Nodal Officer within <strong>30 days</strong>, enabling time-bound electronic release of unclaimed dividends and shares.</li><li><strong>Mandatory Electronic Dividend Mandate &amp; SEBI Administrability (Sec 24 &amp; Sec 123(5)):</strong> Dividend is payable strictly in cash (cheque, warrant, or electronic ECS/NEFT/NACH mode) and never in kind; for listed companies, non-payment of dividend is administered by <strong>SEBI</strong> under Section 24.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Breakdown of Chapter VIII (Sections 123 to 127) — Timelines, Rules &amp; Penalties</div>
+<table class="concept-table">
+<thead><tr><th>Section</th><th>Title &amp; Core Statutory Mandate</th><th>Key Timelines, Rates &amp; Thresholds</th><th>Exceptions &amp; Penalties</th></tr></thead>
+<tbody><tr><td>Section 123</td><td>Declaration of Dividend (Final &amp; Interim Dividend)</td><td>Sources: Current FY profit after depreciation (Schedule II), past undistributed profits after depreciation, or Govt guarantee money. Deposit in separate Scheduled Bank account within 5 days of declaration.</td><td>Interim Dividend: If company incurred loss up to preceding quarter of current FY, interim dividend rate CANNOT exceed average dividend rate declared during immediately preceding 3 FYs.</td></tr><tr><td>Section 124</td><td>Unpaid Dividend Account (UDA)</td><td>If dividend remains unpaid/unclaimed for 30 days from declaration, transfer within 7 days (i.e., by Day 37) to 'Unpaid Dividend Account' in a Scheduled Bank. Publish statement on website within 90 days of transfer.</td><td>Default in transferring to UDA attracts interest @ 12% per annum (which goes to the benefit of members). After 7 consecutive years in UDA, transfer money + underlying shares to IEPF.</td></tr><tr><td>Section 125</td><td>Investor Education and Protection Fund (IEPF)</td><td>Established by Central Govt. Managed by IEPF Authority: Chairperson (Secretary, MCA) + CEO + up to 7 members. Audited by C&amp;AG of India.</td><td>Credits to IEPF: Unclaimed dividends/matured deposits/matured debentures/application money + interest remaining unpaid for 7 years; disgorged amounts; Grants; Investment income.</td></tr><tr><td>Section 126</td><td>Right to Dividend, Rights Shares &amp; Bonus Shares Held in Abeyance</td><td>Where instrument of transfer of shares has been delivered to company for registration and transfer has not been registered, company must transfer dividend to Unpaid Dividend Account (Sec 124).</td><td>Exception: Company may pay dividend to transferee if registered shareholder authorizes the company IN WRITING to pay such dividend to the transferee specified in the transfer instrument.</td></tr><tr><td>Section 127</td><td>Punishment for Failure to Distribute Dividend within 30 Days</td><td>If declared dividend is not paid or warrant not posted within 30 days of declaration: Every Director who is knowingly a party → Imprisonment up to 2 years + Fine ≥ ₹1,000 per day of default.</td><td>Company must pay Simple Interest @ 18% per annum during the period of default! 5 Statutory Exceptions where no offense is committed (see below).</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Dividend out of Free Reserves in Year of Inadequate/Absence of Profits (Rule 3 of Declaration &amp; Payment of Dividend Rules, 2014 — 4 Mandatory Conditions):</code></div><div class="formula-item"><code>  Condition 1 (Rate Cap): Declared Dividend Rate ≤ Average of dividend rates declared in 3 immediately preceding FYs (not applicable if no dividend was declared in each of the 3 preceding FYs)</code></div><div class="formula-item"><code>  Condition 2 (Withdrawal Cap): Total amount drawn from accumulated profits ≤ 1/10th (10%) of (Paid-up Share Capital + Free Reserves) as per latest audited financial statements</code></div><div class="formula-item"><code>  Condition 3 (First Set-Off): Amount drawn must FIRST be utilized to set off losses incurred in the current financial year before declaring any dividend on equity shares</code></div><div class="formula-item"><code>  Condition 4 (Minimum Residual Balance): Balance of reserves after such withdrawal ≥ 15% of Paid-up Share Capital as per latest audited financial statements</code></div><div class="formula-item"><code>Dividend Payment Timeline Chain (Sec 123–127): Day 0 (Declaration) → Within 5 Days (Deposit in Separate Scheduled Bank A/c) → Within 30 Days (Pay/Post Warrant) → Within 7 Days after 30 Days (Day 37: Transfer unpaid to Unpaid Dividend A/c; default interest 12% p.a.) → After 7 Years (Transfer to IEPF)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Numerical (Rule 3 — Dividend out of Free Reserves during Loss Year): Omega Ltd has Paid-up Equity Capital = ₹200 Lakh and Free Reserves = ₹100 Lakh (Total = ₹300 Lakh). It incurred a current-year loss (after depreciation) of ₹5 Lakh. Its dividend rates in the preceding 3 years were 10%, 12%, and 14%. What is the maximum dividend rate it can declare? (1) Condition 1 (Rate Cap): Average of 3 yrs = (10+12+14)/3 = 12%; (2) Condition 2 (10% Withdrawal Cap): Max withdrawal = 10% of ₹300L = ₹30 Lakh; (3) Condition 4 (15% Residual Reserve Balance): Reserves after withdrawal must be ≥ 15% of Paid-up Capital (15% of ₹200L = ₹30L), so max withdrawal allowed by Condition 4 = ₹100L − ₹30L = ₹70L. Thus max withdrawal = min(₹30L, ₹70L) = ₹30 Lakh. (4) Condition 3 (Set off Current Loss): Deduct ₹5 Lakh loss first → ₹25 Lakh available for dividend = 12.5% of ₹200L, capped by Condition 1 at 12% (₹24 Lakh)!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter VIII — Declaration and Payment of Dividend (Sections 123 to 127)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter VIII — Declaration and Payment of Dividend (Sections 123 to 127)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter VIII — Declaration and Payment of Dividend (Sections 123 to 127) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Integrated IEPF Portal &amp; Simplified Claim Refund Workflow (2025–2026): Under the revised IEPF Authority (Accounting, Audit, Transfer and Refund) Rules, claimants file consolidated online Web-Form IEPF-5 with digital verification report submitted by the company's Nodal Officer within 30 days , enabling time-bound electronic release of unclaimed dividends and shares.; Mandatory Electronic Dividend Mandate &amp; SEBI Administrability (Sec 24 &amp; Sec 123(5</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Section 123 | Declaration of Dividend (Final &amp; Interim Dividend) | Sources: Current FY profit after depreciation (Schedule II), past undistributed profits after depreciation, or Govt guarantee money. Deposit in separate Scheduled Bank account within 5 days of declaration. | Interim Dividend: If company incurred loss up to preceding quarter of current FY, interim dividend rate CANNOT exceed average dividend rate declared during immediately precedi</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Section 123 | Declaration of Dividend (Final &amp; Interim Dividend) | Sources: Current FY profit after depreciation (Schedule II), past undistributed profits after depreciation, or Govt guarantee money. Deposit in separate Scheduled Bank account within 5 days of declaration. | Interim Dividend: If company incurred loss up to preceding quarter of current FY, interim dividend rate CANNOT exceed average dividend rate declared during immediately precedi</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter VIII — Declaration and Payment of Dividend (Sections 123 to 127) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter VIII — Declaration and Payment of Dividend (Sections 123 to 127).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter VIII — Declaration and Payment of Dividend (Sections 123 to 127) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Mandatory Electronic Dividend Mandate &amp; SEBI Administrability (Sec 24 &amp; Sec 123(5)): Dividend is payable strictly in cash (cheque, warrant, or electronic ECS/NEFT/NACH mode) and never in kind; for listed companies, non-payment of dividend is administered by SEBI under Section 24.</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter VIII — Declaration and Payment of Dividend (Sections 123 to 127).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch04" style="border-left: 5px solid #b45309;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#b45309;">CH 04</span>
+<h3 class="rev-title">Chapter X — Audit and Auditors (Sections 139 to 148)</h3>
+<span class="rev-pyq-cnt">17 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>NFRA (National Financial Reporting Authority — Sec 132) &amp; Audit Trail (Edit Log) Mandate (Rule 11(g)):</strong> Every company using accounting software for maintaining its books of account must use software that has a feature of recording an <strong>audit trail (edit log) of each and every transaction</strong> creating an edit log of each change made along with the date, and auditors must explicitly report on whether the audit trail was operated throughout the year and preserved for 8 years.</li><li><strong>CARO 2020 (Companies Auditor's Report Order, 2020 — Sec 143(11)):</strong> Contains <strong>21 reporting clauses</strong> covering PPE title deeds, Benami properties, working capital limits &gt; ₹5 Crore, internal audit systems, cash losses, whistle-blower complaints, and statutory dues.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Statutory Matrix of Chapter X (Sections 139 to 148) — Appointments, Disqualifications &amp; Fraud Reporting</div>
+<table class="concept-table">
+<thead><tr><th>Section</th><th>Provision &amp; Scope</th><th>Thresholds, Forms &amp; Timelines</th><th>Exam Traps &amp; Penalty Provisions</th></tr></thead>
+<tbody><tr><td>Sec 139(2): Rotation of Auditors</td><td>Applies to Listed Cos + Unlisted Public (Paid-up ≥ ₹10 Cr) + Private (Paid-up ≥ ₹50 Cr) + Any Co (Borrowings from Banks/PFIs/Deposits ≥ ₹50 Cr).</td><td>Individual Auditor: 1 term of 5 consecutive years. Audit Firm / LLP: 2 terms of 5 consecutive years each (10 yrs). Cooling-off period: 5 years for both!</td><td>Audit firm sharing even a SINGLE common partner with the outgoing audit firm is also ineligible during the 5-year cooling-off period.</td></tr><tr><td>Sec 139(8): Filling Casual Vacancy in Office of Auditor</td><td>Non-Govt Co: Filled by Board within 30 days; if caused by RESIGNATION, must ALSO be approved by company at General Meeting convened within 3 months of Board recommendation.</td><td>Govt Co: Casual vacancy filled by C&amp;AG within 30 days; if C&amp;AG fails, Board fills within next 30 days.</td><td>Auditor appointed in casual vacancy holds office until the conclusion of the next Annual General Meeting.</td></tr><tr><td>Sec 140: Removal, Resignation of Auditor &amp; Special Notice</td><td>Sec 140(1) Removal before Expiry: Board Resolution → Application to Central Govt (RD) in Form ADT-2 within 30 days → Pass Special Resolution in GM within 60 days of receipt of CG approval.</td><td>Sec 140(2) Resignation: Auditor must file statement in Form ADT-3 within 30 days with Company + RoC (+ C&amp;AG if Govt Co). Penalty: ₹50,000 or remuneration (whichever is less) + ₹500/day.</td><td>Sec 140(5): NCLT can (suo-moto or on CG/any person's application) direct company to change auditor involved in fraud; such auditor/firm is debarred for 5 years!</td></tr><tr><td>Sec 141(3): Disqualifications of Auditor</td><td>Who CANNOT be appointed: Body corporate (other than LLP), Officer/employee, Partner/employee of officer, Person holding &gt;20 audits, Person convicted of fraud (&lt;10 yrs elapsed), or rendering Sec 144 prohibited services.</td><td>Financial Interest / Indebtedness Thresholds (Sec 141(3)(d)): (1) Auditor/partner holds ANY security (₹1 disallowed!), OR Relative holds security of Face Value &gt; ₹1,00,000 (60 days to take corrective action); (2) Indebted to company/subsidiary/associate &gt; ₹5,00,000; (3) Given guarantee/security &gt; ₹1,00,000.</td><td>Business Relationship (Sec 141(3)(e)): Disqualified unless it is a commercial transaction in the ordinary course of business at arm's length price (e.g., telecom, airlines, hotel, banking).</td></tr><tr><td>Sec 143(5)–(7) &amp; Sec 143(12): Govt Audit &amp; Reporting of Fraud</td><td>Sec 143(5)–(7): C&amp;AG can order a Supplementary Audit OR Test Audit within 60 days of receipt of audit report of a Government Company.</td><td>Sec 143(12) Fraud ≥ ₹1 Crore: Auditor reports to Board/Audit Committee within 2 days → waits 45 days for reply → forwards report to Central Govt in Form ADT-4 within 15 days (total 60 days).</td><td>Fraud &lt; ₹1 Crore: Reported ONLY to Audit Committee / Board within 2 days (not to Central Govt), and disclosed in the Board's Report. Penalty for non-reporting: ₹5 Lakh (Listed Co) / ₹1 Lakh (Other Co).</td></tr><tr><td>Sec 144 &amp; Sec 148: Prohibited Non-Audit Services &amp; Cost Audit</td><td>Sec 144 Prohibited Services (8 items): Accounting &amp; book-keeping, Internal audit, Design/implementation of financial info system, Actuarial services, Investment advisory, Investment banking, Outsourced financial services, Management services.</td><td>Sec 148 Cost Audit: Cost Records in Form CRA-1; Cost Auditor appointed by Board within 180 days of start of FY (Intimation to CG in Form CRA-2 within 30 days / 180 days); Cost Audit Report in Form CRA-3 within 180 days from end of FY; Company forwards to CG in Form CRA-4 within 30 days.</td><td>EXAM TRAP: Statutory Auditor enacted under Sec 139 CANNOT be appointed as Cost Auditor under Sec 148 OR Internal Auditor under Sec 138!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>First Auditor Timelines (Sec 139(6) vs Sec 139(7)): Non-Govt Co = Board within 30 days → else Members at EGM within 90 days  |  Govt Co = C&amp;AG within 60 days → else Board within 30 days → else Members at EGM within 60 days</code></div><div class="formula-item"><code>Subsequent Auditor (Sec 139(1) vs Sec 139(5)): Non-Govt Co = Appointed at 1st AGM for 5 Years (till conclusion of 6th AGM; Form ADT-1 within 15 days)  |  Govt Co = Appointed by C&amp;AG within 180 days from commencement of every FY</code></div><div class="formula-item"><code>Mandatory Rotation of Auditors Thresholds (Sec 139(2) &amp; Rule 5): All Listed Cos + Unlisted Public Cos (Paid-up ≥ ₹10 Cr) + Private Cos (Paid-up ≥ ₹50 Cr) + ANY Co having Public Borrowings/Deposits ≥ ₹50 Cr (OPC &amp; Small Cos Exempt)</code></div><div class="formula-item"><code>Auditor Ceiling per Partner (Sec 141(3)(g)): Maximum 20 Company Audits (Excludes: OPC, Dormant Co, Small Co, and Private Co with Paid-up Share Capital &lt; ₹100 Crore)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Case (Section 141(3)(d) Relative Shareholding Disqualification): CA Vikram is a partner in M/s V&amp;K Associates, statutory auditors of Zenith Ltd. His brother (a 'Relative' under Sec 2(77)) purchases 800 equity shares of Zenith Ltd having a Face Value of ₹100 each (Total Face Value = ₹80,000) at a Market Value of ₹2,50,000. Is M/s V&amp;K Associates disqualified? NO! Under Rule 10 of the Companies (Audit and Auditors) Rules, a relative may hold security in the company of <strong>Face Value not exceeding ₹1,00,000</strong> (market value is irrelevant). Had the face value exceeded ₹1,00,000, the auditor would have <strong>60 days</strong> from such acquisition to take corrective action!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter X — Audit and Auditors (Sections 139 to 148)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter X — Audit and Auditors (Sections 139 to 148)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter X — Audit and Auditors (Sections 139 to 148) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> NFRA (National Financial Reporting Authority — Sec 132) &amp; Audit Trail (Edit Log) Mandate (Rule 11(g)): Every company using accounting software for maintaining its books of account must use software that has a feature of recording an audit trail (edit log) of each and every transaction creating an edit log of each change made along with the date, and auditors must explicitly report on whether the audit trail was operated throughout the year and pr</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Sec 139(2): Rotation of Auditors | Applies to Listed Cos + Unlisted Public (Paid-up ≥ ₹10 Cr) + Private (Paid-up ≥ ₹50 Cr) + Any Co (Borrowings from Banks/PFIs/Deposits ≥ ₹50 Cr). | Individual Auditor: 1 term of 5 consecutive years. Audit Firm / LLP: 2 terms of 5 consecutive years each (10 yrs). Cooling-off period: 5 years for both! | Audit firm sharing even a SINGLE common partner with the outgoing audit firm is also ineligible during the 5-year</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Sec 139(2): Rotation of Auditors | Applies to Listed Cos + Unlisted Public (Paid-up ≥ ₹10 Cr) + Private (Paid-up ≥ ₹50 Cr) + Any Co (Borrowings from Banks/PFIs/Deposits ≥ ₹50 Cr). | Individual Auditor: 1 term of 5 consecutive years. Audit Firm / LLP: 2 terms of 5 consecutive years each (10 yrs). Cooling-off period: 5 years for both! | Audit firm sharing even a SINGLE common partner with the outgoing audit firm is also ineligible during the 5-year</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter X — Audit and Auditors (Sections 139 to 148) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter X — Audit and Auditors (Sections 139 to 148).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter X — Audit and Auditors (Sections 139 to 148) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> CARO 2020 (Companies Auditor's Report Order, 2020 — Sec 143(11)): Contains 21 reporting clauses covering PPE title deeds, Benami properties, working capital limits &gt; ₹5 Crore, internal audit systems, cash losses, whistle-blower complaints, and statutory dues.</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter X — Audit and Auditors (Sections 139 to 148).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch05" style="border-left: 5px solid #047857;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#047857;">CH 05</span>
+<h3 class="rev-title">Chapter XI — Appointment &amp; Qualifications of Directors Part I (Sections 149 to 160)</h3>
+<span class="rev-pyq-cnt">12 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Independent Director Proficiency Test &amp; Data Bank (Sec 150 &amp; IICA Rules):</strong> Every individual included in the Independent Director Data Bank maintained by the <strong>Indian Institute of Corporate Affairs (IICA, Manesar)</strong> must pass the online proficiency self-assessment test (score ≥ 50%) within <strong>2 years</strong> of inclusion (exemptions apply for experienced directors/KMPs/professionals with ≥ 3 to 10 years of specified experience).</li><li><strong>DIR-3 KYC Web Verification &amp; SEBI LODR Alignment:</strong> Every Director holding a DIN must submit annual KYC (DIR-3 KYC / Web) by 30th September; while Companies Act Sec 149(1) allows a maximum of 15 directors (extendable via Special Resolution), SEBI LODR requires top 2,000 listed entities to have a <strong>minimum of 6 directors</strong> including at least 1 Independent Woman Director.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Statutory Matrix of Sections 149 to 160 — Directors, Thresholds, Tenures &amp; Pecuniary Limits</div>
+<table class="concept-table">
+<thead><tr><th>Section &amp; Role</th><th>Statutory Applicability &amp; Thresholds</th><th>Tenure, Re-Appointment &amp; Cooling-Off</th><th>Key Restrictions &amp; Exam Traps</th></tr></thead>
+<tbody><tr><td>Sec 149(3): Resident Director</td><td>Mandatory for EVERY company (Public, Private, OPC, Listed, Unlisted).</td><td>At least 1 Director who has stayed in India for a total period of not less than 182 days during the financial year.</td><td>For newly incorporated companies, the 182-day requirement applies proportionately at the end of the first financial year.</td></tr><tr><td>Sec 149(4)–(12): Independent Director (ID)</td><td>Listed Co (≥1/3rd of Board); Public Co with Paid-up ≥ ₹10 Cr OR Turnover ≥ ₹100 Cr OR Loans/Debentures/Deposits &gt; ₹50 Cr (≥2 IDs). Joint Venture, Wholly-Owned Subsidiary, and Dormant Cos are EXEMPT!</td><td>Term: Up to 5 consecutive years (Ordinary Resolution). Re-appointment for 2nd term of up to 5 consecutive years requires SPECIAL RESOLUTION. Cooling-off period: 3 years after 2 consecutive terms.</td><td>IDs are NOT entitled to any Stock Options (ESOPs) (Sec 149(9)) and do NOT retire by rotation (Sec 149(13)). Pecuniary relationship of ID (other than sitting fees/commission) ≤ 10% of his total income; Relative's pecuniary transaction ≤ 2% of company's gross turnover/total income or ₹50 Lakh (whichever is lower).</td></tr><tr><td>Sec 151: Small Shareholders' Director (SSD)</td><td>Listed Company may appoint 1 SSD suo-moto OR upon notice of not less than 1,000 small shareholders OR 1/10th of total small shareholders, whichever is LOWER (14 days notice before meeting).</td><td>'Small Shareholder' = shareholder holding shares of nominal value of not more than ₹20,000. Tenure: Maximum 3 consecutive years; NOT liable to retire by rotation; NOT eligible for re-appointment.</td><td>Cooling-off: Cannot be associated with the company in any capacity for 3 years after ceasing to hold office. A person can be SSD in at most 2 companies (provided the 2nd does not compete with the 1st).</td></tr><tr><td>Sec 152: Appointment &amp; Retirement by Rotation</td><td>Every director appointed in General Meeting; must have DIN (Sec 152(3)), file consent to act in Form DIR-2 within 30 days (Company files Form DIR-12 with RoC within 30 days).</td><td>Public Co: ≥2/3rd of total directors (excluding IDs) must be rotational; 1/3rd (or nearest number) retire at every AGM. If vacancy not filled &amp; meeting not resolved not to fill → Adjourned to next week → If still not filled, retiring director is DEEMED RE-APPOINTED.</td><td>Exception: Deemed re-appointment does NOT apply if resolution for re-appointment was put to vote and lost, or retiring director expressed unwillingness in writing.</td></tr><tr><td>Sec 153–159: Director Identification Number (DIN)</td><td>Sec 153: Apply to CG in Form DIR-3 (or SPICe+ at incorporation). Sec 154: CG allots DIN within 1 month. Sec 155: Prohibition on obtaining more than ONE DIN.</td><td>Sec 156: Existing director must intimate DIN to company within 1 month of receipt. Sec 157: Company must furnish DINs of all directors to RoC within 15 days of receipt.</td><td>Penalty (Sec 159): Default under Sec 152/155/156 attracts penalty up to ₹50,000 + ₹500 per day for continuing default.</td></tr><tr><td>Sec 160: Right of Persons other than Retiring Directors to Stand for Directorship</td><td>Notice in writing at least 14 days before the General Meeting at the registered office, signifying candidature as a director.</td><td>Deposit of ₹1,00,000 must accompany notice. Deposit is REFUNDED if candidate gets elected OR secures MORE THAN 25% of total valid votes cast!</td><td>EXEMPTION FROM ₹1,00,000 DEPOSIT: No deposit of ₹1,00,000 is required if the candidate is recommended by the Nomination &amp; Remuneration Committee (NRC) OR by the Board of Directors (if no NRC)! Section 8 companies decide refund via Board.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Board Strength (Sec 149(1)): Minimum Directors: Public Co = 3  |  Private Co = 2  |  One Person Company (OPC) = 1   |   Maximum Directors = 15 (Can exceed 15 by passing a Special Resolution; Section 8 Cos exempt from 15-director cap)</code></div><div class="formula-item"><code>Woman Director Applicability (Sec 149(1) &amp; Rule 3): Every Listed Company + Every Public Company having Paid-Up Share Capital ≥ ₹100 Crore OR Turnover ≥ ₹300 Crore (Vacancy filled by Board at immediate next BM or within 3 months, whichever is LATER)</code></div><div class="formula-item"><code>Independent Director (ID) Applicability (Sec 149(4) &amp; Rule 4): Listed Co ≥ 1/3rd of Total Directors  |  Unlisted Public Co having Paid-Up Capital ≥ ₹10 Cr OR Turnover ≥ ₹100 Cr OR Aggregate Outstanding Loans, Debentures &amp; Deposits &gt; ₹50 Cr → Minimum 2 IDs</code></div><div class="formula-item"><code>Rotational Directors (Sec 152(6) — Public Companies): At least 2/3rd of Total Directors (excluding Independent Directors) must be liable to retire by rotation; at each AGM, 1/3rd of such rotational directors (or nearest to 1/3rd, longest in office) shall retire</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Numerical (Section 152(6) Rotational &amp; Retiring Directors Calculation): A Public Limited Company has a Board of 12 Directors, of whom 4 are Independent Directors and 1 is a non-rotational Managing Director. How many directors must be liable to retire by rotation, and how many will retire at the upcoming AGM? Step 1: Exclude Independent Directors (4) from Total Directors (12): Remaining Directors = 12 − 4 = 8. Step 2: Minimum Rotational Directors = 2/3 × 8 = 5.33 → Round UP to next integer = <strong>6 Rotational Directors</strong> (since ≥ 2/3rd is required). Step 3: Directors retiring at the AGM = 1/3 × 6 = <strong>2 Directors</strong> (if 2/3rd had given 7 rotational directors, 1/3 × 7 = 2.33 → Round to NEAREST integer = 2 Directors)!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter XI — Appointment &amp; Qualifications of Directors Part I (Sections 149 to 160)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter XI — Appointment &amp; Qualifications of Directors Part I (Sections 149 to 160)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter XI — Appointment &amp; Qualifications of Directors Part I (Sections 149 to 160) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Independent Director Proficiency Test &amp; Data Bank (Sec 150 &amp; IICA Rules): Every individual included in the Independent Director Data Bank maintained by the Indian Institute of Corporate Affairs (IICA, Manesar) must pass the online proficiency self-assessment test (score ≥ 50%) within 2 years of inclusion (exemptions apply for experienced directors/KMPs/professionals with ≥ 3 to 10 years of specified experience).; DIR-3 KYC Web Verification &amp; SEBI</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Sec 149(3): Resident Director | Mandatory for EVERY company (Public, Private, OPC, Listed, Unlisted). | At least 1 Director who has stayed in India for a total period of not less than 182 days during the financial year. | For newly incorporated companies, the 182-day requirement applies proportionately at the end of the first financial year.; Sec 149(4)–(12): Independent Director (ID) | Listed Co (≥1/3rd of Board); Public Co with Paid-up ≥ ₹10 Cr</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Sec 149(3): Resident Director | Mandatory for EVERY company (Public, Private, OPC, Listed, Unlisted). | At least 1 Director who has stayed in India for a total period of not less than 182 days during the financial year. | For newly incorporated companies, the 182-day requirement applies proportionately at the end of the first financial year.; Sec 149(4)–(12): Independent Director (ID) | Listed Co (≥1/3rd of Board); Public Co with Paid-up ≥ ₹10 Cr</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter XI — Appointment &amp; Qualifications of Directors Part I (Sections 149 to 160) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter XI — Appointment &amp; Qualifications of Directors Part I (Sections 149 to 160).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter XI — Appointment &amp; Qualifications of Directors Part I (Sections 149 to 160) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> DIR-3 KYC Web Verification &amp; SEBI LODR Alignment: Every Director holding a DIN must submit annual KYC (DIR-3 KYC / Web) by 30th September; while Companies Act Sec 149(1) allows a maximum of 15 directors (extendable via Special Resolution), SEBI LODR requires top 2,000 listed entities to have a minimum of 6 directors including at least 1 Independent Woman Director.</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter XI — Appointment &amp; Qualifications of Directors Part I (Sections 149 to 160).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch06" style="border-left: 5px solid #7c3aed;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#7c3aed;">CH 06</span>
+<h3 class="rev-title">Chapter XI — Appointment &amp; Qualifications of Directors Part II (Sections 161 to 172)</h3>
+<span class="rev-pyq-cnt">4 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>SEBI LODR Tighter Rules vs Companies Act Section 161 &amp; 165:</strong> Under SEBI LODR (applicable to Listed Entities), shareholder approval for appointment of any Director (including an Additional Director) must be taken at the <strong>next general meeting OR within 3 months from the date of appointment, whichever is earlier</strong>, and a person who is rejected by shareholders at a general meeting cannot be appointed as an Additional Director even under Section 161(1).</li><li><strong>Prohibition on Continuation of Permanent Board Seats in Listed Companies (SEBI LODR Reg 17(1D)):</strong> Effective 2024–2026, continuation of every director on the board of a listed entity requires shareholder approval at least <strong>once every 5 years</strong>.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Statutory Matrix of Sections 161 to 172 — Board Appointments, Disqualifications, Vacation &amp; Removal</div>
+<table class="concept-table">
+<thead><tr><th>Section</th><th>Provision &amp; Mechanism</th><th>Tenure, Conditions &amp; Timelines</th><th>Critical Exam Trap / Exception</th></tr></thead>
+<tbody><tr><td>Sec 161(1): Additional Director</td><td>Board may appoint if authorized by AoA. Holds office up to the date of the next AGM OR the last date on which the AGM should have been held, whichever is EARLIER.</td><td>Can be appointed via Board Meeting OR Resolution by Circulation (Sec 175).</td><td>TRAP: A person who FAILS to get appointed as a director in a General Meeting CANNOT be appointed as an Additional Director by the Board!</td></tr><tr><td>Sec 161(2): Alternate Director</td><td>Board (if authorized by AoA or resolution in GM) may appoint to act for a director during his absence for a period of NOT LESS THAN 3 MONTHS from India.</td><td>Vacates office as soon as the original director returns to India, or when original director's term expires.</td><td>Cannot hold alternate directorship for another director in the same company; Alternate Director for an Independent Director MUST also be qualified as an Independent Director!</td></tr><tr><td>Sec 161(3) &amp; Sec 161(4): Nominee &amp; Casual Vacancy Director</td><td>Sec 161(3): Board appoints Nominee Director nominated by institution/agreement or Central/State Govt. Sec 161(4): Casual vacancy of director appointed in GM is filled by Board AT A BOARD MEETING (not by circulation!).</td><td>Casual Vacancy Director holds office up to the date up to which the director in whose place he is appointed would have held office, and must be subsequently approved by members in the IMMEDIATE NEXT General Meeting.</td><td>Both Public and Private companies can fill casual vacancies under Sec 161(4) (since the 2017 Amendment removed the word 'public').</td></tr><tr><td>Sec 162 &amp; Sec 163: Individual Voting &amp; Proportional Representation</td><td>Sec 162: Two or more directors CANNOT be appointed by a single resolution unless a resolution to do so has first been agreed to UNANIMOUSLY (0 votes against). (Private Cos are exempt from Sec 162).</td><td>Sec 163: AoA may provide for appointment of not less than 2/3rd of total directors according to principle of proportional representation, made ONCE IN EVERY 3 YEARS.</td><td>Directors appointed by Proportional Representation under Sec 163 CANNOT be removed by shareholders under Section 169!</td></tr><tr><td>Sec 164(1) &amp; Sec 164(2): Disqualifications for Appointment of Director</td><td>Sec 164(1) Personal: Unsound mind, undischarged insolvent, applied to be adjudicated insolvent, convicted &amp; sentenced ≥6 months (5-yr bar; if ≥7 yrs sentence → LIFETIME bar!), unpaid calls for 6 months, convicted of RPT under Sec 188 during last 5 yrs, no DIN, or violates Sec 165 limit.</td><td>Sec 164(2) Corporate Default: Director of a company that (a) has not filed financial statements OR annual returns for continuous 3 FYs, OR (b) failed to repay deposits/debentures/interest or pay declared dividend for ≥1 year → Disqualified for 5 years.</td><td>Proviso to Sec 164(2): If a person is newly appointed as director of a company which is ALREADY in default under Sec 164(2), he shall NOT incur the disqualification for 6 months from the date of his appointment!</td></tr><tr><td>Sec 166, 167 &amp; 168: Duties, Vacation of Office &amp; Resignation</td><td>Sec 166: Statutory duties of care, diligence, no conflict of interest, no undue gain, and NO ASSIGNMENT of office (any assignment is void; fine ₹1L–₹5L).</td><td>Sec 167(1)(b): Office becomes vacant if director absents himself from ALL meetings of the Board held during a period of 12 MONTHS with or without seeking leave of absence! Sec 168: Resignation takes effect from date notice is received by company or later date specified (Form DIR-12 by Co within 30 days; optional Form DIR-11 by Director).</td><td>If ALL directors vacate/resign simultaneously under Sec 167(3) or 168(3), the Promoter (or in his absence, the Central Government) shall appoint the required number of directors till general meeting.</td></tr><tr><td>Sec 169: Removal of Directors before Expiry of Period</td><td>Company may, by ORDINARY RESOLUTION (after Special Notice of 14 days by members holding ≥1% voting power or ≥₹5 Lakh paid-up shares), remove a director before expiry of his period.</td><td>Exception for Independent Director in 2nd Term: An Independent Director re-appointed for a 2nd term can be removed ONLY by passing a SPECIAL RESOLUTION!</td><td>Who CANNOT be removed under Sec 169: (1) Director appointed by Tribunal (NCLT) under Sec 242, and (2) Directors appointed under Proportional Representation (Sec 163).</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Maximum Number of Directorships (Sec 165(1)): Max 20 Companies in total, out of which Max 10 can be Public Companies (Note: Directorship in a Private Company that is a Holding or Subsidiary of a Public Company is counted within the 10-Public-Company sub-limit!)</code></div><div class="formula-item"><code>Exclusions from 20-Company Ceiling (Sec 165): (1) Dormant Companies (Sec 455), and (2) Section 8 (Non-Profit) Companies</code></div><div class="formula-item"><code>Corporate Default Disqualification (Sec 164(2)): Non-filing of Financial Statements OR Annual Returns for any continuous 3 Financial Years, OR Default in repaying Deposits/Debentures/Interest or paying declared Dividend continuing for ≥ 1 Year → Disqualified for 5 Years</code></div><div class="formula-item"><code>Proportional Representation (Sec 163): At least 2/3rd of Directors appointed once every 3 Years by single transferable vote or cumulative voting</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Statutory Case (Section 165 Maximum Directorships Counting): Mr. Khanna is currently a Director in: 8 Public Limited Companies, 1 Private Company (which is a Subsidiary of one of those Public Companies), 9 Standalone Private Companies, 2 Section 8 (Charitable) Companies, and 1 Dormant Company. How many more Public and Private companies can he join? Step 1: Ignore the 2 Section 8 Companies and 1 Dormant Company (exempt under Sec 165). Step 2: Public Company Sub-Limit (Max 10): The 1 Private Subsidiary of a Public Company counts as a Public Company under the Explanation to Sec 165(1), so he already holds 8 + 1 = <strong>9 Public Directorships</strong> (can join at most <strong>1 more Public Company</strong>). Step 3: Overall Ceiling (Max 20): He holds 9 (Public/Deemed) + 9 (Standalone Private) = <strong>18 Directorships</strong>, so he can join at most <strong>2 more companies overall</strong> (either 2 Private Companies OR 1 Public + 1 Private)!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter XI — Appointment &amp; Qualifications of Directors Part II (Sections 161 to 172)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter XI — Appointment &amp; Qualifications of Directors Part II (Sections 161 to 172)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter XI — Appointment &amp; Qualifications of Directors Part II (Sections 161 to 172) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> SEBI LODR Tighter Rules vs Companies Act Section 161 &amp; 165: Under SEBI LODR (applicable to Listed Entities), shareholder approval for appointment of any Director (including an Additional Director) must be taken at the next general meeting OR within 3 months from the date of appointment, whichever is earlier , and a person who is rejected by shareholders at a general meeting cannot be appointed as an Additional Director even under Section 161(1).;</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Sec 161(1): Additional Director | Board may appoint if authorized by AoA. Holds office up to the date of the next AGM OR the last date on which the AGM should have been held, whichever is EARLIER. | Can be appointed via Board Meeting OR Resolution by Circulation (Sec 175). | TRAP: A person who FAILS to get appointed as a director in a General Meeting CANNOT be appointed as an Additional Director by the Board!; Sec 161(2): Alternate Director | Boa</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Sec 161(1): Additional Director | Board may appoint if authorized by AoA. Holds office up to the date of the next AGM OR the last date on which the AGM should have been held, whichever is EARLIER. | Can be appointed via Board Meeting OR Resolution by Circulation (Sec 175). | TRAP: A person who FAILS to get appointed as a director in a General Meeting CANNOT be appointed as an Additional Director by the Board!; Sec 161(2): Alternate Director | Boa</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter XI — Appointment &amp; Qualifications of Directors Part II (Sections 161 to 172) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter XI — Appointment &amp; Qualifications of Directors Part II (Sections 161 to 172).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter XI — Appointment &amp; Qualifications of Directors Part II (Sections 161 to 172) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Prohibition on Continuation of Permanent Board Seats in Listed Companies (SEBI LODR Reg 17(1D)): Effective 2024–2026, continuation of every director on the board of a listed entity requires shareholder approval at least once every 5 years .</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter XI — Appointment &amp; Qualifications of Directors Part II (Sections 161 to 172).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch07" style="border-left: 5px solid #be123c;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#be123c;">CH 07</span>
+<h3 class="rev-title">Chapter XII — Meetings of Board and its Powers Part I (Sections 173 to 183)</h3>
+<span class="rev-pyq-cnt">12 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Omission of Rule 4 Restriction on Video Conferencing Board Meetings (MCA Amendment):</strong> Following the MCA omission of Rule 4 of the Companies (Meetings of Board and its Powers) Rules, <strong>ALL matters</strong> (including approval of annual financial statements, Board's report, prospectus, Audit Committee review of accounts, and mergers/amalgamations) can now be validly transacted through <strong>Video Conferencing (VC) or Other Audio-Visual Means (OAVM)</strong>!</li><li><strong>Audit Committee, NRC &amp; SRC Composition (Companies Act vs SEBI LODR):</strong> Under Companies Act Sec 177, Audit Committee requires a <strong>majority of Independent Directors</strong> (whereas SEBI LODR requires <strong>2/3rd Independent Directors</strong> for listed entities, with all members financially literate).</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Statutory Matrix of Sections 173 to 183 — Board Meetings, Committees &amp; Powers of Board</div>
+<table class="concept-table">
+<thead><tr><th>Section</th><th>Provision &amp; Applicability</th><th>Thresholds, Quorum &amp; Notice Rules</th><th>Key Statutory Nuance / Exam Trap</th></tr></thead>
+<tbody><tr><td>Sec 173: Meetings of Board</td><td>First BM within 30 days of incorporation; ≥4 BMs/year (max gap ≤120 days). OPC (with &gt;1 director), Small, Dormant &amp; Start-up: ≥1 BM in each half of calendar year (gap ≥90 days). Section 8 Co: ≥1 BM within every 6 calendar months.</td><td>Notice: Not less than 7 days in writing to every director at registered address (penalty on officer: ₹25,000). Shorter Notice (&lt;7 days) valid if ≥1 Independent Director is present (or ratified by ≥1 ID).</td><td>If an OPC has ONLY ONE director on its Board, the provisions of Section 173 and Section 174 (Quorum) do NOT apply at all!</td></tr><tr><td>Sec 174 &amp; Sec 175: Quorum &amp; Resolution by Circulation</td><td>Sec 174: Quorum = 1/3rd of total strength (excluding vacancies) or 2 directors, whichever is higher. Adjourned to same day/time next week if no quorum.</td><td>Sec 175 Circulation: Draft resolution circulated to ALL directors at addresses in India and approved by MAJORITY of directors entitled to vote. However, if ≥1/3rd of total directors require it to be decided at a meeting, Chairperson must put it to a Board Meeting.</td><td>Interested director under Sec 184(2) is NOT counted towards Quorum (except in a Private Company after disclosing interest).</td></tr><tr><td>Sec 177: Audit Committee &amp; Vigil Mechanism</td><td>Audit Committee Applicability: Listed Cos + Public Cos with Paid-up ≥ ₹10 Cr OR Turnover ≥ ₹100 Cr OR Outstanding Loans/Debentures/Deposits &gt; ₹50 Cr. Composition: Min 3 directors, with Independent Directors forming a MAJORITY.</td><td>Vigil Mechanism (Whistleblower — Sec 177(9)): Mandatory for (1) Every Listed Co, (2) Cos accepting Deposits from public, and (3) Cos with Borrowings from Banks/PFIs &gt; ₹50 Crore.</td><td>Majority of Audit Committee members (including Chairperson) must have ability to read and understand financial statements. Audit Committee can grant omnibus approval for RPTs valid for 1 year.</td></tr><tr><td>Sec 178: Nomination &amp; Remuneration Committee (NRC) &amp; SRC</td><td>NRC Applicability: Same as Audit Committee (Listed + Public Cos crossing ₹10 Cr / ₹100 Cr / &gt;₹50 Cr). Composition: Min 3 Non-Executive Directors, with NOT LESS THAN 50% (One-Half) being Independent Directors.</td><td>Stakeholders Relationship Committee (SRC — Sec 178(5)): Mandatory for any company having MORE THAN 1,000 shareholders, debenture-holders, deposit-holders and any other security holders at any time during a FY.</td><td>Chairperson of Company may be appointed as a member of NRC, but CANNOT chair the NRC. SRC must be chaired by a Non-Executive Director.</td></tr><tr><td>Sec 179(3) &amp; Sec 180: Powers Exercised at Board Meeting vs Special Resolution</td><td>Sec 179(3) (Only at BM, not by circulation): Call on shares, Authorize buy-back (≤10%), Issue securities/debentures, Borrow monies, Invest funds, Grant loans/guarantees, Approve Financial Statements &amp; Board's Report, Diversify business, Approve Merger, Takeover/acquire stake, Appoint/remove KMP &amp; Internal/Secretarial Auditor.</td><td>Sec 180 (Requires Special Resolution in GM; Private Cos are EXEMPT): (a) Sell/lease/dispose of whole or substantially the whole of any undertaking; (b) Invest compensation from merger in non-trust securities; (c) Borrow &gt; (Paid-up Capital + Free Reserves + Securities Premium); (d) Remit/give time for repayment of debt due from a director.</td><td>Definition of 'Undertaking' (Sec 180(1)(a)): Investment exceeds 20% of Net Worth OR generates 20% of Total Income during previous FY. 'Substantially the whole' = 20% or more of the value of the undertaking.</td></tr><tr><td>Sec 181, 182 &amp; 183: Charitable, Political &amp; National Defence Contributions</td><td>Sec 181 (Bona fide Charitable Funds): Board can contribute up to 5% of average net profits for the 3 immediately preceding FYs; exceeding 5% requires prior permission of Company in General Meeting (Ordinary Resolution).</td><td>Sec 182 (Political Contributions): Prohibited for Government Companies and any Company in existence for LESS THAN 3 FINANCIAL YEARS. Allowed for others via resolution passed at a Board Meeting (7.5% cap was OMITTED in 2017!).</td><td>Sec 183 (National Defence Fund / PM CARES / CG-approved Defence Fund): Board (or person/committee authorized) may contribute ANY AMOUNT without any monetary ceiling and notwithstanding AoA/MoA!</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Board Meeting Frequency (Sec 173(1) vs Sec 173(5)): Normal Company = First BM within 30 days of incorporation; Min 4 BMs every year with Max Gap ≤ 120 days  |  OPC, Small Co, Dormant Co &amp; Start-up = Min 1 BM in each half of Calendar Year with Min Gap ≥ 90 days</code></div><div class="formula-item"><code>Board Quorum (Sec 174(1) &amp; (3)): Higher of 1/3rd of Total Strength OR 2 Directors (Fraction rounded up to next integer)  |  If Interested Directors ≥ 2/3rd of Total Strength → Remaining Non-Interested Directors (not less than 2) form Quorum</code></div><div class="formula-item"><code>Section 8 Company Quorum Exception: Quorum for Section 8 (Charitable) Company = Either 8 Members OR 25% (1/4th) of Total Strength, whichever is LESS (provided it shall not be less than 2 members)</code></div><div class="formula-item"><code>Borrowing Restriction on Board (Sec 180(1)(c)): Special Resolution required if Money to be Borrowed + Money Already Borrowed (excluding temporary loans) &gt; (Paid-up Share Capital + Free Reserves + Securities Premium)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Numerical (Section 174 Board Quorum with Interested Directors): A Public Company has a sanctioned strength of 12 Directors, of whom 2 seats are vacant (so Total Strength = 10 Directors). Standard Quorum = 1/3 × 10 = 3.33 → <strong>4 Disinterested Directors</strong>. Suppose at a Board Meeting where 8 Directors are present, an item comes up in which 7 out of the 10 Directors are interested under Section 184(2). Since the number of Interested Directors (7) is ≥ 2/3rd of Total Strength (2/3 × 10 = 6.67), Section 174(3) triggers: the remaining Non-Interested Directors present, being <strong>not less than 2</strong> (here up to 3 non-interested directors), form a valid Quorum for that item!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter XII — Meetings of Board and its Powers Part I (Sections 173 to 183)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter XII — Meetings of Board and its Powers Part I (Sections 173 to 183)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter XII — Meetings of Board and its Powers Part I (Sections 173 to 183) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Omission of Rule 4 Restriction on Video Conferencing Board Meetings (MCA Amendment): Following the MCA omission of Rule 4 of the Companies (Meetings of Board and its Powers) Rules, ALL matters (including approval of annual financial statements, Board's report, prospectus, Audit Committee review of accounts, and mergers/amalgamations) can now be validly transacted through Video Conferencing (VC) or Other Audio-Visual Means (OAVM) !; Audit Committe</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Sec 173: Meetings of Board | First BM within 30 days of incorporation; ≥4 BMs/year (max gap ≤120 days). OPC (with &gt;1 director), Small, Dormant &amp; Start-up: ≥1 BM in each half of calendar year (gap ≥90 days). Section 8 Co: ≥1 BM within every 6 calendar months. | Notice: Not less than 7 days in writing to every director at registered address (penalty on officer: ₹25,000). Shorter Notice (&lt;7 days) valid if ≥1 Independent Director is present (or ratif</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Sec 173: Meetings of Board | First BM within 30 days of incorporation; ≥4 BMs/year (max gap ≤120 days). OPC (with &gt;1 director), Small, Dormant &amp; Start-up: ≥1 BM in each half of calendar year (gap ≥90 days). Section 8 Co: ≥1 BM within every 6 calendar months. | Notice: Not less than 7 days in writing to every director at registered address (penalty on officer: ₹25,000). Shorter Notice (&lt;7 days) valid if ≥1 Independent Director is present (or ratif</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter XII — Meetings of Board and its Powers Part I (Sections 173 to 183) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter XII — Meetings of Board and its Powers Part I (Sections 173 to 183).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter XII — Meetings of Board and its Powers Part I (Sections 173 to 183) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Audit Committee, NRC &amp; SRC Composition (Companies Act vs SEBI LODR): Under Companies Act Sec 177, Audit Committee requires a majority of Independent Directors (whereas SEBI LODR requires 2/3rd Independent Directors for listed entities, with all members financially literate).</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter XII — Meetings of Board and its Powers Part I (Sections 173 to 183).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch08" style="border-left: 5px solid #0369a1;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0369a1;">CH 08</span>
+<h3 class="rev-title">Chapter XII — Meetings of Board and its Powers Part II (Sections 184 to 195)</h3>
+<span class="rev-pyq-cnt">2 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Omission of Sections 194 &amp; 195 (Forward Dealings &amp; Insider Trading):</strong> Remember for the exam that <strong>Section 194 (Prohibition on Forward Dealings by Director/KMP)</strong> and <strong>Section 195 (Prohibition on Insider Trading)</strong> were <strong>omitted from the Companies Act, 2013</strong> by the Companies (Amendment) Act, 2017 (effective Feb 9, 2018) because SEBI (PIT) Regulations, 2015 comprehensively regulate insider trading in listed/to-be-listed securities.</li><li><strong>Section 185 Partial Exemption vs Prohibition Framework:</strong> Following the 2018 substitution of Section 185, a company is completely prohibited from advancing loans/guarantees to its Directors or its Holding Company's Directors/relatives/partners (Sec 185(1)), <strong>HOWEVER</strong> under Sec 185(2), a company MAY advance a loan/guarantee to any person/entity in which a director is interested (e.g., private company or firm) if approved by a <strong>Special Resolution</strong> and utilized for its <strong>principal business activities</strong>.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Statutory Matrix of Sections 184 to 195 — Interested Directors, Loans, Investments &amp; RPTs</div>
+<table class="concept-table">
+<thead><tr><th>Section</th><th>Provision &amp; Core Rule</th><th>Approvals, Forms &amp; Thresholds</th><th>Exemptions &amp; Penalties</th></tr></thead>
+<tbody><tr><td>Sec 184: Disclosure of Interest by Director</td><td>Sec 184(1): General notice of interest in Form MBP-1 at the FIRST Board Meeting in which he participates as director, and at the FIRST Board Meeting in every Financial Year (or whenever change occurs).</td><td>Sec 184(2): Specific disclosure when holding &gt;2% paid-up share capital (alone or with other directors) in a body corporate, or is promoter/CEO/partner/owner. Must not participate in meeting.</td><td>Penalty (Sec 184(4)): Liable to a flat penalty of ₹1,00,000 (decriminalized in 2020) + vacation of office under Sec 167(1)(c)/(d).</td></tr><tr><td>Sec 185: Loan to Directors, etc.</td><td>Sec 185(1) Absolute Prohibition: No loan/guarantee/security to any Director of Company or of its Holding Co, or any Partner or Relative of such director, or any Firm in which such director/relative is a partner.</td><td>Sec 185(2) Conditional Permission: Allowed to any other entity in which director is interested (e.g., Private Co where director is director/member, or Body Corporate where ≥25% voting power is controlled) via SPECIAL RESOLUTION + utilized for principal business activities.</td><td>Sec 185(3) Exemptions: (a) Loan to MD/WTD as part of service conditions extended to all employees OR pursuant to scheme approved by SR; (b) Ordinary course of business at ≥ RBI Bank Rate; (c) Any Loan/Guarantee/Security given by a Holding Co to its Wholly-Owned Subsidiary (WOS), or Guarantee/Security to a Subsidiary's Bank Loan (utilized for principal business).</td></tr><tr><td>Sec 186: Loan and Investment by Company</td><td>Requires UNANIMOUS Board Resolution (consent of ALL directors present at BM) + Prior approval of Public Financial Institution (if term loan subsists and limit crossed OR default exists). Register in Form MBP-2 within 7 days.</td><td>Requires prior SPECIAL RESOLUTION if aggregate Loans + Investments + Guarantees exceed HIGHER of: 60% of (Paid-up Share Capital + Free Reserves + Securities Premium) OR 100% of (Free Reserves + Securities Premium).</td><td>Exemptions: Banking, Insurance, Housing Finance, and Infrastructure Financing companies; Acquisition of Right Shares under Sec 62(1)(a); Loans/Guarantees given to a Wholly-Owned Subsidiary (WOS) or Joint Venture (exempt from SR under Sec 186(3)).</td></tr><tr><td>Sec 187 &amp; Sec 189: Investments in Own Name &amp; Register of Contracts</td><td>Sec 187: All investments held in company's own name (or depository). If held in nominee's name (e.g., to maintain statutory minimum members in a subsidiary), maintain register in Form MBP-3.</td><td>Sec 189: Register of Contracts or Arrangements in which Directors are interested maintained in Form MBP-4, placed before next Board Meeting and signed by all directors present.</td><td>Sec 189(6) Exemption: Does NOT apply to contract for sale/purchase/supply of goods/materials/services if value does not exceed ₹5,00,000 in the aggregate in any year!</td></tr><tr><td>Sec 188: Related Party Transactions (RPTs)</td><td>Applies to 7 specified contracts/arrangements with a 'Related Party' (Sec 2(76)). Requires Board Resolution at a Board Meeting; if threshold crossed (e.g., ≥10% of Turnover / Net Worth, or &gt;₹2.5L/month office of profit), requires prior ORDINARY RESOLUTION.</td><td>No member who is a Related Party shall vote on such resolution to approve any contract (relaxed if ≥90% of members in number are relatives of promoters/related parties).</td><td>COMPLETE EXEMPTION (4th Proviso to Sec 188(1)): Neither Board Resolution nor Shareholder Resolution is required under Sec 188 if the transaction is in the ORDINARY COURSE OF BUSINESS AND on an ARM'S LENGTH BASIS! (And between Holding Co and its Wholly-Owned Subsidiary).</td></tr><tr><td>Sec 192: Restriction on Non-Cash Transactions Involving Directors</td><td>Director of Company (or its Holding, Subsidiary, or Associate) or person connected with him cannot acquire assets for consideration other than cash from the company (or vice versa) without prior approval in General Meeting.</td><td>If the director is a director of the Holding Company, resolution must ALSO be passed in General Meeting of the Holding Company. Notice must include valuation report by a Registered Valuer.</td><td>Arrangement entered into in violation of Sec 192 is voidable at the option of the company unless restitution is impossible and company has been indemnified.</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Disclosure of Interest Threshold in Body Corporate (Sec 184(2)): Director (alone or with other directors) holds &gt; 2% of Paid-up Share Capital of that Body Corporate, OR is a Promoter, Manager, or CEO of that Body Corporate</code></div><div class="formula-item"><code>Inter-Corporate Loans &amp; Investments Ceiling (Sec 186(2)): Aggregate Loans + Guarantees + Securities + Investments ≤ HIGHER of: (a) 60% of (Paid-Up Share Capital + Free Reserves + Securities Premium)  OR  (b) 100% of (Free Reserves + Securities Premium)  [Exceeding this limit requires prior SPECIAL RESOLUTION]</code></div><div class="formula-item"><code>Minimum Interest Rate on Inter-Corporate Loans (Sec 186(7)): Interest Rate ≥ Prevailing Yield of 1-Year, 3-Year, 5-Year, or 10-Year Government Security closest to the tenor of the loan</code></div><div class="formula-item"><code>Maximum Layers of Investment Subsidiaries (Sec 186(1)): Not more than 2 Layers of Investment Subsidiaries</code></div><div class="formula-item"><code>Related Party Transaction (RPT) Shareholder Approval Thresholds (Sec 188 &amp; Rule 15): Sale/Purchase/Supply of Goods or Materials ≥ 10% of Turnover  |  Selling/Disposing/Buying Property ≥ 10% of Net Worth  |  Leasing Property ≥ 10% of Turnover  |  Availing/Rendering Services ≥ 10% of Turnover  |  Office/Place of Profit Remuneration &gt; ₹2,50,000 per month  |  Underwriting Remuneration &gt; 1% of Net Worth</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Numerical (Section 186(2) Inter-Corporate Loan &amp; Investment Limit): Titan Infra Ltd has Paid-up Equity Capital = ₹100 Crore, Paid-up Preference Capital = ₹20 Crore (Total Paid-up Share Capital = ₹120 Crore), Free Reserves = ₹150 Crore, Securities Premium = ₹30 Crore, and Revaluation Reserve = ₹40 Crore (ignored as not a free reserve). It already has existing inter-corporate loans and investments of ₹140 Crore. How much additional inter-corporate loan can the Board sanction by Unanimous Board Resolution WITHOUT needing a Special Resolution? Step 1: Limit A = 60% of (Paid-up Share Capital ₹120 Cr + Free Reserves ₹150 Cr + Securities Premium ₹30 Cr = ₹300 Cr) = <strong>₹180 Crore</strong>. Step 2: Limit B = 100% of (Free Reserves ₹150 Cr + Securities Premium ₹30 Cr) = <strong>₹180 Crore</strong>. Step 3: Maximum Ceiling without SR = Higher of (₹180 Cr, ₹180 Cr) = <strong>₹180 Crore</strong>. Step 4: Additional sanctionable by Unanimous Board Resolution = ₹180 Cr − ₹140 Cr = <strong>₹40 Crore</strong>!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter XII — Meetings of Board and its Powers Part II (Sections 184 to 195)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter XII — Meetings of Board and its Powers Part II (Sections 184 to 195)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter XII — Meetings of Board and its Powers Part II (Sections 184 to 195) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Omission of Sections 194 &amp; 195 (Forward Dealings &amp; Insider Trading): Remember for the exam that Section 194 (Prohibition on Forward Dealings by Director/KMP) and Section 195 (Prohibition on Insider Trading) were omitted from the Companies Act, 2013 by the Companies (Amendment) Act, 2017 (effective Feb 9, 2018) because SEBI (PIT) Regulations, 2015 comprehensively regulate insider trading in listed/to-be-listed securities.; Section 185 Partial Exem</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Sec 184: Disclosure of Interest by Director | Sec 184(1): General notice of interest in Form MBP-1 at the FIRST Board Meeting in which he participates as director, and at the FIRST Board Meeting in every Financial Year (or whenever change occurs). | Sec 184(2): Specific disclosure when holding &gt;2% paid-up share capital (alone or with other directors) in a body corporate, or is promoter/CEO/partner/owner. Must not participate in meeting. | Penalty</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Sec 184: Disclosure of Interest by Director | Sec 184(1): General notice of interest in Form MBP-1 at the FIRST Board Meeting in which he participates as director, and at the FIRST Board Meeting in every Financial Year (or whenever change occurs). | Sec 184(2): Specific disclosure when holding &gt;2% paid-up share capital (alone or with other directors) in a body corporate, or is promoter/CEO/partner/owner. Must not participate in meeting. | Penalty</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter XII — Meetings of Board and its Powers Part II (Sections 184 to 195) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter XII — Meetings of Board and its Powers Part II (Sections 184 to 195).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter XII — Meetings of Board and its Powers Part II (Sections 184 to 195) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Section 185 Partial Exemption vs Prohibition Framework: Following the 2018 substitution of Section 185, a company is completely prohibited from advancing loans/guarantees to its Directors or its Holding Company's Directors/relatives/partners (Sec 185(1)), HOWEVER under Sec 185(2), a company MAY advance a loan/guarantee to any person/entity in which a director is interested (e.g., private company or firm) if approved </li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter XII — Meetings of Board and its Powers Part II (Sections 184 to 195).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch09" style="border-left: 5px solid #6d28d9;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#6d28d9;">CH 09</span>
+<h3 class="rev-title">Chapter XXVII — National Company Law Tribunal (NCLT) &amp; Appellate Tribunal (NCLAT) (Sections 407 to 434)</h3>
+<span class="rev-pyq-cnt">13 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Dual Adjudicating Jurisdiction of NCLT &amp; NCLAT (Companies Act, 2013 + IBC, 2016 + Competition Act):</strong> NCLT acts as the Adjudicating Authority for corporate insolvency (CIRP &amp; Liquidation) under the Insolvency and Bankruptcy Code, 2016, while <strong>NCLAT</strong> serves as the Appellate Authority for orders of (1) <strong>NCLT</strong> (under Companies Act &amp; IBC), (2) <strong>Insolvency and Bankruptcy Board of India (IBBI)</strong>, (3) <strong>Competition Commission of India (CCI)</strong>, and (4) <strong>National Financial Reporting Authority (NFRA)</strong>.</li><li><strong>Principal Bench &amp; Regional Benches:</strong> Both NCLT and NCLAT were notified with effect from <strong>June 1, 2016</strong> on the recommendation of the <strong>Justice V. Balakrishna Eradi Committee (2000)</strong>, with the Principal Bench of NCLT at <strong>New Delhi</strong> and 15+ Benches across India (plus Chennai Bench of NCLAT).</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 Master Statutory Matrix of Chapter XXVII (Sections 407 to 434) — NCLT &amp; NCLAT Architecture</div>
+<table class="concept-table">
+<thead><tr><th>Section</th><th>Provision &amp; Authority</th><th>Qualifications &amp; Composition</th><th>Timelines, Age Limits &amp; Appeal Rules</th></tr></thead>
+<tbody><tr><td>Sec 408 &amp; Sec 409: Constitution &amp; Qualifications of NCLT</td><td>Constituted by Central Government (notified June 1, 2016). Consists of a President and such number of Judicial and Technical Members as CG deems fit.</td><td>President: Is or has been a Judge of a High Court for 5 years. Judicial Member: High Court Judge, or District Judge for ≥5 yrs, or Advocate for ≥10 yrs. Technical Member: ≥15 yrs in Indian Corporate Law Service / Legal Service, or CA/CS/CMA in practice for ≥15 yrs, or ≥15 yrs proven ability in industrial finance/management/reconstruction.</td><td>Term: 5 years (re-appointable for 5 yrs). Min Age = 50 years. Max Age: President = 67 years; Judicial/Technical Member = 65 years.</td></tr><tr><td>Sec 410 &amp; Sec 411: Constitution &amp; Qualifications of NCLAT</td><td>Constituted by Central Government to hear appeals against orders of NCLT, NFRA, CCI, and IBBI. Consists of a Chairperson and Judicial &amp; Technical Members (no numerical cap since 2020 amendment).</td><td>Chairperson: Is or has been a Judge of the Supreme Court OR Chief Justice of a High Court. Judicial Member: High Court Judge OR Judicial Member of NCLT for ≥5 years. Technical Member: ≥25 years proven ability, integrity and standing in law, industrial finance, reconstruction, investment, or accountancy.</td><td>Term: 5 years (re-appointable for 5 yrs). Min Age = 50 years. Max Age: Chairperson = 70 years; Judicial/Technical Member = 67 years.</td></tr><tr><td>Sec 412: Selection of Members of Tribunal &amp; Appellate Tribunal</td><td>President of NCLT and Chairperson/Judicial Members of NCLAT appointed after consultation with Chief Justice of India (CJI). Members of NCLT &amp; Technical Members of NCLAT appointed on recommendation of a 5-Member Selection Committee.</td><td>5-Member Selection Committee: (1) Chief Justice of India or his nominee (Chairperson — has CASTING VOTE in case of tie!), (2) Senior Judge of Supreme Court or Chief Justice of HC, (3) Secretary, MCA, (4) Secretary, Ministry of Law &amp; Justice, (5) 1 Secretary in Govt of India.</td><td>Secretary, Ministry of Corporate Affairs (MCA) acts as the Convener of the Selection Committee.</td></tr><tr><td>Sec 419 &amp; Sec 420: Benches &amp; Orders of Tribunal</td><td>Powers of NCLT exercisable by Benches consisting of 2 Members (1 Judicial + 1 Technical). Single Judicial Member may hear prescribed class of cases. If 2-member Bench is equally divided → referred to President who refers to ≥1 other Member (decided by majority).</td><td>Sec 420(2) Rectification of Mistake: NCLT may, at any time within 2 YEARS from the date of the order, amend any order passed by it to rectify any mistake apparent from the record.</td><td>Proviso to Sec 420(2): NCLT CANNOT amend an order under Sec 420(2) if an appeal has already been preferred against that order before NCLAT!</td></tr><tr><td>Sec 421, 422 &amp; 423: Appeals to NCLAT, Disposal Target &amp; Appeal to Supreme Court</td><td>Sec 421: Any person aggrieved by an order of NCLT may prefer an appeal to NCLAT within 45 DAYS from receipt of copy of order (+ up to 45 days further extension if prevented by sufficient cause). No appeal lies if order was passed with CONSENT of parties.</td><td>Sec 422: Every application/petition before NCLT or appeal before NCLAT shall be dealt with as expeditiously as possible with an endeavour to dispose of within 3 MONTHS (+ extension not exceeding 90 days recorded in writing).</td><td>Sec 423: Appeal against order of NCLAT lies to the SUPREME COURT OF INDIA within 60 DAYS (+ up to 60 days further extension on sufficient cause) ONLY on a Question of Law!</td></tr><tr><td>Sec 424, 425, 430 &amp; 432: Procedure, Contempt, Bar of Civil Court &amp; Representation</td><td>Sec 424: Guided by principles of natural justice (not bound by CPC, 1908); orders executable as decree of a court. Sec 425: Same power to punish for Contempt as a High Court under Contempt of Courts Act, 1971.</td><td>Sec 430: Complete bar on jurisdiction of Civil Courts in respect of any matter which NCLT or NCLAT is empowered to determine. Sec 432: Party may appear in person OR authorize a practicing CA, CS, Cost Accountant (CMA), or Legal Practitioner.</td><td>Under Sec 416, President/Chairperson/Member may resign by giving notice in writing to the Central Government, continuing in office up to 3 months or until successor assumes office or term expires (whichever is earliest).</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Minimum Age for Appointment as President/Chairperson/Judicial or Technical Member of NCLT or NCLAT (Sec 413): Minimum 50 Years of Age</code></div><div class="formula-item"><code>Term &amp; Maximum Retirement Age in NCLT (Sec 413(1)–(2)): Term = 5 Years (eligible for re-appointment for another 5 years)  |  Max Age: NCLT President = 67 Years  |  NCLT Judicial/Technical Member = 65 Years</code></div><div class="formula-item"><code>Term &amp; Maximum Retirement Age in NCLAT (Sec 413(3)–(4)): Term = 5 Years (eligible for re-appointment for another 5 years)  |  Max Age: NCLAT Chairperson = 70 Years  |  NCLAT Judicial/Technical Member = 67 Years</code></div><div class="formula-item"><code>Statutory Appeal &amp; Disposal Timelines (Sec 420–423): Rectification of Mistake by NCLT = Within 2 Years  |  Appeal from NCLT to NCLAT = 45 Days (+ up to 45 days extension)  |  Appeal from NCLAT to Supreme Court = 60 Days (+ up to 60 days extension on Question of Law)  |  Disposal Target = 3 Months (+ up to 90 days extension)</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Worked Statutory Timeline Case (Section 421 &amp; 423 Condonation of Delay Ceilings): NCLT Mumbai Bench passes a final order on May 1, 2026, and a certified copy is received by the aggrieved company on May 5, 2026. What is the maximum statutory window to file an appeal before NCLAT? Under Section 421(3), the initial appeal period is <strong>45 days</strong> from receipt of the order copy (up to June 19, 2026). If prevented by sufficient cause, NCLAT can condone a delay of <strong>not exceeding a further period of 45 days</strong> (total absolute outer limit = 45 + 45 = <strong>90 days</strong>). Beyond 90 days, even NCLAT has no jurisdiction to condone delay! Similarly, for an appeal from NCLAT to the Supreme Court under Section 423, the window is <strong>60 days + max 60 days condonation = 120 days</strong>.</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Chapter XXVII — National Company Law Tribunal (NCLT) &amp; Appellate Tribunal (NCLAT) (Sections 407 to 434)</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Chapter XXVII — National Company Law Tribunal (NCLT) &amp; Appellate Tribunal (NCLAT) (Sections 407 to 434)' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Chapter XXVII — National Company Law Tribunal (NCLT) &amp; Appellate Tribunal (NCLAT) (Sections 407 to 434) is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Dual Adjudicating Jurisdiction of NCLT &amp; NCLAT (Companies Act, 2013 + IBC, 2016 + Competition Act): NCLT acts as the Adjudicating Authority for corporate insolvency (CIRP &amp; Liquidation) under the Insolvency and Bankruptcy Code, 2016, while NCLAT serves as the Appellate Authority for orders of (1) NCLT (under Companies Act &amp; IBC), (2) Insolvency and Bankruptcy Board of India (IBBI) , (3) Competition Commission of India (CCI) , and (4) National Fin</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Sec 408 &amp; Sec 409: Constitution &amp; Qualifications of NCLT | Constituted by Central Government (notified June 1, 2016). Consists of a President and such number of Judicial and Technical Members as CG deems fit. | President: Is or has been a Judge of a High Court for 5 years. Judicial Member: High Court Judge, or District Judge for ≥5 yrs, or Advocate for ≥10 yrs. Technical Member: ≥15 yrs in Indian Corporate Law Service / Legal Service, or CA/CS/CM</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Sec 408 &amp; Sec 409: Constitution &amp; Qualifications of NCLT | Constituted by Central Government (notified June 1, 2016). Consists of a President and such number of Judicial and Technical Members as CG deems fit. | President: Is or has been a Judge of a High Court for 5 years. Judicial Member: High Court Judge, or District Judge for ≥5 yrs, or Advocate for ≥10 yrs. Technical Member: ≥15 yrs in Indian Corporate Law Service / Legal Service, or CA/CS/CM</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Chapter XXVII — National Company Law Tribunal (NCLT) &amp; Appellate Tribunal (NCLAT) (Sections 407 to 434) ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Chapter XXVII — National Company Law Tribunal (NCLT) &amp; Appellate Tribunal (NCLAT) (Sections 407 to 434).</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Chapter XXVII — National Company Law Tribunal (NCLT) &amp; Appellate Tribunal (NCLAT) (Sections 407 to 434) is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Principal Bench &amp; Regional Benches: Both NCLT and NCLAT were notified with effect from June 1, 2016 on the recommendation of the Justice V. Balakrishna Eradi Committee (2000) , with the Principal Bench of NCLT at New Delhi and 15+ Benches across India (plus Chennai Bench of NCLAT).</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Chapter XXVII — National Company Law Tribunal (NCLT) &amp; Appellate Tribunal (NCLAT) (Sections 407 to 434).</p>
+</div>
+</div>
+</div></section>
+<section class="rev-card" id="rev-ch10" style="border-left: 5px solid #0f766e;">
+<div class="rev-hdr">
+<span class="rev-badge" style="background:#0f766e;">CH 10</span>
+<h3 class="rev-title">Master Statutory Synthesis — Forms, Applicability Thresholds, Resolutions &amp;CA Raman Luthra Shortcuts</h3>
+<span class="rev-pyq-cnt">0 PYQs</span>
+</div>
+<div class="dyn-box">
+<div class="dyn-header">🚀 2025–2026 Statutory, Regulatory &amp; Current Affairs Updates</div>
+<ul class="dyn-list"><li><strong>Updated Small Company Thresholds (Section 2(85) &amp; Rule 2(1)(t)):</strong> A Private Company is classified as a <strong>Small Company</strong> if its <strong>Paid-Up Share Capital does not exceed ₹4 Crore</strong> AND its <strong>Turnover does not exceed ₹40 Crore</strong> (statutory outer ceiling in Sec 2(85) is ₹10 Cr Paid-up and ₹100 Cr Turnover; Holding/Subsidiary companies, Section 8 companies, and Special Act companies can NEVER be Small Companies).</li><li><strong>Decriminalization under Companies (Amendment) Act, 2020 &amp; In-House Adjudication Mechanism (IAM — Sec 454):</strong> Most procedural and technical defaults under Chapters III, IV, VIII, X, XI, and XII have been shifted from criminal fines before Special Courts to civil penalties adjudicated by the Registrar of Companies (Adjudicating Officer) with a <strong>50% penalty reduction (subject to ₹2L Co / ₹1L Officer cap) for OPCs, Small Companies, Start-ups, and Producer Companies under Section 446B</strong>.</li></ul>
+</div>
+<div class="table-wrap">
+<div class="table-caption">📋 The Ultimate CA Raman Luthra + EduTap Applicability &amp; Resolution Master Comparison Table</div>
+<table class="concept-table">
+<thead><tr><th>Statutory Provision / Committee</th><th>Paid-Up Capital Threshold</th><th>Turnover Threshold</th><th>Loans / Borrowings / Deposits / Net Profit Threshold</th></tr></thead>
+<tbody><tr><td>Woman Director (Sec 149(1) &amp; Rule 3)</td><td>All Listed Cos + Public Cos with Paid-Up Capital ≥ ₹100 Crore</td><td>OR Turnover ≥ ₹300 Crore</td><td>Checked as on last date of latest audited financial statements.</td></tr><tr><td>Independent Directors (Sec 149(4)), Audit Committee (Sec 177) &amp; NRC (Sec 178)</td><td>All Listed Cos (≥1/3rd IDs) + Unlisted Public Cos with Paid-Up Capital ≥ ₹10 Crore (≥2 IDs)</td><td>OR Turnover ≥ ₹100 Crore</td><td>OR Aggregate Outstanding Loans, Debentures and Deposits &gt; ₹50 Crore (Exceeding ₹50 Cr; JV, WOS &amp; Dormant Cos Exempt).</td></tr><tr><td>Rotation of Statutory Auditors (Sec 139(2) &amp; Rule 5)</td><td>All Listed Cos + Unlisted Public Cos with Paid-Up Capital ≥ ₹10 Crore + Private Cos with Paid-Up Capital ≥ ₹50 Crore</td><td>Not applicable (Turnover not a criterion for Auditor Rotation!)</td><td>OR ANY Company (Public or Private) having Public Borrowings from Financial Institutions, Banks or Public Deposits ≥ ₹50 Crore.</td></tr><tr><td>Vigil Mechanism / Whistleblower (Sec 177(9) &amp; Rule 7)</td><td>All Listed Companies</td><td>Not applicable</td><td>Companies accepting Deposits from Public OR Companies having Borrowings from Banks and PFIs &gt; ₹50 Crore (in excess of ₹50 Cr).</td></tr><tr><td>Internal Auditor (Sec 138 &amp; Rule 13)</td><td>Listed Cos + Unlisted Public Cos with Paid-Up Capital ≥ ₹50 Crore</td><td>OR Turnover ≥ ₹200 Crore (applies to both Unlisted Public &amp; Private Cos)</td><td>OR Outstanding Loans/Borrowings from Banks/PFIs &gt; ₹100 Crore (at any point during preceding FY) OR Outstanding Deposits ≥ ₹25 Crore (Unlisted Public).</td></tr><tr><td>Corporate Social Responsibility — CSR (Sec 135)</td><td>Net Worth ≥ ₹500 Crore (Paid-up + Reserves)</td><td>OR Turnover ≥ ₹1,000 Crore</td><td>OR Net Profit ≥ ₹5 Crore during the immediately preceding Financial Year (No CSR Committee needed if annual CSR obligation ≤ ₹50 Lakh).</td></tr></tbody>
+</table>
+</div>
+<div class="formula-card">
+<div class="formula-header">📐 Key Formulas, Statutory Thresholds &amp; Core Identities</div>
+<div class="formula-grid"><div class="formula-item"><code>Section 446B Lesser Penalty for OPC, Small Co, Start-up &amp; Producer Co: Penalty = 1/2 (50%) of regular penalty, subject to Maximum ₹2,00,000 for Company and Maximum ₹1,00,000 for Officer in Default</code></div><div class="formula-item"><code>CSR Applicability (Sec 135(1)): Net Worth ≥ ₹500 Crore OR Turnover ≥ ₹1,000 Crore OR Net Profit ≥ ₹5 Crore during the immediately preceding FY → Spend ≥ 2% of Average Net Profits of 3 immediately preceding FYs</code></div><div class="formula-item"><code>Internal Audit Applicability (Sec 138 &amp; Rule 13): Every Listed Co + Unlisted Public Co (Paid-up ≥ ₹50 Cr OR Turnover ≥ ₹200 Cr OR Loans/Borrowings &gt; ₹100 Cr OR Deposits ≥ ₹25 Cr) + Private Co (Turnover ≥ ₹200 Cr OR Loans/Borrowings &gt; ₹100 Cr)</code></div><div class="formula-item"><code>Whole-Time Key Managerial Personnel / KMP (Sec 203 &amp; Rule 8/8A): Every Listed Co + Public Co (Paid-up ≥ ₹10 Cr) must have Whole-Time MD/CEO/WTD + CFO + Company Secretary; Any Private/Public Co with Paid-up Capital ≥ ₹10 Crore must have a Whole-Time Company Secretary</code></div></div>
+<div class="worked-box"><strong>🧮 Worked Numerical / Practical Case Study:</strong> Master Resolution Classification Shortcut for PFRDA &amp; SEBI Grade A: Which provisions require an <strong>UNANIMOUS Board Resolution</strong> (100% of directors present voting in favor)? Only <strong>Three</strong> in the syllabus: (1) <strong>Section 162</strong> (Motion to appoint 2 or more directors by a single resolution), (2) <strong>Section 186(5)</strong> (Sanctioning any inter-corporate loan, investment, guarantee or security), and (3) <strong>Section 203(3) Proviso</strong> (Appointing a person who is already the MD or Manager of one company as the MD of a second company)!</div>
+</div>
+
+<div class="desc-box">
+<div class="desc-header">
+<span>✍️ Phase II Descriptive Mains &amp; Analytical Model Answers — Master Statutory Synthesis — Forms, Applicability Thresholds, Resolutions &amp;CA Raman Luthra Shortcuts</span>
+<span style="font-size:12px;background:#1e3a8a;color:#fff;padding:4px 10px;border-radius:999px;">15-Mark &amp; 10-Mark Structured Blueprints</span>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">15 Marks • 250–300 Words</span>Q1 (Descriptive Mains): Critically analyze the conceptual foundation, statutory/regulatory provisions, and practical policy significance of 'Master Statutory Synthesis — Forms, Applicability Thresholds, Resolutions &amp;CA Raman Luthra Shortcuts' in the Indian financial and regulatory ecosystem.</div>
+<div class="desc-struct">
+<p><strong>1. Introduction &amp; Definitional Context:</strong> Master Statutory Synthesis — Forms, Applicability Thresholds, Resolutions &amp;CA Raman Luthra Shortcuts is a core syllabus module tested across PFRDA, IFSCA, IRDAI, and NPS Trust Phase I and Phase II examinations.</p>
+<p><strong>2. Core Analytical, Statutory &amp; Quantitative Pillars:</strong></p>
+<ul class="ch-ul">
+<li><strong>Primary Theoretical &amp; Regulatory Framework:</strong> Updated Small Company Thresholds (Section 2(85) &amp; Rule 2(1)(t)): A Private Company is classified as a Small Company if its Paid-Up Share Capital does not exceed ₹4 Crore AND its Turnover does not exceed ₹40 Crore (statutory outer ceiling in Sec 2(85) is ₹10 Cr Paid-up and ₹100 Cr Turnover; Holding/Subsidiary companies, Section 8 companies, and Special Act companies can NEVER be Small Companies).; Decriminalization under Companies (Amendment) Act,</li>
+<li><strong>Operational Mechanisms &amp; Structural Norms:</strong> Woman Director (Sec 149(1) &amp; Rule 3) | All Listed Cos + Public Cos with Paid-Up Capital ≥ ₹100 Crore | OR Turnover ≥ ₹300 Crore | Checked as on last date of latest audited financial statements.; Independent Directors (Sec 149(4)), Audit Committee (Sec 177) &amp; NRC (Sec 178) | All Listed Cos (≥1/3rd IDs) + Unlisted Public Cos with Paid-Up Capital ≥ ₹10 Crore (≥2 IDs) | OR Turnover ≥ ₹100 Crore | OR Aggregate Outstanding Loans, Debentures and Deposit</li>
+<li><strong>Comparative Matrix &amp; 2025–2026 Policy Alignment:</strong> Woman Director (Sec 149(1) &amp; Rule 3) | All Listed Cos + Public Cos with Paid-Up Capital ≥ ₹100 Crore | OR Turnover ≥ ₹300 Crore | Checked as on last date of latest audited financial statements.; Independent Directors (Sec 149(4)), Audit Committee (Sec 177) &amp; NRC (Sec 178) | All Listed Cos (≥1/3rd IDs) + Unlisted Public Cos with Paid-Up Capital ≥ ₹10 Crore (≥2 IDs) | OR Turnover ≥ ₹100 Crore | OR Aggregate Outstanding Loans, Debentures and Deposit</li>
+</ul>
+<p><strong>3. Conclusion &amp; Way Forward (2047 Regulatory Vision):</strong> Strengthening principle-based governance, empirical risk modeling, and transparent disclosures across Master Statutory Synthesis — Forms, Applicability Thresholds, Resolutions &amp;CA Raman Luthra Shortcuts ensures long-term institutional resilience and stakeholder protection across PFRDA, IFSCA, IRDAI, and NPS Trust domains.</p>
+</div>
+</div>
+<div class="desc-q-card">
+<div class="desc-q-title"><span class="desc-tag">10 Marks • 180–200 Words</span>Q2 (Applied Case &amp; Sub-Topic Deep Dive): Examine the key implementation challenges, numerical/statutory thresholds, and decision-making implications associated with Master Statutory Synthesis — Forms, Applicability Thresholds, Resolutions &amp;CA Raman Luthra Shortcuts.</div>
+<div class="desc-struct">
+<p><strong>1. Context &amp; Scope:</strong> In Phase II Mains and interview assessments, Master Statutory Synthesis — Forms, Applicability Thresholds, Resolutions &amp;CA Raman Luthra Shortcuts is evaluated on both statutory accuracy and applied decision-making under regulatory constraints.</p>
+<p><strong>2. Key Benchmarks &amp; Case Application:</strong></p>
+<ul class="ch-ul">
+<li><strong>Key Thresholds &amp; Rules:</strong> Decriminalization under Companies (Amendment) Act, 2020 &amp; In-House Adjudication Mechanism (IAM — Sec 454): Most procedural and technical defaults under Chapters III, IV, VIII, X, XI, and XII have been shifted from criminal fines before Special Courts to civil penalties adjudicated by the Registrar of Companies (Adjudicating Officer) with a 50% penalty reduction (subject to ₹2L Co / ₹1L Officer cap) for OPCs, Small Co</li>
+<li><strong>Risk &amp; Governance Safeguards:</strong> Prevents asymmetric information, moral hazard, and compliance breaches through periodic audit, stress testing, and board-level oversight.</li>
+</ul>
+<p><strong>3. Conclusion:</strong> A balanced combination of statutory compliance and technology-driven monitoring maximizes efficiency in Master Statutory Synthesis — Forms, Applicability Thresholds, Resolutions &amp;CA Raman Luthra Shortcuts.</p>
+</div>
+</div>
+</div></section>
+</div>
+</body>
+</html>
